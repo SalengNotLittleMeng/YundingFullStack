@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script>
+		// const axios = require('axios');
+		//  npm 脚手架 npm installl axios 
+		// 
+		axios.defaults.baseURL="http://47.93.100.90:9091/";
+		// 一个项目中 后端的接口 http://47.93.100.90:9091/api
+		// axios.get("http://www.baidu.com/").then(res=>{console.log(res)})
+		// axios.get("http://47.93.100.90:9091/leaveStudy/findAll")
+		// .then(
+		// 	function(res){
+		// 		console.log(res);
+		// 	}
+		// )
+			// axios.get("leaveStudy/findAll/").then(
+			// 	function(res) {
+			// 		// console.log(res.data.data);
+			// 		console.log(res.data.data);
+			// 		let list = res.data.data;
+			// 		for(let i = 0 ; i<list.length;i++){
+			// 			console.log(list[i])
+			// 		}
+			// 	}
+			// )
+			// axios.get("/leaveStudy", {
+			// 		params: {
+			// 			pageNum: "1",
+			// 			pageSize: "5",
+			// 			search: ""
+			// 		}
+			// 	})
+			// 	.then(
+			// 		function(res) {
+			// 			console.log(res);
+			// 		}
+			// 	)
+			// 	.catch(function(err) {
+			// 		console.log(err);
+			// 	})
+			// 	.then(function() {})
+
+			// axios.get("http://47.93.100.90:9091/leaveStudy", {
+			// 		parmas: {
+			// 			pageNum: "1",
+			// 			pageSize: "10",
+			// 			search: ""
+			// 		}
+			// 	})
+			// 	.then(
+			// 		res => {
+			// 			console.log(res);
+			// 		}
+			// 	)
+
+			axios.post("http://47.93.100.90:9091/meeting", 
+				{
+					"dateMeeting": "2022-2-7",
+					"meetingName": "第一次接口测试",
+					"nameStudent": "肖文卓",
+					"reason": "啊巴"
+				}
+			).then(
+				res => {
+					console.log(res);
+				}
+
+			)
+			
+			
+		</script>
+	</body>
+</html>

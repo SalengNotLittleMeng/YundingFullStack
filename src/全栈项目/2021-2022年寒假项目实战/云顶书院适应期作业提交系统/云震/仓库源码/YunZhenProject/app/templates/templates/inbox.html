@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>yemian</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <div class="logo"><img src="{% static 'img/图层5.png' %}"></div>
+            <form class="username" name="post_user_name">{{ request.session.info.user_name }}</form>
+            <form class="phonenumber">{{ request.session.info.user_phone_number }}</form>
+            <form class="search_input">
+                <i class="fa fa-search" id="i-advanced-search-i"></i>
+                <input type="text" id="i-advanced-search" placeholder="作业搜索...">
+            </form>
+            <a href="/outbox/" class="list_one">发件箱</a>
+            <a href="/inbox/" class="list_two">收件箱</a>
+            <a href="/postwork/" class="list_three">提交作业</a>
+            <a href="/log_out/" class="list_four">退出登录</a>
+        </div>
+        <div class="foot">
+            <form class="bodyfirst">
+                <button>删除</button>
+                <button>彻底删除</button>
+                <button>转发</button>
+                <button>全部标为已读</button>
+            </form>
+            <form class="bodysecond">
+                <a href="#">
+                    <input type="checkbox" id="myCheck" >
+                    <label for="myCheck"></label>
+                    <img class="left" src="{% static 'img/直线6.png' %}" height="28px" width="2px">
+                    <img class="second" src="{% static 'img/邮箱闭着.png' %}" height="17px" width="25px">
+                    <img class="third" src="{% static 'img/别针.png' %}" height="17px" width="15px">
+                    <img class="right" src="{% static 'img/直线6.png' %}" height="28px" width="2px">
+                    <div class="person">发件人</div>
+                    <img class="right_" src="{% static 'img/直线6.png' %}" height="28px" width="2px">
+                    <div class="theme">主题</div>
+                    <div class="data">日期</div>
+                </a>
+                <hr />
+                {% for data in data_list %}
+                <a href="../email?email_id={{ data.id }}">
+                    <input type="checkbox" id="{{ data.id }}" class="duigou">
+                    <label for="{{ data.id }}"></label>
+                    {% if data.read %}
+                        <img class="second_" src="{% static 'img/已读拷贝.png' %}" height="17px" width="25px">
+                        {% else %}
+                        <img class="second_" src="{% static 'img/邮箱闭着.png' %}" height="17px" width="25px">
+                    {% endif %}
+                    <div class="person_">{{ data.post_user_name }}</div>
+                    <div class="theme_">{{ data.topic }}</div>
+                    <div class="data_">{{ data.date.year }}年{{ data.date.month }}月{{ data.date.day }}日{{ data.date.hour }}时{{ data.date.minute }}分</div>
+                </a>
+                <hr />
+                {% endfor %}
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
