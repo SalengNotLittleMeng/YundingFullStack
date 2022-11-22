@@ -1,0 +1,62 @@
+<!--
+ * @Author: DoubleLiHao =2998000782@qq.com
+ * @Date: 2022-11-15 14:24:25
+ * @LastEditors: DoubleLiHao =2998000782@qq.com
+ * @LastEditTime: 2022-11-19 16:29:19
+ * @FilePath: \Full Stack\大二\HTML\GirdDemo.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .BigBox {
+        height: 500px;
+        width: 600px;
+        background-color: rgba(210, 135, 87, 1);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 10px;
+      }
+      .box1 {
+        border: 8px solid black;
+        grid-row: 1 / 4;
+      }
+      .box2 {
+        border: 8px solid black;
+        grid-row: 1 / 6;
+      }
+      .box3 {
+        border: 8px solid black;
+        grid-row: 1 / 4;
+      }
+      .box4 {
+        border: 8px solid black;
+        grid-row: 4 / 8;
+      }
+      .box5 {
+        border: 8px solid black;
+        grid-row: 6 / 8;
+      }
+      .box6 {
+        border: 8px solid black;
+        grid-row: 4 / 8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="BigBox">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+      <div class="box6"></div>
+    </div>
+  </body>
+</html>
