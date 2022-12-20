@@ -1,0 +1,27 @@
+.more {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.list {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.line {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    width: 640px;
+}
+
+.id {
+    color: rgb(255, 0, 0);
+}
+
+.bgc_1 {
+    background-color: rgb(231, 231, 231);
+}
+
+.bgc_2 {
+    background-color: rgb(192, 192, 192);
+}

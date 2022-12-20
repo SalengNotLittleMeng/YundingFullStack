@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+  <title>注册页面</title>
+</head>
+<form method="post" action="">
+    {% csrf_token %}
+<body background="{% static 'img/yun.jpg' %}" style=" background-repeat:no-repeat ; background-size:100% 100%; background-attachment: fixed;">
+  <div class="background">
+    <div class="box">
+      <div class="image" style="position: relative; top:20px"><img src="{% static 'img/image.jpg' %}" width="560px" height="678px"></div>
+      <div class="contain">
+        <div class="head-1" style="font-size: 36px;">欢迎注册</div>
+        <div class="head-2" style="font-size: 15px;">Welcome to register</div>
+        <div class="logo"><img src="{% static 'img/图层 logo.png' %}" style="width: 130px; height: 92px;"></div>
+        <div class="slogan" style="font-size: 24px;">{{ error }}</div>
+        <div class="regisiter">
+          <div class="r-1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp昵称&nbsp&nbsp&nbsp&nbsp<input type="text"
+              style="width:300px; height: 60px;" placeholder="请输入1-10个字的昵称" name="user_name" value="{{ user_name }}"></div>
+          <div class="r-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp密码&nbsp&nbsp&nbsp&nbsp<input type="password" style="width:300px; height: 60px;"
+              placeholder="输入少于20位数的密码" name="user_password" value="{{ user_password }}"></div>
+          <div class="r-3">确认密码&nbsp&nbsp&nbsp&nbsp<input type="password" style="width:300px; height: 60px;"
+              placeholder="再次输入密码" name="test_user_password" value="{{ test_user_password }}"></div>
+          <div class="r-4">手机号码&nbsp&nbsp&nbsp&nbsp<input type="text" style="width:300px; height: 60px;"
+              placeholder="输入正确的手机号码" name="user_phone_number" value="{{ user_phone_number }}"></div>
+          <div class="r-5">&nbsp&nbsp&nbsp验证码&nbsp&nbsp&nbsp&nbsp<input type="text" style="width: 160px; height: 52px;"
+              placeholder="输入验证码" name="verification_code" value="{{ verification_code }}"></div>
+          <div class="button"><button type="submit" value="发送验证码"
+              style="width:120px; height: 52px;  background-color: #0278c8;" name="submit">发送验证码</button></div>
+        </div>
+        <div class="sure"><button type="submit" value="立即注册" style="width: 260px; height: 50px;">立即注册</button></div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</form>
+</html>

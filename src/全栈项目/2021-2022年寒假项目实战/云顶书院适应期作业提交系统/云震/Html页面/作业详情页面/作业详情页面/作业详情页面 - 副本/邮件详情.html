@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>邮件详情</title>
+    <link rel="stylesheet" href="css/邮件详情.css">
+</head>
+
+<body>
+    <div class="detailers">
+        <div class="content">
+            <div class="content-nav">
+                <div class="content-nav-left">
+                    <div class="logo"><img src="./image/logo.png" alt="error"></div>
+                    <form class="info" action="" method="">
+                        <input class="user_name" name="user_name" value="自己的昵称"></input><br>
+                        <input class="user_phone_number" name="user_phone_number" value="（手机号码）"></input>
+                    </form>
+                </div>
+                <div class="content-nav-right">
+                    <ul id="select">
+                        <li class="selected"><a href="">收件箱</a></li>
+                        <li><a href="">提交作业</a></li>
+                        <li><a href="">查看他人作业</a></li>
+                        <li><a href="">退出登录</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-main">
+                <div class="content-main-nav">
+                    <ul class="left">
+                        <li><a href="">&lt;返回</a></li>
+                        <li><a href="">转发</a></li>
+                        <li><a href="">删除</a></li>
+                        <li><a href="">彻底删除</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="">上一封</a></li>
+                        <li><a href="">下一封</a></li>
+                    </ul>
+                </div>
+                <form class="content-main-info" action="" method="">
+                    <input name="topic" value="标题" contenteditable="true"></input>
+                    <input name="topic" value="附件名称" id="appendix"></input>
+                    <button name="download" class="download">下载附件</button><br>
+                    <div class="details">
+                        <span>发件人：</span><input name="post_user_name"></input><br>
+                        <span>时间：</span><input name="date"></input><br>
+                        <span>收件人：</span><input name="get_user_name"></input>
+                    </div>
+                    <textarea name="content" class="content-main-body"></textarea>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

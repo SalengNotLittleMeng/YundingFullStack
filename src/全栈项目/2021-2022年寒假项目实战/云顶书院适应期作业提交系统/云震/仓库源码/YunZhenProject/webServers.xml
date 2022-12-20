@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1edcef6a-e94a-43d2-bffa-c4ebcc1a2c0a" name="YunZhenProject" url="http://8.130.8.58/">
+        <fileTransfer accessType="SFTP" host="8.130.8.58" port="22" sshConfigId="383cbe98-716e-4284-a68a-5acc8425ed57" sshConfig="root@8.130.8.58:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双飞翼布局</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="container">
+        <div id="center">
+            <h1>双飞翼布局</h1>
+            <h2>1.header和footer各自占领屏幕所有宽度，高度固定。</h2>
+            <h2>2.中间的container是一个三栏布局。</h2>
+            <h2>3.三栏布局两侧宽度固定不变，中间部分自动填充整个区域。</h2>
+            <h2>4.中间部分的高度是三栏中最高的区域的高度。</h2>
+            <br>
+            <h2 style="text-indent: 2em;">双飞翼布局与圣杯布局的区别是在中心盒子外加一个外包盒子,用外包盒子的margin代替圣杯布局中大盒子的padding, 此时左右侧边栏会占据外包盒子的margin部分,而非外围大盒子的padding部分,因此左右侧边栏不需要再进行移动
+            </h2>
+            <br>
+            <h2>另外,由于在双飞翼布局中,侧栏占据的是margin,因此当视口缩小后,右侧栏不会挡住中间的内容</h2>
+        </div>
+    </div>
+    <div id="left"></div>
+    <div id="right"></div>
+    <!-- 清除浮动带来的影响 -->
+    <div style="clear: both;"></div>
+    <div id="footer"></div>
+</body>
+<style>
+    body {
+        /* 这里一定要设置最小宽度，因为当宽度过小时，由于两边的侧栏会因为距离过小而被挤下去 */
+        min-width: 800px;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #header,
+    #footer {
+        height: 60px;
+        background-color: teal;
+    }
+    
+    #left {
+        /* 先左浮动,此时由于center的width为100%,左侧栏会被挤下去 */
+        float: left;
+        /* 这里使用calc计算属性让 布局刚好占满全屏*/
+        height: calc(100vh - 120px);
+        width: 200px;
+        background-color: aquamarine;
+        /* 通过margin-left的方式,让在下方的左侧栏可以被提到上边的一行 */
+        margin-left: -100%;
+        /* 被提升后,左侧栏的左边跟中心栏的左边重合,此时往左边移动左侧栏宽度的距离,即可让其移到中心栏的左边 */
+    }
+    
+    #container {
+        /* 注意这里需要给margin-left和margin-right设置为左右边栏的宽度值，
+            将中间盒子撑开，否则两边内容会浮在中间内容的上方 */
+        float: left;
+        width: 100%;
+    }
+    
+    #center {
+        margin: 0 200px;
+    }
+    
+    #right {
+        /* 右侧栏跟左侧栏同理 */
+        float: left;
+        margin-left: -200px;
+        width: 200px;
+        height: calc(100vh - 120px);
+        background-color: chocolate;
+    }
+</style>
+
+</html>

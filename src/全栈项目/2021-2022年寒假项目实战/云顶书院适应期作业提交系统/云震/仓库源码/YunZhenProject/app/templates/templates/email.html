@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>邮件详情</title>
+    <link rel="stylesheet" href={% static 'css/email.css' %}>
+</head>
+
+<body>
+    <div class="post-detailers">
+        <div class="content">
+            <form>
+                <div class="content-nav">
+                    <div class="content-nav-left">
+                        <div class="logo"><img src="https://gitee.com/xiayi1/typora-library/raw/master/logo.png" alt="error"></div>
+                        <div class="info">
+                            <span id="txt" size="24" maxlength="24" class="user_name" name="user_name" value="自己的昵称">{{ request.session.info.user_name }}</span><br>
+                            <span class="user_phone_number" name="user_phone_number" value="(手机号码)">{{ user_phone_number }}</span>
+                        </div>
+                    </div>
+                    <div class="content-nav-right">
+                        <ul id="select">
+                            <li class="selected"><a href="../inbox">收件箱</a></li>
+                            <li><a href="../outbox">发件箱</a></li>
+                            <li><a href="../postwork">提交作业</a></li>
+                            <li><a href="../log_out">退出登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-main-nav">
+                        <ul class="left">
+                            <li><a href="../inbox">&lt;返回</a></li>
+                            <li><a href="../delete?email_id={{ id }}">删除</a></li>
+                        </ul>
+                        <div class="right">
+                            <a href="../email?email_id={{ previous }}" class="prev">上一封</a>
+                            <a href="../email?email_id={{ next }}" class="next">下一封</a>
+                        </div>
+                    </div>
+                    <div class="content-main-info">
+                        <input id="txt" name="topic" value="标题"></input>
+                        <input id="txt" name="sub_topic" value="{{ filename }}" class="appendix"></input><br>
+                        {% if filename != '' %}
+                        <a href="{{ file }}" class="download">下载附件</a>
+                        {% endif %}
+                        <div class="details">
+                            <span>发件人：{{ post_user_name }}</span><br>
+                            <span>时间：{{ date.year }}年{{ date.month }}月{{ date.day }}日{{ date.hour }}时{{ date.minute }}分</span><br>
+                            <span>收件人：{{ get_user_name }}</span>
+                        </div>
+                    </div>
+                    <div class="content-main-body">
+                        <textarea name="content" placeholder="{{ content }}">{{ content }}</textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>

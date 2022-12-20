@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 版心：版心就是让页面能够整体居中，并且在拉伸后能让页面保持稳定的布局的盒子，
+                设置版心是伪类让页面在不同分别率的浏览器上能过够稳定显示，同时让页面不会因为拉伸而散架 -->
+    <!-- 顶部 -->
+    <!-- 顶部由于稿子的两个icon在版心以外，因此我们可以采用浮动的方式，让这两个icon自适应 。永远在页面的左右角-->
+    <nav>
+        <div>更多</div>
+        <div>搜索</div>
+    </nav>
+    <!-- 头部图片 -->
+    <header>
+        <!-- 下面这个container的盒子就是版心盒子，给这个盒子设置一个宽度，用margin居中，版心里面的东西就会一直再网页的中间 -->
+        <div class="container">
+            <div id="square"></div>
+            <h1>Animal Photography</h1>
+            <div class="flex-box">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 这是第二部分的版心，一般版心写一个就可以了，但这个PSD中间也有一个要全屏宽度的图片，因此将版心分开了 -->
+        <div class="container">
+            <div></div>
+        </div>
+    </main>
+
+    <h2>Difference</h2>
+    <!-- 这是第三个版心 -->
+    <div class="container">
+        <div class="flex-box-list">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h2>know more</h2>
+        <div class="flex-box-buttom">
+            <div></div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 尾部同理，盒子要自适应宽度，footer宽度为100%；里面的内容居中 -->
+    <footer>
+        <div>
+            <div>IN THE WILD</div>
+            <div>IN THE WILD</div>
+        </div>
+        <div class="big-world">Big World </div>
+    </footer>
+</body>
+
+</html>

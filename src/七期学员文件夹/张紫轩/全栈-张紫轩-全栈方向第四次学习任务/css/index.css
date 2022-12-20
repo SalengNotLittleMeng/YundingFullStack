@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+}
+.banner{
+    width: 100% ;
+    height: 1330px;
+    background-color: white;
+}
+.sign{
+    width: 100%;
+    height: 780px;
+}
+.difference{
+    width: 100%;
+    height: 850px;
+}
+.photo{
+    width: 100%;
+    height: 1080px;
+}
+.bottom{
+    width: 100%;
+    height: 460px;
+}
+.content{
+    width: 1920px;
+    height: 100%;
+    background-color:white;
+    margin: 0 auto;
+    position: relative;
+}
+.banner_top{
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.b_top_box1{
+    height: 20px;
+    width: 22px;
+    margin-left: 25px;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E4%B8%89%E6%9D%A0.png);
+    background-repeat: no-repeat;
+    transition: 0.1s;
+}
+.b_top_box1:hover{
+    transform: scale(0.5);
+}
+.b_top_box2 {
+    height: 15px;
+    width: 15px;
+    margin-right: 25px;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E6%94%BE%E5%A4%A7%E9%95%9C.png);
+    background-repeat: no-repeat;
+    transition: 0.1s;
+}
+.b_top_box2:hover{
+    transform: scale(0.5);
+}
+.iconfont{
+    position:absolute;
+    top: 0;
+    left: 860px;
+    width: 200px;
+    height: 200px;
+    transition: 2s;
+}
+.iconfont:hover{
+    transform: scale(0.5);
+}
+.banner_photo{
+    width: 1920px;
+    height: 929px;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png);
+    background-repeat: no-repeat;
+}
+.banner_botton{
+    width: 1105px;
+    height: 503px;
+    position: absolute;
+    bottom: 0;
+    left: 407.5px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+.b_botton_p1{
+    width: 330px;
+    height: 100%;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-top: 360px;
+    padding-left: 205px;
+    font-size: 38px;
+    color: white;
+    transition: 0.5s;
+}
+.b_botton_p1:hover{
+    transform: translate(0px,-100px);
+}
+.b_botton_p2 {
+    width: 330px;
+    height: 100%;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-top: 360px;
+    padding-left: 190px;
+    font-size: 38px;
+    color: white;
+    transition: 0.5s;
+}
+.b_botton_p2:hover{
+    transform: translate(0px,-100px);
+}
+.b_botton_p3 {
+    width: 330px;
+    height: 100%;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-top: 360px;
+    padding-left: 175px;
+    font-size: 38px;
+    color: white;
+    transition: 0.5s;
+}
+.b_botton_p3:hover{
+    transform: translate(0px, -100px);
+}
+.photo_box1{
+    position: absolute;
+    width: 1000px;
+    height: 89px;
+    font-size: 72px;
+    font-family: Cambria;
+    color: #2a3f17;
+    top: 320px;
+    left:630.5px;
+}
+.photo_box2 {
+    position: absolute;
+    width: 1100px;
+    height: 120px;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    top: 415px;
+    left: 446.5px;
+}
+.photo_box3 {
+    position: absolute;
+    width: 187px;
+    height: 55px;
+    background-color:#2a3f17;
+    font-size: 30px;
+    color: white;
+    font-family: 微软雅黑;
+    padding-top: 18px;
+    padding-left: 70px;
+    top: 655px;
+    left: 419px;
+    transition: 1s;
+}
+.photo_box3:hover{
+    transform: scale(0.8);
+}
+.s_photo{
+    width: 1920px;
+    height: 760px;
+    margin-top: 245px;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png);
+}
+.s_sign{
+    width: 941px;
+    height: 537px;
+    background-color:#e0dfdf;
+    position: absolute;
+    top: -80px;
+    left: 489.5px;
+    transition: 0.5s;
+}
+.s_sign:hover{
+    transform: translate(0px,-50px);
+}
+.s_s_con{
+    width: 810px;
+    height: 235px;
+    margin-top: 70px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: #2a3f17;
+}
+.s_s_sign{
+    width: 200px;
+    height: 70px;
+    background-color: #2a3f17;
+    color: white;
+    margin-left: 370px;
+    margin-top: 90px;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 40px;
+    transition: 0.5s;
+}
+.s_s_sign:hover{
+    transform: scale(0.8);
+}
+.di_top{
+    width: 240px;
+    height: 53px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 27px;
+    color: #2a3f17;
+    font-size: 48px;
+    font-family: 微软雅黑;
+    transition: 0.5s;
+}
+.di_top:hover{
+    border: 8px solid #2a3f17;
+    display: block;
+}
+.am{
+    width: 1144px;
+    height: 430px;
+    position: absolute;
+    top: 130px;
+    left: 388px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.am_box{
+    width: 264px;
+    height: 430px;
+    background-color: #e0dfdf;
+    transition: 0.5s;
+}
+.am_photo{
+    width: 264px;
+    height: 261px;
+    margin-bottom: 37px;
+    transition: 0.5s;
+}
+.am_box:hover{
+    transform: translate(0,-100px);
+}
+.am_a{
+    width: 264px;
+    height: 33px;
+    margin: 37px auto;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    text-align: center;
+}
+.am_b{
+    width: 264px;
+    height: 45px;
+    color: #2a3f17;
+    font-size: 21.85px;
+    font-family: 微软雅黑;
+    text-decoration: underline;
+    margin: 0 auto;
+    text-align: center;
+}
+.di_bottom{
+    width: 255px;
+    height: 70px;
+    position: absolute;
+    bottom: 80px;
+    left: 832.5px;
+    border: 5px solid #2a3f17;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    color:#2a3f17;
+    font-size: 30px;
+    transition: 1s;
+}
+.di_bottom:hover{
+    background-color: #2a3f17;
+    color: white;
+}
+.ph{
+    width: 1400px;
+    height: 1070px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ph_ph{
+    width: 702px;
+    height: 1020px;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png);
+}
+.ph_con{
+    width: 560px;
+    height: 1020px;
+}
+.the{
+    width: 190px;
+    height: 42px;
+    margin-top: 80px;
+    font-size: 36px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    transition: 0.5s;
+}
+.the:hover{
+    transform: translate(0,-40px);
+}
+.ph_word{
+    width: 535px;
+    height: 123px;
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    transition: 0.5s;
+}
+.ph_word:hover{
+    transform: scale(1.1);
+}
+.c{
+    width: 521px;
+    height: 78px;
+    margin-top: 70px;
+    display: flex;
+    transition: 1s;
+}
+.c:hover{
+    transform: translate(80px,0);
+}
+.c_box1{
+    width: 78px;
+    height: 78px;
+    margin-right: 20px;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/%E6%A4%AD%E5%9C%86.png);
+    background-repeat: no-repeat;
+    font-size: 48px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 19px;
+}
+.c_box2{
+    width: 443px;
+    height: 78px;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+}
+.bottom_box{
+    width: 1150px;
+    height: 143px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.in{
+    width: 475px;
+    height: 143px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.big{
+    width: 360px;
+    height: 70px;
+    background-color: #949f8b;
+    margin-top: 30px;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    transition: 1s;
+}
+.big:hover{
+    background-color: white;
+    transform: translate(0,-20px);
+    color: #2a3f17;;
+}
+.in_t{
+    width: 255px;
+    height: 143px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.in_con{
+    width: 175px;
+    height: 119px;
+    margin-top: 10px;
+}
+.in_t_w{
+    width: 260px;
+    height: 45px;
+    font-size: 40px;
+    color: #2a3f17;
+}
+.in_m{
+    width: 110px;
+    height: 35px;
+    color: #2a3f17;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.in_w{
+    width: 170px;
+    height: 60px;
+    line-height: 35px;
+    font-size: 24px;
+    color: #697461;
+}

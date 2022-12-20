@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局</title>
+</head>
+
+<body>
+    <div id="outer-box">
+        <div id="left"></div>
+        <div id="center">
+            <strong>三栏布局的特点：两边定宽。中间宽度自适应（随着视口宽度的改变而改变）</strong>
+        </div>
+        <div id="right"></div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #outer-box {
+        width: 100%;
+        display: flex;
+    }
+    
+    #left {
+        height: 100vh;
+        width: 200px;
+        flex-shrink: 0;
+        background-color: aquamarine;
+    }
+    
+    #center {
+        /* 注意这里需要给margin-left和margin-right设置为左右边栏的宽度值，
+            将中间盒子撑开，否则两边内容会浮在中间内容的上方 */
+        flex-grow: 2;
+        background-color: cadetblue;
+    }
+    
+    #right {
+        flex-shrink: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: chocolate;
+    }
+</style>
+
+</html>

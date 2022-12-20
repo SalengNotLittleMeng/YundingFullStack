@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div id="vue-box">
+            <b>双向绑定的简单实现</b>
+            <input type="text" id="input-box">
+            <span id="out-box"></span>
+        </div>
+        <br>
+        <b>双向绑定完整实现</b>
+        <div id="app">
+            <input type="text" value="" v-model="{{user.name}}" /> {{user.name}}
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            user: {
+                name: 'Vue'
+            }
+        }
+    })
+</script>
+
+</html>
