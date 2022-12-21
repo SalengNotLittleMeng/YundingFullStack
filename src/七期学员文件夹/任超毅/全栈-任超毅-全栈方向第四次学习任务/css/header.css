@@ -12,7 +12,7 @@
 .box1{
     width: 75px;
     height: 49px;
-    background-image: url(../img/展开菜单_menu-unfold.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E5%B1%95%E5%BC%80%E8%8F%9C%E5%8D%95_menu-unfold.png);
     background-size: 100% 100%;
     background-position: center center;
     transition: width 1s,height 1s;
@@ -24,7 +24,7 @@
 .box2{
     width: 75px;
     height: 49px;
-    background-image: url(../img/搜索_search.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E6%90%9C%E7%B4%A2_search.png);
     background-size: 100% 100%;
     background-position: center center;
     transition: width 1s, height 1s;
@@ -44,7 +44,7 @@
     width: 199px;
     height: 199px;
     background-color: #81c04b;
-    background-image: url(../img/相机.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E7%9B%B8%E6%9C%BA.png);/*相机*/
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
@@ -58,7 +58,7 @@
 .headerpic{
     width: 100%;
     height: 880px;
-    background-image: url(../img/乌龟.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E4%B9%8C%E9%BE%9F.png);/*王八*/
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -94,10 +94,11 @@
     margin-top: 730px;
     justify-content: space-between;
 }
+/*火烈鸟1*/
 .bird1{
     width: 333px;
     height: 500px;
-    background-image: url(../img/火烈鸟1.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E7%81%AB%E7%83%88%E9%B8%9F1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: 1s;
@@ -105,10 +106,11 @@
 .bird1:hover{
     transform:translateY(-30px);
 }
+/*火烈鸟2*/
 .bird2 {
     width: 333px;
     height: 500px;
-    background-image: url(../img/火烈鸟2.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E7%81%AB%E7%83%88%E9%B8%9F2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: 1s;
@@ -116,10 +118,11 @@
 .bird2:hover {
     transform: translateY(-30px);
 }
+/*火烈鸟3*/
 .bird3 {
     width: 333px;
     height: 500px;
-    background-image: url(../img/火烈鸟3.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E7%81%AB%E7%83%88%E9%B8%9F3.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: 1s;

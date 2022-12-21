@@ -80,10 +80,11 @@
 .thing4:hover {
     transform: translateY(-20px);
 }
+/*马*/
 .p1{
     width: 263px;
     height: 260px;
-    background-image: url(../img/马.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E9%A9%AC.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -93,10 +94,11 @@
     text-align: center;
     font-size: 20px;
 }
+/*袋鼠*/
 .p2 {
     width: 263px;
     height: 260px;
-    background-image: url(../img/袋鼠.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E8%A2%8B%E9%BC%A0.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -106,10 +108,11 @@
     text-align: center;
     font-size: 20px;
 }
+/*狮子*/
 .p3 {
     width: 263px;
     height: 260px;
-    background-image: url(../img/狮子.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E7%8B%AE%E5%AD%90.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -119,10 +122,11 @@
     text-align: center;
     font-size: 20px;
 }
+/*小鸟*/
 .p4 {
     width: 263px;
     height: 260px;
-    background-image: url(../img/小鸟.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E5%B0%8F%E9%B8%9F.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -156,10 +160,11 @@
     display: flex;
     justify-content: space-between;
 }
+/*松鼠*/
 .picture{
     width: 702px;
     height: 1020px;
-    background-image: url(../img/松鼠.png);
+    background-image: url(https://yundingshu.oss-cn-beijing.aliyuncs.com/picgo/%E6%9D%BE%E9%BC%A0.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
