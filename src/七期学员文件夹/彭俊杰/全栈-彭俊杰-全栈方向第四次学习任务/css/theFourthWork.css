@@ -4,13 +4,13 @@
     overflow: hidden;
 }
 
-.head{
+.head {
     height: 50px;
     background-color: #ffffff;
     display: flex;
 }
 
-.gang{
+.gang {
     height: 15px;
     width: 22px;
     display: flex;
@@ -27,30 +27,30 @@
     width: 18px;
 }
 
-.gang_0{
+.gang_0 {
     height: 2px;
     background-color: black;
 }
 
-.photo{
+.photo {
     height: 200px;
     width: 200px;
     transition: width 1s,height 1s;
     margin: 0 auto;
 }
 
-#photo{
+#photo {
     height: 200px;
     width: 200px;
     transition: width 1s, height 1s;
 }
 
-#photo:hover{
+#photo:hover {
     height: 175px;
     width: 175px;
 }
 
-#question{
+#question {
     height: 16px;
     width: 16px;
     top: 26px;
@@ -59,18 +59,18 @@
     transition: width 1s, height 1s;
 }
 
-#question:hover{
+#question:hover {
     height: 12px;
     width: 12px;
 }
 
-.title{
+.title {
     background-image: url(../img/乌龟.png); 
     height: 920px;
     overflow: hidden;
 }
 
-.big_tit{
+.big_tit {
     font-family: Cambria;
     font-size: 72px;
     margin: 235px auto;
@@ -78,7 +78,7 @@
     color: #2f3f1c;
 }
 
-.sma_tit{
+.sma_tit {
     font-family:"Microsoft YaHei";
     font-size: 30px;
     top: 450px;
@@ -87,7 +87,7 @@
     position: absolute;
 }
 
-.expiore{
+.expiore {
     height: 55px;
     width: 260px;
     font-size: 30px;
@@ -101,13 +101,13 @@
     background-color: #2f3f1c;
 }
 
-.bird{
+.bird {
     height: 595px;
     display: flex;
     justify-content: space-between;
 }
 
-.bird_pho{
+.bird_pho {
     height: 499px;
     width: 333px;
     top: 850px;
@@ -118,31 +118,31 @@
     transition: top 1s;
 }
 
-#first{
+#first {
     left: 404px;
     background-image: url(../img/火烈鸟1.png);
 }
 
-#second{
+#second {
     left: 793px;
     background-image: url(../img/火烈鸟2.png);
 }
 
-#third{
+#third {
     right: 405px;
     background-image: url(../img/火烈鸟3.png);
 }
 
-.bird_pho:hover{
+.bird_pho:hover {
     top: 795px;
 }
 
-.introduce{
+.introduce {
     height: 760px;
     background-image: url(../img/鹿.png);
 }
 
-.intr_word{
+.intr_word {
     height: 540px;
     width: 850px;
     top: 1450px;
@@ -155,11 +155,11 @@
     transition: top 1s;
 }
 
-.intr_word:hover{
+.intr_word:hover {
     top: 1400px;
 }
 
-.sign_up{
+.sign_up {
     height: 50px;
     width: 200px;
     padding-top: 20px;
@@ -174,16 +174,16 @@
     transition: width 1s, height 1s;
 }
 
-.sign_up:hover{
+.sign_up:hover {
     height: 45px;
     width: 180px;
 }
 
-.difference{
+.difference {
     height: 920px;
 }
 
-.dif_tit{
+.dif_tit {
     height: 55px;
     width: 250px;
     font-size: 48px;
@@ -195,28 +195,28 @@
     margin: 80px auto;
 }
 
-.dif_tit:hover{
+.dif_tit:hover {
     border:12px solid #2f3f1c;
 }
 
-.animals{
+.animals {
     height: 535px;
     display: flex;
     justify-content: space-between;
 }
 
-.ani_intr{
+.ani_intr {
     height: 415px;
     width: 264px;
     background-color: #dedddd;
     transition: top 1s;
 }
 
-.ani_intr:hover{
+.ani_intr:hover {
     top: 45px;
 }
 
-.ani_name{
+.ani_name {
     height: 54px;
     padding-top:20px;
     padding-bottom: 5px;
@@ -227,7 +227,7 @@
 
 }
 
-.word{
+.word {
     width: 200px;
     font-size: 21.85px;
     font-family: "Microsoft YaHei";
@@ -237,7 +237,7 @@
     margin: 0 auto;
 }
 
-.button{
+.button {
     height: 50px;
     width: 355px;
     padding-top: 16px;
@@ -255,13 +255,13 @@
     background-color: #2f3f1c;
 }
 
-.how{
+.how {
     height: 1080px;
     display: flex;
     justify-content: space-between;
 }
 
-.word1{
+.word1 {
     top: 3350px;
     left: 1200px;
     font-size: 36px;
@@ -274,7 +274,7 @@
     top: 3320px;
 }
 
-.word2{
+.word2 {
     width: 500px;
     top: 3425px;
     left: 1200px;
@@ -288,6 +288,113 @@
     left: 1250px;
 }
 
-.word01{
+.word01 {
+    left: 1200px;
+    top: 3600px;
+    text-align: center;
+    font-size: 24px;
+    color: #2f3f1c;
+    position: absolute;
+    transition: left 1s;
+}
 
+.word01:hover {
+    left: 1250px;
+}
+
+.word02 {
+    left: 1200px;
+    top: 3750px;
+    font-size: 24px;
+    color: #2f3f1c;
+    position: absolute;
+    transition: left 1s;
+}
+
+.word02:hover {
+    left: 1250px;
+}
+
+.word03 {
+    left: 1200px;
+    top: 3900px;
+    font-size: 24px;
+    color: #2f3f1c;
+    position: absolute;
+    transition: left 1s;
+}
+
+.word03:hover {
+    left: 1250px;
+}
+
+.word04 {
+    left: 1200px;
+    top: 4050px;
+    font-size: 24px;
+    color: #2f3f1c;
+    position: absolute;
+    transition: left 1s;
+}
+
+.word04:hover {
+    left: 1250px;
+}
+
+.bottom {
+    height: 460px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.end01 {
+    top: 4530px;
+    color: #2f3f1c;
+    font-size: 40px;
+    position: absolute;
+}
+
+.end02 {
+    top: 4590px;
+    color: #2f3f1c;
+    font-size: 40px;
+    position: absolute;
+}
+
+.end03 {
+    top: 4530px;
+    left: 675px;
+    color: #4e5941;
+    font-size: 30px;
+    position: absolute;
+}
+
+.end04 {
+    top: 4570px;
+    left: 675px;
+    color: #68715f;
+    font-size: 24px;
+    position: absolute;
+}
+
+.world {
+    height: 65px;
+    width: 361px;
+    top: 4550px;
+    right: 330px;
+    font-size: 36px;
+    padding-top: 5px;
+    text-align: center;
+    border: 2px solid #929c88;
+    background-color: #929c88;
+    color: white;
+    position: absolute;
+    transition: color 1s, background-color 1s, top 1s, border;
+}
+
+.world:hover{
+    color: #929c88;
+    background-color: white;
+    border: 2px solid #929c88;
+    top: 4500px;
 }
