@@ -1,0 +1,113 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url(logbg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centerbox {
+	position: relative;
+	width: 450px;
+	height: 560px;
+	background: #ffffff;
+	border-radius:4px ;
+	display: flex;
+	justify-content: center;
+}
+
+.header {
+	position: absolute;
+	top: 14px;
+}
+
+.ele {
+	position: absolute;
+	top: 120px;
+}
+
+.b1 {
+	position: absolute;
+	width: 200px;
+	height: 45px;
+	background-color: #4287ef;
+	border-radius: 6px;
+	border: none;
+	left: 24%;
+	font-size: 27px;
+	font-style: normal;
+	cursor: pointer;
+}
+.b1:hover {
+	height: 50px;
+	transform: translate(0px,5px);
+	background-color: #1296db;
+}
+
+.other {
+	position: absolute;
+	top: 350px;
+}
+
+.lj {
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+}
+
+.social {
+	color:#babcbd;
+	display: flex;
+	justify-content: space-between;
+}
+.iconfont {
+	color: gray;
+}
+
+
+.log:hover {
+	color: #4287ef;
+	cursor: pointer;
+}
+
+
+.footer {
+	position: absolute;
+	top: 444px;
+}
+
+.logo {
+	position: relative;
+	left: 82px;
+}
+
+
+
+.bottom {
+	position: absolute;
+	top: 800px;
+	font-size: 50px;
+	font-weight: 600;
+	color: white;
+}
+
+.w1 {
+	position: relative;
+	right: 160px;
+}
+.w2{
+	position: relative;
+	left: 160px;
+}

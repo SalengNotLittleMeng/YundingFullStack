@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <title>网抑云音乐</title>
+</head>
+<body>
+    <div id="app_1">
+        <cpn1>
+            <span slot="top" class="more">新碟上架</span>
+            <cpn2 slot="thing">
+                <div class="list"
+                    v-for="item in newCDs"
+                    :key="item.name"
+                >
+                    <img :src="item.img">
+                    <br>
+                    <a href="">{{item.song}}</a>
+                    <p>{{item.singer}}</p>
+                </div>
+            </cpn2>
+        </cpn1>
+        <cpn1>
+            <span slot="top" class="more">榜单</span>
+            <cpn3 slot="thing" class="list">
+                <img :src='rise.img'>
+                <span>{{rise.name}}</span>
+                <div
+                    v-for="item in rise.songs"
+                    :key="item.id"
+                >
+                    <div
+                        :class="{bgc_1: item.id%2 == 1, bgc_2: item.id%2 != 1}"
+                    >
+                        <span :class="{id: item.id==1|item.id==2|item.id==3}">{{item.id}}</span>
+                        <a href="">{{item.name}}</a>
+                    </div>
+                </div>
+            </cpn3>
+            <cpn3 slot="thing" class="list">
+                <img :src='newsong.img'>
+                <span>{{newsong.name}}</span>
+                <div
+                    v-for="item in newsong.songs"
+                    :key="item.id"
+                >
+                    <div
+                        :class="{bgc_1: item.id%2 == 1, bgc_2: item.id%2 != 1}"
+                    >
+                        <span :class="{id: item.id==1|item.id==2|item.id==3}">{{item.id}}</span>
+                        <a href="">{{item.name}}</a>
+                    </div>
+                    
+                </div>
+            </cpn3>
+            <cpn3 slot="thing" class="list">
+                <img :src='original.img'>
+                <span>{{original.name}}</span>
+                <div
+                    v-for="item in original.songs"
+                    :key="item.id"
+                >
+                    <div
+                        :class="{bgc_1: item.id%2 == 1, bgc_2: item.id%2 != 1}"
+                    >
+                        <span :class="{id: item.id==1|item.id==2|item.id==3}">{{item.id}}</span>
+                        <a href="" class="bgc">{{item.name}}</a>
+                    </div>
+                </div>
+            </cpn3>
+        </cpn1>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="./js/vue.js"></script>
+</html>

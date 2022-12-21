@@ -1,0 +1,209 @@
+/* 参考系可以删除 */
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+
+}
+.contain {
+  border: 2px solid black;
+}
+
+
+/* 改动部分 */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1550px;
+  height: 800px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.regisiter {
+  font-size: 18px;
+  position: relative;
+  top: 0px;
+  left: 100px;
+}
+
+.box {
+  width: 1205px;
+  height: 678px;
+  position: relative;
+  left: 140px;
+  top: 0px;
+  opacity: 0.9;
+
+}
+
+.contain {
+  width: 644px;
+  height: 674px;
+  position: absolute;
+  left: 560px;
+  top: 20px;
+  background-color: #fff;
+}
+
+.head-1 {
+  position: relative;
+  top: 50px;
+  left: 74px;
+}
+
+.head-2 {
+  position: relative;
+  top: 50px;
+  left: 74px;
+}
+
+.slogan {
+  position: relative;
+  left: 194px;
+  bottom: 30px;
+}
+.button {
+  position: relative;
+  left: 280px;
+  bottom: 56px;
+
+
+}
+
+.sure {
+  position: relative;
+  left: 210px;
+  top: 80px;
+}
+
+.r-1 input{
+  border-radius: 8%;
+  border: 2px solid #d9d9d9;
+  font-size: 20px;
+}.r-2 input{
+  border-radius: 8%;
+  border: 2px solid #d9d9d9;
+  font-size: 20px;
+}.r-3 input{
+  border-radius: 8%;
+  border: 2px solid #d9d9d9;
+  font-size: 20px;
+}.r-4 input{
+  border-radius: 8%;
+  border: 2px solid #d9d9d9;
+  font-size: 20px;
+}.r-5 input{
+  border-radius: 8%;
+  border: 2px solid #d9d9d9;
+  font-size: 20px;
+}
+
+.r-1,.r-2,.r-3,.r-4 {
+  margin-bottom: 10px;
+}
+
+
+
+/* 改动部分 */
+
+
+
+.button button{
+border-radius: 50px;
+font-size: 20px;
+color: white;
+}
+
+.button button:visited {
+  color: aquamarine;
+}
+
+.button button:hover {
+  color:#ffeb3b;
+
+}
+
+
+
+
+
+
+
+
+
+/* 改动部分 */
+
+
+
+
+
+
+.sure button {
+  border-radius: 50px;
+  font-size: 26px;
+  color: white;
+  position: relative;
+  bottom: 120px;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  z-index: 1;
+}
+.sure button::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 50px;
+  filter: blur(20px);
+  z-index: -1;
+
+}
+.sure button:hover{
+  animation: sun 8s infinite;
+}
+@keyframes sun{
+  100%{
+    background-position: -400% 0;
+  }
+}
+
+.logo {
+  position: relative;
+  left: 480px;
+  bottom: 40px;
+  
+  z-index: 3;
+
+}

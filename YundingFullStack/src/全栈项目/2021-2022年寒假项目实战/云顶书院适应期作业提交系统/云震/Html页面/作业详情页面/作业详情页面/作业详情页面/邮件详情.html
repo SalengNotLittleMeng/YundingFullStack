@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>邮件详情</title>
+    <link rel="stylesheet" href="css/邮件详情.css">
+</head>
+
+<body>
+    <div class="post-detailers">
+        <div class="content">
+            <form>
+                <div class="content-nav">
+                    <div class="content-nav-left">
+                        <div class="logo"><img src="https://gitee.com/xiayi1/typora-library/raw/master/logo.png" alt="error"></div>
+                        <div class="info">
+                            <input id="txt" size="24" maxlength="24" class="user_name" name="user_name" value="自己的昵称"></input><br>
+                            <input class="user_phone_number" name="user_phone_number" value="(手机号码)" maxlength="11"></input>
+                        </div>
+                    </div>
+                    <div class="content-nav-right">
+                        <ul id="select">
+                            <li class="selected"><a href="邮件详情.html">收件箱</a></li>
+                            <li><a href="#">提交作业</a></li>
+                            <li><a href="#">查看他人作业</a></li>
+                            <li><a href="#">退出登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-main-nav">
+                        <ul class="left">
+                            <li><a href="#">&lt;返回</a></li>
+                            <li><a href="#">转发</a></li>
+                            <li><a href="#">删除</a></li>
+                        </ul>
+                        <div class="right">
+                            <a href="#" class="prev">上一封</a>
+                            <a href="#" class="next">下一封</a>
+                        </div>
+                    </div>
+                    <div class="content-main-info">
+                        <input id="txt" name="topic" value="标题"></input>
+                        <input id="txt" name="sub_topic" value="附件名称" class="appendix"></input><br>
+                        <a href="#" class="download">下载附件</a>
+                        <div class="details">
+                            <span>发件人：</span><input id="txt" name="post_user_name"></input><br>
+                            <span>时间：</span><input id="txt" name="date"></input><br>
+                            <span>收件人：</span><input id="txt" name="get_user_name"></input>
+                        </div>
+                    </div>
+                    <div class="content-main-body">
+                        <textarea name="content" placeholder="这里是详细内容..."></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>

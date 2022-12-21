@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品字布局</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>品字布局</h1>
+    </div>
+    <div id="container">
+        <div id="left"></div>
+        <div id="right"></div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #header {
+        width: 500px;
+        height: 300px;
+        /* margin居中 */
+        margin: 0 auto;
+        text-align: center;
+        background-color: teal;
+    }
+    
+    #container {
+        display: flex;
+        width: 100%;
+        /* 主轴居中 */
+        justify-content: center;
+    }
+    
+    #left {
+        width: 500px;
+        height: 300px;
+        background-color: aqua;
+    }
+    
+    #right {
+        width: 500px;
+        height: 300px;
+        background-color: coral;
+    }
+</style>
+
+</html>
