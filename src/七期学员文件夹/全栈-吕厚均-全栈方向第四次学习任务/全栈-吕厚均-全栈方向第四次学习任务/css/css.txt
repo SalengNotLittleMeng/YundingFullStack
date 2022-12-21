@@ -1,0 +1,490 @@
+ <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .top{
+            width: 100%;
+            height: 50px;
+            background-color: white;
+        }
+        .title{
+            width: 100%;
+            height: 880px;
+            background-color: white;
+        }
+        .white{
+            width: 100%;
+            height: 598px;
+            background-color: white;
+        }
+        .animal{
+            width: 100%;
+            height: 760px;
+            background-color: white;
+        }
+        .difference{
+            width: 100%;
+            height: 630px;
+            background-color: white;
+        }
+        .photo{
+            width: 100%;
+            height: 1300px;
+            background-color: white;
+        }
+        .bottom{
+            width: 100%;
+            height: 460px;
+            background-color: white;
+        }
+        .content1{
+            width: 1920px;
+            height: 50px;
+            background-color: white;
+            margin: auto;
+        }
+        .search{
+            display: flex;
+            justify-content: space-between;   
+        }
+        .gang{
+            height: 50px;
+            width: 90px;
+            background-color: white;
+            margin: auto;
+            transition:all 1s;
+        }
+        .gang:hover{
+            transform: scale(0.5);
+        }
+        .zhong{
+            height: 50px;
+            width: 1780px;
+            background-color: white;
+            text-align: center;   
+        }
+        .cir{
+            height: 50px;
+            width: 78px;
+            background-color: white;
+            transition: all 1s;
+        }
+        .cir:hover{
+            transform: scale(0.5);
+        }
+        .toto{
+            height: 880px;
+            width: 1920px;
+            background-image: url("https://typora--lv.oss-cn-beijing.aliyuncs.com/piggo/%E4%B9%8C%E9%BE%9F.png");
+            margin: auto;
+        }
+        .fly{
+            height: 598px;
+            width: 1920px;
+            background-color: white;
+            margin: auto;
+        }
+        .deer{
+            height: 760px;
+            width: 1920px;
+            margin: auto;
+            background-image: url("https://typora--lv.oss-cn-beijing.aliyuncs.com/piggo/%E9%B9%BF.png");
+            display: flex;
+            justify-content: center;
+            z-index: 3;
+        }
+        .horse{
+            height: 630px;
+            width: 1920px;
+            margin: auto;
+            background-color: white;
+            z-index: 3;
+        }
+        .squirrel{
+            height: 1300px;
+            width: 1920px;
+            margin: auto;
+            background-color: white;
+        }
+        .world{
+            height: 460px;
+            width: 1920px;
+            margin: auto;
+            background-color: white;
+        }
+        .box1{
+            z-index: 1;
+            position: relative;
+            left: 110px;
+        }
+        .box2{
+            z-index: 2;
+            left: -75px;
+            position: relative;
+            top: -30px;
+        }
+        
+        .box3{
+            z-index: 3;
+            position: relative;
+            right: 218px;
+            bottom: 70px;
+        }
+        .phy{
+            text-align: center;
+            font-size: 60px;
+            color: #2a3f17;
+            position: relative;
+            top: 300px;
+        }
+        .sil{
+            text-align: center;
+            font-size: 33px;
+            position: relative;
+            top: 320px;
+            color: #637256;
+            
+        }
+        .expiore{
+            background-image: url("https://typora--lv.oss-cn-beijing.aliyuncs.com/piggo/%E7%9F%A9%E5%BD%A2%2011.png");
+            height: 72px;
+            width: 262px;
+           
+        }
+        .love{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -150px;
+            z-index: 2;
+            transition: transform 2s;
+        }
+        .love:hover{
+            transform: translateY(-100px);
+        }
+        .ly{
+            z-index: 1;
+            font-size: 60px;
+            color: white;
+            position: absolute;
+            right: 1250px;
+            top: 330px;
+        }
+        .ve{
+            z-index: 1;
+            font-size: 60px;
+            position: absolute;
+            top: 330px;
+            right: 830px;
+            color: white;
+        }
+        .nd{
+            z-index: 1;
+            font-size: 60px;
+            position: absolute;
+            color: white;
+            top: 330px;
+            right: 450px;
+        }
+        .family{
+            width: 945px;
+            height: 541px;
+            background-color:#e0dfdf;
+            position: absolute;
+            top: 1430px;
+            z-index: 2;
+            transition: transform 2s;
+        }
+        .family:hover{
+            transform: translateY(-80px);
+        }
+        .sign{
+            background-image: url("https://typora--lv.oss-cn-beijing.aliyuncs.com/piggo/%E7%9F%A9%E5%BD%A2%2011.png");
+            z-index: 1;
+            position: absolute;
+            top: 300px;
+            left: 310PX;
+            width: 197px;
+            height: 70px;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            line-height: 70px;
+            transition: all 1s;  
+        }
+        .sign:hover{
+           transform: scale(1.5);
+        }
+        .farms{
+            color: #3e512d;
+            font-size: 20px;
+            text-align: justify;
+            position: absolute;
+            bottom: 250px;
+            right: 65px;
+        }
+        .dif{
+            position: relative;
+            bottom: 290px;
+            left: 850px;
+            color: #2a3f17;
+            font-size: 50px;
+            border: white 8px solid;
+            transition: border 1s;
+        }
+        .dif:hover{
+            border:#2a3f17 5px solid;
+        }
+        .kan{
+            width: 264px;
+            height: 261px;
+            position: relative;
+            bottom: -80px;
+            left: 138px;
+            margin-right: 30px;
+            z-index: 3;
+            transition: transform 1s;     
+        }
+        .kan:hover{
+            transform: translateY(-60px);
+        }
+        .bac1{
+            position: relative;
+            right: 150px;
+            bottom: -230px;
+        }
+        .bac2{
+            position: relative;
+            left: 400px;
+            bottom: 195px;
+            z-index: 1;
+        }
+        .bac3{
+            position: relative;
+            left: 430px;
+            bottom: 195px;
+            z-index: 1;
+        }
+        .bac4{
+            position: relative;
+            left: 460px;
+            bottom: 195px;
+            z-index: 1;
+        }
+        .ho{
+            bottom: 300px;
+            right: 320px;
+            position: relative;
+            z-index: 2;
+            color: #314520;
+            font-size: 35px;
+        }
+        .ka{
+            bottom: 300px;
+            right: 160px;
+            position: relative;
+            z-index: 2;
+            color: #314520;
+            font-size: 35px;
+        }
+        .li{
+            bottom: 300px;
+            right: -15px;
+            position: relative;
+            z-index: 2;
+            color: #314520;
+            font-size: 35px;
+        }
+        .hu{
+            bottom: 300px;
+            right: -173px;
+            position: relative;
+            z-index: 2;
+            color: #314520;
+            font-size: 35px;
+        }
+        .d1{
+            bottom: 240px;
+            right: 347px;
+            position: relative;
+            z-index: 2;
+            color: #314520;
+            font-size: 26px;
+            
+        }
+        .d2{
+            bottom: 240px;
+            right: 250px;
+            position: relative;
+            z-index: 2;
+            color: #314520;
+            font-size: 26px;
+        }
+        .d3{
+            bottom: 280px;
+            right: -450px;
+            position: relative;
+            z-index: 2;
+            color: #314520;
+            font-size: 26px;
+        }
+        .d4{
+            bottom: 280px;
+            right: -550px;
+            position: relative;
+            z-index: 2;
+            color: #314520;
+            font-size: 26px;
+        }
+        .sq{
+            position: relative;
+            bottom: -250px;
+            left: 250px;
+        }
+        .look{
+            background-color: white;
+            width: 740px;
+            height: 1020px;
+            position: relative;
+            left: 800px;
+            bottom: 1020px;
+        }
+        .ph{
+            background-color:white;
+            width: 235px;
+            height: 100px;
+            position: relative;
+            bottom: -90px;
+            left: 50px;
+            color: #69775b;
+            transition: transform 1s;
+        }
+        .ph:hover{
+            transform: translateY(-50px);
+        }
+        .fa{
+            background-color:white;
+            width: 530px;
+            height: 125px;
+            position: relative;
+            bottom: -50px;
+            left: 50px;
+            color: #69775b;
+            font-size: larger;
+            /* transition: all 1s; */
+        }
+        /* .fa:hover{
+            transform: scale(1.45);
+        } */
+        .it{
+            position: relative;
+            color: #69775b;
+            bottom: -90px;
+            left: 70px;
+            transition: transform 1s;
+        }
+        .it:hover{
+            transform: translateX(80px);
+        }
+        .feel{
+            position: relative;
+            color: #69775b;
+            bottom: -200px;
+            left: 70px;
+            transition: transform 1s;
+        }
+        .feel:hover{
+            transform: translateX(80px);
+        }
+        .shoot{
+            position: relative;
+            color: #69775b;
+            bottom: -310px;
+            left: 70px;
+            transition: transform 1s;
+        }
+        .shoot:hover{
+            transform: translateX(80px);
+        }
+        .harvest{
+            position: relative;
+            color:#69775b;
+            bottom: -420px;
+            left: 70px;
+            transition: transform 1s;
+        }
+        .harvest:hover{
+            transform: translateX(80px);
+        }
+        .wild{
+            position: relative;
+            height: 167px;
+            width: 311px;
+            background-color: white;
+            left: 420px;
+            top: 150px;
+            font-size: 40px;
+            line-height: 80px;
+            color:#324621;
+        }
+        .more{
+            position: relative;
+            height: 123px;
+            width: 195px;
+            background-color: white;
+            top:1px ;
+            left:730px ;
+            color: #949f8b;
+            
+        }
+        .big{
+            position: relative;
+            height: 75px;
+            width: 360px;
+            background-color: #949f8b;
+            top: -105px;
+            left: 1200px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 30px;
+            color:white;
+            transition: transform 2s ;
+            transition: background 2s;
+            transition: color 2s ;
+        }
+        .big:hover{
+            transform: translateY(-50px);
+            background: white;
+            color: #949f8b;
+        }
+        .know{
+            background-color: white;
+            width: 356px;
+            height: 70px;
+            position: relative;
+            top: -250px;
+            left: -250px;
+            font-size: 40px;
+            text-align: center;
+            color: #314520;
+            border:#314520 6px solid;
+            transition: background 1s ease-in-out;
+            transition: color 1s ease-in-out;
+        }
+        .know:hover{
+            background:#314520 ;
+            color: white;
+        }
+        .box11{
+            transition: all 1s;
+        }
+        .box11:hover{
+            transform: scale(0.8);
+        }
+        .box6{
+            transition: fontsize 1s;
+        }
+        .box6:hover{
+            font-size: 20px;
+        }
