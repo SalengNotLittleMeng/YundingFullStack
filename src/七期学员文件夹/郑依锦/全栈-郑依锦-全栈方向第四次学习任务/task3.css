@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.animal {
+  max-width: 1920px;
+  min-width: 0;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.type_area {
+  width: 1354px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.cover {
+  background: url("https://image-sunrise.oss-cn-beijing.aliyuncs.com/cover_bg.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 1528px;
+  margin: 0 auto;
+}
+
+.cover_nav {
+  height: 49px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.icon-menu2 {
+  font-size: 20px;
+  line-height: 47px;
+  margin-left: 26px;
+}
+
+.icon-fangdajing {
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 47px;
+  margin-right: 25px;
+}
+
+.icon-menu2:hover,
+.icon-fangdajing:hover {
+  transform: scale(0.8, 0.8);
+}
+
+.cover_nav_center {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+
+.cover_nav_center:hover {
+  transform: scale(0.8, 0.8);
+}
+
+.cover_nav_center {
+  transition: all 1s;
+}
+
+.cover_content h1 {
+  font-family: "Cambria";
+  font-size: 72px;
+  font-weight: lighter;
+  color: #2a3f17;
+  margin-left: 340px;
+  margin-top: 215px;
+}
+
+.cover_content p {
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  color: #2a3f17;
+  margin-left: 161px;
+  margin-top: 15px;
+}
+
+.cover_button {
+  width: 262px;
+  height: 72px;
+  background-color: #2a3f17;
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  color: #fff;
+  line-height: 70px;
+  text-align: center;
+  margin-left: 161px;
+  margin-top: 130px;
+}
+
+.cover_display {
+  width: 1110px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 149px;
+  margin-top: 107px;
+}
+
+.cover_display img:hover {
+  transform: translate(0, -50px);
+}
+
+.cover_display img {
+  transition: all 1s;
+}
+
+.sign_up {
+  height: 759px;
+  width: 100%;
+  background-image: url("https://image-sunrise.oss-cn-beijing.aliyuncs.com/sign_up_bg.png");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sign_up_content {
+  width: 945px;
+  height: 538px;
+  background-color: #e0dfdf;
+  margin-top: -85px;
+  transition: all 1s;
+}
+
+.sign_up_content:hover {
+  transform: translate(0, -40px);
+}
+
+.sign_up_content p {
+  font-family: "Microsoft Yahei";
+  font-size: 20px;
+  color: #2a3f17;
+  line-height: 30px;
+  margin-top: 81px;
+  margin-left: 78px;
+}
+
+.sign_up_button {
+  width: 198px;
+  height: 70px;
+  background-color: #2a3f17;
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  color: #fff;
+  line-height: 68px;
+  text-align: center;
+  margin-top: 91px;
+  margin-left: 374px;
+  transition: all 1s;
+}
+
+.sign_up_button:hover {
+  transform: scale(0.85, 0.85);
+}
+
+.difference {
+  height: 846px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.ugly {
+  width: 272px;
+  height: 80px;
+  margin-left: 577px;
+  margin-top: 61px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ugly h1 {
+  font-family: "Microsoft Yahei";
+  font-size: 48px;
+  font-weight: normal;
+  color: #2a3f17;
+  line-height: 78px;
+  text-align: center;
+  margin: auto;
+}
+
+.top,
+.bottom {
+  width: 272px;
+  height: 5px;
+}
+
+.left,
+.right {
+  width: 5px;
+  height: 80px;
+}
+
+.top,
+.bottom,
+.left,
+.right {
+  position: absolute;
+  background-color: #2a3f17;
+}
+
+.top {
+  left: -272px;
+  transition: all 0.25s 0;
+}
+
+.ugly:hover .top {
+  transform: translate(272px, 0);
+}
+
+.right {
+  left: 267px;
+  top: -80px;
+  transition: all 0.25s 0.25s;
+}
+
+.ugly:hover .right {
+  transform: translate(0, 80px);
+}
+
+.bottom {
+  top: 75px;
+  left: 272px;
+  transition: all 0.25s 0.5s;
+}
+
+.ugly:hover .bottom {
+  transform: translate(-272px, 0);
+}
+
+.left {
+  top: 80px;
+  transition: all 0.25s 0.75s;
+}
+
+.ugly:hover .left {
+  transform: translate(0, -80px);
+}
+
+.difference_display {
+  width: 1146px;
+  height: 414px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+  margin-left: 143px;
+}
+
+.difference_display div {
+  width: 262px;
+  height: 414px;
+  background-color: #e0dfdf;
+  transition: all 1s;
+}
+
+.difference_display div:hover {
+  transform: translate(0, -40px);
+}
+
+.species {
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  color: #2a3f17;
+  line-height: 87px;
+  text-align: center;
+}
+
+.story {
+  width: 194px;
+  font-family: "Microsoft Yahei";
+  font-size: 21.85px;
+  color: #2a3f17;
+  line-height: 32px;
+  text-align: center;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid #2a3f17;
+  margin-left: 38px;
+}
+
+.difference_button {
+  width: 358px;
+  height: 68px;
+  color: #2a3f17;
+  line-height: 66px;
+  text-align: center;
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  border: 2px solid #2a3f17;
+  margin-top: 119px;
+  margin-left: 538px;
+  transition: all 1s;
+}
+
+.difference_button:hover {
+  background-color: #2a3f17;
+  color: #fff;
+}
+
+.the_photo {
+  height: 1083px;
+  background-color: #f8f8f8;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.the_photo_img {
+  width: 702px;
+  height: 1020px;
+  background-image: url(https://image-sunrise.oss-cn-beijing.aliyuncs.com/the_photo_image.png);
+}
+
+.the_photo_content {
+  width: 572px;
+  height: 1020px;
+}
+
+.the_photo_content h1 {
+  font-family: "Microsoft Yahei";
+  font-size: 36px;
+  color: #2a3f17;
+  font-weight: normal;
+  transition: all 1s;
+}
+
+.the_photo_content h1:hover {
+  transform: translate(0, -50px);
+}
+
+.the_photo_content p {
+  font-family: "Microsoft Yahei";
+  font-size: 24px;
+  color: #2a3f17;
+  line-height: 30px;
+  margin-top: 31px;
+  transition: all 1s;
+  transform-origin: 0 0;
+}
+
+.the_photo_content_paragraph p:hover {
+  transform: translate(20px, 0) scale(1.3, 1.3);
+}
+
+.the_photo_content_paragraph {
+  height: 359px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+}
+
+.the_photo_content_list {
+  height: 562px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.the_photo_content_list > div {
+  transition: all 1s;
+}
+
+.the_photo_content_list > div:hover {
+  transform: translate(70px, 0);
+}
+
+.number {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #2a3f17;
+  border-radius: 100px;
+  color: #2a3f17;
+  line-height: 68px;
+  text-align: center;
+  font-family: "Microsoft Yahei";
+  font-size: 48px;
+  display: table-cell;
+}
+
+.the_photo_content_list p {
+  padding-left: 29px;
+  display: table-cell;
+}
+
+.big_world {
+  height: 458px;
+  color: #ffffff;
+  border-top: 2px solid #000;
+}
+
+.big_world_words {
+  height: 100%;
+  width: 848px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.words1 {
+  font-family: "Microsoft Yahei";
+  font-size: 40px;
+  color: #2a3f17;
+  line-height: 90px;
+  margin-right: 55px;
+}
+
+.words2 {
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  color: #4d5b41;
+  line-height: 40px;
+}
+
+.words3 {
+  font-family: "Microsoft Yahei";
+  font-size: 24px;
+  color: #697461;
+  margin-top: 20px;
+}
+
+.left2,
+.right2 {
+  display: table-cell;
+}
+
+.big_world_button {
+  width: 361px;
+  height: 73px;
+  background-color: #949f8b;
+  color: #fff;
+  font-family: "Microsoft Yahei";
+  font-size: 36px;
+  line-height: 71px;
+  text-align: center;
+  margin-left: 973px;
+  margin-top: -267px;
+  transition: all 1s;
+}
+
+.big_world_button:hover {
+  transform: translate(0, -40px);
+  background-color: #fff;
+  color: #949f8b;
+}
