@@ -1,0 +1,522 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+form,
+a,
+p,
+textarea {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: "Helvetica", Helvetica, Arial, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+
+}
+.main_area{
+    width: 1200px;
+    margin: auto;
+}
+img {
+    border: none;
+    display: block;
+}
+.all{
+    margin:  auto;
+}
+.header{
+    height: 930px;
+    width: 100%;
+    background: url(https://aaaaaabc.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png)no-repeat;
+
+}
+.content1{
+    height: 48px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+.img1{
+    margin-left: 26px;
+    margin-top: 18px;
+}
+.img1:hover{
+    transform: scale(0.6);
+    transition: all 0.5s;
+}
+.img2{
+    margin-top: 18px;
+    margin-left: 1560px;
+}
+.img2:hover{
+    transform: scale(0.6);
+    transition: all 0.5s;
+}
+.img3{
+    margin: 0 auto;
+}
+.camera{
+    margin-top: -48px;
+    margin-left:510px;
+    transition: all 0.5s;
+}
+.camera:hover{
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+.header p{
+    font-family: Cambria;
+    font-size: 72px;
+    color: #2a3f17;
+    margin-left: 272px;
+    margin-top: 115px;
+}
+.header a{
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: #2a3f17;
+    margin-left: 89px;
+}
+.botton1{
+    width: 260px;
+    height: 70px;
+    background-color: #2a3f17;
+    margin-left: 89px;
+    margin-top: 84px;
+}
+.botton1 m{
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: white;
+    line-height: 70px;
+    margin-left:68px ;
+}
+.show1{
+    height: 600px;
+    background-color: white;
+    position: relative;
+}
+.content2{
+    position: absolute;
+    width: 1110px;
+    height: 500px;
+    margin-left: 60px;
+    top: -146px;
+    display: flex;
+    justify-content: space-between;
+}
+/*.div{
+    position: relative;
+}*/
+
+.content2 div{
+    transition: all 0.5s linear;/*如果没有在原来元素添加transition，鼠标在离开后图片会直接落下，添加之后会实现·平滑的过渡*/
+}
+.content2 div:hover{
+    transform: translateY(-60px);
+    transition: all 0.5s linear;
+}
+.content2 p{
+    font-family: Cambria;
+    color: white;
+    font-size: 48px;/*未完成文字漂浮在个张图片右侧    文字会堆叠*/
+    bottom: 86px;
+}
+.middle{
+    position: relative;
+    height: 761px;
+    width: 100%;
+    background:url(https://aaaaaabc.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png) ;
+}
+.textbox{
+    position: relative;
+    width: 944px;
+    height: 540px;
+    background-color: #e0dfdf;
+    top: -92px;
+    transition: all 0.5s linear;
+}
+.textbox:hover{
+    transform: translateY(-60px);
+    transition: all 0.5s linear;
+}
+.textbox p{
+    position: absolute;
+    top: 80px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    font-size: 20px;
+    left: 76px;
+}
+
+.botton2{
+    position: absolute;
+    width: 196px;
+    height: 69px;
+    background-color: #2a3f17;
+    bottom: 62px;
+    left: 374px;
+    transition: all 0.5s linear;
+}
+.botton2:hover{
+    transform: scale(0.8);
+    transition: all 0.5s linear;
+}
+.botton2 a{
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    line-height: 69px;
+    left: 36px;
+}
+.show2{
+    position: relative;
+    height: 691px;
+    width: 100%;
+}
+.title{
+    position: relative;
+    width: 1146px;
+    height: 160px;
+}
+.title p:hover{
+    border-color: black;
+}
+.title p{
+    position: absolute;
+    font-family: 微软雅黑;
+    font-size: 48px;
+    color: #2a3f17;
+    top: 40px;
+    left: 472px;
+    border: white 5px solid;
+}
+.window{
+    width: 1146px;
+    height: 410px;
+    position: absolute;
+    left: 47px;
+    top: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.w1:hover{
+    transform: translateY(-60px);
+    transition: all 0.5s linear;
+}
+.w1{
+    position: relative;
+    width: 264px;
+    height: 410px;
+    background-color: #e0dfdf;
+    transition: all 0.5s linear;
+}
+.w1 p{
+    position: absolute;
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: #2a3f17;
+    bottom: 94px;
+    left: 90px;
+}
+.line1{
+    position: absolute;
+    width: 202px;
+    height: 24px;
+    border-bottom: solid;
+    border-bottom-color: #2a3f17;
+    bottom: 40px;
+    left: 30px;
+}
+.line1 a{
+    line-height: 24px;
+    margin-left: 23px;
+    font-size: 21px;
+    color: #2a3f17;
+}
+.w2{
+    position: relative;
+    width: 264px;
+    height: 410px;
+    background-color: #e0dfdf;
+    transition: all 0.5s linear;
+}
+.w2:hover {
+    transform: translateY(-60px);
+    transition: all 0.5s linear;
+}
+.w2 p {
+    position: absolute;
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: #2a3f17;
+    bottom: 94px;
+    left: 70px;
+}
+.line2 {
+    position: absolute;
+    width: 202px;
+    height: 24px;
+    border-bottom: solid;
+    border-bottom-color: #2a3f17;
+    bottom: 40px;
+    left: 30px;
+}
+
+.line2 a {
+    line-height: 24px;
+    margin-left: 23px;
+    font-size: 21px;
+    color: #2a3f17;
+}
+.w3{
+    position: relative;
+    width: 264px;
+    height: 410px;
+    background-color: #e0dfdf;
+    transition: all 0.5s linear;
+}
+.w3:hover {
+    transform: translateY(-60px);
+    transition: all 0.5s linear;
+}
+.w3 p {
+    position: absolute;
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: #2a3f17;
+    bottom: 94px;
+    left: 102px;
+}
+.w4{
+    position: relative;
+    width: 264px;
+    height: 410px;
+    background-color: #e0dfdf;
+    transition: all 0.5s linear;
+}
+.w4:hover {
+    transform: translateY(-60px);
+    transition: all 0.5s linear;
+}
+.w4 p {
+    position: absolute;
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: #2a3f17;
+    bottom: 94px;
+    left: 32px;
+}
+
+.title2{
+    width: 358px;
+    height: 68px;
+    border: solid;
+    border-color: #2a3f17;
+    transition: all .5s;
+}
+.title2:hover{
+    background-color: #2a3f17;
+    transition: all .5s;
+}
+.title2 p{
+    font-size: 30px;
+    color: #2a3f17;
+    line-height: 68px;
+    margin-left: 102px;
+    transition: all .5s;
+}
+.title2 p:hover{
+    color:white;
+    transition: all .5s;
+}
+.bottom{
+    margin-top: 90px;
+    position: relative;
+}
+.textcard{
+    position: absolute;
+    width: 537px;
+    height: 840px;
+    /*background-color:pink ;*/
+    top: 80px;
+    right: -100px;
+}
+.img9{
+    margin-left: -98px;
+}
+.textcard p{
+    font-size: 36px;
+    color: #2a3f17;
+    transition: all .5s;
+}
+.textcard p:hover{
+    transform: translateY(-40px);
+    transition: all .5s;
+}
+.textcard a{
+    font-size: 24px;
+    color: #2a3f17;
+    transition: all .5s;
+}
+.textcard a:hover{
+    transform-origin: left top;
+    transform: scale(1.2);
+}
+.list{
+    width: 600px;
+    height: 567px;
+    margin-top: 83px;
+    margin-left: 0px;
+}
+li {
+    margin-top: 100px;
+    margin-left: -38px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    list-style: none;
+    border-radius: 50%;
+    border: 3px solid #2a3f17;
+    color: #2a3f17;
+    font-size:50px ;
+    display: block;
+}
+.num1 div{
+    position: absolute;
+    top: 320px;
+    left: 95px;
+    font-size: 24px;
+    color:#2a3f17 ;
+}
+.num1{
+    transition: all .5s;
+}
+.num1:hover{
+    transform: translateX(40px);
+    transition: all .5s;
+}
+.num2 div {
+    position: absolute;
+    top: 486px;
+    left: 95px;
+    font-size: 24px;
+    color: #2a3f17;
+}
+.num2 {
+    transition: all .5s;
+}
+
+.num2:hover {
+    transform: translateX(40px);
+    transition: all .5s;
+}
+.num3 div {
+    position: absolute;
+    top: 652px;
+    left: 95px;
+    font-size: 24px;
+    color: #2a3f17;
+}
+.num3 {
+    transition: all .5s;
+}
+
+.num3:hover {
+    transform: translateX(40px);
+    transition: all .5s;
+}
+.num4 div {
+    position: absolute;
+    top: 820px;
+    left: 95px;
+    font-size: 24px;
+    color: #2a3f17;
+}
+.num4 {
+    transition: all .5s;
+}
+
+.num4:hover {
+    transform: translateX(40px);
+    transition: all .5s;
+}
+
+.first1{
+    width: 68px;
+    border-radius: 50% 50% 50% 50%;
+    height: 68px;
+    border: solid;
+    border-color: #2a3f17;
+}
+.last{
+    margin-top: 60px;
+    height: 460px;
+    width: 100%;
+    border-top: solid black;
+}
+.botton3{
+    position: absolute;
+    margin-top: 190px;
+    right: 132px;
+    width: 356px;
+    height: 76px;
+    color: white;
+    background-color: #949f8b;
+    transition: all .5s;
+}
+.botton3 p{
+    font-size: 36px;
+    color: white;
+    line-height: 76px;
+    margin-left: 100px;
+}
+.botton3:hover {
+    background-color:white;
+    color: #2a3f17;
+    transform: translateY(-30px);
+    transition: all .5s;
+}
+.wenzi{
+    position: absolute;
+    top: 4400px;
+    left: 308px;
+}
+.wenzi p{
+    font-size: 40px;
+}
+.wenzi2{
+    position: absolute;
+    top: 4416px;
+    left: 734px;
+}
+.wenzi2 p{
+    font-size: 30px;
+}
+.wenzi2 a{
+    font-size: 20px;
+}
