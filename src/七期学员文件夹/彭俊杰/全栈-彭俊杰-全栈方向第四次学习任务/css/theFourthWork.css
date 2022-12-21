@@ -180,7 +180,7 @@
 }
 
 .difference{
-    height: 845px;
+    height: 920px;
 }
 
 .dif_tit{
@@ -258,4 +258,36 @@
 .how{
     height: 1080px;
     display: flex;
+    justify-content: space-between;
+}
+
+.word1{
+    top: 3350px;
+    left: 1200px;
+    font-size: 36px;
+    color: #2f3f1c;
+    position: absolute;
+    transition: top 1s;
+}
+
+.word1:hover{
+    top: 3320px;
+}
+
+.word2{
+    width: 500px;
+    top: 3425px;
+    left: 1200px;
+    font-size: 24px;
+    position: absolute;
+    color: #2f3f1c;
+    transition: left 1s;
+}
+
+.word2:hover{
+    left: 1250px;
+}
+
+.word01{
+
 }
