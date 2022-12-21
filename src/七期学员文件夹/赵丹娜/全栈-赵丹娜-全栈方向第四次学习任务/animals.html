@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 1920px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .first {
+            height: 890px;
+        }
+
+        .top {
+            width: 1920px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+            display: flex;
+        }
+
+        .box1 {
+            height: 50px;
+            width: 70px;
+        }
+
+        .box1:hover {
+            transform: scale(0.7);
+            transition: all 0.3s;
+        }
+
+        .box2 {
+            height: 50px;
+            width: 70px;
+            margin-left: auto;
+        }
+
+        .box2:hover {
+            transform: scale(0.7);
+            transition: all 0.3s;
+        }
+
+        .photo {
+            width: 202px;
+            height: 202px;
+            background-color: #81c04b;
+            margin-left: 850px;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+
+        .photo1 {
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        .photo2 {
+            position: relative;
+            top: -120px;
+            left: 40px;
+        }
+
+        .text1 {
+            font-size: 78px;
+            color: #2a3f17;
+            position: relative;
+            top: -650px;
+            left: 590px;
+            font-family: Cambria;
+
+        }
+
+        .text2 {
+            font-size: 15px;
+            color: #2a3f17;
+            position: absolute;
+            top: 330px;
+            left: 412px;
+            font-family: MicrosoftYaHei;
+            opacity: 0.78;
+
+        }
+
+        .box3 {
+            width: 264px;
+            height: 72px;
+            background-color: #2a3f17;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            top: 600px;
+            left: 420px;
+            padding-top: 15px;
+        }
+
+        .second {
+            background-color: white;
+            height: 600px;
+        }
+
+        .pic {
+            width: 1120px;
+            height: 504px;
+            display: flex;
+            position: absolute;
+            top: 780px;
+            left: 420px;
+        }
+
+        .box4 {
+            margin-right: 60px;
+            width: 330px;
+            height: 100%;
+        }
+
+        .text4 {
+            font-size: 38px;
+            color: white;
+            position: relative;
+            top: -141px;
+            left: 200px;
+        }
+
+        .box4:hover {
+            transform: translateY(-40px);
+            transition: all 0.6s;
+        }
+
+        .box5 {
+            margin-right: 60px;
+            background-image: url(https://zhaodn.oss-cn-beijing.aliyuncs.com/huoleiniao2.png);
+            width: 330px;
+            height: 100%;
+            font-size: 40px;
+            color: white;
+        }
+
+        .text5 {
+            font-size: 38px;
+            color: white;
+            position: relative;
+            top: -141px;
+            left: 200px;
+        }
+
+        .box5:hover {
+            transform: translateY(-40px);
+            transition: all 0.6s;
+        }
+
+        .box6 {
+            background-image: url(https://zhaodn.oss-cn-beijing.aliyuncs.com/huoleiniao3.png);
+            width: 330px;
+            height: 100%;
+            font-size: 40px;
+            color: white;
+        }
+
+        .text6 {
+            font-size: 38px;
+            color: white;
+            position: relative;
+            top: -141px;
+            left: 200px;
+        }
+
+        .box6:hover {
+            transform: translateY(-40px);
+            transition: all 0.6s;
+        }
+
+        .third {
+            height: 762px;
+        }
+
+        .c {
+            width: 950px;
+            height: 542px;
+            position: absolute;
+            left: 500px;
+            top: 1400px;
+            background-color: #e0dfdf;
+            color: #2a3f17;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        .c:hover {
+            transform: translateY(-40px);
+            transition: all 0.7s;
+        }
+
+        .box8 {
+            width: 200px;
+            height: 75px;
+            position: relative;
+            top: 88px;
+            left: 376px;
+            background-color: #2a3f17;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        .box8:hover {
+            transform: scale(0.7, 0.7);
+            transition: all 0.6s;
+        }
+
+        .text7 {
+            font-size: 40px;
+            text-align: center;
+            color: #55634b;
+        }
+
+        .box9 {
+            display: flex;
+        }
+
+        .box10 {
+            text-align: center;
+            font-size: 30px;
+            margin-left: 400px;
+            height: 450px;
+            background-color: #e0dfdf;
+            color: #2a3f17;
+        }
+
+        .box10:hover {
+            transform: translateY(-40px);
+            transition: all 0.6s;
+        }
+
+        .box11 {
+            text-align: center;
+            font-size: 30px;
+            margin-left: 30px;
+            background-color: #e0dfdf;
+            color: #2a3f17;
+        }
+
+        .box11:hover {
+            transform: translateY(-40px);
+            transition: all 0.6s;
+        }
+
+        .box12 {
+            text-align: center;
+            font-size: 30px;
+            margin-left: 30px;
+            background-color: #e0dfdf;
+            color: #2a3f17;
+        }
+
+        .box12:hover {
+            transform: translateY(-40px);
+            transition: all 0.6s;
+        }
+
+        .box13 {
+            text-align: center;
+            font-size: 30px;
+            margin-left: 30px;
+            background-color: #e0dfdf;
+            color: #2a3f17;
+        }
+
+        .box13:hover {
+            transform: translateY(-40px);
+            transition: all 0.6s;
+        }
+
+        .box15 {
+            height: 272px;
+        }
+
+        .box14 {
+            position: relative;
+            top: 120px;
+            width: 360px;
+            height: 45px;
+            margin: 0 auto;
+            border: 3px solid #2a3f17;
+            background-color: white;
+            text-align: center;
+            font-size: 30px;
+            color: #2a3f17;
+        }
+
+        .box15 {
+            height: 272px;
+        }
+
+        .box14 {
+            position: relative;
+            top: 120px;
+            width: 360px;
+            height: 45px;
+            margin: 0 auto;
+            border: 3px solid #2a3f17;
+            background-color: white;
+            text-align: center;
+            font-size: 30px;
+            color: #2a3f17;
+        }
+
+        .box14:hover {
+            background-color: #2a3f17;
+            color: white;
+        }
+
+        .box16 {
+            display: flex;
+            height: 1020px;
+        }
+
+        .box17 {
+            margin-left: 254px;
+            margin-right: 120px;
+            width: 704px;
+        }
+
+        .box18 {
+            width: 610px;
+            color: #2a3f17;
+        }
+
+        .text8 {
+            font-size: 35px;
+        }
+
+        .text8:hover {
+            transform: translateY(-40px);
+            transition: all 0.6s;
+        }
+
+        .text9 {
+            font-size: 30px;
+        }
+
+        .text9:hover {
+            transform: translateX(40px);
+            transition: all 0.6s;
+        }
+
+        .a {
+            display: flex;
+        }
+
+        .a:hover {
+            transform: translate(100px, 0);
+            transition: 0.8s;
+        }
+
+        .b {
+            display: flex;
+        }
+
+        .b:hover {
+            transform: translate(100px, 0);
+            transition: 0.8s;
+        }
+
+        .d {
+            display: flex;
+        }
+
+        .d:hover {
+            transform: translate(100px, 0);
+            transition: 0.8s;
+        }
+
+        .e {
+            display: flex;
+        }
+
+        .e:hover {
+            transform: translate(100px, 0);
+            transition: 0.8s;
+        }
+
+        .box19 {
+            height: 70px;
+            width: 70px;
+            border-radius: 70px;
+            background-color: white;
+            border: 3px solid #2a3f17;
+            font-size: 50px;
+            text-align: center;
+            color: #2a3f17;
+            margin-top: 70px;
+            margin-right: 20px;
+        }
+
+        .box20 {
+            height: 70px;
+            width: 70px;
+            border-radius: 70px;
+            background-color: white;
+            border: 3px solid #2a3f17;
+            font-size: 50px;
+            text-align: center;
+            color: #2a3f17;
+            margin-top: 70px;
+            margin-right: 20px;
+        }
+
+        .box21 {
+            height: 70px;
+            width: 70px;
+            border-radius: 70px;
+            background-color: white;
+            border: 3px solid #2a3f17;
+            font-size: 50px;
+            text-align: center;
+            color: #2a3f17;
+            margin-top: 70px;
+            margin-right: 20px;
+        }
+
+        .box22 {
+            height: 70px;
+            width: 70px;
+            border-radius: 70px;
+            background-color: white;
+            border: 3px solid #51782f;
+            font-size: 50px;
+            text-align: center;
+            color: #2a3f17;
+            margin-top: 70px;
+            margin-right: 20px;
+        }
+
+        .box23 {
+            height: 464px;
+            border-top: 3px solid black;
+            display: flex;
+        }
+
+        .box25 {
+            height: 60px;
+            background-color: white;
+        }
+
+        .text14 {
+            font-size: 40px;
+            color: #2a3f17;
+            position: relative;
+            top: 170px;
+            left: 300px;
+        }
+
+        .text15 {
+            font-size: 30px;
+            color: #2a3f17;
+            position: relative;
+            top: 170px;
+            left: 400px;
+        }
+
+        .box24 {
+            width: 366px;
+            height: 82px;
+            position: relative;
+            top: 194px;
+            left: 900px;
+            background-color: #2a3f17;
+            opacity: 0.5;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .box24:hover {
+            background-color: white;
+            transform: translate(0, -40px);
+            color: #2a3f17;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="top">
+                <div class="box1"><img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/daohang.png" height="50"
+                        width="70" /></div>
+                <div class="photo">
+                    <div class="photo1">
+                        <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/yuan.png" />
+                    </div>
+                    <div class="photo2">
+                        <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/xiangji.png" />
+                    </div>
+                </div>
+                <div class="box2"><img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/sousuo.png" height="50"
+                        width="70" /></div>
+            </div>
+            <div class="background1">
+                <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/wugui.png" />
+            </div>
+            <div class="text1">Animal Photography</div>
+            <div class="text2">
+                <h1>A silhouette of them, a simple little acttion,here are the photographer’s<br />
+                    eyes the best of them, their laughter, their love, their every vivid, are recored<br />
+                    by us.
+                </h1>
+            </div>
+            <div class="box3">EXPIORE</div>
+        </div>
+        <div class="second">
+            <div class="pic">
+                <div class="box4">
+                    <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/huoleiniao1.png" />
+                    <div class="text4">Fly</div>
+                </div>
+                <div class="box5">
+                    <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/huoleiniao2.png" />
+                    <div class="text5">Love</div>
+                </div>
+                <div class="box6">
+                    <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/huoleiniao3.png" />
+                    <div class="text6">Stand</div>
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <div class="background2">
+                <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/lu.png" />
+            </div>
+            <div class="c">
+                <div class="box7">
+                    <br /><br /><br />“Family Farms is the best place，where I can buy
+                    fruit,vegetable,meat,honey,milk,<br />
+                    eggs and so on for my retaurant directly fromupplier. Super convinient.Thank you”<br />
+                    xdccnfc cfvfesc cfnccnjdcn cfjdcdsr dcwwzwqg ejs dddc ddf fnfjv eij fvnv jnxzexh cn<br />
+                    cdcmdsc ddnc, cddmdcds dncdn cdcn wqeoeas, dcndassasas,cdcndcnc cciqoskxm<br />
+                    cbdcpqslwq nfnere nfncsfjjc dndcww frhfjnc qpdjweiw cnncqe, cqjsdc ccn dcjndc ,<br />
+                    ncf cdncjd dcdjcndq csjncq dcdncf dcdjdnc cdjsq, qkodkqe wqcnpsdc cdnqq qcw,<br />
+                    cqnonxj dcdcnd dcnjsdvb wcnwq cowwncjq jjcnjncqnw wcq c wd cwch, cnjncnc ece<br />
+                    cdcnncdwnc nenwc dcnnc cjcj , c cjrnc wecwc .
+                </div>
+                <div class="box8">SIGN UP</div>
+            </div>
+        </div>
+        <div class="fourth">
+            <div class="text7"><br /><br />Different<br /></div><br />
+            <div class="box9">
+                <div class="box10">
+                    <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/ma.png" />
+                    <p><br />Horse</p><br />
+                    <span>A difference story<br />
+                        <hr>
+                    </span>
+                </div>
+                <div class="box11">
+                    <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/daishu.png" />
+                    <p><br />Kangaroo</p><br />
+                    <span>A difference story<br />
+                        <hr>
+                    </span>
+                </div>
+                <div class="box12">
+                    <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/shizi.png" />
+                    <p><br />Lion</p><br />
+                    <span>A difference story<br />
+                        <hr>
+                    </span>
+                </div>
+                <div class="box13">
+                    <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/xiaoniao.png" />
+                    <p><br />Hummingbird</p><br />
+                    <span>A difference story<br />
+                        <hr>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="fifth">
+            <div class="box15">
+                <div class="box14">Know more</div>
+            </div>
+            <div class="box16">
+                <div class="box17">
+                    <img src="https://zhaodn.oss-cn-beijing.aliyuncs.com/songshu.png" />
+                </div>
+                <div class="box18">
+                    <div class="text8">
+                        <span><br />The Photo</span>
+                    </div>
+                    <div class="text9">
+                        <p><br />
+                            “Family Farms is the best placewhere I
+                            can buy fruit,vegetable,meat,honey,milk,
+                            eggs and so on for my retaurant directly from
+                            supplier. Super convinient.Thank you”</p>
+                    </div>
+                    <div class="a">
+                        <div class="box19">1</div>
+                        <div class="text10"><br /><br /><br /><br /><br />Looking for it</div>
+                    </div>
+                    <div class="b">
+                        <div class="box20">2</div>
+                        <div class="text11"><br /><br /><br /><br /><br />Cultivate feelings</div>
+                    </div>
+                    <div class="d">
+                        <div class="box21">3</div>
+                        <div class="text12"><br /><br /><br /><br /><br />Shooting</div>
+                    </div>
+                    <div class="e">
+                        <div class="box22">4</div>
+                        <div class="text13"><br /><br /><br /><br /><br />Harvest achievement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sixth">
+            <div class="box25"></div>
+            <div class="box23">
+                <div class="text14">
+                    IN THE WILD<br /><br />
+                    IN THE SEA
+                </div>
+                <div class="text15">
+                    MOER<br /><br />
+                    We create art.<br />
+                    We create life
+                </div>
+                <div class="box24">Big World</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
