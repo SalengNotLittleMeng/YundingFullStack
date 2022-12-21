@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charest="UTF-8">
+    <title>Animal</title>
+    <style type="text/css">
+        .Content{
+            width:1500px;
+            height:100%;
+            margin:0 auto;
+            max-width:90%;
+            position:relative;
+            /*overflow: hidden;*/
+        }
+        .Content2{
+            width:1500px;
+            height:80px;
+            margin:0 auto;
+            max-width: 90%;
+            position:relative;
+        }
+        .top{
+            height:50px;
+            width:100%;
+            background:white;
+            position:absolute;
+        }
+        .sousuo{
+            position:absolute;
+            width:30px;
+            height:30px;
+            margin-top:10px;
+            right:50px;
+        }
+        .caidan{
+            position:absolute;
+            width:30px;
+            height:30px;
+            margin-top:10px;
+            left:50px;
+        }
+        .pic1{
+            transition: 0.3s;
+        }
+        .pic1:hover{
+            transform:scale(0.6);
+        }
+        .pic1,.pic2{
+            width:100%;
+            height:100%;
+        }
+        .first{
+            position:absolute;
+            top:0px;
+            width:100%;
+            height:1500px;
+        } 
+        .background1{
+            width:100%;
+            height:80%;
+            position:relative;
+        }
+        .turtle{
+            position:relative;
+            height:90%;
+            width:100%;
+            top:50px;
+        }
+        .topcenter{
+            background:rgb(118, 189, 118);
+            width:200px;
+            height:200px;
+            position:absolute;
+            top:0;
+            left:50%;
+            margin-left:-100px;
+            transition:0.5s;
+        }
+        .topcenter:hover{
+            transform:scale(0.8);
+        }
+        .quan{
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin:-82px 0 0 -82px;
+            width:145px;
+            height:145px;
+            border-radius:80px;
+            border:10px solid white;
+        }
+        .camera{
+            width:100px;
+            height:80px;
+            position:absolute;
+            top:55%;
+            left:52%;
+            margin:-50px 0 0 -50px;
+        }
+        .title1{
+            position:relative;
+            width:80%;
+            height:250px;
+            top:350px;
+            left:50%;
+            margin-left:-600px;
+        }
+        .biaoti{
+            width:1200px;
+            height:200px;
+        }
+        .explore{
+            background:rgb(54, 83, 54);
+            width:150px;
+            height:50px;
+            position:relative;
+            left:10%;
+            top:330px;
+            text-align: center;
+        }
+        span{
+            color:whitesmoke;
+            font-size:30px;
+        }
+        .he{
+            position:absolute;
+            width:1200px;
+            top:50%;
+            left:50%;
+            margin-left:-600px;
+            height:500px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .he1{
+            transition: all 0.3s;
+            width:350px;
+        }
+        .he2{
+            transition: all 0.3s;
+            width:350px;
+        }
+        .he3{
+            transition: all 0.3s;
+            width:350px;
+        }
+        .he1:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .he2:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .he3:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .background2{
+            top:500px;
+            height:20%;
+            width:100%;
+            position:relative;
+        }
+        .lu{
+            position:relative;
+            width:100%;
+            height:100%;
+        }
+        .center{
+            background:gainsboro;
+            width:100%;
+            height:3800px;
+        }
+        .ph1{
+            background:whitesmoke;
+            width:800px;
+            height:500px;
+            left:50%;
+            margin-left:-400px;
+            top:-500px;
+            display:flex;
+            flex-direction: column;
+            position:relative;
+            transition: all 0.3s;
+        }
+        .ph1:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .pa1{
+            position:absolute;
+            left:50%;
+            width:700px;
+            margin-left:-350px;
+            top:50px;
+        }
+        .signup{
+            background:rgb(54, 83, 54);
+            width:300px;
+            height:100px;
+            position:absolute;
+            bottom:70px;
+            left:50%;
+            margin-left:-150px;
+            text-align: center;
+            line-height:50%;
+            transition:0.5s;
+        }
+        .signup:hover{
+            transform:scale(0.8);
+        }
+        .difference{
+            top:6000px;
+            margin:0 auto;
+            text-align: center;
+            line-height:20%;
+            width:400px;
+            height:120px;
+        }
+        @keyframes move{
+            0%   {border:0;}
+            25%  {border-top:10px solid rgb(54, 83, 54);}
+            50%  {border-right:10px solid rgb(54, 83, 54);}
+            75%  {border-bottom:10px solid rgb(54, 83, 54);}
+            100% {border-left:10px solid rgb(54, 83, 54);}
+        }
+        .difference:hover {
+            animation:move 1s linear ;
+        }
+        .animal{
+            width:1300px;
+            height:400px;
+            left:50%;
+            margin-left: -650px;
+            display:flex;
+            justify-content:space-between;
+            position:relative;
+        }
+        .Horse,.Kangaroo,.Lion,.Hummingbird{
+            position:relative;
+            background:rgb(205, 199, 199);
+            width:300px;
+            height:500px;
+            display:flex;
+            flex-direction:column;
+            text-align:center;
+            transition: all 0.3s;
+        }
+        .Horse:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .Kangaroo:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .Lion:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .Hummingbird:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+.title01,.title02,.title03,.title04,.title05,.title06,.title07,.title08{
+            margin-top:40px;
+        }
+        p1{
+            top:30px;
+            font-size:30px;
+            color:rgb(54, 83, 54);
+            font-weight:bold;
+        }
+        p2{
+            font-size:25px;
+            color:rgb(54, 83, 54);
+            padding-bottom:5px;
+            border-bottom:2px solid rgb(54, 83, 54);
+        }
+        .title2{
+            border:3px solid rgb(54, 83, 54);
+            text-align:center;
+            position:absolute;
+            left:50%;
+            margin-left:-250px;
+            margin-top:300px;
+            width:500px;
+            height:80px;
+            transition-property:all;
+            transition-duration:0.5s;
+        }
+        .title2:hover{
+            background:rgb(54, 83, 54);
+        }
+        p3{
+            top:35px;
+            font-size:60px;
+            color:rgb(54, 83, 54);
+            font-weight:bold;
+            transition-property:all;
+            transition-duration:0.5s;
+        }
+        p3:hover{
+            color:gainsboro;
+        }
+        .songshu{
+            position:absolute;
+            width:90%;
+            top:1700px;
+            margin:0 auto;
+            display:flex;
+            justify-content:space-between;
+        }
+        .right{
+            display:flex;
+            flex-direction: column;
+        }
+        .title3{
+            margin-bottom: 50px;
+            flex:1;
+            transition:all 0.3s;
+        }
+        .title3:hover{
+            transform:translateY(-50px);
+        }
+        .pa2{
+            margin-bottom: 50px;
+            transition:0.3s;
+        }
+        .pa2:hover{
+            transform:translateX(20px) scale(1.2);
+            transform-origin: left top;
+        }
+        .quan1{
+            flex: 1;
+            transition:0.3s;
+        }
+        .quan1:hover{
+            transform:translateX(100px);
+        }
+        .quan2{
+            flex: 1;
+            transition:0.3s;
+        }
+        .quan2:hover{
+            transform:translateX(100px);
+        }
+        .quan3{
+            flex: 1;
+            transition:0.3s;
+        }
+        .quan3:hover{
+            transform:translateX(100px);
+        }
+        .quan4{
+            flex: 1;
+            transition:0.3s;
+        }
+        .quan4:hover{
+            transform:translateX(100px);
+        }
+        .box{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .big{
+            flex:1;
+            text-align: center;
+        }
+        .small{
+            flex:1;
+            text-align: left;
+        }
+        .rightbox{
+            text-align: center;
+            line-height: 500%;
+            background:rgb(54, 83, 54);
+            height:80px;
+            width:500px;
+            transition:1s;
+        }
+        @keyframes change1{
+            to{
+                background:whitesmoke;
+            }
+        }
+        .rightbox:hover{
+            animation: change1 1s;
+            transform:translateY(-50px);
+        }
+        a{
+            transition:1s;
+        }
+        @keyframes change2{
+            to{
+                color:rgb(54, 83, 54);
+            }
+        }
+        a:hover{
+            animation: change2 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="caidan">
+            <img class="pic1" src="第四次网页/Css/菜单.png">
+        </div>
+        <div class="sousuo">
+            <img class="pic2" src="Css/搜索.png">
+        </div>
+    </div>
+    <div class="background1">
+        <img class="turtle" src="Css/海龟.png">
+    </div>
+    <div class="first">
+        <div class="Content">
+            <div class="title1">
+                <img class="biaoti" src="Css/标题.png">
+            </div>
+            <div class="explore"><span>EXPLORE</span></div>
+            <div class="he">
+                <img class="he1" src="Css/鹤1.png">
+                <img class="he2" src="Css/鹤2.png">
+                <img class="he3" src="Css/鹤3.png">
+            </div>
+        </div>
+        <div class="topcenter">
+            <div class="quan">
+                <img class="camera" src="Css/相机.png">
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="background2">
+            <img class="lu" src="Css/鹿.png">
+        </div>
+        <div class="Content">
+            <div class="ph1">
+                <img class="pa1" src="Css/文字.png">
+                <div class="signup"><p style="color:whitesmoke;font-size:50px">SIGN UP</p></div>
+            </div>
+            <div class="difference"><p style="color:rgb(54, 83, 54);font-size:80px">Difference</p></div>
+            <div class="animal">
+                <div class="Horse">
+                    <img class="picHO" src="Css/马.png">
+                    <div class="title01"><p1>Horse</p1></div>
+                    <div class="title02"><p2>A difference story</p2></div>
+                </div>
+                <div class="Kangaroo">
+                    <img class="picK" src="Css/袋鼠.png">
+                    <div class="title03"><p1>Kangaroo</p1></div>
+                    <div class="title04"><p2>A difference story</p2></div>
+                </div>
+                <div class="Lion">
+                    <img class="picL" src="Css/狮子.png">
+                    <div class="title05"><p1>Lion</p1></div>
+                    <div class="title06"><p2>A difference story</p2></div>
+                </div>
+                <div class="Hummingbird">
+                    <img class="picHU" src="Css/蜂鸟.png">
+                    <div class="title07"><p1>Hummingbird</p1></div>
+                    <div class="title08"><p2>A difference story</p2></div>
+                </div>
+            </div>
+            <div class="title2"><p3>Know more</p3></div>
+            <div class="songshu">
+                <img class="squirrel" src="Css/松鼠.png">
+                <div class="right">   
+                    <div class="title3"><a style="font-size:40px;color:rgb(54, 83, 54)">The Photo</a></div>
+                    <img class="pa2" src="Css/文字2.png">
+                    <div class="quan1">
+                        <img class="first_circle" src="CSS/first_circle.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p2>Looking for it</p2>
+                    </div>
+                    <div class="quan2">
+                        <img class="second_circle" src="Css/second_circle.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p2>Cultivate feelings</p2>
+                    </div>
+                    <div class="quan3">
+                        <img class="third_circle" src="Css/third_circle.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p2>Shooting</p2>
+                    </div>
+                    <div class="quan4">
+                        <img class="fourth_circle" src="Css/fourth_circle.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p2>Harvest achievement</p2>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="Content">
+            <div class="box">
+                <div class="big">
+                        <div class="big1"><p style="color:rgb(54, 83, 54);font-size:40px">IN THE WILD</p></div>
+                        <div class="big2"><p style="color:rgb(54, 83, 54);font-size:40px">IN THE SEA</p></div>
+                </div>
+                <div class="small">
+                        <div class="small1"><p style="color:rgb(54, 83, 54);font-size:30px">MOER</p></div>
+                        <div class="small2"><p style="color:rgb(54, 83, 54);font-size:20px">We create art</p></div>
+                        <div class="small3"><p style="color:rgb(54, 83, 54);font-size:20px">We create life</p></div>
+                </div>
+                <div class="rightbox"><a style="color:whitesmoke;font-size:40px">Big World</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
