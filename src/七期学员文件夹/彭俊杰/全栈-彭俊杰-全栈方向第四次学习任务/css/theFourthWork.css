@@ -1,0 +1,261 @@
+.Content {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.head{
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.gang{
+    height: 15px;
+    width: 22px;
+    display: flex;
+    flex-direction: column;
+    top: 26px;
+    left: 26px;
+    justify-content: space-between;
+    transition: height 1s, width 1s;
+    position: absolute;
+}
+
+.gang:hover {
+    height: 12px;
+    width: 18px;
+}
+
+.gang_0{
+    height: 2px;
+    background-color: black;
+}
+
+.photo{
+    height: 200px;
+    width: 200px;
+    transition: width 1s,height 1s;
+    margin: 0 auto;
+}
+
+#photo{
+    height: 200px;
+    width: 200px;
+    transition: width 1s, height 1s;
+}
+
+#photo:hover{
+    height: 175px;
+    width: 175px;
+}
+
+#question{
+    height: 16px;
+    width: 16px;
+    top: 26px;
+    right: 25px;
+    position: absolute;
+    transition: width 1s, height 1s;
+}
+
+#question:hover{
+    height: 12px;
+    width: 12px;
+}
+
+.title{
+    background-image: url(../img/乌龟.png); 
+    height: 920px;
+    overflow: hidden;
+}
+
+.big_tit{
+    font-family: Cambria;
+    font-size: 72px;
+    margin: 235px auto;
+    text-align: center;
+    color: #2f3f1c;
+}
+
+.sma_tit{
+    font-family:"Microsoft YaHei";
+    font-size: 30px;
+    top: 450px;
+    color: #2f3f1c;
+    width:1111px ;
+    position: absolute;
+}
+
+.expiore{
+    height: 55px;
+    width: 260px;
+    font-size: 30px;
+    font-family:"Microsoft YaHei";
+    top: 650px;
+    left: 415px;
+    padding-top: 15px;
+    text-align: center;
+    position: absolute;
+    color: white;
+    background-color: #2f3f1c;
+}
+
+.bird{
+    height: 595px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bird_pho{
+    height: 499px;
+    width: 333px;
+    top: 850px;
+    font-size: 48px;
+    font-family: Cambria;
+    color: white;
+    position: absolute;
+    transition: top 1s;
+}
+
+#first{
+    left: 404px;
+    background-image: url(../img/火烈鸟1.png);
+}
+
+#second{
+    left: 793px;
+    background-image: url(../img/火烈鸟2.png);
+}
+
+#third{
+    right: 405px;
+    background-image: url(../img/火烈鸟3.png);
+}
+
+.bird_pho:hover{
+    top: 795px;
+}
+
+.introduce{
+    height: 760px;
+    background-image: url(../img/鹿.png);
+}
+
+.intr_word{
+    height: 540px;
+    width: 850px;
+    top: 1450px;
+    left: 475px;
+    padding: 79px 65px 61px 79px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    background-color: #dedddd;
+    position: absolute;
+    transition: top 1s;
+}
+
+.intr_word:hover{
+    top: 1400px;
+}
+
+.sign_up{
+    height: 50px;
+    width: 200px;
+    padding-top: 20px;
+    top: 500px;
+    left: 370px;
+    font-size: 30px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    background-color: #2f3f1c;
+    color: white;
+    position: absolute;
+    transition: width 1s, height 1s;
+}
+
+.sign_up:hover{
+    height: 45px;
+    width: 180px;
+}
+
+.difference{
+    height: 845px;
+}
+
+.dif_tit{
+    height: 55px;
+    width: 250px;
+    font-size: 48px;
+    font-family: "Microsoft YaHei";
+    border: 12px solid white;
+    color: #2f3f1c;
+    text-align: center;
+    transition: border 3s;
+    margin: 80px auto;
+}
+
+.dif_tit:hover{
+    border:12px solid #2f3f1c;
+}
+
+.animals{
+    height: 535px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ani_intr{
+    height: 415px;
+    width: 264px;
+    background-color: #dedddd;
+    transition: top 1s;
+}
+
+.ani_intr:hover{
+    top: 45px;
+}
+
+.ani_name{
+    height: 54px;
+    padding-top:20px;
+    padding-bottom: 5px;
+    color: #2f3f1c;
+    font-size: 30px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+
+}
+
+.word{
+    width: 200px;
+    font-size: 21.85px;
+    font-family: "Microsoft YaHei";
+    color: #2f3f1c;
+    text-align: center;
+    border-bottom: 2px solid #2f3f1c;
+    margin: 0 auto;
+}
+
+.button{
+    height: 50px;
+    width: 355px;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Microsoft YaHei";
+    color: #2f3f1c;
+    border: 2px solid #2f3f1c;
+    margin: 0 auto;
+    transition: color 1s,background-color 1s;
+}
+
+.button:hover{
+    color: white;
+    background-color: #2f3f1c;
+}
+
+.how{
+    height: 1080px;
+    display: flex;
+}
