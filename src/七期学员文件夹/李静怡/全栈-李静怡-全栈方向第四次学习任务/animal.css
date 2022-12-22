@@ -130,18 +130,18 @@
     height: 40px;
 }
 .photo1 {
-    background: url(image/photo1.png) no-repeat scroll;
+    background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo1.png) no-repeat scroll;
     width: 330px;
     height: 500px;
 }
 .photo2 {
-    background: url(image/photo2.png) no-repeat scroll;
+    background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo2.png) no-repeat scroll;
     width: 330px;
     height: 500px;
     left: 390px;
 }
 .photo3 {
-    background: url(image/photo3.png) no-repeat scroll;
+    background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo3.png) no-repeat scroll;
     width: 330px;
     height: 500px;
     left: 780px;
@@ -355,7 +355,7 @@
 .serial4 {
     width: 68px;
     height: 68px;
-    background: url(image/knowmore_circle.png) no-repeat scroll;
+    background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/knowmore_circle.png) no-repeat scroll;
     float: left;
     position: relative;
 }
