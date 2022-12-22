@@ -65,7 +65,7 @@
 }
 
 .title {
-    background-image: url(../img/乌龟.png); 
+    background-image: url(https://doitasican.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png?Expires=1671703020&OSSAccessKeyId=TMP.3KjYmVzgyzhbgYZBZiuxgrPnm4VwoGp3p6TjhDLAhTMcrqGpcKTdeq23q6yyz5LpPBWxtrNnx6sZKGvyAZ8DTv71V81zur&Signature=yW3%2BxIi2Ha0fl5SwekVNHJVcwXI%3D); 
     height: 920px;
     overflow: hidden;
 }
@@ -120,17 +120,17 @@
 
 #first {
     left: 404px;
-    background-image: url(../img/火烈鸟1.png);
+    background-image: url(https://doitasican.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png?Expires=1671703308&OSSAccessKeyId=TMP.3KjYmVzgyzhbgYZBZiuxgrPnm4VwoGp3p6TjhDLAhTMcrqGpcKTdeq23q6yyz5LpPBWxtrNnx6sZKGvyAZ8DTv71V81zur&Signature=ftIvx2ItSKiSnJE3Co7O8YiZZ%2Fg%3D);
 }
 
 #second {
     left: 793px;
-    background-image: url(../img/火烈鸟2.png);
+    background-image: url(https://doitasican.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png?Expires=1671703334&OSSAccessKeyId=TMP.3KjYmVzgyzhbgYZBZiuxgrPnm4VwoGp3p6TjhDLAhTMcrqGpcKTdeq23q6yyz5LpPBWxtrNnx6sZKGvyAZ8DTv71V81zur&Signature=6FAvia%2BUOxdgyuSsnNKWCWqB05s%3D);
 }
 
 #third {
     right: 405px;
-    background-image: url(../img/火烈鸟3.png);
+    background-image: url(https://doitasican.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png?Expires=1671703353&OSSAccessKeyId=TMP.3KjYmVzgyzhbgYZBZiuxgrPnm4VwoGp3p6TjhDLAhTMcrqGpcKTdeq23q6yyz5LpPBWxtrNnx6sZKGvyAZ8DTv71V81zur&Signature=vA6rBumRZ0wFyWf%2FdtRexU0SMWk%3D);
 }
 
 .bird_pho:hover {
@@ -139,7 +139,7 @@
 
 .introduce {
     height: 760px;
-    background-image: url(../img/鹿.png);
+    background-image: url(https://doitasican.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png?Expires=1671703588&OSSAccessKeyId=TMP.3KjYmVzgyzhbgYZBZiuxgrPnm4VwoGp3p6TjhDLAhTMcrqGpcKTdeq23q6yyz5LpPBWxtrNnx6sZKGvyAZ8DTv71V81zur&Signature=JYJZdKPhqWqHLWRYjMv63Ela%2B4g%3D);
 }
 
 .intr_word {
