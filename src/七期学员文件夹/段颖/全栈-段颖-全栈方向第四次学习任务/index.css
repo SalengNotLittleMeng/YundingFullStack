@@ -30,11 +30,11 @@
 }
 
 .lines {
-    background: url(images/lines.png) no-repeat center;
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/lines.png) no-repeat center;
 }
 
 .search {
-    background: url(images/search.png) no-repeat center;
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/search.png) no-repeat center;
 }
 
 
@@ -43,7 +43,7 @@
     width: 100%;
     height: 880px;
     /* background-color: blueviolet; */
-    background: url(images/tirtle.png) no-repeat;
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/tirtle.png) no-repeat;
 }
 
 .hp {
@@ -67,7 +67,7 @@
     width: 160px;
     height: 160px;
     /* background-color: rgb(243, 31, 31); */
-    background: url(images/camear.png) no-repeat center;
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/camear.png) no-repeat center;
     margin: auto;
     margin-top: 15px;
     border-radius: 50%;
@@ -274,7 +274,7 @@
 }
 
 .section_three .pictures div {
-    width: 260px;
+    width: 264px;
     height: 415px;
     background-color:#e0dfdf;
     transition: all .9s ease;
@@ -434,7 +434,7 @@
     width: 70px;
     height: 70px;
     /* background-color:tomato; */
-    background: url(images/1.png) no-repeat center;
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/1.png) no-repeat center;
     border-radius: 50%;
     border: 4px solid #2a3f17;
     transition: all .9s ease;
@@ -459,7 +459,7 @@
     width: 70px;
     height: 70px;
     /* background-color:tomato; */
-    background: url(images/2.png) no-repeat center;
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/2.png) no-repeat center;
     border-radius: 50%;
     border: 4px solid #2a3f17;
     transition: all .9s ease;
@@ -484,7 +484,7 @@
     width: 70px;
     height: 70px;
     /* background-color:tomato; */
-    background: url(images/3_.png) no-repeat center;
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/3_.png) no-repeat center;
     border-radius: 50%;
     border: 4px solid #2a3f17;
     transition: all .9s ease;
@@ -509,7 +509,7 @@
     width: 70px;
     height: 70px;
     /* background-color:tomato; */
-    background: url(images/4_.png) no-repeat center;
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/4_.png) no-repeat center;
     border-radius: 50%;
     border: 4px solid #2a3f17;
     transition: all .9s ease;
@@ -556,7 +556,7 @@
 }
 
 .left .first .wild {
-    width: 300px;
+    width: 320px;
     height: 75px;
     /* background-color: wheat; */
     color: #2a3f17;
@@ -571,6 +571,7 @@
     width: 250px;
     height: 75px;
     /* background-color: pink; */
+    margin-left: 20px;
     color: #697461;
     font-size: 30px;
     font-family: "微软雅黑";
@@ -603,7 +604,7 @@
     height: 75px;
     /* background-color: pink; */
     color: #697461;
-
+    margin-left: 30px;
     font-size: 30px;
     font-family: "微软雅黑";
     text-align: left;
