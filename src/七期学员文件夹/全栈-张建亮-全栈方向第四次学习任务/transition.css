@@ -24,7 +24,7 @@
     float: right;
     font-size: 32px;
     padding-top: 5px;
-    padding-right: 50px;
+    padding-right: 20px;
     font-weight: bolder;
 
 }
@@ -35,6 +35,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    max-width: 1920px;
 }
 
 .center {
@@ -201,22 +202,46 @@
 
 .different {
     font-weight: 500;
-    font-size: 40px;
     margin-top: 80px;
     height: 60px;
     width: 270px;
     font-size: 48px;
     color: #2a3f17;
-    transition: all 1s;
+    transition: all 5s;
     margin-bottom: 100px;
     margin-right: auto;
     margin-left: auto;
+    border-width: 3px;
+    border: transparent solid;
+    border-color: transparent;
 }
 
 .different:hover {
-    border: #2a3f17 solid;
-    border-width: 3px;
+
+    /* animation-timing-function:linear; */
+    animation-name: example;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes example {
+    25% {
+        border-top: #2a3f17 solid;
+    }
+
+    50% {
+        border-right: #2a3f17 solid;
+    }
+
+    75% {
+        border-bottom: #2a3f17 solid;
+    }
+
+    100% {
+        border: #2a3f17 solid;
+    }
+}
+
 
 .know-more {
     width: 360px;
@@ -302,13 +327,14 @@
     transition-timing-function: ease-in-out;
 }
 
-.squirrel-right div{
-    transition-timing-function: ease-in-out; transition: all 1s;
+.squirrel-right div {
+    transition-timing-function: ease-in-out;
+    transition: all 1s;
 }
 
 .squirrel-right div:hover {
     transform: translate(70px, 0);
-   
+
 }
 
 .footer {
