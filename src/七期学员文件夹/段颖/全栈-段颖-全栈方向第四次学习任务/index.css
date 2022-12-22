@@ -1,0 +1,631 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bigbox {
+    width: 1920px;
+    height: 4674px;
+    /* background-color: pink; */
+    margin: auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    width: 1920px;
+    background-color: white;
+}
+
+.head div {
+    width: 60px;
+    height: 100%;
+    /* background-color: bisque; */
+    transition: all .8s ease;
+}
+
+.head div:hover {
+    transform: scale(0.7);
+}
+
+.lines {
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/lines.png) no-repeat center;
+}
+
+.search {
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/search.png) no-repeat center;
+}
+
+
+.section_one {
+    position: relative;
+    width: 100%;
+    height: 880px;
+    /* background-color: blueviolet; */
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/tirtle.png) no-repeat;
+}
+
+.hp {
+    position: absolute;
+    left: 50%;
+    left: 850px;
+    top: -60px;
+    width: 200px;
+    height: 200px;
+    background-color: #81c04b;
+    margin: auto;
+    /* transform: translateX(-50%); */
+    transition: all .8s ease;
+}
+
+.hp:hover {
+    transform: scale(0.7);
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    /* background-color: rgb(243, 31, 31); */
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/camear.png) no-repeat center;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.section_one .animal {
+    width: 645px;
+    height: 70px;
+    /* background-color: pink; */
+    margin: auto;
+    transform: translateY(240px);
+    color:#2a3f17;
+    font-family: "微软雅黑";
+    font-size: 48px;
+    text-align: center;
+}
+
+.section_one .a {
+    width: 1100px;
+    height: 90px;
+    /* background-color: plum; */
+    margin: auto;
+    margin-top: 250px;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.section_one .explore {
+    position: absolute;
+    top: 555px;
+    left: 410px;
+    width: 265px;
+    height: 70px;
+    background-color: #2a3f17;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.section_one .birds {
+    position: absolute;
+    left: 50%;
+    top: 730px;
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
+    height: 500px;
+    /* background-color: coral; */
+    transform: translateX(-50%);
+}
+
+.section_one .birds div {
+    position: relative;
+    width: 330px;
+    height: 500px;
+    /* background-color: cornsilk; */
+    margin-left: 50px;
+    transition: all .9s ease;
+}
+
+.birds div:hover {
+    transform: translateY(-40px);
+}
+
+.fly {
+    position: absolute;
+    top: -140px;
+    left: 160px;
+    color: white;
+    font-size: 48px;
+    font-family: Cambria;
+}
+
+.love {
+    position: absolute;
+    top: -140px;
+    left: 160px;
+    color: white;
+    font-size: 48px;
+    font-family: Cambria;
+}
+
+.stand {
+    position: absolute;
+    top: -140px;
+    left: 160px;
+    color: white;
+    font-size: 48px;
+    font-family: Cambria;
+}
+
+.section_two {
+    position: relative;
+    height: 755px;
+    background-color: pink;
+    margin-top: 600px;
+}
+
+.section_two .sign_up {
+    position: absolute;
+    left: 50%;
+    left: 510px;
+    bottom: 300px;
+    width: 945px;
+    height: 540px;
+    background-color: #e0dfdf;
+
+    transition: all .9s ease;
+}
+
+.sign_up:hover {
+    transform: translateY(-40px);
+    /* transform: translateX(-50%); */
+}
+
+.section_two .sign_up div {
+    width: 790px;
+    height: 230px;
+    /* background-color: white; */
+    margin: auto;
+    margin-top: 75px;
+    color: #2a3f17;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+
+#botton {
+    width: 195px;
+    height: 65px;
+    background-color: #2a3f17;
+    margin-bottom: 65px;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    transition: all .8s ease;
+}
+
+#botton:hover {
+    transform: scale(0.7);
+}
+
+.section_three {
+    height: 830px;
+    /* background-color: tomato; */
+}
+
+.section_three .difference {
+    width: 230px;
+    height: 40px;
+    /* background-color: turquoise; */
+    margin: auto;
+    margin-top: 70px;
+    color: #2a3f17;
+    border:3px solid transparent;
+    font-size: 48px;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 40px;
+}
+.difference::before{
+    content:"";
+    position: absolute ;
+    width: 0;
+    height: 0;
+    top:0;left: 0;width: 0;height: 0;
+    box-sizing: border-box;
+    transition: width .25s,height .25s,border-bottom-color;
+    transition-delay: .25s,0s,.25s;
+}
+.difference:hover::before {
+    width: 230px;
+    height: 40px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.difference::after {
+    right: 0;
+    bottom: 0;
+}
+
+.difference:hover::after {
+    transition: height .25s, width .25s, border-top-color .25s;
+    transition-delay: 0.5s, 0.75s, 0.75s;
+    width: 230px;
+    height: 40px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+.section_three .pictures {
+    display: flex;
+    justify-content: space-between;
+    width: 1145px;
+    height: 415px;
+    /* background-color: violet; */
+    margin: auto;
+    margin-top: 35px;
+}
+
+.section_three .pictures div {
+    width: 264px;
+    height: 415px;
+    background-color:#e0dfdf;
+    transition: all .9s ease;
+}
+
+.section_three .pictures div:hover {
+    transform: translateY(-40px);
+}
+
+.section_three .pictures .horse,
+.Kangaroo,
+.Hummingbird,
+.lion {
+    width: 130px;
+    height: 40px;
+    /* background-color: plum; */
+    margin: auto;
+    margin-top: 10px;
+    color: #2a3f17;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 40px;
+}
+
+.section_three .pictures .story {
+    width: 200px;
+    height: 40px;
+    /* background-color: plum; */
+    margin: auto;
+    margin-top: 20px;
+    color: #2a3f17;
+    font-family: "微软雅黑";
+    font-size: 21.85px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: underline;
+}
+
+.section_three .pictures .Kangaroo {
+    width: 200px;
+    height: 40px;
+    /* background-color: plum; */
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.section_three .pictures .lion {
+    width: 110px;
+    height: 40px;
+    /* background-color: plum; */
+    margin: auto;
+    margin-top: 10px;
+}
+
+.section_three .pictures .Hummingbird {
+    width: 200px;
+    height: 40px;
+    /* background-color: plum; */
+    margin: auto;
+    margin-top: 10px;
+}
+
+.section_three .know {
+    width: 355px;
+    height: 65px;
+    /* background-color: white; */
+    margin: auto;
+    margin-top: 120px;
+    border: 3px solid black;
+    color: #2a3f17;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    text-align: center;
+    line-height: 65px;
+    transition: all .9s ease;
+}
+
+.section_three .know:hover {
+    background-color: #2a3f17;
+    color: white;
+}
+
+.section_four {
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+    height: 1040px;
+    /* background-color: violet; */
+    margin: auto;
+}
+
+.section_four div {
+    position: relative;
+    width: 705px;
+    height: 1020px;
+    /* background-color: white; */
+}
+
+.section_four .photo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 540px;
+    height: 40px;
+    color: #4e603f;
+    font-size: 36px;
+    font-family: "微软雅黑";
+    transition: all .8s ease;
+}
+
+.photo:hover {
+    transform: translateY(-40px);
+}
+
+.section_four .family {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 540px;
+    height: 190px;
+    /* background-color: pink; */
+    color: #2a3f17;
+    font-family: "微软雅黑";
+    font-size: 24px;
+    transition: all .2s ease;
+}
+
+.family:hover {
+    transform: translateX(40px);
+
+}
+
+.section_four .branch {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 540px;
+    height: 700px;
+    /* background-color: pink; */
+}
+
+.section_four .branch div {
+    width: 255px;
+    height: 70px;
+
+    /* background-color: white; */
+}
+
+
+.section_four .branch .number1 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    /* background-color:tomato; */
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/1.png) no-repeat center;
+    border-radius: 50%;
+    border: 4px solid #2a3f17;
+    transition: all .9s ease;
+}
+
+.section_four .branch .number1:hover {
+    transform: translateX(80px);
+}
+
+.section_four .branch .look {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+    color: #4e603f;
+    font-family: "微软雅黑";
+}
+
+.section_four .branch .number2 {
+    width: 70px;
+    height: 70px;
+    /* background-color:tomato; */
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/2.png) no-repeat center;
+    border-radius: 50%;
+    border: 4px solid #2a3f17;
+    transition: all .9s ease;
+}
+
+.section_four .branch .number2:hover {
+    transform: translateX(80px);
+}
+
+.section_four .branch .cul {
+    position: absolute;
+    left: 70px;
+    top: 10px;
+    text-align: center;
+    line-height: 70px;
+    color: #4e603f;
+    font-size: 24px;
+    font-family: "微软雅黑";
+}
+
+.section_four .branch .number3 {
+    width: 70px;
+    height: 70px;
+    /* background-color:tomato; */
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/3_.png) no-repeat center;
+    border-radius: 50%;
+    border: 4px solid #2a3f17;
+    transition: all .9s ease;
+}
+
+.section_four .branch .number3:hover {
+    transform: translateX(80px);
+}
+
+.section_four .branch .shoot {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    text-align: center;
+    line-height: 70px;
+    color: #4e603f;
+    font-size: 24px;
+    font-family: "微软雅黑";
+}
+
+.section_four .branch .number4 {
+    width: 70px;
+    height: 70px;
+    /* background-color:tomato; */
+    background: url(https://chibaoshaitaiyang-1316184616.cos.ap-beijing.myqcloud.com/images/4_.png) no-repeat center;
+    border-radius: 50%;
+    border: 4px solid #2a3f17;
+    transition: all .9s ease;
+}
+
+.section_four .branch .number4:hover {
+    transform: translateX(80px);
+}
+
+.section_four .branch .har {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    text-align: center;
+    line-height: 70px;
+    color: #4e603f;
+    font-size: 24px;
+    font-family: "微软雅黑";
+}
+
+
+.foot {
+    display: flex;
+    width: 1920px;
+    height: 440px;
+    background-color: white;
+    margin-top: 60px;
+    border-top: 3px solid black;
+}
+
+.foot div {
+    width: 960px;
+    height: 440px;
+    /* background-color: turquoise; */
+}
+
+.left .first {
+    display: flex;
+    width: 465px;
+    height: 75px;
+    /* background-color: tomato; */
+    margin: auto;
+    margin-top: 150px;
+}
+
+.left .first .wild {
+    width: 320px;
+    height: 75px;
+    /* background-color: wheat; */
+    color: #2a3f17;
+    font-size: 40px;
+    font-family: "微软雅黑";
+    text-align: left;
+    line-height: 75px;
+
+}
+
+.left .first .more {
+    width: 250px;
+    height: 75px;
+    /* background-color: pink; */
+    margin-left: 20px;
+    color: #697461;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    text-align: left;
+    line-height: 75px;
+}
+
+.left .second {
+    display: flex;
+    width: 475px;
+    height: 100px;
+    /* background-color: violet; */
+    margin: auto;
+
+}
+
+.left .second .sea {
+    width: 300px;
+    height: 75px;
+    /* background-color: wheat; */
+    color: #2a3f17;
+    font-size: 40px;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 75px;
+}
+
+.left .second .we {
+    width: 250px;
+    height: 75px;
+    /* background-color: pink; */
+    color: #697461;
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    text-align: left;
+
+}
+
+.right .bigword {
+    width: 360px;
+    height: 70px;
+    background-color: #949f8b;
+    margin: auto;
+    margin-top: 190px;
+    font-size: 36px;
+    color: white;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 70px;
+    transition: all .8s ease;
+}
+
+.right .bigword:hover {
+    transform: translateY(-50px);
+    background-color: transparent;
+}
