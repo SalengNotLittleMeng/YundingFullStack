@@ -90,13 +90,18 @@ li {
     width: 333px;
     height: 500px;
 }
+<<<<<<< HEAD
 .bird1,
 .bird2,
 .bird3  {
+=======
+.bird img {
+>>>>>>> 2f4ee44927ee52918167744c91387420e6365427
     transition: all 1s;
 } 
 .bird1 {
     left: 404px;
+<<<<<<< HEAD
     background-image: url(image/火烈鸟1.png);
 }
 .bird2 {
@@ -106,6 +111,14 @@ li {
 .bird3 {
     left: 1182px;
     background-image: url(image/火烈鸟3.png);
+=======
+}
+.bird2 {
+    left: 794px;
+}
+.bird3 {
+    left: 1182px;
+>>>>>>> 2f4ee44927ee52918167744c91387420e6365427
 }
 .bird1 p,
 .bird2 p,
@@ -115,9 +128,15 @@ li {
     bottom: 90px;
     
 }
+<<<<<<< HEAD
 .bird1:hover,
 .bird2:hover,
 .bird3:hover {
+=======
+.bird1 img:hover,
+.bird2 img:hover,
+.bird3 img:hover {
+>>>>>>> 2f4ee44927ee52918167744c91387420e6365427
     transform: translateY(-50px);
 }
 .center2 {
