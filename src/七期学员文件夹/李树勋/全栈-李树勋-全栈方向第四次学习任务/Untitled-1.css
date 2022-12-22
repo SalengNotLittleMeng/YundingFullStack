@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('font_3794132_xb7wntqqdep/iconfont.woff2?t=1671678182519') format('woff2'),
+       url('font_3794132_xb7wntqqdep/iconfont.woff?t=1671678182519') format('woff'),
+       url('font_3794132_xb7wntqqdep/iconfont.ttf?t=1671678182519') format('truetype');
+}
+
+.rectangle .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 50px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: width 0.2s;
+}
+.rectangle .iconfont:hover{
+    transform: scale(0.8);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -23,30 +42,6 @@
     justify-content: space-between;
 }
 
-.icon-2501caidan {
-    font-size: 36px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    transition: width 0.2s;
-}
-
-.icon-2501caidan:hover {
-    font-size: 24px;
-}
-
-.icon-search1 {
-    font-size: 36px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    transition: width 0.2s;
-}
-
-.icon-search1:hover {
-    font-size: 24px;
-}
-
 .camera {
     width: 200px;
     height: 200px;
@@ -56,6 +51,7 @@
 .camera:hover{
    transform: scale(0.8);
 }
+
 .round {
     position: absolute;
     width: 160px;
@@ -66,19 +62,16 @@
     border-color: #fff;
         transition: width 1s;
 }
-
-.icon-zhaoxiangji {
+.camera .iconfont{
     font-size: 120px;
     padding: 20px 40px;
     width: 120px;
     height: 120px;
     line-height: 180px;
     color: #fff;
-        transition: width 1s;
 }
-
 .tortoise {
-    background-image: url(photo/乌龟.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png);
     width: 100%;
     height: 880px;
 }
@@ -134,7 +127,7 @@
     text-align: center;
     line-height: 800px;
     color: #fff;
-    background-image: url(photo/火烈鸟1.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png);
     transition: all 0.6s;
 }
 
@@ -148,7 +141,7 @@
     text-align: center;
     line-height: 800px;
     color: #fff;
-    background-image: url(photo/火烈鸟2.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png);
     transition: all 0.6s;
 }
 .flamingo_2:hover {
@@ -161,7 +154,7 @@
     text-align: center;
     line-height: 800px;
     color: #fff;
-    background-image: url(photo/火烈鸟3.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png);
     transition: all 0.6s;
 }
 .flamingo_3:hover {
@@ -204,12 +197,16 @@
     text-align: center;
     line-height: 70px;
     background-color: #2a3f17;
+    transition: all .6s;
 }
-
+.sign:hover{
+    color: #2a3f17;
+    background-color: transparent
+}
 .ph_deer {
     width: 1920px;
     height: 760px;
-    background-image: url(photo/鹿.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/%E9%B9%BF.png);
 }
 
 .Difference {
@@ -294,7 +291,7 @@
 .PH_horse {
     width: 260px;
     height: 260px;
-    background-image: url(photo/Horse.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/Horse.png);
 }
 
 .Horse {
@@ -319,7 +316,7 @@
 .PH_Kangaroo {
     width: 260px;
     height: 260px;
-    background-image: url(photo/Kangaroo.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/kangaroo.png);
 }
 
 .Kangaroo {
@@ -334,7 +331,7 @@
 .PH_Lion {
     width: 260px;
     height: 260px;
-    background-image: url(photo/Lion.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/Lion.png);
 }
 
 .Lion {
@@ -349,7 +346,7 @@
 .PH_Hummingbird {
     width: 260px;
     height: 260px;
-    background-image: url(photo/Hummingbird.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/Hummingbird.png);
 }
 
 .Hummingbird {
@@ -401,7 +398,7 @@
 .PH_squirrel {
     width: 700px;
     height: 1020px;
-    background-image: url(photo/松鼠.png);
+    background-image: url(https://yedebucket.oss-cn-hangzhou.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png);
     float: left;
 
 }
@@ -440,48 +437,28 @@
     height: 680px;
     margin-left: 100px;
 }
-
-.icon-zifu-num {
+.box_6{
     width: 700px;
     height: 170px;
+    display: flex;
+    transition: all 0.6s;
+}
+.box_6 .iconfont{
     font-size: 56px;
     margin-top: 50px;
     color: #2a3f17;
-    transition: all 0.6s;
 }
-.icon-zifu-num:hover{
+.word_4{
+    font-size: 20px;
+    color: #2a3f17;
+    height: 170px;
+    line-height: 170px;
+}
+
+.box_6:hover{
     transform: translate(50px,0);
 }
-.icon-zifu-num1 {
-    width: 700px;
-    height: 170px;
-    font-size: 56px;
-    color: #2a3f17;
-    transition: all 0.6s;
-}
-.icon-zifu-num1:hover {
-    transform: translate(50px, 0);
-}
-.icon-zifu-num2 {
-    width: 700px;
-    height: 170px;
-    font-size: 56px;
-    color: #2a3f17;
-    transition: all 0.6s;
-}
-.icon-zifu-num2:hover {
-    transform: translate(50px, 0);
-}
-.icon-zifu-num3 {
-    width: 700px;
-    height: 170px;
-    font-size: 56px;
-    color: #2a3f17;
-    transition: all 0.6s;
-}
-.icon-zifu-num3:hover {
-    transform: translate(50px, 0);
-}
+
 .base {
     width: 1920px;
     height: 462px;
