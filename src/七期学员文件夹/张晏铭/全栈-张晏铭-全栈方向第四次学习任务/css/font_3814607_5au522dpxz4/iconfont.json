@@ -1,0 +1,30 @@
+{
+  "id": "3814607",
+  "name": "全栈四周所用",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18170118",
+      "name": "相机,截图,截屏,拍照",
+      "font_class": "camera-full",
+      "unicode": "e967",
+      "unicode_decimal": 59751
+    },
+    {
+      "icon_id": "5387850",
+      "name": "菜单_o",
+      "font_class": "caidan_o",
+      "unicode": "eb71",
+      "unicode_decimal": 60273
+    },
+    {
+      "icon_id": "5439968",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    }
+  ]
+}
