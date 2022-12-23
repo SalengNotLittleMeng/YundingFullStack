@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(248, 248, 248);
+}
+.firstLocation {
+    height: 1444px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_1.png") no-repeat;
+    background-size: 100% 929px;
+}
+.firstLocation_overlay1{
+    height: 49px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+.firstLocation_image{
+    height: 180px;
+    width: 180px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_11.png");
+    background-size: 100% 100%;
+    transition: 0.5s;
+}
+.firstLocation_image:hover{
+    height: 160px;
+    width: 160px;
+}
+.firstLocation_icon_circle{
+    width: 151px;
+    height: 151px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.firstLocation_overlay2{
+    height: 70px;
+    margin-top: 225px;
+    font-size: 65px;
+    text-align: center;
+    color: rgb( 42, 63, 23);
+}
+.firstLocation_overlay3{
+    height: 91px;
+    margin-top: 23px;
+    margin-bottom: 135px;
+    display: flex;
+    justify-content: center;
+}
+.firstLocation_overlay3_word{
+    height: 225px;
+    width: 850px;
+    font-size: 23px;
+    text-align: left;
+    color: rgb(42, 63, 23);
+}
+.firstLocation_overlay4{
+    height: 72px;
+    margin-bottom: 106px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstLocation_overlay4_box0{
+    height: 72px;
+    width: 850px;
+}
+.firstLocation_overlay4_box{
+    height: 57px;
+    width: 262px;
+    padding-top: 15px;
+    background-color: rgb( 42, 63, 23);
+    background-size: 262px 72px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    transition: 1s;
+}
+.firstLocation_overlay4_box:hover{
+    color: black;
+    border-radius: 50%;
+}
+.firstLocation_overlay5{
+    height: 499px;
+    display: flex;
+    justify-content: center;
+}
+.firstLocation_overlay5_image1{
+    width: 333px;
+    height: 499px;
+    margin-right: 28px;
+    margin-left: 28px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_2.png");
+    background-size: 100% 100%;
+    transition: 1s;
+}
+#image2{
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_3.png");
+}
+#image3{
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_4.png");
+}
+.firstLocation_overlay5_image1:hover{
+    transform:translate(0,-40px);
+}
+.firstLocation_overlay5_word1{
+    position: relative;
+    top: 356px;
+    left: 202px;
+    font-size: 45px;
+    color: white;
+}
+#word2{
+    left:176px;
+}
+#word3{
+    left: 146px;
+}
+.secondLocation{
+    height: 840px;
+    margin-top: 83px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_5.png") no-repeat;
+    background-size: 100% 760px;
+    display: flex;
+    justify-content: center;
+}
+.secondLocation_overlay{
+    width: 946px;
+    height: 541px;
+    background: rgb( 224, 223, 223);
+    position: relative;
+    bottom: 83px;
+    transition: 1s;
+}
+.secondLocation_overlay:hover{
+    transform: translate(0, -40px);
+}
+.secondLocation_overlay_word{
+    width: 800px;
+    margin: 73px 73px 96px 73px;
+    height: 230px;
+    margin-top: 78px;
+    color: rgb( 42, 63, 23);
+    font-size: 19px;
+    line-height: 30px;
+}
+.secondLocation_overlay_box1{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.secondLocation_overlay_box2{
+    padding-top: 13px;
+    height: 57px;
+    width: 197px;
+    background: rgb( 42, 63, 23);
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+.secondLocation_overlay_box2:hover{
+    height: 42px;
+    width: 177px;
+    font-size: 23px;
+}
+.thirdLocation{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.thirdLocation_temp{
+    height: 1px;
+    display: flex;
+    justify-content: center;
+}
+.thirdLocation_block0{
+    height: 50px;
+    width: 220px;
+}
+.thirdLocation_box1{
+    color: rgb(42, 63, 23);
+    height: 45px;
+    width: 220px;
+    padding-bottom: 5px;
+    font-size: 40px;
+    text-align: center;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid rgb(42, 63, 23);
+    border-left: 3px solid rgb(42, 63, 23);
+    border-right: 3px solid transparent;
+}
+.thirdLocation_box2{
+    height: 50px;
+    width: 220px;
+    background-color: transparent;
+    border-bottom: 3px solid rgb(248, 248, 248);
+    border-left: 3px solid rgb(248, 248, 248);
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: relative;
+    bottom: 82px;
+    right: 3px;
+    color: transparent;
+    font-size: 40px;
+    text-align: center;
+}
+.thirdLocation_box2:hover{
+    animation: shrink 1s linear 1s 1 forwards;
+}
+@keyframes shrink{
+    0% {
+        width: 220px;
+        height: 50px;
+    }
+    80% {
+        width: 0;
+        height: 50px;
+    }
+    99.9999% {
+        width: 0;
+        height: 0;
+        border-left: 3px solid rgb(248, 248, 248);
+        border-bottom: 3px solid rgb(248, 248, 248);
+    }
+    100% {border: 3px solid transparent;}
+}
+.thirdLocation_box3{
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    right: 3px;
+    bottom: 3px;
+}
+.thirdLocation_box3:hover{
+    animation: enlarge 1s linear 1 forwards;
+}
+@keyframes enlarge{
+    0% {
+        width: 0;
+        height: 0;
+        border-top: 3px solid transparent;
+    }
+    0.001% {
+        width: 0;
+        height: 0;
+        border-top: 3px solid rgb(42, 63, 23);}
+    79.999% {
+        width: 220px;
+        height: 0;
+        border-top: 3px solid rgb(42, 63, 23);
+        border-right: 3px solid transparent;
+    }
+    80% {
+        width: 220px;
+        height: 0;
+        border-top: 3px solid rgb(42, 63, 23);
+        border-right: 3px solid rgb(42, 63, 23);
+    }
+    100% {
+        width: 220px;
+        height: 50px;
+        border-top: 3px solid rgb(42, 63, 23);
+        border-right: 3px solid rgb(42, 63, 23);
+    }
+}
+.fourthLocation{
+    height: 414px;
+    margin-bottom: 119px;
+    display: flex;
+    justify-content: center;
+}
+.fourthLocation_box{
+    height: 414px;
+    width: 265px;
+    margin: 20px 16px 0 16px;
+    transition: 1s;
+}
+.fourthLocation_box:hover{
+    transform: translate(0, -35px);
+}
+.fourthLocation_box_image1{
+    width: 265px;
+    height: 261px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_6.png") no-repeat;
+    background-size: 100% 261px;
+}
+.fourthLocation_box_image2{
+    width: 265px;
+    height: 261px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_7.png") no-repeat;
+    background-size: 100% 261px;
+}
+.fourthLocation_box_image3{
+    width: 265px;
+    height: 261px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_8.png") no-repeat;
+    background-size: 100% 261px;
+}
+.fourthLocation_box_image4{
+    width: 265px;
+    height: 261px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_9.png") no-repeat;
+    background-size: 100% 261px;
+}
+.fourthLocation_box_word1{
+    height: 27px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    font-size: 27px;
+    color: rgb( 42, 63, 23);
+    text-align: center;
+    background: rgb( 224, 223, 223);
+}
+.fourthLocation_box_word2{
+    height: 25px;
+    padding-bottom: 49px;
+    font-size: 21px;
+    color: rgb( 42, 63, 23);
+    text-align: center;
+    text-decoration: underline rgb( 42, 63, 23);
+    background: rgb(224, 223, 223);
+}
+.fifthLocation{
+    height: 69px;
+    margin-bottom: 86px;
+    display: flex;
+    justify-content: center;
+}
+.fifthLocation_box{
+    height: 25px;
+    padding: 15px 90px 22px 90px;
+    font-size: 27px;
+    color: rgb( 42, 63, 23);
+    border: 3px solid rgb( 42, 63, 23);
+    text-align: center;
+    transition: 1s;
+}
+.fifthLocation_box:hover{
+    background-color: rgb( 42, 63, 23);
+    color: white;
+}
+.sixthLocation{
+    height: 1082px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+.sixthLocation_box_left{
+    height: 1020px;
+    width: 701px;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/Task_The%20four%20week_10.png");
+    background-size: 100% 100%;
+    margin-right: 62px;
+}
+.sixthLocation_box_right{
+    height: 1024px;
+    width: 630px;
+    margin-left: 62px;
+    padding-top: 87px;
+    padding-bottom: 101px;
+}
+.sixthLocation_box_right_word1{
+    height: 37px;
+    color: rgb( 42, 63, 23);
+    font-size: 40px;
+    transition: 1s;
+}
+.sixthLocation_box_right_word1:hover{
+    transform: translate(0,-40px);
+}
+.sixthLocation_box_right_word2{
+    margin-top: 41px;
+    height: 115px;
+    font-size: 24px;
+    line-height: 40px;
+    transition: 1s;
+}
+.sixthLocation_box_right_word2:hover{
+    transform: translate(30px,0);
+    font-size: 28px;
+    height: 135px;
+}
+.sixthLocation_box_right_block{
+    height: 162px;
+    width: 530px;
+    display: flex;
+    transition: 1s;
+}
+.sixthLocation_box_right_block:hover{
+    transform: translate(60px,0);
+}
+.sixthLocation_box_right_circle{
+    width: 76px;
+    height: 76px;
+    margin-top: 82px;
+    border-radius: 50% 50%;
+    border: 2px solid rgb( 42, 63, 23);
+    font-size: 60px;
+    color: rgb( 42, 63, 23);
+    text-align: center;
+}
+.sixthLocation_box_right_word3{
+    height: 27px;
+    margin: 115px 0 20px 30px;
+    font-size: 24px;
+    color: rgb( 42, 63, 23);
+}
+.seventhLocation{
+    height: 457px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.seventhLocation_box_left{
+    margin: 173px 57px 161px 0;
+    width: 247px;
+    height: 123px;
+    font-size: 35px;
+    color: rgb(42, 63, 23);
+    line-height: 78px;
+}
+.seventhLocation_box_center{
+    height: 123px;
+    margin: 183px 320px 151px 0;
+}
+.seventhLocation_box_center_word1{
+    height: 26px;
+    font-size: 23px;
+    color: rgb( 77, 91, 65);
+    margin: 17px 0 18px 0;
+}
+.seventhLocation_box_center_word2{
+    height: 21px;
+    font-size: 18px;
+    color: rgb(105, 116, 97);
+    line-height: 30px;
+}
+.seventhLocation_box_right{
+    height: 63px;
+    width: 361px;
+    margin-top: 203px;
+    font-size: 36px;
+    padding-top: 10px;
+    color: white;
+    background-color: rgb( 148, 159, 139);
+    text-align: center;
+    transition: 1s;
+}
+.seventhLocation_box_right:hover{
+    transform: translate(0,-30px);
+    background-color: white;
+    color: black;
+}

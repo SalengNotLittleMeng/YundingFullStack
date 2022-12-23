@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 928px;
+    background-image: url(https://liangjia.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png);
+    background-size: 100% 100%;
+}
+.header_top{
+    width: 100%;
+    height: 49px;
+    background-color: white;
+}
+.header_container{
+    position: relative;
+    height: 879px;
+    width: 1200px;
+    margin: auto;
+}
+.header_container #icon_one{
+    position: absolute;
+    top: -31px;
+    left: -220px;
+    width: 23px;
+    height: 15px;
+}
+.header_container #icon_one:hover img{
+    transform: scale(0.7);
+}
+.header_container #icon_two{
+    position: absolute;
+    top:-31px;
+    right: -220px;
+    width: 23px;
+    height: 15px;
+}
+.header_container #icon_two:hover img{
+    transform: scale(0.7);
+}
+.header_container .header_camera{
+    position: absolute;
+    top: -49px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translateX(-50%);
+}
+.header_container .header_camera img{
+    transition: transform 0.6s;
+}
+.header_container .header_camera img:hover{
+    transform: scale(0.8);
+}
+/* .header_camera_image{
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: width 0.6s,height 0.6s;
+    background-image: url(https://liangjia.oss-cn-beijing.aliyuncs.com/%E7%9B%B8%E6%9C%BA.png);    
+    background-position:center center;
+    background-repeat:no-repeat;
+} */
+.header_EXPLORE{
+    position: absolute;
+    top: 556px;
+    left: 56px;
+    width: 262px;
+    height: 72px;
+    background-color: #2a3f17;
+    font-size: 30px;
+    line-height: 72px;
+    text-align: center;
+    color: white;
+}
+.header_words{
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    width: 1100px;
+    height: 200px;
+    transform: translateX(-50%);
+}
+.header_words h2{
+    width: 635px;
+    height: 65px;
+    margin-left: 178px;
+    text-align: center;
+    color: #2a3f17;
+    font-size: 55px;
+    font-weight: 400;
+    font-family: Cambria;
+    line-height: 65px;
+}
+.header_words p{
+    position: absolute;
+    top: 86px;
+    left: 70px;
+    font-size: 27px;
+    color: #2a3f17;
+}
+.header_pictures{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 731px;
+    left: 50%;
+    width: 1110px;
+    height: 500px;
+    transform: translateX(-50%);
+}
+.header_picture p{
+    position: absolute;
+    top: 360px;
+    left: 200px;
+    font-size: 40px;
+    color: white;
+    font-family: Cambria;
+}
+.header_picture{
+    position: relative;
+    width: 333px;
+    height: 100%;
+    background-color: white;
+    transition: transform 0.8s;
+}
+.header_picture:hover{
+    transform: translateY(-50px);
+}
+.content_one{
+    width: 100%;
+    height: 598px;
+    background-color: white;
+}
+.content_two{
+    position: relative;
+    width: 100%;
+    height: 760px;
+    background-image: url(https://liangjia.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png);
+    background-size: 100% 100%;
+}
+.content_two_article{
+    position: absolute;
+    top: -83px;
+    left: 50%;
+    width: 946px;
+    height: 541px;
+    margin-left: -473px;
+    background-color: #e0dfdf;
+    transition: transform 1s;
+}
+.content_two_article:hover{
+    transform: translateY(-70px);
+}
+.content_two_article p{
+    position: absolute;
+    top: 73px;
+    left: 50%;
+    width: 800px;
+    height: 228px;
+    color: #2a3f17;
+    font-size: 20px;
+    line-height: 30px;
+    transform: translateX(-50%);
+}
+.content_two_article .SIGN_UP{
+    position: absolute;
+    bottom: 63px;
+    left: 50%;
+    width: 179px;
+    height: 70px;
+    background-color: #2a3f17;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    text-decoration: none;
+    transform: translateX(-50%);
+    transition: width 0.6s,height 0.6s,font-size 0.6s,line-height 0.6s;
+}
+.content_two_article .SIGN_UP:hover{
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+}
+.content_three{
+    position: relative;
+    width: 100%;
+    height: 572px;
+    background-color: #f8f8f8;
+}
+.content_three .Difference{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50%;
+    width: 260px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    transform: translateX(-50%);
+} 
+.content_three .Difference button {
+    position: relative;
+    outline: none;
+    background: none;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 40px;
+    color: #2a3f17;
+    font-weight: 400;
+    box-sizing: border-box; 
+}
+/* 动画实现边框效果 */
+ /* @keyframes Difference{
+    0%{
+        border: 4px solid #f8f8f8;
+    }
+    25%{
+        border: 4px solid #f8f8f8;
+        border-top: 4px solid #2a3f17;
+
+    }
+    50%{
+        border: 4px solid #f8f8f8;
+        border-top: 4px solid #2a3f17;
+        border-right: 4px solid #2a3f17;
+    }
+    75%{
+        border: 4px solid #f8f8f8;
+        border-top: 4px solid #2a3f17;
+        border-right: 4px solid #2a3f17;
+        border-bottom: 4px solid #2a3f17;
+    }
+    100%{
+        border: 4px solid #2a3f17;
+    }
+}   */
+/* .Difference button:hover{
+    animation: Difference 2s normal;
+}   */
+/* 利用过渡实现边框效果 */
+.content_three .Difference button::before,
+.content_three .Difference button::after{
+    position: absolute;
+    border: 4px solid transparent;
+    width: 0;
+    height: 0;
+    content: "";
+    box-sizing: inherit; 
+}
+
+.content_three .Difference button::after {
+    bottom: 0;
+    right: 0;
+}
+
+.content_three .Difference button::before {
+    top: 0;
+    left: 0;
+} 
+
+.content_three .Difference button:hover::before,
+.content_three .Difference button:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.content_three .Difference button:hover::before {
+    border-top-color: #2a3f17;
+    border-right-color: #2a3f17;
+    transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+}
+
+.content_three .Difference button:hover::after {
+    border-bottom-color: #2a3f17;
+    border-left-color: #2a3f17;
+    transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
+}     
+.content_three_pictures{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 158px;
+    left: 50%;
+    width: 1146px;
+    height: 412px;
+    transform: translateX(-50%);
+}
+.content_three_picture{
+    position: relative;
+    width: 264px;
+    height: 100%;
+    background-color: #e0dfdf;
+    transition: transform 0.6s;
+}
+.content_three_picture:hover{
+    transform: translateY(-30px);
+}
+.content_three_picture h3{
+    position: absolute;
+    top: 295px;
+    left: 50%;
+    color: #2a3f17;
+    font-size: 30px;
+    font-weight: 400;
+    transform: translateX(-50%);
+}
+.content_three_picture a{
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    font-size: 22px;
+    color: #2a3f17;
+}
+.content_four{
+    width: 100%;
+    height: 1354px;
+    background-color: #f8f8f8;
+}
+.content_four_container{
+    position: relative;
+    width: 1400px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content_four_container .Know_more{
+    position: absolute;
+    top: 119px;
+    left: 50%;
+    width: 359px;
+    height: 69px;
+    border: 4px solid #2a3f17;
+    color: #2a3f17;
+    font-size: 30px;
+    line-height: 69px;
+    text-align: center;
+    text-decoration: none;
+    transform: translateX(-50%);
+    transition: background-color 1.5s,color 1.5s;
+}
+.content_four_container .Know_more:hover{
+    background-color: #2a3f17;
+    color: white;
+} 
+.content_four_container img{
+    position: absolute;
+    top: 274px;
+    left: 0;
+}
+.content_four_container h4{
+    position: absolute;
+    top: 362px;
+    left: 828px;
+    font-size: 40px;
+    color: #2a3f17;
+    font-weight: 400;
+    transition: transform 0.6s;
+}
+.content_four_container h4:hover{
+    transform: translateY(-40px);
+}
+.content_four_container p{
+    position: absolute;
+    top: 433px;
+    left: 828px;
+    font-size: 22px;
+    color: #2a3f17;
+    line-height: 35px;
+    transition: 0.5s;
+}
+.content_four_container p:hover{
+    font-size: 26px;
+}
+.content_four_sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 630px;
+    left: 828px;
+    width: 360px;
+    height: 560px;
+}
+.content_four_sidebar .sidebar{
+    position: relative;
+    width: 100%;
+    height: 72px;
+    transition: transform 1.2s;
+}
+.content_four_sidebar .sidebar_serial_number{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border:2px solid #2a3f17;
+    color: #2a3f17;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+}
+.content_four_sidebar .sidebar p{
+    position: absolute;
+    top: 20px;
+    left: 97px;
+    font-size: 25px;
+    color: #2a3f17;
+}
+.content_four_sidebar .sidebar:hover{
+    transform: translateX(90px);
+}
+.footer{
+    width: 100%;
+    height: 460px;
+    border-top: 2px solid #000000;
+    background-color: white;
+}
+.footer_container{
+    position: relative;
+    width: 1260px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footer_container .Big_World{
+    position: absolute;
+    top: 193px;
+    right: 0;
+    width: 361px;
+    height: 73px;
+    background-color: #949f8b;
+    text-align: center;
+    line-height: 73px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    transition: transform 1.5s,color 1.5s,background-color 1.5s;
+}
+.footer_container .Big_World:hover{
+    color: #949f8b;
+    background-color: white;
+    transform: translateY(-40px);
+}
+.footer_container p{
+    font-size: 40px;
+    color: #2a3f17;
+}
+.footer_container #IN_THE_WILD{
+    position: absolute;
+    top: 174px;
+    left: 117px;
+}
+.footer_container #IN_THE_SEA{
+    position: absolute;
+    top: 266px;
+    left: 117px;
+}
+.footer_container #MORE{
+    position: absolute;
+    top: 181px;
+    left: 413px;
+    font-size: 30px;
+    color: #949f8b;
+}
+.footer_container #We_create_art{
+    position: absolute;
+    top: 233px;
+    left: 415px;
+    font-size: 20px;
+    color: #949f8b;
+}
+.footer_container #We_create_life{
+    position: absolute;
+    top: 273px;
+    left: 415px;
+    font-size: 20px;
+    color: #949f8b;
+}
