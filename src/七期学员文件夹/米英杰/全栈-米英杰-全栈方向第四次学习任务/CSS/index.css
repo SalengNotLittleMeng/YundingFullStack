@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: auto;
+    width: 1200px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-caidan{
+    width: 40px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 7px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    transition: background 1s,color 0.5s;
+}
+
+.icon-caidan:hover{
+    height: 25px;
+    background: #949f8b;
+    color: white;
+    opacity: 0.6;
+}
+
+.camera{
+    z-index: 2;
+    height: 140px;
+    width: 140px;
+    background-color: #81c04b;
+    transition: border-radius 0.8s;
+}
+
+.camera .circle{
+    margin: auto;
+    margin-top: 12px;
+    height: 110px;
+    width: 110px;
+    border: solid 3px white;
+    border-radius: 50%;
+    transition: border-radius 0.5s,border-color 0.5s;
+}
+
+.icon-zhaoxiangji{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    font-size: 90px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+
+.camera:hover{
+    border-radius: 50%;
+}
+
+.camera:hover .circle {
+    border-radius: 20%;
+    border-color: black;
+}
+
+.camera:hover .icon-zhaoxiangji{
+    color: grey;
+}
+
+.icon-sousuo{
+    width: 40px;
+    height: 25px;
+    margin-right: 20px;
+    margin-top: 7px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: background 1s, color 0.5s;
+}
+
+.icon-sousuo:hover{
+    background: #949f8b;
+    color: white;
+    opacity: 0.6;
+}
+
+.banner{
+    position: relative;
+    bottom: 100px;
+    height: 880px;
+    background: url("https://xirealm.oss-cn-beijing.aliyuncs.com/xi/乌龟.png" ) no-repeat;
+    background-size: 100%;
+}
+
+.banner h1{
+    padding-top: 220px;
+    font-size: 60px;
+    font-weight: normal;
+    font-family: "Cambria";
+    color: #2a3f17;
+    text-align: center;
+}
+
+.banner p{
+    margin: auto;
+    margin-top: 22px;
+    width: 900px;
+    font-size: 24px;
+    font-family: "微软雅黑";
+    color: #2a3f17;
+}
+
+.explorebox{
+    width: 1000px;
+}
+
+.explorebox .picture{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.explore{
+    margin-top: 100px;
+    background: #2a3f17;
+    width: 200px;
+    height: 60px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 1px;
+    transition: background 0.5s,color 0.5s;
+}
+
+.explore:hover{
+    background: #949f8b;
+    color: black;
+}
+
+.explorebox img{
+    margin-top: 100px;
+    height: 400px;
+}
+
+.explorebox .up{
+    position: relative;
+    transition: transform 1s ease;
+}
+
+.explorebox .up:hover{
+   transform: translateY(-50px);
+}
+
+.explorebox .word1 {
+    position: absolute;
+    bottom: 70px;
+    left: 180px;
+    color: white;
+    font-family: "Cambria";
+    font-size: 40px;
+}
+
+.explorebox .word2 {
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+    color: white;
+    font-family: "Cambria";
+    font-size: 40px;
+}
+
+.explorebox .word3 {
+    position: absolute;
+    bottom: 70px;
+    left: 130px;
+    color: white;
+    font-family: "Cambria";
+    font-size: 40px;
+}
+
+.bg_signUp{
+    margin-top: 230px;
+    margin-bottom: 50px;
+    background: url("https://xirealm.oss-cn-beijing.aliyuncs.com/xi/鹿.png") no-repeat;
+    height: 700px;
+    background-size: 100%;
+}
+
+.signUpBox{
+    position: relative;
+    padding-bottom: 50px;
+    bottom: 70px;
+    background: #e0dfdf;
+    width: 850px;
+}
+
+.signUpBox p{
+    margin: auto;
+    padding-top: 70px;
+    width: 720px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: #2a3f17;
+}
+
+.signUp{
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    line-height: 60px;
+    background: #2a3f17;
+    color: white;
+    font-size: 24px;
+    transition: background 0.5s, color 0.5s;
+}
+
+.signUp:hover{
+    background: #949f8b;
+    color: black;
+}
+
+.difference{
+    width: 1000px;
+}
+
+.difference h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    color: #2a3f17;
+}
+.difference ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.difference li{
+    height: 310px;
+    list-style: none;
+    background: #e0dfdf;
+    transition: transform 1s ease;
+}
+
+.difference li:hover{
+    transform: translateY(-10px);
+}
+
+.difference img{
+    height: 200px;
+}
+
+.difference div{
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #2a3f17;
+    line-height: 50px;
+}
+
+.difference a{
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    width:140px;
+    text-align: center;
+    font-size: 15px;
+    color: #2a3f17;
+    padding-bottom: 1px;
+    border-bottom: solid 1.5px #2a3f17;
+}
+
+.difference a:hover{
+    color: black;
+}
+
+.morebox h1{
+    height: 60px;
+    width: 280px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 60px;
+    border: solid 2px #2a3f17;
+    color: #2a3f17;
+    transition: background 0.5s;
+}
+
+.morebox h1:hover{
+    background: #949f8b;
+    color: black;
+}
+
+.moreBox{
+    display: flex;
+    margin-top: 60px;
+}
+
+.moreBox img{
+    width: 600px;
+}
+
+.moreBox ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    width: 500px;
+    height: 900px;
+    color: #2a3f17;
+}
+
+.morebox ul h2{
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.moreBox p 
+{
+    font-size: 22px;
+    transition: text-decoration 2s ease;
+}
+    
+.moreBox p:hover {
+    
+}
+
+.moreBox li{
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    transition: transform 1s ease;
+}
+
+.moreBox li:hover{
+    transform: translateX(80px);
+}
+
+.moreBox .number{
+    height: 50px;
+    width: 50px;
+    border: solid 2px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+}
+
+.moreBox a {
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 22px;
+    margin-left: 20px;
+    color: #2a3f17;
+}
+
+.end{
+    margin-top: 60px;
+    border-top: solid 2px black;
+}
+
+.endbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
+
+.endbox .box1{
+    margin-left: 80px;
+    font-size: 40px;
+    color: #2a3f17;
+    line-height: 100px;
+}
+
+.endbox .box2{
+    margin-right: 190px;
+    font-size: 24px;
+    color: #2a3f17;
+    opacity: 0.6;
+    line-height: 48px;
+}
+
+.endbox .box2 .more{
+    font-size:30px;
+}
+
+.endbox .box3{
+    height: 70px;
+    width: 360px;
+    text-decoration: none;
+    background: #949f8b;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 70px;
+    animation: end 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes end{
+    50%{
+        border-radius: 40px;
+        color: black;
+    }
+    100%{
+        border-radius: 0;
+        background: #2a3f17;
+    }
+}

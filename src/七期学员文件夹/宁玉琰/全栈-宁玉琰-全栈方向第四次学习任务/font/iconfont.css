@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3834934 */
+  src: url('iconfont.woff2?t=1671610836292') format('woff2'),
+       url('iconfont.woff?t=1671610836292') format('woff'),
+       url('iconfont.ttf?t=1671610836292') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-goutongye_santiaogang_tiaozhuanxuanzehaizi:before {
+  content: "\e638";
+}
+
+.icon-fangdajing:before {
+  content: "\e662";
+}
+

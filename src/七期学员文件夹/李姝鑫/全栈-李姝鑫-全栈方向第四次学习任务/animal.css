@@ -1,0 +1,575 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.board{
+    height: 4674px;
+    background-color: #f8f8f8;
+    margin: 0 auto;
+}
+
+.backbox1{
+    width: auto;
+    height: 25px;
+    position: relative;
+    background-color: white;
+}
+
+.pole {
+    width: 15px;
+    height: 10px;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E4%B8%89%E6%9D%A0.png) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    top: 8px;
+    left: 5px;
+}
+.pole:hover{
+    width: 12px;
+    height: 8px;
+}
+
+.search {
+    width: 15px;
+    height: 15px;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E6%90%9C%E7%B4%A2%E6%94%BE%E5%A4%A7%E9%95%9C.png) center center no-repeat;
+    position: absolute;
+    background-size: cover;
+    right: 0;
+    transition: 0.5s;
+    top: 5px;
+    right: 5px;
+}
+
+.search:hover {
+    width: 10px;
+    height: 10px;
+    top: 7px;
+    right: 7px;
+}
+
+.camera{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left:720px ;
+    top: 0px;
+    z-index: 2;
+    background-image: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E7%9B%B8%E6%9C%BA.png);
+    transition: 1s;
+    background-size: cover;
+}
+.camera:hover{
+    width: 100px;
+    height: 100px;
+    top: 15px;
+    left: 750px;
+}
+
+.backbox2{
+    width: auto;
+    height: 880px;
+    position: relative;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png);
+    background-size: cover;
+}
+
+.text1{
+    width: 600px;
+    height: 90px;
+    position: absolute;
+    top: 275px;
+    left: 480px;
+    color: #2a3f17;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 90px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.text2{
+    width: 885px;
+    height: 120px;
+    position: absolute;
+    top: 370px;
+    left: 365px;
+    color: #2a3f17;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.backbox2_button{
+    width: 265px;
+    height: 70px;
+    background-color: #2a3f17;
+    position: absolute;
+    left: 365px;
+    top: 600px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 75px;
+    text-align: center;
+}
+
+.backbox3{
+    width: auto;
+    height: 595px;
+    position: relative;
+}
+
+.bird {
+    width: 233px;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    transition: 1s;
+}
+
+.bird1 {
+    left: 365px;
+    top: -90px;
+    background-image: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png);
+    background-size: cover;
+}
+
+.bird:hover{
+    top: -175px;
+}
+
+.Fly{
+    left: 150px;
+}
+
+.bird2 {
+    left: 650px;
+    top: -90px;
+    background-image: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png);
+    background-size: cover;
+}
+
+.Love{
+    left: 130px;;
+}
+
+.bird3 {
+    right: 350px;
+    top: -90px;
+    background-image: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png);
+    background-size: cover;
+}
+
+.Stand{
+    right: 15px;
+}
+
+.action{
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    top: 300px;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: monospace;
+
+}
+
+.backbox4{
+    width: auto;
+    height: 755px;
+    position: relative;
+    background-image: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png);
+    background-size: cover;
+}
+
+.backbox4_box{
+    width: 940px;
+    height: 540px;
+    background-color: #e0dfdf;
+    position: relative;
+    top: -75px;
+    left: 295px;
+    transition: 0.8s;
+}
+
+.backbox4_box:hover{
+    top: -125px;
+}
+
+.backbox4_box_text{
+    width: 800px;
+    height: 240px;
+    position: absolute;
+    top: 75px;
+    left: 70px;
+    font-size: 20px;
+    color: #4f5d44;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.backbox4_box_button{
+    width: 195px;
+    height: 70px;
+    background-color: #2a3f17;
+    position: absolute;
+    bottom: 60px;
+    left: 373px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 75px;
+    text-align: center;
+    transition: 1s;
+}
+
+.backbox4_box_button:hover{
+    width: 180px;
+    height: 50px;
+    bottom: 70px;
+    left: 380px;
+    line-height: 50px;
+    font-size: 35px;
+}
+
+.backbox5{
+    width: auto;
+    height: 1920px;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+.backbox5_title{
+    width: 245px;
+    height: 70px;
+    position: absolute;
+    top: 70px;
+    left: 650px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.backbox5_title:hover{
+        animation-name: backbox5_title;
+        animation-duration: 1s;
+        animation-iteration-count:10;
+}
+@keyframes backbox5_title {
+    0% {
+        border-top: 3px solid #2a3f17;
+    }
+
+    25% {
+        border-top: 3px solid #2a3f17;
+        border-right: 3px solid #2a3f17;
+    }
+
+    50% {
+        border-top: 3px solid #2a3f17;
+        border-right: 3px solid #2a3f17;
+        border-bottom: 3px solid #2a3f17;
+    }
+
+    75% {
+        border-top: 3px solid #2a3f17;
+        border-right: 3px solid #2a3f17;
+        border-bottom: 3px solid #2a3f17;
+        border-left: 3px solid #2a3f17;
+    }
+}
+
+.photos_{
+    width: 245px;
+    height: 405px;
+    position: absolute;
+    transition: 0.8s;
+    top: 165px;
+}
+
+.photos_:hover{
+    top: 125px;
+}
+
+.photos_1{
+    left: 258px;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E9%A9%AC.png) no-repeat;
+    background-color: #e0dfdf;
+}
+
+.photos_2 {
+    left: 523px;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E8%A2%8B%E9%BC%A0.png) no-repeat;
+    background-color: #e0dfdf;;
+}
+
+.photos_3 {
+    left: 786px;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E7%8B%AE%E5%AD%90.png) no-repeat;
+    background-color: #e0dfdf;
+}
+
+.photos_4 {
+    right: 227px;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E5%B0%8F%E9%B8%9F.png) no-repeat;
+    background-color: #e0dfdf;
+}
+
+.texts_1{
+    width: 210px;
+    height: 40px;
+    top: 285px;
+    color: #2a3f17;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+}
+.texts1_1{
+    left: 90px;
+}
+
+.texts2_1{
+    left: 60px;
+}
+
+.texts3_1{
+    left: 100px;
+}
+
+.texts4_1{
+    left: 30px;
+}
+
+.texts_2{
+    width: 210px;
+    height: 33px;
+    position: absolute;
+    bottom: 32px;
+    left: 30px;
+    color: #2a3f17;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+    text-decoration: underline;
+}
+
+.backbox5_button{
+    width: 360px;
+    height: 70px;
+    background-color: #f8f8f8;
+    border: 2px solid #2a3f17;
+    position: absolute;
+    top: 690px;
+    left: 590px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 70px;
+    text-align: center;
+    transition: 1s;
+}
+.backbox5_button:hover{
+    background-color: #2a3f17;
+    color: white;
+}
+
+.squirrle{
+    width: 502px;
+    height: 730px;
+    position: absolute;
+    bottom: 200px;
+    left: 255px;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png) center center no-repeat;
+    background-size: cover;
+}
+
+.text_1{
+    width: 310px;
+    height: 80px;
+    position: absolute;
+    bottom: 850px;
+    left: 885px;
+    background-color: #f8f8f8;
+    color: #2a3f17;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    transition: 1s;
+}
+.text_1:hover{
+    bottom: 900px;
+}
+
+.text_2{
+    width: 535px;
+    height: 120px;
+    position: absolute;
+    bottom: 695px;
+    left: 885px;
+    background-color: #f8f8f8;
+    color: #2a3f17;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    transition: 1s;
+}
+
+.text_2:hover{
+
+    left: 950px;
+    font-size: 21px;
+}
+
+.text_{
+    width: 230px;
+    height: 60px;
+    position: absolute;
+    background-color: #f8f8f8;
+    left: 885px;
+    display: flex;
+    justify-content: space-between;
+    color: #2a3f17;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 57px;
+    transition: 1s;
+}
+
+.text_:hover{
+    left: 950px;
+}
+
+.text_3{
+    bottom: 610px;
+}
+
+.text_4{
+    bottom: 490px;
+}
+
+.text_5{
+    bottom: 370px;
+}
+
+.text_6{
+    bottom: 250px;
+    width: 280px;
+}
+
+.pho_{
+    width: 90px;
+    height: 100%;
+    background-color: pink;
+}
+.pho1{
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E6%A4%AD%E5%9C%864.png) center center no-repeat;
+    background-size: cover;
+}
+
+.pho2{
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E6%A4%AD%E5%9C%864%E6%8B%B7%E8%B4%9D.png) center center no-repeat;
+    background-size: cover;
+}
+
+.pho3{
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E6%A4%AD%E5%9C%864%E6%8B%B7%E8%B4%9D2.png) center center no-repeat;
+    background-size: cover;
+}
+
+.pho4{
+    width: 70px;
+    background: url(https://typorafirst.oss-cn-beijing.aliyuncs.com/%E6%A4%AD%E5%9C%864%E6%8B%B7%E8%B4%9D3.png) center center no-repeat;
+    background-size: cover;
+}
+
+.photext_{
+    width: 255px;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.line{
+    width: auto;
+    height: 2px;
+    background-color: black;
+}
+
+.backbox6{
+    width: auto;
+    height: 475px;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+.backbox6_text1{
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    top: 165px;
+    left: 300px;
+    color: #2a3f17;
+    font-size: 35px;
+    font-weight: 550;
+    line-height: 40px;
+}
+
+.backbox6_text2{
+    width: 220px;
+    height: 40px;
+    position: absolute;
+    bottom: 160px;
+    left: 300px;
+    color: #2a3f17;
+    font-size: 35px;
+    font-weight: 550;
+    line-height: 40px;
+}
+
+.backbox6_text3{
+    width: 90px;
+    height: 25px;
+    position: absolute;
+    top: 177px;
+    left: 595px;
+    color: #4d5b41;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.backbox6_text4{
+    width: 165px;
+    height: 65px;
+    position: absolute;
+    bottom: 165px;
+    left: 595px;
+    color: #77806f;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 32px;
+}
+
+.backbox6_button{
+    width: 290px;
+    height: 75px;
+    background-color: #949f8b;
+    position: absolute;
+    top: 190px;
+    right: 300px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 75px;
+    text-align: center;
+    transition: 1s;
+}
+
+.backbox6_button:hover{
+    top: 160px;
+    background-color: #f8f8f8;
+    color: #949f8b;
+}

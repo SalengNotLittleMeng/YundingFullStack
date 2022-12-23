@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('font/iconfont.woff2?t=1671020252452') format('woff2'),
+        url('font/iconfont.woff?t=1671020252452') format('woff'),
+        url('font/iconfont.ttf?t=1671020252452') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.page {
+    margin: 0 auto;
+    width: auto;
+    background: #f8f8f8;
+}
+
+.menu {
+    background-color: #fff;
+    height: 49px;
+}
+
+.menu .camera {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #81c04b;
+    z-index: 1;
+    transition: 1s;
+}
+
+.menu .camera:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.menu .camera .circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    width: 164px;
+    height: 164px;
+    border: 4px solid white;
+    border-radius: 50% 50%;
+}
+
+.menu .icon1 {
+    position: absolute;
+    top: 15px;
+    right: 26px;
+    font-size: 22px;
+    color: black;
+    transition: 1s;
+}
+
+.menu .icon2 {
+    position: absolute;
+    top: 15px;
+    left: 26px;
+    font-size: 22px;
+    color: black;
+    transition: 1s;
+}
+
+.menu .icon1:hover {
+    transform: scale(0.7, 0.7);
+}
+
+.menu .icon2:hover {
+    transform: scale(0.7, 0.7);
+}
+
+.menu .camera .icon3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 200px;
+    font-size: 114px;
+    color: white;
+}
+
+.header {
+    position: relative;
+    height: 1478px;
+    text-align: center;
+    color: #2a3f17;
+}
+
+.header .bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    height: 880px;
+    background: url("https://typora-image-mrz.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.header .title {
+    position: absolute;
+    top: 242px;
+    left: 50%;
+    min-width: 700px;
+    transform: translateX(-50%);
+    font-family: Cambria;
+    font-size: 72px;
+    font-weight: 100;
+}
+
+.header .para {
+    position: absolute;
+    top: 345px;
+    left: 50%;
+    min-width: 900px;
+    transform: translateX(-50%);
+    text-align: left;
+    font-size: 30px;
+}
+
+.header .btn {
+    position: absolute;
+    top: 556px;
+    left: 50%;
+    transform: translateX(-200%);
+    width: 262px;
+    height: 72px;
+    background-color: #2a3f17;
+    color: white;
+}
+
+.header .btn .btnText {
+    height: 72px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 72px;
+    color: white;
+}
+
+.header .displayer {
+    position: absolute;
+    bottom: 246px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1111px;
+    height: 498px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .displayer .show {
+    position: relative;
+    width: 332px;
+    height: 498px;
+    transition: 1s;
+}
+
+.header .displayer .show:hover {
+    transform: translateY(-50px)
+}
+
+.header .displayer .show .lab {
+    position: absolute;
+    bottom: 98px;
+    right: 70px;
+    font-size: 48px;
+    color: white;
+}
+
+.selectionOne {
+    position: relative;
+    height: 760px;
+}
+
+.selectionOne .bgOne {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 760px;
+    background: url("https://typora-image-mrz.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.selectionOne .msg {
+    position: absolute;
+    top: -83px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 946px;
+    height: 541px;
+    background-color: #e0dfdf;
+    transition: top 1s;
+}
+
+.selectionOne .msg:hover {
+    top: -133px;
+}
+
+.selectionOne .msg .introduce {
+    position: absolute;
+    top: 79px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #2a3f17;
+}
+
+.selectionOne .msg .sign {
+    position: absolute;
+    bottom: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 197px;
+    height: 70px;
+    background-color: #2a3f17;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    transition: width 1s, height 1s, line-height 1s;
+}
+
+.selectionOne .msg .sign:hover {
+    width: 177px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.selectionOne .msg .sign .signLink {
+    position: absolute;
+    top: 0;
+    width: 197px;
+    height: 70px;
+}
+
+.selectionTwo {
+    position: relative;
+    height: 846px;
+}
+
+.selectionTwo .bannerTitle {
+    position: absolute;
+    top: 81px;
+    left: 50%;
+    width: 240px;
+    height: 63px;
+    transform: translateX(-50%);
+    font-size: 48px;
+    color: #2a3f17;
+    transition: border-top 1s;
+}
+
+.bannerTitle::before,
+.bannerTitle::after {
+    box-sizing: inherit;
+    position: absolute;
+    content: '';
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.bannerTitle::after {
+    bottom: 0;
+    right: 0;
+}
+
+.bannerTitle::before {
+    top: 0;
+    left: 0;
+}
+
+.bannerTitle:hover::before,
+.bannerTitle:hover::after {
+    width: 234px;
+    height: 57px;
+}
+
+.bannerTitle:hover::before {
+    border-top: 4px solid #2a3f17;
+    border-right: 4px solid #2a3f17;
+    transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+}
+
+.bannerTitle:hover::after {
+    border-bottom: 4px solid #2a3f17;
+    border-left: 4px solid #2a3f17;
+    transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
+}
+
+.selectionTwo .banner {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1148px;
+    height: 414px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.selectionTwo .banner .animal {
+    position: relative;
+    top: 0;
+    width: 264px;
+    height: 414px;
+    background-color: #e0dfdf;
+    transition: top 1s;
+}
+
+.selectionTwo .banner .animal:hover {
+    top: -25px;
+}
+
+.selectionTwo .banner .animal .name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 96px;
+    text-align: center;
+    font-size: 30px;
+    color: #2a3f17
+}
+
+.selectionTwo .banner .animal .link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 48px;
+    font-size: 22px;
+    border-bottom: 2px solid #2a3f17;
+    color: #2a3f17;
+}
+
+.selectionTwo .banner .animal .pic {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 261px;
+    height: 259px;
+}
+
+.selectionTwo .button {
+    position: absolute;
+    bottom: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 359px;
+    height: 69px;
+    background-color: #f8f8f8;
+    border: 2px solid #2a3f17;
+}
+
+.selectionTwo .button .buttonTxt {
+    height: 72px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 72px;
+    color: #2a3f17;
+    transition: background-color 1s, color 1s;
+}
+
+.selectionTwo .buttonTxt:hover {
+    background-color: #2a3f17;
+    color: #fff;
+}
+
+.selectionThr {
+    position: relative;
+    height: 1081px;
+}
+
+.selectionThr .container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1480px;
+    height: 1020px;
+    color: #2a3f17
+}
+
+.selectionThr .container .picture {
+    position: absolute;
+    width: 700px;
+    height: 1020px;
+}
+
+.selectionThr .container .text {
+    position: relative;
+    left: 700px;
+    width: 600px;
+    height: 1020px;
+    text-align: left;
+}
+
+.selectionThr .container .text .title {
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    height: 300px;
+    font-size: 36px;
+    transition: 1s;
+}
+
+.selectionThr .container .text .title:hover {
+    top: 0;
+}
+
+.selectionThr .container .text .box {
+    position: relative;
+    top: 162px;
+    left: 130px;
+}
+
+.selectionThr .container .text .para {
+    text-align: left;
+    font-size: 24px;
+    display: block;
+    transition: 0.5s;
+}
+
+.selectionThr .container .text .para:hover {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.selectionThr .container .text .order {
+    width: 600px;
+    height: 532px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.selectionThr .container .text .order .num {
+    font-weight: lighter;
+    font-size: 70px;
+}
+
+.selectionThr .container .text .order .point {
+    transition: 1s;
+}
+
+.selectionThr .container .text .order .point:hover {
+    margin-left: 50px;
+}
+
+.footer {
+    position: relative;
+    background-color: #fff;
+    height: 460px;
+    border-top: 2px solid #000000;
+}
+
+.footer .footerBox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 460px;
+    min-width: 1600px;
+    top: 0;
+}
+
+.footer .footerBox .text1 {
+    position: absolute;
+    top: 163px;
+    left: 275px;
+    font-size: 40px;
+    color: #2a3f17;
+}
+
+.footer .footerBox .text2 {
+    position: absolute;
+    left: 275px;
+    bottom: 163px;
+    font-size: 40px;
+    color: #2a3f17;
+}
+
+.footer .footerBox .text3 {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-200%);
+    font-size: 30px;
+    color: #949f8b;
+}
+
+.footer .footerBox .text4 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-115%);
+    bottom: 208px;
+    font-size: 24px;
+    color: #949f8b;
+}
+
+.footer .footerBox .text5 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-113%);
+    bottom: 168px;
+    font-size: 24px;
+    color: #949f8b;
+}
+
+.footer .footerBox .button {
+    position: absolute;
+    right: 225px;
+    bottom: 163px;
+    width: 361px;
+    height: 73px;
+    background-color: #949f8b;
+    font-size: 36px;
+    line-height: 73px;
+    text-align: center;
+    color: white;
+    transition: 1s;
+}
+
+.footer .footerBox .button:hover {
+    top: 50%;
+    transform: translateY(-50%);
+    color: #949f8b;
+    background-color: white;
+}

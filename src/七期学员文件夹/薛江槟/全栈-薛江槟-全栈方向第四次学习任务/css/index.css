@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    width:device-width;
+}
+body{
+    overflow-x:hidden ;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.core0{
+    width: 1600px;
+
+}
+
+
+.top {
+    width: 1920px;
+    position: relative;
+    height: 48px;
+    margin: auto;
+}
+.top_left{
+        position: absolute;
+        left:24px;
+        top:15px;
+        
+}
+.top_left:hover{
+    transform:scale(1.8,1.8);
+}
+
+
+.img li{
+    list-style: none;
+    float: left;
+   padding-right: 35px;
+   padding-left: 35px;
+   transition: transform 1.5s;
+}
+
+  
+
+.top_right{
+    position: absolute;
+   right: 24px;
+   top:15px;
+
+    
+}
+.top_right:hover {
+    transform: scale(1.8, 1.8);
+}
+.core{
+    width: 1200px;
+    margin: auto;
+    
+    
+}
+.back{
+    background-image: url(https://xuejiangbin.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png) ;
+    height: 880px;
+    width: 1920px;
+    margin: auto;
+    position: relative;
+}
+.camera{
+    max-height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: -56px;
+    transition: all 2s;
+    cursor: pointer;
+}
+.camera:hover{
+   transform:scale(80%);
+  
+}
+.word1{
+    text-align: center;
+    font-size: 72px;
+    color: #2a3f17;
+    font-family: 楷体;
+}
+.word2{
+    padding-top: 10px;
+    font-size: 30px;
+    color: #2a3f17;
+}
+.word{
+    padding-top: 240px;
+}
+.img{
+    position: absolute;
+    top: 730px;
+}
+ li:hover {
+    transform: translate(0px, -100px);
+}
+.button{
+    position: absolute;
+    top: 555px;
+    height: 73px;
+    width: 262px;
+    background-color: #2a3f17;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 73px;
+    transition: all 2s;
+}
+.button:hover{
+    transform:scale(0.85,0.85);
+
+}
+.back2{
+    position: relative;
+    background-image: url(https://xuejiangbin.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png);
+    height: 760px;
+    width: 1920px;
+    margin: auto;
+    margin-top: 600px;
+}
+
+.box1{
+    position: absolute;
+    top:-83px;
+    left: 50%;
+    margin-left: -538px;
+    height: 534px;
+    width: 950px;
+     padding-top: 80px;
+    padding-left: 68px;
+    padding-right: 68px;
+    font-size: 20px;
+    background-color: #e0dfdf;
+    color: #2a3f17;
+    transition: transform 2s;
+}
+.box2{
+        position: absolute;
+        top: 400px;
+        left:50%;
+        margin-left: -94px;
+        height: 73px;
+        width: 188px;
+        background-color: #2a3f17;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        line-height: 73px;
+        transition: transform 2s;
+
+}
+.box1:hover{
+    transform: translate(0px,-50px);
+}
+.box2:hover{
+    transform: scale(0.85,0.95);
+}
+.core2{
+    width: 1200px;
+    margin: auto;
+}
+.text1{
+    margin: auto;
+    margin-top: 85px;
+    width: 250px;
+    height: 58px;
+    font-size: 48px;
+    color: #2a3f17;
+    text-align: center;
+    
+}
+@keyframes text1{
+    25%  {border-top: 7.5px solid #2a3f17}
+    50% {border-right: 7.5px solid #2a3f17;}
+    75% {border-bottom: 7.5px solid #2a3f17;}
+    100% {border:7.5px solid #2a3f17;}
+}
+
+.text1:hover {
+    animation: text1 3s ease-in;
+
+}
+
+.img1 li{
+    padding-left: 30px;
+    list-style: none;
+    float: left;
+    margin: 0 auto;
+    transition: transform 2s;
+}
+.img1{
+    margin-top: 37px;
+}
+.text2{
+    display: block;
+    margin: auto;
+    margin-top: 530px;
+    height: 66px;
+    width: 358px;
+    border: 2px solid ;
+    color: #2a3f17;
+    text-align: center;
+    line-height: 66px;
+    font-size: 30px;
+   text-decoration: none;
+    transition: all 1.5s;
+
+}
+.text2:hover{
+    background-color: #2a3f17;
+    color: white;
+}
+
+
+.box3{
+    
+    height: 1050px;
+    margin-top: 85px;
+    
+}
+.img2{
+   float: left;
+}
+.text3{
+   float: left;
+    padding-top: 88px;
+    width: 450px;
+    
+   
+}
+.title{
+        font-size: 36px;
+        color: #2a3f17;
+        margin-left: 120px;
+        transition: all 1s;
+}
+.title:hover{
+    transform:translate(0,-40px);
+}
+.text4{
+    margin-top: 36px;
+    width: 550px;
+    font-size: 24px;
+    color: #2a3f17;
+    margin-left: 120px;
+    transition: all 0.5s;
+}
+.text4:hover{
+    transform: translate(10px,0);
+    transform: scale(1.1);
+    
+   
+    
+}
+.text5:hover{
+    transform: none;
+}
+.text5_1{
+    margin-left: 120px;
+    margin-top: 90px;
+    width: 450px;
+    height: 58px;
+    font-size: 24px;
+    color: #2a3f17;
+    transition: transform 2s;
+
+}
+.text5_1:hover{
+    transform: translate(200px,0);
+}
+.text5_1_1{
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    border-radius: 32px;
+    border: 3px solid #2a3f17;
+    text-align: center;
+    font-size: 48px;
+    line-height: 58px;
+}
+.box4{
+    margin: auto;
+    height: 60px;
+    width: 2000px;
+    border-bottom: 3px solid #2a3f17 ;
+   
+}
+.box5{
+    position: relative;
+    margin: auto;
+    width:1200px ;
+    height: 440px;
+    color: #2a3f17;
+}
+.a{
+    position: absolute;
+    left: 160px;
+    top: 160px;
+    font-size: 40px;
+
+}
+.b{
+    position: absolute;
+    left: 160px;
+    top:250px;
+    font-size: 40px;
+}
+.c{
+    position: absolute;
+    left: 492px;
+    top:170px;
+    font-size: 30px;
+}
+.d{
+    position: absolute;
+    left: 492px;
+    top: 226px;
+    font-size: 24px;
+}
+.e{
+    position: absolute;
+    top:266px;
+    left: 492px;
+    font-size: 24px;
+}
+.button2{
+    position: absolute;
+    top: 188px;
+    left: 977px;
+    width: 360px;
+    height: 70px;
+    background-color:#2a3f17 ;
+    color:white;
+    font-size: 36px;
+    opacity: 0.5;
+    text-align: center;
+    line-height: 70px;
+    transition: all 1s;
+}
+
+.button2:hover{
+    transform: translate(0,-40px);
+    background-color: white;
+    color: #2a3f17;
+}

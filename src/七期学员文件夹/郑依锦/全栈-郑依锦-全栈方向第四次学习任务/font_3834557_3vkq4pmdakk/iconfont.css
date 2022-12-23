@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3834557 */
+  src: url('iconfont.woff2?t=1671597446699') format('woff2'),
+       url('iconfont.woff?t=1671597446699') format('woff'),
+       url('iconfont.ttf?t=1671597446699') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  /* font-style: normal; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu2:before {
+  content: "\e609";
+}
+
+.icon-fangdajing:before {
+  content: "\e60c";
+}
