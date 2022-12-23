@@ -1,0 +1,537 @@
+
+@font-face {
+    font-family: 'iconfont';  
+    src: url(./font_3794945_gllfvg6gibg/iconfont.woff2) format('woff2'),
+         url(./font_3794945_gllfvg6gibg/iconfont.woff) format('woff'),
+         url(./font_3794945_gllfvg6gibg/iconfont.ttf) format('truetype');
+  }
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:30px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+.content{
+   height: 100%;
+   width: 1200px; 
+   margin: auto;
+}
+
+.firstcontainer{
+    width: 100%;
+    height: 47px;
+    background-color: white;
+    
+}
+
+.firheader{
+    display: flex;
+    width: 100%;
+    height: 47px;
+    justify-content: space-between;
+}
+
+.firhd-btn{
+    width: 75px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+.firhd-btn:hover{
+    transform: scale(0.6);
+}
+
+.firbcg{
+    position: relative;
+    width: 100%;
+    height: 880px;
+    background-image: url(https://typora-dream.oss-cn-beijing.aliyuncs.com/tortoise.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.fircmr{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: -50px;
+    left: 46%;
+    /* transform: translateX(-50%); */
+    background-color: #81c04b;
+    transition-duration: 0.5s;
+}
+
+.fircmr:hover{
+    transform: scale(0.9);
+}
+.fircmr-img{
+    position: relative;
+    height: 164px;
+    width: 164px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border:5px solid white;
+    border-radius: 50%;
+}
+
+.fircmr-img::after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://typora-dream.oss-cn-beijing.aliyuncs.com/camera.png);
+    background-repeat: no-repeat;
+}
+/* 添加动画效果 */
+/* .fircrm:hover{ */
+
+/* } */
+
+.fir-title{
+    text-align: center; 
+    padding-top: 230px;
+    font-size:65px ;
+    font-family: Cambria;
+    color: #2a3f17;
+}
+
+.fir-text{
+    width: 1100px;
+    height: 110px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.firbtn{
+    width: 262px;
+    height: 72px;
+    margin-left: 50px;
+    margin-top: 133px;
+    background-color: #2a3f17;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+
+.secondcontainer{
+    position: relative;
+    width: 100%;
+    height: 595px;
+    background-color: white;
+}
+
+.seccontent{
+    display: flex;
+    height: 100%;
+    width: 1200px; 
+    margin: auto;
+    justify-content: space-around;
+ }
+
+ 
+.seccontent div[class^="sec-image"]:hover{
+    transform: translateY(-40px);
+}
+
+.seccontent div[class^="sec-image"]{
+    margin-top: -145px;
+    width: 333px;
+    height: 500px;
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+}
+.sec-image1{
+    background-image: url(https://typora-dream.oss-cn-beijing.aliyuncs.com/bird1.png);
+}
+.sec-image2{
+    background-image: url(https://typora-dream.oss-cn-beijing.aliyuncs.com/bird2.png);
+}
+.sec-image3{
+    background-image: url(https://typora-dream.oss-cn-beijing.aliyuncs.com/bird3.png);
+}
+
+.note{
+    display: block;
+    padding-top: 300px;
+    padding-left: 150px;
+    font-size: 48px;
+    font-family: Cambria;
+    color: white;
+    text-align: center;
+}
+
+.thirdcontainer{
+    width: 100%;
+    height: 760px;
+    background-image: url(https://typora-dream.oss-cn-beijing.aliyuncs.com/bckkangaroo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.thircontent{
+    position: relative;
+    height: 100%;
+    width: 1000px;
+    margin: auto;
+}
+
+.thir-text{
+    position: absolute;
+    width: 946px;
+    height: 541px;
+    /* margin-top: -82px;
+    margin-left: 50%; */
+    /* transform: translateX(-50%); */
+    top: -82px;
+    background-color: #e0dfdf;
+    color: #2a3f17;
+    font-size: 20px;
+    line-height: 1.5em;
+    transition: all 1s;
+    
+}
+
+.thir-text:hover{
+    transform: translateY(-50px);
+}
+
+.thirtext{
+    display: block;
+    padding-top: 72px;
+    padding: 72px;
+}
+
+.thir-btn{
+    position: absolute;
+    width: 197px;
+    height: 70px;
+    top: 400px;
+    left: 40%;
+    /* transform: translateX(-50%); */
+    background-color: #2a3f17;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height:70px;
+    transition: all 1s;
+}
+
+.thir-btn:hover{
+    transform: scale(0.8);
+}
+
+.forthcontainer{
+    width: 100%;
+    height: 847px;
+    background-color: white;
+}
+.for-image{
+    width: 264px;
+    height: 410px;
+    background-color: #e0dfdf;
+    color: #2a3f17;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    transition-duration: 1s;
+}
+
+.for-image:hover{
+    transform: translateY(-40px);
+}
+
+p{
+    font-size: 20px;
+    text-decoration:underline
+}
+
+.title-center{
+    width: 280px;
+    height: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+}
+
+.for-title{
+    width: 280px;
+    height: 70px;
+    margin-top: 75px;
+}
+
+  
+  button {
+    border: 0;
+    background: none;
+    color:#2a3f17;
+    position: relative;
+    outline: none;
+    font-size: 50px;
+    box-sizing: border-box;
+  }
+  
+  button::before, button::after {
+    box-sizing: inherit;
+    position: absolute;
+    content: '';
+    border: 5px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  
+  button::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  button::before {
+    top: 0;
+    left: 0;
+  }
+  
+  button:hover::before, button:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  
+  button:hover::before {
+    border-top-color:#2a3f17;
+    border-right-color: #2a3f17;
+    transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+  }
+  
+  button:hover::after {
+    border-bottom-color: #2a3f17;
+    border-left-color: #2a3f17;
+    transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
+  }
+  
+/* .for-title::before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border:5px solid #2a3f17;
+}  */
+
+.for-btn{
+    position: relative;
+    width: 360px;
+    height: 70px;
+    margin-top: 120px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #2a3f17;
+    border:2px solid #2a3f17;
+    color:white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+
+.for-btn::before{
+    display: block;
+    content: "Know more";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #2a3f17;
+    transition: all 1s;
+    opacity: 1;
+}
+
+/* .forbtn-text{
+    color: white;
+    border: 1px solid black;
+    transition: all 1s;
+}
+
+.forbtn-text:hover{
+    color:#2a3f17;
+    transition: all 1s;
+} */
+.for-btn:hover::before{
+    opacity: 0;
+}
+
+.fifthcontain{
+    height: 1165px;
+    width: 100%;
+    background-color: white;
+}
+
+.fifthcontent{
+    display: flex;
+    width: 1350px;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.fif-image{
+    width: 702px;
+    height: 1020px;
+    margin-top: 85px;
+}
+
+.fif-text{
+    width: 530px;
+    height: 940px;
+    margin-top: 85px;
+}
+
+.fif-text-title{
+    width: 250px;
+    height: 50px;
+    font-size: 45px;
+    color: #2a3f17;
+    margin-top: 80px;
+    transition: all 1s;
+}
+
+.fif-text-title:hover{
+    transform: translateY(-80px);
+}
+
+.fif-text-word{
+    width: 530px;
+    height: 140px;
+    margin-top: 10px;
+    color: #2a3f17;
+    line-height: 1.5em;
+    font-size: 25px;
+    transition: all 1s;
+    transform-origin: left top;
+}
+
+.fif-text-word:hover{
+   transform: scale(1.4);
+}
+
+.fif-text-ol{
+    display: flex;
+    width: 380px;
+    height: 590px;
+    margin-top: 70px;
+    flex-direction: column;
+    justify-content: space-between;   
+    color: #2a3f17;
+}
+
+.ol{
+    width: 380px;
+    height: 74px;
+    transition: all 2s;
+} 
+
+.ol:hover{
+    transform: translateX(180px);
+}
+
+.ordinal{
+    width: 70px;
+    height: 70px;
+    border: 3px solid #2a3f17;
+    border-radius: 50%;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+.ordinal-description{
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin-top: 35px;
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+.sixthcontain{
+    width: 100%;
+    height: 460px;
+    background-color: white;
+    border-top:3px solid #2a3f17;
+}
+
+.sixcontent{
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.six-text{
+    display: flex;
+    width: 550px;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.six-text-left{
+    width: 275px;
+    height: 165px;
+    margin-top:115px;
+    font-size: 40px;
+    line-height: 2.5em;
+    color: #2a3f17;
+
+}
+
+.six-text-right{
+    width: 200px;
+    height: 150px;
+    font-size: 20px;
+    margin-top: 145px;
+    line-height: 2em;
+    color: #949f8b;
+
+}
+
+.six-btn{
+    position: relative;
+    width: 361px;
+    height: 73px;
+    background-color:white;
+    margin-top:170px;
+    text-align: center;
+    line-height: 2em;
+    font-size: 35px;
+    color:#949f8b;   
+    transition: all 1s;
+}
+
+.six-btn:hover{
+    transform: translateY(-50px);
+}
+
+.six-btn::before{
+    display: block;
+    position: absolute;
+    content: "Big World";
+    width: 361px;
+    height: 73px;
+    background-color: #949f8b;
+    color: white;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.six-btn:hover::before{
+    opacity: 0;
+    /* transform: translateY(-10px); */
+}
