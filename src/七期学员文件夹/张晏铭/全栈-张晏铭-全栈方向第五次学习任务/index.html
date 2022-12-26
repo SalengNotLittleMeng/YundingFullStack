@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串中的字符数查找(五周作业)</title>
+</head>
+<body>
+    <script>
+        "use strict"
+            let x = prompt("请输入原字符串：")
+            let y = prompt("请输入要查找的字符(串)：")
+            console.log("原字符串：", x)
+            console.log("查找的字符(串)：", y)
+            let n = 0
+
+            let arr = x.split("")           //将其变为数组
+            let brr = y.split("")
+
+            do {
+                n++
+            } while (brr[n] != null)
+
+            var i = 0                       //用i来统计相等时的索引
+            let count = 0
+            for (let vol of arr) {
+                if (brr[0] === vol) {
+                    if (fn(brr, arr) === n) {
+                        count++
+                    }
+                }
+                i++
+            }
+            console.log("所查找字符(串)出现次数为：", count)
+
+            document.write("原字符串：", x)
+            document.write("查找的字符(串)：", y)
+            document.write("所查找字符(串)出现次数为：", count)
+
+            function fn(a, b) {
+                let special = 0
+                window.important = 0
+                var f = i
+                do {
+                    if (a[special] === b[f]) {
+                        f++                                     //函数返回important 来统计相等个数 再返回到主函数与指定字符串数目相比较
+                        important++
+                    }
+                    special++
+                } while (a[special] != null)
+                return important
+            }
+    </script>
+</body>
+</html>
