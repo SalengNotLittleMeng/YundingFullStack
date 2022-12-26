@@ -323,7 +323,8 @@ body {
     transition: all 2s;
 }
 .SectionFourfooter p:hover{
-    transform: translateX(40px);
+    transform-origin: 0px 50px;
+    transform: scale(1.2,1.2);
 }
 .SectionFourFooterBox{
     position: absolute;

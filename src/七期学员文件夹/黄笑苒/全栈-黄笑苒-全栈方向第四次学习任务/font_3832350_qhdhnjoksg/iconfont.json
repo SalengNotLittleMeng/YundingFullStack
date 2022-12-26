@@ -1,0 +1,23 @@
+{
+  "id": "3832350",
+  "name": "云顶第四周作业使用图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "592049",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e790",
+      "unicode_decimal": 59280
+    },
+    {
+      "icon_id": "637795",
+      "name": "搜素",
+      "font_class": "sousu",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    }
+  ]
+}
