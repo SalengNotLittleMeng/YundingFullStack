@@ -1,0 +1,44 @@
+{
+  "id": "3794372",
+  "name": "image",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6486524",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "629357",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "18170161",
+      "name": "功能,汉堡键,横杠",
+      "font_class": "row",
+      "unicode": "e976",
+      "unicode_decimal": 59766
+    },
+    {
+      "icon_id": "5387579",
+      "name": "箭头_切换左",
+      "font_class": "jiantou_qiehuanzuo",
+      "unicode": "eb06",
+      "unicode_decimal": 60166
+    },
+    {
+      "icon_id": "8989214",
+      "name": "警告",
+      "font_class": "jinggao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}

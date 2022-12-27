@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3831555 */
+  src: url('iconfont.woff2?t=1671413664504') format('woff2'),
+       url('iconfont.woff?t=1671413664504') format('woff'),
+       url('iconfont.ttf?t=1671413664504') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ego-caidan:before {
+  content: "\e62f";
+  color: black;
+  font-size: 35px;
+  position: relative;
+  top: 7px;
+}
+
+.icon-xiangji:before {
+  content: "\e674";
+  color: white;
+  position: relative;
+  top: 12px;
+  font-size: 125px;
+}
+
+.icon-chazhao:before {
+  content: "\e61d";
+  color: gray;
+  font-size: 25px;
+  position: relative;
+  top: 12px;
+}
+

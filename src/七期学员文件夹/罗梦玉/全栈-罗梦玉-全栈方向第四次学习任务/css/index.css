@@ -1,0 +1,491 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.BOX {
+    width: 1920px;
+    height: 4674px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 49px;
+    background-color: #ffffff;
+}
+
+.icon {
+    float: left;
+    transition: all .3s;
+}
+
+.icon:hover {
+    transform: scale(.6);
+}
+
+.wugui {
+    position: relative;
+    width: 100%;
+    height: 880px;
+    background-image: url(https://lmy-2.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png);
+}
+
+.camera {
+    position: relative;
+    top: -33px;
+    width: 200px;
+    height: 200px;
+    background-color: #81c04b;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.camera:hover {
+    transform: scale(.8);
+}
+
+.circle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 160px;
+    height: 160px;
+    border: 7px solid;
+    border-radius: 100%;
+    border-color: #ffffff;
+}
+
+.title {
+    position: absolute;
+    top: 240px;
+    left: 595px;
+    font-size: 72px;
+    font-family: Cambria;
+    color: #2a3f17;
+}
+
+.explain {
+    position: absolute;
+    top: 337px;
+    left: 417px;
+    width: 1100px;
+    height: 92px;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+}
+
+.EXPLORE {
+    display: flex;
+    position: absolute;
+    top: 556px;
+    left: 417px;
+    width: 260px;
+    height: 74px;
+    background-color: #2a3f17;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.blank {
+    width: 100%;
+    height: 600px;
+    background-color: #f8f8f8;
+}
+
+.bird {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1117px;
+    height: 502px;
+    position: relative;
+    top: -146px;
+} 
+
+.Fly,
+.Love,
+.Stand {
+    float: left;
+    width: 333px;
+    height: 500px;
+    font-size: 48px;
+    font-family: Cambria;
+    color: #FFF;
+    position: relative;
+    transition: all .5s;
+}
+
+.bird p {
+    position: absolute;
+    bottom: 100px;
+    right: 65px;
+}
+
+.Fly {
+    background-image: url(https://lmy-2.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png);
+}
+
+.Fly:hover {
+    transform: translateY(-30px);
+}
+
+.Love {
+    background-image: url(https://lmy-2.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png);
+}
+
+.Love:hover {
+    transform: translateY(-30px);
+}
+
+.Stand {
+    background-image: url(https://lmy-2.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png);
+}
+
+.Stand:hover {
+    transform: translateY(-30px);
+}
+
+.lu {
+    position: relative;
+    width: 100%;
+    height: 761px;
+    background-image: url(https://lmy-2.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png);
+}
+
+.sign {
+    position: absolute;
+    top: -85px;
+    left: 498px;
+    width: 946px;
+    height: 540px;
+    background-color: #e0dfdf;
+    transition: all .5s;
+}
+
+.sign:hover {
+    transform: translateY(-30px);
+}
+
+.sign p {
+    width: 790px;
+    height: 463px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    color: #2d411a;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.up {
+    display: flex;
+    position: absolute;
+    top: 408px;
+    left: 375px;
+    width: 197px;
+    height: 70px;
+    background-color: #2a3f17;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.up:hover {
+    transform: scale(.9);
+}
+
+.introduce {
+    position: relative;
+    width: 100%;
+    height: 1928px;
+    background-color: #f8f8f8;
+    border-bottom:5px solid #000000;
+}
+
+.Difference {
+    position: absolute;
+    top: 70px;
+    left: 850px;
+    width: 250px;
+    height: 60px;
+    font-size: 48px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    transition: all 1s;
+}
+
+.Difference:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 0;
+    border: 5px solid transparent;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    transition: border-color 0s ease-in 0.8s, width 0.2s ease-in 0.6s, height 0.2s ease-in 0.4s;
+}
+
+.Difference:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.2s, height 0.2s ease-out 0s;
+}
+
+.Difference:hover:after,
+.Difference:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+.Difference:hover:before {
+    border-top-color: #2a3f17;
+    border-right-color: #2a3f17;
+    transition: border-color 0s ease-out 0s, width 0.2s ease-out 0s, height 0.2s ease-out 0.2s;
+}
+
+.Difference:hover:after {
+    border-bottom-color: #2a3f17;
+    border-left-color: #2a3f17;
+    transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.6s;
+}
+
+.animal {
+    position: relative;
+    top: 160px;
+    width: 1147px;
+    height: 413px;
+}
+
+.animal>div {
+    float: right;
+    margin-left: 33px;
+    width: 262px;
+    height: 413px;
+    background-color: #e0dfdf;
+    transition: all .7s;
+}
+
+.animal>div:hover {
+    transform: translateY(-25px);
+}
+
+.animal>div:nth-child(4) {
+    margin-left: 0;
+}
+
+.Horse,
+.Kangaroo,
+.Lion,
+.Hummingbird {
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #30441e;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.text {
+    width: 200px;
+    font-size: 21.85px;
+    font-family: 微软雅黑;
+    color: #2b4019;
+    text-align: center;
+    margin-top: 25px;
+    border-bottom: 3px solid #2a3f17;
+}
+
+.more {
+    display: flex;
+    position: relative;
+    top: 255px;
+    width: 260px;
+    height: 70px;
+    border: 3px solid #2a3f17;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s;
+}
+
+.more:hover {
+    background-color: #2a3f17;
+    color: #FFF;
+}
+
+.songshu {
+    position: relative;
+    top: 330px;
+    left: -355px;
+    width: 700px;
+    height: 1017px;
+}
+
+.state {
+    position: relative;
+    top: -575px;
+    left: 370px;
+    width: 528px;
+    height: 832px;
+}
+
+.PHOTO {
+    height: 58px;
+    font-size: 36px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    transition: all .7s;
+}
+
+.PHOTO:hover {
+    transform: translateY(-40px);
+}
+
+.state p {
+    float: left;
+    width: 528px;
+    height: 130px;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    color: #2e421c;
+    transition: all .6s;
+    transform-origin: left top;
+}
+
+.state p:hover {
+    transform: scale(1.2);
+}
+
+.catalog {
+    position: relative;
+    top: 130px;
+    height: 645px;
+}
+
+.box {
+    position: relative;
+    width: 528px;
+    height: 160px;
+    transition: all 1s;
+}
+
+.box:hover {
+    transform: translateX(70px);
+}
+
+.order {
+    position: absolute;
+    top: 50%;
+    width: 72px;
+    height: 72px;
+    border: 3px solid;
+    border-radius: 100%;
+    border-color: #2a3f17;
+    font-size: 48px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+    text-align: center;
+}
+
+.topic {
+    position: relative;
+    bottom: 22px;
+    left: 20px;
+    float: right;
+    width: 456px;
+    height: 160px;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+}
+
+.bottom {
+    position: relative;
+    width: 100%;
+    height: 402px;
+    background-color: #ffffff;
+}
+
+.World {
+    display: flex;
+    position: absolute;
+    top: 190px;
+    right: 330px;
+    width: 360px;
+    height: 73px;
+    background-color: #949f8b;
+    font-size: 36px;
+    font-family: 微软雅黑;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.World:hover {
+    transform: translateY(-30px);
+    background-color: transparent;
+    color: #4d5b41;
+}
+
+.one {
+    position: absolute;
+    top: 170px;
+    left: 445px;
+    width: 248px;
+    height: 32px;
+    font-size: 40px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+}
+
+.two {
+    position: absolute;
+    top: 265px;
+    left: 445px;
+    width: 248px;
+    height: 32px;
+    font-size: 40px;
+    font-family: 微软雅黑;
+    color: #2a3f17;
+}
+
+.three {
+    position: absolute;
+    top: 180px;
+    left: 745px;
+    width: 248px;
+    height: 32px;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #4d5b41;
+}
+
+.four {
+    position: absolute;
+    top: 245px;
+    left: 745px;
+    width: 162px;
+    height: 66px;
+    font-size: 24px;
+    font-family: 微软雅黑;
+    color: #4d5b41;
+}

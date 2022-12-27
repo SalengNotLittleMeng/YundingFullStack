@@ -1,0 +1,547 @@
+* {
+    margin: auto;
+}
+
+.camera {
+    width: 200px;
+    height: 190px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: #81c04b;
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#cam {
+    width: 114px;
+    height: 78px;
+    left: 50%;
+    margin-left: -50px;
+    top: 55px;
+    position: absolute;
+    z-index: 2;
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E7%9B%B8%E6%9C%BA.png);
+}
+
+.camera:hover {
+    transform: scale(0.5);
+}
+
+.whiteone {
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
+.pic {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+}
+
+.ToP {
+    background-image: url("https://tallgao.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.jpg");
+    position: relative;
+        height: 929px;
+    width: 100%;
+    margin: 0 auto;
+}
+#top {
+
+    background-color: transparent;
+    position: relative;
+}
+
+.Content {
+    width: 1350px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 微软雅黑;
+}
+
+.topic {
+    width: 634px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    top: 242px;
+    margin-left: -317px;
+}
+
+.text {
+    width: 1096px;
+    height: 93px;
+    left: 50%;
+    top: 330px;
+    margin-left: -548px;
+    position: absolute;
+}
+
+.exp {
+    width: 262px;
+    height: 72px;
+    left: 416px;
+    top: 555px;
+    position: relative;
+    background-color: #2a3f17;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    text-align: center;
+    line-height: 72px;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.exp:hover {
+    transform: scale(0.7);
+}
+
+.threepart {
+    width: 1110px;
+    height: 500px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    left: 404px;
+    top: 733px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.firstt,
+.secondt,
+.thirdt {
+    left: 157px;
+    top: 360px;
+    color: white;
+    font-size: 48px;
+    margin: 0;
+    width: 125px;
+    height: 38px;
+    position: relative;
+    font-family: Cambria;
+}
+.sec {
+    width: 100%;
+    height: 598px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.first,
+.second,
+.third {
+    width: 333px;
+    height: 499px;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.first:hover,
+.second:hover,
+.third:hover {
+    transform: translate(0,-30px);
+}
+
+.first {
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.jpg);
+}
+
+.second {
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.jpg);
+}
+
+.third {
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.jpg);
+}
+
+.farmcard {
+    background-color: #e0dfdf;
+    width: 945px;
+    height: 540px;
+    position: absolute;
+    left: 500px;
+    top: 515px;
+    z-index: 2;
+    transition: 1.0s;
+}
+
+.farmcard:hover {
+    transform:translate(0,-20px);
+}
+
+.grass {
+    width: 100%;
+    height: 760px;
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.jpg);
+    position: relative;
+}
+
+.lot {
+    color: #2a3f17;
+    font-size: 22px;
+    font-family: 微软雅黑;
+    top: 79px;
+    left: 75px;
+    width: 797px;
+    height: 23px;
+    position: absolute;
+}
+
+.signup {
+    width: 179px;
+    height: 70px;
+    top: 923px;
+    left: 818px;
+    position: absolute;
+    background-color: #2a3f17;
+    color: #ffffff;
+    text-align: center;
+    line-height: 70px;
+    z-index: 3;
+    transition:1s;
+}
+
+.signup:hover {
+    transform:scale(0.7);
+}
+
+.whi {
+    width: 100%;
+    height: 1927px;
+    position: relative;
+    border-bottom: #2a3f17 solid 3px;
+}
+
+.difference {
+    width: 270px;
+    height: 70px;
+    top: 80px;
+    left: 50%;
+    margin-left: -150px;
+    position: relative;
+    line-height: 70px;
+    text-align: center;
+}
+
+.difference:hover {
+    border: 5px solid #2a3f17;
+}
+
+.fourpart {
+    width: 1146px;
+    height: 444px;
+    top: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.one,
+.two,
+.three,
+.four {
+    width: 264px;
+    height: 414px;
+    background-color: #e0dfdf;
+    color: #2a3f17;
+    transition:1s;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+    transform:translate(0,-20px);
+}
+
+.pone {
+    width: 264px;
+    height: 261px;
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E9%A9%AC.jpg);
+}
+
+.ptwo {
+    width: 262px;
+    height: 261px;
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E8%A2%8B%E9%BC%A0.jpg);
+}
+
+.pthree {
+    width: 262px;
+    height: 260px;
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E7%8B%AE%E5%AD%90.jpg);
+}
+
+.pfour {
+    width: 261px;
+    height: 259px;
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E5%B0%8F%E9%B8%9F.jpg);
+}
+
+.ttone,
+.tttwo,
+.ttthree,
+.ttfour {
+    height: 31px;
+    top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.tone,
+.ttwo,
+.tthree,
+.tfour{
+    height: 25px;
+    width: 200px;
+    top: 50px;
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid #2a3f17;
+}
+
+.more {
+    width: 360px;
+    height: 68px;
+    top: 265px;
+    position: relative;
+    text-align: center;
+    line-height: 68px;
+    font-size: 30px;
+    color: #2a3f17;
+    border: 2px solid #2a3f17;
+    background-color: #ffffff;
+}
+
+.more:hover {
+    background-color: #2a3f17;
+    color: #ffffff;
+}
+
+.box {
+    width: 100%;
+    height: 1020px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.forest {
+    width: 702px;
+    height: 1020px;
+    left: 0;
+    top: 348px;
+    position: relative;
+    margin: 0;
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E6%9D%BE%E9%BC%A0.jpg);
+}
+
+.titl {
+    color: #2a3f17;
+    font-size: 36px;
+    top: 92px;
+    left: 0;
+    position: relative;
+    transition: 1s;
+}
+
+.titl:hover {
+    transform: translate(0,-30px);
+}
+
+.words {
+    color: #2a3f17;
+    font-size: 24px;
+    top: 162px;
+    left: 0;
+    position: relative;
+    transition: 2s;
+}
+
+.words:hover{
+    transform: scale(1.5);
+}
+
+.fourpoint {
+    width: 100%;
+    height: 563px;
+    left: 0;
+    top: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.onep,
+.twop,
+.threep,
+.fourp {
+    height: 72px;
+    width: 100%;
+    color: #2a3f17;
+    display: flex;
+    flex-direction: row;
+    background-image: url(https://tallgao.oss-cn-beijing.aliyuncs.com/%E6%A4%AD%E5%9C%86%204.png);
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.onep:hover,
+.twop:hover,
+.threep:hover,
+.fourp:hover {
+    transform: translate(80px,0);
+}
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';  /* Project id 3789233 */
+  src: url('https://at.alicdn.com/t/c/font_3789233_083qudjxbc6u.woff2?t=1671503838119') format('woff2'),
+       url('https://at.alicdn.com/t/c/font_3789233_083qudjxbc6u.woff?t=1671503838119') format('woff'),
+       url('https://at.alicdn.com/t/c/font_3789233_083qudjxbc6u.ttf?t=1671503838119') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 45px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2a3f17;
+    margin: 0;
+    top: 10px;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.iconfont:hover {
+    transform:scale(1.5);
+}
+
+.onepo,
+.twopo,
+.threepo,
+.fourpo {
+    height: 100%;
+    width: 70px;
+    left: 12px;
+    position: relative;
+    margin: 0;
+}
+
+.onet,
+.twot,
+.threet,
+.fourt {
+    font-size: 24px;
+    color: #2a3f17;
+    margin: 0;
+    line-height: 72px;
+    left: 15px;
+    position: relative;
+}
+
+.word {
+    height: 1020px;
+    width: 521px;
+    top: 348px;
+    right: 0;
+    position: relative;
+    margin: 0;
+    background-color: transparent;
+}
+
+.bottom {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 176px;
+    justify-content: space-between;
+}
+
+.left {
+    width: 250px;
+    height: 143px;
+    font-size: 40px;
+    left: 104px;
+    top: 0;
+    color: #2a3f17;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.sea {
+    margin: 0;
+}
+
+.moretwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.art,
+.life {
+    font-size: 24px;
+    color: #697461;
+}
+
+.Moreone {
+    font-size: 30px;
+    margin: 0;
+    top: 176px;
+    color: #2a3f17;
+}
+
+.bigworld {
+    font-size: 36px;
+    line-height: 73px;
+    width: 360px;
+    height: 73px;
+    top: 30px;
+    background-color: #949f8b;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    transition: 2s;
+}
+
+.bigworld:hover {
+    transform: translate(0,-100px);
+    background-color: #ffffff;
+    color: #949f8b;
+}
