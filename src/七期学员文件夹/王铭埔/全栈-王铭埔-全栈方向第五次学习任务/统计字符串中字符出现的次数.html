@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let str1=prompt("请输入字符串");
+        console.log("输入的字符串为" + str1);
+        let str2=prompt("请输入子字符串");
+        console.log("输入的子字符串为" + str2);
+
+        let count=0 ;
+        let m = Array.from(str1);
+        let n = Array.from(str2);
+
+        for(let i = 0 ;i < str1.length ;i++){
+            for(let h = 0 ; h < str2.length ; h++){
+                if(str1[i] === str2[h]){
+                    count++;
+                }
+            }
+        }
+        let a = str2.length;
+        count = count/a;
+        console.log("子字符串出现的次数为" + count);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
