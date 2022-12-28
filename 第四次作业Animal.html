@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charest="UTF-8">
+    <title>Animal</title>
+    <style type="text/css">
+        .Content{
+            width:1500px;
+            height:100%;
+            margin:0 auto;
+            max-width:90%;
+            position:relative;
+        }
+        .top{
+            height:50px;
+            width:100%;
+            background:white;
+            position:absolute;
+        }
+        .sousuo{
+            position:absolute;
+            width:30px;
+            height:30px;
+            margin-top:10px;
+            right:50px;
+        }
+        .caidan{
+            position:absolute;
+            width:30px;
+            height:30px;
+            margin-top:10px;
+            left:50px;
+            transition:0.5s;
+        }
+        .caidan:hover{
+            transform:scale(0.6);
+        }
+        .pic1,.pic2{
+            width:100%;
+            height:100%;
+        }
+        .first{
+            position:absolute;
+            top:0px;
+            width:100%;
+            height:1500px;
+        } 
+        .background1{
+            width:100%;
+            height:80%;
+            position:relative;
+        }
+        .turtle{
+            position:relative;
+            height:90%;
+            width:100%;
+            top:50px;
+        }
+        .topcenter{
+            background:rgb(118, 189, 118);
+            width:200px;
+            height:200px;
+            position:absolute;
+            top:0;
+            left:50%;
+            margin-left:-100px;
+            transition:0.5s;
+        }
+        .topcenter:hover{
+            transform:scale(0.8);
+        }
+        .quan{
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin:-82px 0 0 -82px;
+            width:145px;
+            height:145px;
+            border-radius:80px;
+            border:10px solid white;
+        }
+        .camera{
+            width:100px;
+            height:80px;
+            position:absolute;
+            top:55%;
+            left:52%;
+            margin:-50px 0 0 -50px;
+        }
+        .title{
+            margin-top: 250px;
+            text-align: center;
+            height:80px;
+        }
+        .passage1{
+            margin-top: 10px;
+            width:900px;
+            margin:0 auto;
+        }
+        .explore{
+            background:rgb(54, 83, 54);
+            width:150px;
+            height:50px;
+            position:relative;
+            left:18%;
+            top:50px;
+            text-align: center;
+        }
+        span{
+            color:whitesmoke;
+            font-size:30px;
+        }
+        .he{
+            position:absolute;
+            width:1000px;
+            top:25%;
+            left:50%;
+            margin-left:-500px;
+            height:400px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .he1{
+            transition: all 0.3s;
+            width:300px;
+        }
+        .he2{
+            transition: all 0.3s;
+            width:300px;
+        }
+        .he3{
+            transition: all 0.3s;
+            width:300px;
+        }
+        .he1:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .he2:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .he3:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .background2{
+            top:500px;
+            height:20%;
+            width:100%;
+            position:relative;
+        }
+        .lu{
+            position:relative;
+            width:100%;
+            height:100%;
+        }
+        .center{
+            background:gainsboro;
+            width:100%;
+            height:2300px;
+        }
+        .ph1{
+            background:whitesmoke;
+            width:600px;
+            height:350px;
+            left:50%;
+            margin-left:-300px;
+            top:-100px;
+            display:flex;
+            flex-direction: column;
+            position:relative;
+            transition: all 0.3s;
+        }
+        .ph1:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .pa1{
+            position:absolute;
+            left:50%;
+            width:500px;
+            margin-left:-250px;
+            top:50px;
+        }
+        .signup{
+            background:rgb(54, 83, 54);
+            width:200px;
+            height:70px;
+            position:absolute;
+            bottom:40px;
+            left:50%;
+            margin-left:-100px;
+            text-align: center;
+            line-height: 50%;
+            transition:0.5s;
+        }
+        .signup:hover{
+            transform:scale(0.8);
+        }
+        .difference{
+            position:absolute;
+            top:500px;
+            left:50%;
+            margin-left: -125px;
+            text-align: center;
+            line-height:5px;
+            width:350px;
+            height:100px;
+        }
+        @keyframes move{
+            0%   {border:0;}
+            25%  {border-top:10px solid rgb(54, 83, 54);}
+            50%  {border-right:10px solid rgb(54, 83, 54);}
+            75%  {border-bottom:10px solid rgb(54, 83, 54);}
+            100% {border-left:10px solid rgb(54, 83, 54);}
+        }
+        .difference:hover {
+            animation:move 1s linear ;
+        }
+        .animal{
+            top:300px;
+            width:1000px;
+            height:370px;
+            left:50%;
+            margin-left: -500px;
+            display:flex;
+            justify-content:space-between;
+            position:relative;
+        }
+        .Horse,.Kangaroo,.Lion,.Hummingbird{
+            position:relative;
+            background:rgb(205, 199, 199);
+            width:220px;
+            height:370px;
+            display:flex;
+            flex-direction:column;
+            text-align:center;
+            transition: all 0.3s;
+        }
+        .Horse:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .Kangaroo:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .Lion:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+        .Hummingbird:hover{
+            box-shadow:0 16px 32px 0 rgba(48,55,66,0.15);
+            transform:translateY(-20px);
+        }
+.title01,.title02,.title03,.title04,.title05,.title06,.title07,.title08{
+            margin-top:40px;
+        }
+        p1{
+            font-size:25px;
+            color:rgb(54, 83, 54);
+            font-weight:bold;
+        }
+        p2{
+            font-size:20px;
+            color:rgb(54, 83, 54);
+            padding-bottom:5px;
+            border-bottom:2px solid rgb(54, 83, 54);
+        }
+        .title2{
+            border:3px solid rgb(54, 83, 54);
+            text-align:center;
+            position:absolute;
+            left:50%;
+            margin-left:-250px;
+            margin-top:350px;
+            width:500px;
+            height:80px;
+            transition-property:all;
+            transition-duration:0.5s;
+        }
+        .title2:hover{
+            background:rgb(54, 83, 54);
+        }
+        p3{
+            top:20px;
+            font-size:60px;
+            color:rgb(54, 83, 54);
+            font-weight:bold;
+            transition-property:all;
+            transition-duration:0.5s;
+        }
+        p3:hover{
+            color:gainsboro;
+        }
+        .songshu{
+            position:absolute;
+            width:85%;
+            height:600px;
+            left:50%;
+            margin-left:-520px;
+            top:1200px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .right{
+            margin-left:50px;
+            height:600px;
+            display:flex;
+            flex-direction: column;
+        }
+        .title3{
+            margin-top: 30px;
+            flex:1;
+            transition:all 0.3s;
+        }
+        .title3:hover{
+            transform:translateY(-50px);
+        }
+        .passage2{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            transition:0.3s;
+        }
+        .passage2:hover{
+            transform:translateX(20px) scale(1.2);
+            transform-origin: left top;
+        }
+        .quan1{
+            flex: 1;
+            transition:0.3s;
+        }
+        .quan1:hover{
+            transform:translateX(100px);
+        }
+        .quan2{
+            flex: 1;
+            transition:0.3s;
+        }
+        .quan2:hover{
+            transform:translateX(100px);
+        }
+        .quan3{
+            flex: 1;
+            transition:0.3s;
+        }
+        .quan3:hover{
+            transform:translateX(100px);
+        }
+        .quan4{
+            flex: 1;
+            transition:0.3s;
+        }
+        .quan4:hover{
+            transform:translateX(100px);
+        }
+        .box{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .big{
+            flex:1;
+            text-align: center;
+        }
+        .small{
+            flex:1;
+            text-align: left;
+        }
+        .rightbox{
+            text-align: center;
+            line-height: 500%;
+            background:rgb(54, 83, 54);
+            height:80px;
+            width:500px;
+            transition:1s;
+        }
+        @keyframes change1{
+            to{
+                background:whitesmoke;
+            }
+        }
+        .rightbox:hover{
+            animation: change1 1s;
+            transform:translateY(-50px);
+        }
+        a{
+            transition:1s;
+        }
+        @keyframes change2{
+            to{
+                color:rgb(54, 83, 54);
+            }
+        }
+        a:hover{
+            animation: change2 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="caidan">
+            <img class="pic1" src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E8%8F%9C%E5%8D%95.png">
+        </div>
+        <div class="sousuo">
+            <img class="pic2" src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E6%90%9C%E7%B4%A2.png"> 
+        </div>
+    </div>
+    <div class="background1">
+        <img class="turtle" src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E6%B5%B7%E9%BE%9F.png">
+    </div>
+    <div class="first">
+        <div class="Content">
+            <div class="title"><P style="font-size: 60PX;color:rgb(54, 83, 54);font-weight:bold;font-family:STSong">Animal Photography</P></div>
+            <div class="passage1"><p style="font-family:STXihei;color:rgb(54, 83, 54);font-size:25px;font-weight:bold">A silhouette of them,a simple little acttion,here are the photographer's eyes the best of them,their laughter,their love,their every vivid,are recored by us.</p></div>
+            <div class="explore"><span>EXPLORE</span></div>
+            <div class="he">
+                <img class="he1" src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E9%B9%A41.png"> 
+                <img class="he2" src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E9%B9%A42.png"> 
+                <img class="he3" src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E9%B9%A43.png"> 
+            </div>
+        </div>
+        <div class="topcenter">
+            <div class="quan">
+                <img class="camera" src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E7%9B%B8%E6%9C%BA.png"> 
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="background2">
+            <img class="lu" src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E9%B9%BF.png"> 
+        </div>
+        <div class="Content">
+            <div class="ph1">
+                <div class="pa1"><p style="color:rgb(54, 83, 54);font-size:13px;font-family:STXihei;font-weight:bold;">"Family Farms is the best place, where I can buy fruit, vegetable, meat, honey, milk, eggs and so on for my retaurant directly fromupplier. Super convinient. Thank you"xdccnfc cfvfesc cfnccnjdcn cfjdcdsr dcwwzwqg ejs dddc ddf fnfjv eij fvnv jnxzexh cn cdcmdsc ddnc, cddmdcds dncdn cdcn wqeoeas, dcndassasas, cdcndcnc cciqoskxm cbdcpqslwq nfnere nfncsfjjc dndcww frhfjnc qpdjweiw cnncqe, ccqisdc ccn dcjndc, ncf cdncjd dcdjcndq csjncq dcdncf dcdjdnc cdjsq, qkodkqe wqcnpsdc cdnqq qcw, cqnonxj dcdcnd dcnjsdvb wcnwq cowwncjq jjcnjncqnw wcq c wd cwch, cnjncnc ece cdcnncdwnc nenwc dcnnc  cjcj, c cjrnc wecwc.</p></div>
+                <div class="signup"><p style="color:whitesmoke;font-size:30px">SIGN UP</p></div>
+            </div>
+            <div class="difference"><p style="color:rgb(54, 83, 54);font-size:70px">Difference</p></div>
+            <div class="animal">
+                <div class="Horse">
+                    <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E9%A9%AC.png"> 
+                    <div class="title01"><p1>Horse</p1></div>
+                    <div class="title02"><p2>A difference story</p2></div>
+                </div>
+                <div class="Kangaroo">
+                    <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E8%A2%8B%E9%BC%A0.png"> 
+                    <div class="title03"><p1>Kangaroo</p1></div>
+                    <div class="title04"><p2>A difference story</p2></div>
+                </div>
+                <div class="Lion">
+                    <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E7%8B%AE%E5%AD%90.png"> 
+                    <div class="title05"><p1>Lion</p1></div>
+                    <div class="title06"><p2>A difference story</p2></div>
+                </div>
+                <div class="Hummingbird">
+                    <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E8%9C%82%E9%B8%9F.png"> 
+                    <div class="title07"><p1>Hummingbird</p1></div>
+                    <div class="title08"><p2>A difference story</p2></div>
+                </div>
+            </div>
+            <div class="title2"><p3>Know more</p3></div>
+            <div class="songshu">
+                <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png"> 
+                <div class="right">   
+                    <div class="title3"><a style="font-size:50px;color:rgb(54, 83, 54)">The Photo</a></div>
+                    <div class="passage2"><p style="font-size: 20px;color:rgb(54, 83, 54)">"Family Farms is the best placewhere I can buy fruit,vegetable,meat,honey,milk,eggs and so on for my retaurant directly from supplier.Super convinient.Thank you"</p></div> 
+                    <div class="quan1">
+                        <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/first_circle.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p2>Looking for it</p2> 
+                    </div>
+                    <div class="quan2">
+                        <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/second_circle.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p2>Cultivate feelings</p2> 
+                    </div>
+                    <div class="quan3">
+                        <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/third_circle.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p2>Shooting</p2> 
+                    </div>
+                    <div class="quan4">
+                        <img src="https://yayabucket.oss-cn-wulanchabu.aliyuncs.com/fourth_circle.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p2>Harvest achievement</p2> 
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="Content">
+            <div class="box">
+                <div class="big">
+                        <div class="big1"><p style="color:rgb(54, 83, 54);font-size:40px">IN THE WILD</p></div>
+                        <div class="big2"><p style="color:rgb(54, 83, 54);font-size:40px">IN THE SEA</p></div>
+                </div>
+                <div class="small">
+                        <div class="small1"><p style="color:rgb(54, 83, 54);font-size:30px">MOER</p></div>
+                        <div class="small2"><p style="color:rgb(54, 83, 54);font-size:20px">We create art</p></div>
+                        <div class="small3"><p style="color:rgb(54, 83, 54);font-size:20px">We create life</p></div>
+                </div>
+                <div class="rightbox"><a style="color:whitesmoke;font-size:40px">Big World</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
