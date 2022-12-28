@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = prompt('请输入母串：')
+        var target = prompt('请输入子串：')
+        let count = 0;
+            for (var i = 0; i < str.length; i++) {
+                for (var j = 0; j < target.length; j++) {
+                    while (i < str.length && str[i] !== target[j]) {
+                        i++;
+                    }
+                }
+                if (i < str.length && j == target.length) count++;
+            }
+            alert(count)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
