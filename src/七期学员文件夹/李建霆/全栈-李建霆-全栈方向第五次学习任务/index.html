@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     function getStr (fStr, cStr) {
+    if (typeof(fStr) !== "string" || typeof(cStr) !== "string") {
+        return 0;
+    }
+ 
+    if (fStr.length < cStr.length) {
+        return 0;
+    }
+ 
+    let nNum = 0;
+    for (let i = 0; i < fStr.length; i++) {
+        let b = true;
+        let k = i;
+        for (let n = 0; n < cStr.length; k++, n++) {
+            if (fStr[k] !== cStr[n]) {
+                b= false;
+                break;
+            }
+        }
+ 
+        if (b) {
+            nNum++;
+        }
+    }
+ 
+    return nNum;
+}
+
+let fname = prompt("请输入母串")
+
+let sname = prompt("请输入子串") 
+
+console.log("子串的数目是",getStr(fname,sname));
+</script>
+<body>
+    
+</body>
+</html>
