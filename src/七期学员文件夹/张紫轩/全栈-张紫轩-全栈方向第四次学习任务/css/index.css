@@ -1,6 +1,9 @@
 *{
     margin: 0;
 }
+body {
+    overflow-x: hidden;
+}
 .banner{
     width: 100% ;
     height: 1330px;
