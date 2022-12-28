@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zichuan</title>
+    <script>
+        var str1=prompt('请输入母串','');
+        
+        var str2=prompt('请输入子串','');
+        
+        var num=0;
+        for(var i=0;i<str1.length;i++)
+        {
+            var judge=true;
+            for(var j=0;j<str2.length;j++)
+            {
+                if(str2[j]!=str1[i+j])
+                {
+                    judge=false;
+                    break;
+                }
+            }
+            if(judge==true)
+            {
+                num++;
+            }
+        }
+        document.write('母串为'+str1+'<br/>');
+        document.write('子串为'+str2+'<br/>');
+        document.write('母串中子串的个数是'+num+'个');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
