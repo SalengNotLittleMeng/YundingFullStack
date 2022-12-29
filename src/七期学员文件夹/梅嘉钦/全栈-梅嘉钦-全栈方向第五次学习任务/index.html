@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅嘉钦-全栈方向第五次学习任务</title>
+    <script>
+        let parentStr = prompt("请输入母串");
+        let childStr = prompt("请输入子串");
+        let count = 0;
+        for (let i = 0; i < parentStr.length; i++) {
+            for (let j = 0; j < childStr.length; j++) {
+                if (parentStr[i] === childStr[j]) {
+                    count++;
+                }
+                else {
+                    break;
+                }
+            }
+        }
+        console.log("母串：", parentStr);
+        console.log("子串：", childStr);
+        console.log("母串中子串的个数为：", count);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

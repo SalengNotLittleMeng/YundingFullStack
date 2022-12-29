@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = prompt("请输入母串");
+        var substr = prompt("请输入子串");
+        console.log("母串为" +str);
+        console.log("子串为" +substr);
+        var str1 = [];
+        var substr1 = [];
+        str1 = str;
+        substr1 = substr;
+        var count = 0;
+        var str1Length = str1.length;
+        var substr1Length = substr1.length;
+        for (var i = 0; i < str1Length; i++)
+        {
+            for (var j = 0; j < substr1Length; j++) {
+                if (str1[i + j] != substr1[j]) {
+                    break;
+                }
+            }
+            if (j == substr1Length) {
+                count++;
+            }
+        }
+        console.log("子串出现的个数为" + count);
+    </script>
+</head>
+<body>
+</body>
+</html>

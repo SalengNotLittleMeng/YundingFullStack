@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head> <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>求子串出现的次数</title>
+</head>
+<script  type="text/javascript">
+    var mother=prompt("请输入母串：","yundingshuyuan");
+    var son=prompt("请输入子串:","yu");
+    var arr1=Array.from(mother);
+    var arr2=Array.from(son);
+    var n1=arr1.length;
+    var n2=arr2.length;
+    console.log(arr1);
+    console.log(arr2);
+    var search=function (arr1,arr2) {
+        var n=0;
+        let n3=0;
+        let z=true;
+        let j=0;
+        for(let i=0;i<n1;i++){
+            let k=i;
+            console.log(arr1[i]);
+            while(arr2[j]==arr1[k]){
+                console.log(arr2[j]);
+                n3++;
+                j++;
+                break;
+            }
+            if(n3==n2){
+                n++;
+                j=0;
+                n3=0;
+            }
+        }
+        return n;
+        }
+    var a=search(mother,son);
+    alert("子串的数目为："+a);
+</script>
+    
