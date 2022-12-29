@@ -1,0 +1,87 @@
+.back{
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/yourname.png);
+    width: 964px;
+    height: 624px;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+}
+*{
+    margin: 0;
+}
+.box{
+    width: 1400px;
+    height: 624px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box1{
+    position: absolute;
+    width: 520px;
+    height: 50px;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    top: 50px;
+    left: 222px;
+}
+.box2{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    color: blue;
+    font-size: 50px;
+    font-family:Georgia,'Times New Roman',Times,serif;
+    top: 200px;
+    left: 380px;
+}
+.button{
+    background-color: rgb(22, 60, 106);
+    opacity: 0.8;
+    border: none;
+    color: rgb(187, 198, 30);
+    padding: 15px 60px;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 350px;
+    left: 390px;
+    transition: 1s;
+}
+.button:hover{
+    transform: scale(0.8);
+    background-color: rgb(231, 117, 46);
+    opacity: 0.5;
+    color: rgb(22, 60, 106);
+}
+.side1{
+    width: 200px;
+    background-size: cover;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/side1.png);
+}
+.side2{
+    width: 200px;
+    background-size: cover;
+    background-image: url(https://zzx1604.oss-cn-beijing.aliyuncs.com/side2.png);
+}
+.bo_box1{
+    position: absolute;
+    top: 100px;
+    font-size: 30px;
+    width: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(42, 42, 171);
+    left: 30px;
+}
+.bo_box2{
+    position: absolute;
+    top: 90px;
+    font-size: 30px;
+    width: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(42, 42, 171);
+    right: 30px;
+}
