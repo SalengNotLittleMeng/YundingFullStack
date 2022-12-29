@@ -1,0 +1,489 @@
+  * {
+      margin: 0px;
+      padding: 0px;
+  }
+
+  .container {
+      width: 1920px;
+      margin: 0 auto;
+      position: relative;
+  }
+
+  .first {
+      height: 890px;
+  }
+
+  .top {
+      width: 1920px;
+      height: 50px;
+      background-color: white;
+      position: absolute;
+      display: flex;
+  }
+
+  .box1 {
+      height: 50px;
+      width: 70px;
+  }
+
+  .box1:hover {
+      transform: scale(0.7);
+      transition: all 0.3s;
+  }
+
+  .box2 {
+      height: 50px;
+      width: 70px;
+      margin-left: auto;
+  }
+
+  .box2:hover {
+      transform: scale(0.7);
+      transition: all 0.3s;
+  }
+
+  .photo {
+      width: 202px;
+      height: 202px;
+      background-color: #81c04b;
+      margin-left: 850px;
+  }
+
+  .photo:hover {
+      transform: scale(1.1);
+      transition: all 0.3s;
+  }
+
+  .photo1 {
+      position: relative;
+      top: 10px;
+      left: 20px;
+  }
+
+  .photo2 {
+      position: relative;
+      top: -120px;
+      left: 40px;
+  }
+
+  .text1 {
+      font-size: 78px;
+      color: #2a3f17;
+      position: relative;
+      top: -650px;
+      left: 590px;
+      font-family: Cambria;
+
+  }
+
+  .text2 {
+      font-size: 15px;
+      color: #2a3f17;
+      position: absolute;
+      top: 330px;
+      left: 412px;
+      font-family: MicrosoftYaHei;
+      opacity: 0.78;
+
+  }
+
+  .box3 {
+      width: 264px;
+      height: 72px;
+      background-color: #2a3f17;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      position: absolute;
+      top: 600px;
+      left: 420px;
+      padding-top: 15px;
+  }
+
+  .second {
+      background-color: white;
+      height: 600px;
+  }
+
+  .pic {
+      width: 1120px;
+      height: 504px;
+      display: flex;
+      position: absolute;
+      top: 780px;
+      left: 420px;
+  }
+
+  .box4 {
+      margin-right: 60px;
+      width: 330px;
+      height: 100%;
+  }
+
+  .text4 {
+      font-size: 38px;
+      color: white;
+      position: relative;
+      top: -141px;
+      left: 200px;
+  }
+
+  .box4:hover {
+      transform: translateY(-40px);
+      transition: all 0.6s;
+  }
+
+  .box5 {
+      margin-right: 60px;
+      background-image: url(https://zhaodn.oss-cn-beijing.aliyuncs.com/huoleiniao2.png);
+      width: 330px;
+      height: 100%;
+      font-size: 40px;
+      color: white;
+  }
+
+  .text5 {
+      font-size: 38px;
+      color: white;
+      position: relative;
+      top: -141px;
+      left: 200px;
+  }
+
+  .box5:hover {
+      transform: translateY(-40px);
+      transition: all 0.6s;
+  }
+
+  .box6 {
+      background-image: url(https://zhaodn.oss-cn-beijing.aliyuncs.com/huoleiniao3.png);
+      width: 330px;
+      height: 100%;
+      font-size: 40px;
+      color: white;
+  }
+
+  .text6 {
+      font-size: 38px;
+      color: white;
+      position: relative;
+      top: -141px;
+      left: 200px;
+  }
+
+  .box6:hover {
+      transform: translateY(-40px);
+      transition: all 0.6s;
+  }
+
+  .third {
+      height: 762px;
+  }
+
+  .c {
+      width: 950px;
+      height: 542px;
+      position: absolute;
+      left: 500px;
+      top: 1400px;
+      background-color: #e0dfdf;
+      color: #2a3f17;
+      text-align: center;
+      font-size: 20px;
+
+  }
+
+  .c:hover {
+      transform: translateY(-40px);
+      transition: all 0.7s;
+  }
+
+  .box8 {
+      width: 200px;
+      height: 75px;
+      position: relative;
+      top: 88px;
+      left: 376px;
+      background-color: #2a3f17;
+      font-size: 40px;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+  }
+
+  .box8:hover {
+      transform: scale(0.7, 0.7);
+      transition: all 0.6s;
+  }
+
+  .text7 {
+      font-size: 40px;
+      text-align: center;
+      color: #55634b;
+  }
+
+  .box9 {
+      display: flex;
+  }
+
+  .box10 {
+      text-align: center;
+      font-size: 30px;
+      margin-left: 400px;
+      height: 450px;
+      background-color: #e0dfdf;
+      color: #2a3f17;
+  }
+
+  .box10:hover {
+      transform: translateY(-40px);
+      transition: all 0.6s;
+  }
+
+  .box11 {
+      text-align: center;
+      font-size: 30px;
+      margin-left: 30px;
+      background-color: #e0dfdf;
+      color: #2a3f17;
+  }
+
+  .box11:hover {
+      transform: translateY(-40px);
+      transition: all 0.6s;
+  }
+
+  .box12 {
+      text-align: center;
+      font-size: 30px;
+      margin-left: 30px;
+      background-color: #e0dfdf;
+      color: #2a3f17;
+  }
+
+  .box12:hover {
+      transform: translateY(-40px);
+      transition: all 0.6s;
+  }
+
+  .box13 {
+      text-align: center;
+      font-size: 30px;
+      margin-left: 30px;
+      background-color: #e0dfdf;
+      color: #2a3f17;
+  }
+
+  .box13:hover {
+      transform: translateY(-40px);
+      transition: all 0.6s;
+  }
+
+  .box15 {
+      height: 272px;
+  }
+
+  .box14 {
+      position: relative;
+      top: 120px;
+      width: 360px;
+      height: 45px;
+      margin: 0 auto;
+      border: 3px solid #2a3f17;
+      background-color: white;
+      text-align: center;
+      font-size: 30px;
+      color: #2a3f17;
+  }
+
+  .box15 {
+      height: 272px;
+  }
+
+  .box14 {
+      position: relative;
+      top: 120px;
+      width: 360px;
+      height: 45px;
+      margin: 0 auto;
+      border: 3px solid #2a3f17;
+      background-color: white;
+      text-align: center;
+      font-size: 30px;
+      color: #2a3f17;
+  }
+
+  .box14:hover {
+      background-color: #2a3f17;
+      color: white;
+  }
+
+  .box16 {
+      display: flex;
+      height: 1020px;
+  }
+
+  .box17 {
+      margin-left: 254px;
+      margin-right: 120px;
+      width: 704px;
+  }
+
+  .box18 {
+      width: 610px;
+      color: #2a3f17;
+  }
+
+  .text8 {
+      font-size: 35px;
+  }
+
+  .text8:hover {
+      transform: translateY(-40px);
+      transition: all 0.6s;
+  }
+
+  .text9 {
+      font-size: 30px;
+  }
+
+  .text9:hover {
+      transform: translateX(40px);
+      transition: all 0.6s;
+  }
+
+  .a {
+      display: flex;
+  }
+
+  .a:hover {
+      transform: translate(100px, 0);
+      transition: 0.8s;
+  }
+
+  .b {
+      display: flex;
+  }
+
+  .b:hover {
+      transform: translate(100px, 0);
+      transition: 0.8s;
+  }
+
+  .d {
+      display: flex;
+  }
+
+  .d:hover {
+      transform: translate(100px, 0);
+      transition: 0.8s;
+  }
+
+  .e {
+      display: flex;
+  }
+
+  .e:hover {
+      transform: translate(100px, 0);
+      transition: 0.8s;
+  }
+
+  .box19 {
+      height: 70px;
+      width: 70px;
+      border-radius: 70px;
+      background-color: white;
+      border: 3px solid #2a3f17;
+      font-size: 50px;
+      text-align: center;
+      color: #2a3f17;
+      margin-top: 70px;
+      margin-right: 20px;
+  }
+
+  .box20 {
+      height: 70px;
+      width: 70px;
+      border-radius: 70px;
+      background-color: white;
+      border: 3px solid #2a3f17;
+      font-size: 50px;
+      text-align: center;
+      color: #2a3f17;
+      margin-top: 70px;
+      margin-right: 20px;
+  }
+
+  .box21 {
+      height: 70px;
+      width: 70px;
+      border-radius: 70px;
+      background-color: white;
+      border: 3px solid #2a3f17;
+      font-size: 50px;
+      text-align: center;
+      color: #2a3f17;
+      margin-top: 70px;
+      margin-right: 20px;
+  }
+
+  .box22 {
+      height: 70px;
+      width: 70px;
+      border-radius: 70px;
+      background-color: white;
+      border: 3px solid #51782f;
+      font-size: 50px;
+      text-align: center;
+      color: #2a3f17;
+      margin-top: 70px;
+      margin-right: 20px;
+  }
+
+  .box23 {
+      height: 464px;
+      border-top: 3px solid black;
+      display: flex;
+  }
+
+  .box25 {
+      height: 60px;
+      background-color: white;
+  }
+
+  .text14 {
+      font-size: 40px;
+      color: #2a3f17;
+      position: relative;
+      top: 170px;
+      left: 300px;
+  }
+
+  .text15 {
+      font-size: 30px;
+      color: #2a3f17;
+      position: relative;
+      top: 170px;
+      left: 400px;
+  }
+
+  .box24 {
+      width: 366px;
+      height: 82px;
+      position: relative;
+      top: 194px;
+      left: 900px;
+      background-color: #2a3f17;
+      opacity: 0.5;
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      padding-top: 20px;
+  }
+
+  .box24:hover {
+      background-color: white;
+      transform: translate(0, -40px);
+      color: #2a3f17;
+      transition: 1s;
+  }

@@ -1,0 +1,65 @@
+{
+  "id": "3794945",
+  "name": "Web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1221178",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    },
+    {
+      "icon_id": "17816845",
+      "name": "更多",
+      "font_class": "gengduo1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "999120",
+      "name": "放大镜",
+      "font_class": "ai219",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "12939972",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "658053",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "380346",
+      "name": "info",
+      "font_class": "info",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "2742625",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "7556165",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

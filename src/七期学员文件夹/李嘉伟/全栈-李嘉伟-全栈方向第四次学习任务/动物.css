@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* Project id 3838722 */
+    src: url('./font/iconfont.woff2') format('woff2'),
+        url('./font/iconfont.woff') format('woff'),
+        url('./font/iconfont.ttf') format('truetype');
+}
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 10px;
+    transition: font-size,5s;
+}
+
+.iconfont:hover {
+    font-size: 16px;
+}
+
+.iconfont2 {
+    font-family: "iconfont" !important;
+    font-size: 100px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionOne {
+    position: relative;
+    width: 100%;
+    height: 930px;
+    background-image: url(./img/乌龟.png);
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+}
+
+.contentOne {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -738px;
+    width: 1476px;
+    height: 930px;
+}
+
+.camera {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: #81c04b;
+    transition:transform 2s;
+}
+
+.camera:hover {
+    transform:scale(0.8);
+}
+
+.circle {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 164px;
+    height: 164px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.circle img {
+    position: relative;
+    top: 40px;
+    left: 25px;
+}
+
+.title {
+    position: relative;
+    top: 288px;
+    text-align: center;
+    font: 70px "微软雅黑";
+    color: #2a3f17;
+}
+
+.text {
+    position: relative;
+    top: 330px;
+    left: 50%;
+    margin-left: -547px;
+    width: 1094px;
+    height: 88px;
+    font: 30px "微软雅黑";
+    color: #2a3f17;
+}
+
+.button1 {
+    position: absolute;
+    top: 620px;
+    left: 160px;
+    width: 260px;
+    height: 70px;
+    background-color: #2a3f17;
+}
+
+.button1 a {
+    position: absolute;
+    top: 15px;
+    left: 65px;
+    font: 30px "微软雅黑";
+    color: #fff;
+    text-decoration: none;
+}
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:600px;
+    left: 160px;
+    width: 1110px;
+    height: 490px;
+}
+
+.img img {
+    transition:transform 2s;
+}
+
+.img img:hover {
+    transform: translateY(-50px);
+}
+
+
+.p1 {
+    position: absolute;
+    top: 320px;
+    left: 200px;
+    font: 48px "微软雅黑";
+    color: #fff;
+}
+
+.p2 {
+    position: absolute;
+    top: 320px;
+    left: 560px;
+    font: 48px "微软雅黑";
+    color: #fff;
+}
+
+.p3 {
+    position: absolute;
+    top: 320px;
+    left: 900px;
+    font: 48px "微软雅黑";
+    color: #fff;
+}
+
+.sectionTwo {
+    position: relative;
+    width: 100%;
+    height: 1355px;
+}
+
+.contentTwo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -738px;
+    width: 1476px;
+    height: 1355px;
+}
+
+.deer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 760px;
+}
+
+.familyFarms {
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    margin-left: -475px;
+    width: 950px;
+    height: 540px;
+    background-color: #e0dfdf;
+    transition: transform 2s;
+}
+
+.familyFarms:hover {
+    transform: translateY(-50px);
+}
+
+.textTwo {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    height: 230px;
+    font: 20px "微软雅黑";
+    color: #2a3f17;
+}
+
+.button2 {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    margin-left: -95px;
+    width: 190px;
+    height: 70px;
+    background-color: #2a3f17;
+    transition: transform 2s;
+}
+
+.button2:hover {
+    transform: scale(0.8);
+}
+
+.button2 a {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    text-decoration: none;
+    font: 30px "微软雅黑";
+    color: white;
+}
+
+.sectionThree {
+    position: relative;
+    width: 100%;
+    height: 846px;
+}
+
+.contentThree {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -735px;
+    width: 1476px;
+    height: 846px;
+}
+
+.difference {
+    position: relative;
+    top: 70px;
+    left: 50%;
+    margin-left: -120px;
+    font: 48px "微软雅黑";
+    color: #2a3f17;
+    width: 250px;
+}
+
+.difference:hover{
+    animation: circle 4s;
+}
+
+@keyframes circle {
+    0% {
+        border-width: 0px;
+    }
+
+    25% {
+        border-top: #2a3f17 3px solid;
+    }
+
+    50% {
+        border-top: #2a3f17 3px solid;
+        border-right: #2a3f17 3px solid;
+    }
+
+    75% {
+        border-top: #2a3f17 3px solid;
+        border-right: #2a3f17 3px solid;
+        border-bottom: #2a3f17 3px solid;
+    }
+
+    100% {
+        border-top: #2a3f17 3px solid;
+            border-right: #2a3f17 3px solid;
+            border-bottom: #2a3f17 3px solid;
+        border-left: #2a3f17 3px solid;
+}   
+}
+
+.story {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    margin-left: -570px;
+    width: 1140px;
+    height: 410px;
+}
+
+.box {
+    width: 260px;
+    height: 414px;
+    background-color: #e0dfdf;
+}
+
+.story .box {
+    transition:transform 2s;
+}
+
+.story .box:hover {
+    transform:translateY(-50px);
+}
+
+.horse {
+    position: relative;
+    top: 20px;
+    left: 90px;
+    font: 30px "微软雅黑";
+    color: #2a3f17;
+}
+
+.horseL {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font: 30px "微软雅黑";
+    color: #2a3f17;
+}
+
+.boxEnd {
+    position: relative;
+    top: 50px;
+    left: 40px;
+    font: 22px "微软雅黑";
+    color: #2a3f17;
+    text-decoration: underline;
+}
+
+.button3 {
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    margin-left: -178px;
+    width: 356px;
+    height: 70px;
+    border: 1px solid #2a3f17;
+    transition: background-color 2s;
+}
+
+.button3 a {
+    position: absolute;
+    top: 15px;
+    left: 95px;
+    font: 30px "微软雅黑";
+    color: #2a3f17;
+    text-decoration: none;
+    transition: color 2s;
+}
+
+.button3:hover {
+    background-color: #2a3f17;
+}
+
+.button3 a:hover {
+    color: #fff;
+}
+
+.sectionFour {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+}
+
+.contentFour {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -738px;
+    width: 1476px;
+    height: 1080px;
+}
+
+.squirrel {
+    float: left;
+    width: 700px;
+    height: 1020px;
+}
+
+.character {
+    position: relative;
+    left: 130px;
+    font: 36px "微软雅黑";
+    color: #2a3f17;
+    transition: transform 2s;
+}
+
+.character:hover {
+    transform: translateY(-50px);
+}
+
+.paragraph {
+    position: absolute;
+    left: 800px;
+    top: 80px;
+    width: 520px;
+    height: 110px;
+    font: 24px "微软雅黑";
+    color:#2a3f17;
+    transition: transform 2s;
+}
+
+.paragraph:hover {
+    transform: scale(1.2);
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    height: 700px;
+}
+
+
+.four div {
+    transition: transform 2s;
+}
+
+
+.four div:hover {
+    transform: translateX(100px);
+}
+
+.class {
+    position: relative;
+    left: 120px;
+    bottom: 80px;
+    font: 24px "微软雅黑";
+    color: #2a3f17;
+}
+
+.sectionFive {
+    position: relative;
+    width: 100%;
+    height: 460px;
+}
+
+.contentFive {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -738px;
+    width: 1476px;
+    height: 460px;
+}
+
+.wild {
+    position: relative;
+    top: 200px;
+    left: 300px;
+    font: 40px "微软雅黑";
+    color: #2a3f17;
+}
+
+.sea {
+    position: relative;
+    top: 260px;
+    left: 300px;
+    font: 40px "微软雅黑";
+    color: #2a3f17;
+}
+
+.art {
+    position: relative;
+    top: 170px;
+    left: 600px;
+    font: 24px "微软雅黑";
+    color:#2a3f17;
+}
+
+.life {
+    position: relative;
+    top: 190px;
+    left: 600px;
+    font: 24px "微软雅黑";
+    color: #2a3f17;
+}
+
+.more {
+    position: relative;
+    top: 40px;
+    left: 600px;
+    font: 30px "微软雅黑";
+    color: #2a3f17;
+}
+
+.button5 {
+    position: absolute;
+    left: 900px;
+    top: 250px;
+    width: 360px;
+    height: 70px;
+    background-color: #949f8b;
+    transition: transform 2s, background-color 2s;
+}
+
+.button5 a {
+    position: absolute;
+    top: 13px;
+    left: 90px;
+    text-decoration: none;
+    font: 36px "微软雅黑";
+    color: #fff;
+    transition: color 2s;
+}
+
+.button5:hover {
+    transform: translateY(-50px);
+    background-color: #fff;
+}
+
+.button5 a:hover {
+    color: #949f8b;
+}

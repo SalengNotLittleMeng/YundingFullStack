@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第三周作业</title>
+  <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3789518_g6h1achky4n.css">
+  <link rel="stylesheet" href="test1.css">
+  <script>
+    var str = prompt("请输入字符串")
+    var str2 = prompt("请输入子字符串")
+    console.log("字符串为为" ,str)
+    console.log("子串为" ,str2)
+    const _search = (str, target) => {
+            let count = 0;
+            for (var i = 0; i < str.length; i++) {
+                for (var j = 0; j < target.length; j++) {
+                    while (i < str.length && str[i] !== target[j]) {
+                        i++;
+                    }
+                }
+                if (i < str.length && j == target.length) 
+                count++;
+            }
+            return count;
+        }
+    let num = _search(str, str2)
+    console.log("出现的次数为" , num)
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

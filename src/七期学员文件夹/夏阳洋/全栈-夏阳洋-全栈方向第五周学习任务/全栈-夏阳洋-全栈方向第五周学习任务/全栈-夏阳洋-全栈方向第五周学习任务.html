@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全栈-夏阳洋-全栈方向第五周学习任务</title>
+    <script>
+        let parentstr = prompt("请输入母串:");
+        let childstr = prompt("请输入子串:");
+
+        let count = 0;
+        let flag = true;
+
+        for (let i = 0; i < parentstr.length; i++) 
+        {
+            
+            let i = j;
+            for (let j = 0; j < childstr. length; i++, j++)
+            {
+                if (parentstr[i] != childstr[j]) 
+                {
+                    flag = false;
+                }
+            }
+            if (flag === true)
+            {
+                count++;
+            }
+        }
+
+        console.log(`母串为:${parentstr}`,`子串为:${childstr}`);
+        console.log(`子串出现的次数为:${count}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

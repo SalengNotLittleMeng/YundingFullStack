@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          const momStr=prompt('请输入母串：');
+        const sonStr=prompt('请输入子串：');
+        
+        let momIndex=0;
+        let sonIndex=0;
+        let count=0;
+        while(momIndex!=momStr.length){
+            if(momStr[momIndex]==sonStr[sonIndex]){
+                momIndex++;
+                sonIndex++;
+        
+                if(sonIndex==sonStr.length){
+                    
+                    
+                    count++;
+                    sonIndex = 0;
+            }
+            momIndex ++;
+        }
+    }
+        console.log(count);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
