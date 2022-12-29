@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>str</title>
+    <link rel="stylesheet" href="str.css" />
+</head>
+<body>
+    <div class="box">
+        <div class="box_content">
+            <span>请输入字符串</span>
+            <input type="text" name="momStr" id="momStr">
+            <span>请输入子串</span>
+            <input type="text" name="sonStr" id="sonStr">
+        </div>
+        <button onclick="getStrCount(
+            document.getElementById('momStr').value,
+            document.getElementById('sonStr').value)">START
+        </button>
+    </div>
+
+    <script src="str.js"></script>
+</body>
+</html>

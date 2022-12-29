@@ -1,0 +1,418 @@
+.body {
+    width: 1920px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.title {
+    height: 1525px;
+    position: relative;
+}
+/* .photos {
+    height: 600px;
+} */
+.passage {
+    height: 760px;
+    position: relative;
+}
+.difference {
+    height: 550px;
+    position: relative;
+    margin-top: -30px;
+}
+.knowmore {
+    position: relative;
+    height: 1235px;
+    overflow: hidden;
+    width: 1355px;
+    margin-left: 283.5px;
+}
+.bottom {
+    height: 460px;
+    position: relative;
+}
+
+/* 第一部分：背景图+顶端导航栏+绿色摄影机+文字+按钮 */
+.navigation {
+    height: 48px;
+    width: 1920px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.camera {
+    background-color: #81c04b;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 3;
+    left: 860px;
+    top: 0px;
+}
+.camera,
+.navigation span {
+    transition: all 0.8s;
+}
+.camera:hover {
+    scale: 0.8;
+}
+.navigation span:hover {
+    font-size: 16px;
+}
+#camera_circle {
+    position: absolute;
+    z-index: 5;
+    top: 18px;
+    left: 18px;
+}
+#camera_sign {
+    position: absolute;
+    z-index: 11;
+    top: 60px;
+    left: 45px;
+}
+.title_title {
+    width: 630px;
+    font-size: 54px;
+    font-family: Cambria;
+    position: absolute;
+    left: 645px;
+    top: 290px;
+    color: #2a3f17;
+    text-align: center;
+}
+.title_words {
+    width: 1095px;
+    color: #2a3f17;
+    font-size: 24px;
+    position: absolute;
+    left: 415px;
+    top: 380px;
+}
+.title_button {
+    width: 265px;
+    height: 75px;
+    background-color: #2a3f17;
+    color: white;
+    font-size: 26px;
+    font-weight: 900;
+    position: absolute;
+    left: 415px;
+    top: 575px;
+    line-height: 75px;
+    text-align: center;
+}
+
+/* 第二部分：三张并列照片+其上的文字 */
+.photos_content {
+    width: 1110px;
+    height: 500px;
+    position: absolute;
+    z-index: 9;
+    left: 410px;
+    bottom: 245px;
+    /* display: flex;
+    justify-content: space-between; (给照片设置绝对定位后失效)*/
+}
+.photos_content div {
+    position: absolute;
+    z-index: 11;
+}
+.photos_content span {
+    font-size: 40px;
+    color:white;
+    font-family: Cambria;
+    position: absolute;
+    z-index: 13;
+    bottom: 93px;
+    display: block;
+    width: 120px;
+    height: 40px;
+}
+.photo1 {
+    background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo1.png) no-repeat scroll;
+    width: 330px;
+    height: 500px;
+}
+.photo2 {
+    background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo2.png) no-repeat scroll;
+    width: 330px;
+    height: 500px;
+    left: 390px;
+}
+.photo3 {
+    background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo3.png) no-repeat scroll;
+    width: 330px;
+    height: 500px;
+    left: 780px;
+}
+#photo_p1 {
+    left: 202px;
+}
+#photo_p2 {
+    left: 202px;
+}
+#photo_p3 {
+    left: 202px;
+}
+.photo1,
+.photo2,
+.photo3 {
+    transition: transform 0.6s;
+}
+/* 设置动画 */
+.photo1:hover,
+.photo2:hover,
+.photo3:hover {
+    transform:translateY(-40px) ;
+}
+
+/* 第三部分：背景图+文字+按钮 */
+.passage_box {
+    width: 945px;
+    height: 545px;
+    position: absolute;
+    z-index: 3;
+    left: 500px;
+    bottom: 300px;
+    background-color: #e0dfdf;
+    margin:0;
+    padding:0;
+    transition: transform 0.8s;
+}
+.passage_box:hover {
+    transform: translateY(-25px);
+}
+.passage_words {
+    position: absolute;
+    z-index: 5;
+    left: 80px;
+    bottom: 230px;
+    width: 800px;
+    height: 235px;
+    font-size: 20px;
+    color: #2a3f17;
+}
+.passage_buttom {
+    width: 265px;
+    height: 75px;
+    background-color: #2a3f17;
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    z-index: 5;
+    left: 365px;
+    bottom: 65px;
+    line-height: 75px;
+    text-align: center;
+    transition: all 0.7s;
+}
+.passage_buttom:hover {
+    scale: 0.9;
+}
+
+/* 第四部分：标题+四组并列框+其中的图片+文字+链接 */
+.diff_title {
+    color: #2a3f17;
+    font-size: 40px;
+    position: absolute;
+    z-index: 3;
+    top: -90px;
+    left: 850px;
+}
+/* 设置动画 */
+@keyframes border_appear {
+    0% {border: 0px;}
+    30% {border-top: 3px #2a3f17 solid;}
+    50% {
+        border-top: 3px #2a3f17 solid;
+        border-right: 3px #2a3f17 solid;
+    }
+    75% {
+        border: 3px #2a3f17 solid;
+        border-left: 0px;
+    }
+    100% {border: 3px #2a3f17 solid;}
+}
+.diff_title:hover {
+    animation: border_appear 1.2s ease 0.1s 1 backwards;
+}
+.diff_content {
+    width: 1150px;
+    height: 410px;
+    margin-left:400px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.diff_content div {
+    width: 265px;
+    background-color: #e0dfdf;
+    position: relative;
+    transition: transform 0.8s;
+}
+/* 设置动画 */
+.diff_content div:hover {
+    transform: translateY(-35px);
+}
+.diff_content p {
+    font-size: 26px;
+    height: 24px;
+    color: #2a3f17;
+    position: absolute;
+    z-index: 5;
+    top: 260px;
+}
+#diff_p1 {
+    left: 95px;
+}
+#diff_p2 {
+    left: 80px;
+}
+#diff_p3 {
+    left: 110px;
+}
+#diff_p4 {
+    left: 50px;
+}
+.diff_content a {
+    font-size: 22px;
+    color: #2a3f17;
+    position: absolute;
+    z-index: 5;
+    top: 335px;
+    left: 45px;
+}
+
+/* 第五部分：顶端标题+左侧大图+右侧文字 */
+.knowmore_title {
+    width: 360px;
+    height: 70px;
+    border: 3px #2a3f17 solid;
+    position: absolute;
+    top: 1px;
+    left: 535px;
+    color: #2a3f17;
+    font-size: 28px;
+    text-align: center;
+    line-height: 70px;
+    transition: all 1s;
+}
+.knowmore_title:hover {
+    background-color: #2a3f17;
+    color: white;
+}
+#knowmore_photo,
+.knowmore_words {
+    margin-top: 155px;
+}
+.knowmore_words {
+    color: #2a3f17;
+    font-size: 22px;
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    top: 90px;
+}
+#kw_words_title {
+    font-size: 38px;
+    transition: transform 0.8s;
+}
+#kw_words_title:hover {
+    transform: translateY(-50px);
+}
+#kw_words1 {
+    width: 520px;
+    transition: all 0.7s linear;
+}
+#kw_words1:hover {
+    scale: 1.2;
+    transform: translateX(50px);
+}
+.option {
+    width: 340px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+.option1,
+.option2,
+.option3,
+.option4 {
+    transition: transform 0.8s;
+}
+.option1:hover,
+.option2:hover,
+.option3:hover,
+.option4:hover {
+    transform: translateX(50px);
+}
+.serial1,
+.serial2,
+.serial3,
+.serial4 {
+    width: 68px;
+    height: 68px;
+    background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/knowmore_circle.png) no-repeat scroll;
+    float: left;
+    position: relative;
+}
+#img_serial1,
+#img_serial2,
+#img_serial3,
+#img_serial4 {
+    position: absolute;
+    left: 26px;
+    top: 15px;
+}
+
+/* 第六部分：三栏（包括两栏文字+右侧按钮） */
+#bottom_img {
+    position:absolute;
+    z-index: 1;
+}
+.bottom_words {
+    color: #2a3f17;
+    position: relative;
+    width: 1920px;
+}
+.bottom_w1 {
+    font-size: 36px;
+    font-weight: 700;
+    position: absolute;
+    z-index: 3;
+    left: 445px;
+    top: 170px;
+}
+.bottom_w2 {
+    font-size: 20px;
+    position: absolute;
+    z-index: 3;
+    left: 745px;
+    top: 175px;
+}
+#botton_w2_title {
+    font-size: 26px;
+    font-weight: 900;
+}
+.bottom_w_button {
+    width: 360px;
+    height: 75px;
+    font-size: 32px;
+    color: white;
+    line-height: 75px;
+    text-align: center;
+    background-color: #949f8b;
+    position: absolute;
+    z-index: 3;
+    right: 330px;
+    top: 190px;
+    transition: all 0.8s linear;
+}
+.bottom_w_button:hover {
+    background-color: white;
+    color: #949f8b;
+    transform: translateY(-25px);
+}

@@ -1,0 +1,34 @@
+.box {
+    width: 500px;
+    height: 375px;
+    margin: auto;
+    border: 3px #c4b7d7 solid;
+    background-color: #f3f3f3;
+}
+.box_content {
+    width: 400px;
+    margin: auto;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.box span {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    font-family: "宋体";
+}
+.box input {
+    display: block;
+    border: 2px #c4b7d7 solid;
+    height: 40px;
+    font-size: 22px;
+}
+.box button{
+    margin-left: 215px;
+    margin-bottom: 30px;
+    background-color: #bba9d4;
+}
