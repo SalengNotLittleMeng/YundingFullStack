@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charest="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        let muchuan=prompt("请输入母串：");
+        if(muchuan!=null)
+        {
+            let zichuan=prompt("请输入子串：");
+            if(zichuan!=null)
+            {
+                let str=muchuan;
+                let a=str.indexOf(zichuan);
+                let num=0;
+                while(a!==-1)
+                {
+                    console.log(a);
+                    num++;
+                    a=str.indexOf(zichuan,a+1);
+                }
+                console.log("母串为："+muchuan+"  "+"子串为："+zichuan);
+                console.log("子串出现的次数为："+num);
+            }
+            else
+            {
+                alert("请输入有效子串！");
+            }
+        }
+        else
+        {
+            alert("请输入有效母串！");
+        }
+    </script>
+</head>

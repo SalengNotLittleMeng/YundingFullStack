@@ -1,0 +1,735 @@
+.content {
+    position: relative;
+    width: 1433px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.Head {
+    width: 1920px;
+    height: 49px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_home {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: black;
+}
+
+.icon_home:hover {
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.1s;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.Head_camera {
+    position: absolute;
+    top: -50px;
+    left: 604px;
+    width: 200px;
+    height: 200px;
+    background-color: #81c04b;
+}
+
+.Head_camera:hover {
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.icon_Head_camera {
+    box-sizing: border-box;
+    padding-top: 18px;
+    width: 200px;
+    height: 200px;
+    font-size: 160px;
+    text-align: center;
+    color: white;
+}
+
+.icon_search {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: black;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font_3812300_bw8frdj8o5w/iconfont.woff2?t=1670320537637') format('woff2'),
+        url('./font_3812300_bw8frdj8o5w/iconfont.woff?t=1670320537637') format('woff'),
+        url('./font_3812300_bw8frdj8o5w/iconfont.ttf?t=1670320537637') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.HomePage {
+    width: 1920px;
+    height: 877px;
+    margin: 0 auto 598px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/HomePage_background.png");
+    /* background-image: url(./img/HomePage_background.png); */
+}
+
+.HP_title {
+    position: absolute;
+    width: 638px;
+    height: 65px;
+    font-size: 65px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: #2a3f17;
+    top: 242px;
+    left: 385px;
+}
+
+.HP_text {
+    position: absolute;
+    width: 1100px;
+    height: 90px;
+    margin: 0 auto;
+    top: 328px;
+    left: 160px;
+    color: #2a3f17;
+    font-size: 30px;
+}
+
+.HP_button {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 23px;
+    width: 262px;
+    height: 72px;
+    margin: 0 auto;
+    top: 556px;
+    left: 160px;
+    background-color: #2a3f17;
+    font-size: 23px;
+    color: white;
+    text-align: center;
+}
+
+.HP_button:hover {
+    width: 262px;
+    height: 72px;
+    background-color: #697461;
+    color: #2a3f17;
+    transition-duration: 1.3s;
+}
+
+.HP_pic {
+    position: absolute;
+    top: 734px;
+    left: 149px;
+    display: flex;
+    justify-content: space-between;
+    width: 1111px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.HP_pic_fly {
+    position: relative;
+    width: 333px;
+    height: 500px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/Fly.png");
+    /* background-image: url(./img/Fly.png); */
+}
+
+.HP_pic_fly:hover {
+    width: 333px;
+    height: 500px;
+    transition-duration: 1s;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    transform: translateY(-50px);
+}
+
+.HP_pic_love {
+    position: relative;
+    width: 333px;
+    height: 500px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/Love.png");
+    /* background-image: url(./img/Love.png); */
+}
+
+.HP_pic_love:hover {
+    width: 333px;
+    height: 500px;
+    transition-duration: 1s;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    transform: translateY(-50px);
+}
+
+.HP_pic_stand {
+    position: relative;
+    width: 333px;
+    height: 500px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/Stand.png");
+    /* background-image: url(./img/Stand.png); */
+}
+
+.HP_pic_stand:hover {
+    width: 333px;
+    height: 500px;
+    transition-duration: 1s;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    transform: translateY(-50px);
+}
+
+.HP_pic_fly_word {
+    position: absolute;
+    top: 361px;
+    left: 205px;
+    width: 62px;
+    height: 44px;
+    color: white;
+    font-size: 42px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.HP_pic_love_word {
+    position: absolute;
+    top: 361px;
+    left: 205px;
+    width: 62px;
+    height: 44px;
+    color: white;
+    font-size: 42px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.HP_pic_stand_word {
+    position: absolute;
+    top: 361px;
+    left: 205px;
+    width: 62px;
+    height: 44px;
+    color: white;
+    font-size: 42px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.SignUp {
+    width: 1920px;
+    height: 760px;
+    margin: 0 auto 80px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/deer.png");
+    /* background-image: url(./img/deer.png); */
+}
+
+.SU_box {
+    position: absolute;
+    top: -83px;
+    left: 243px;
+    width: 945px;
+    height: 541px;
+    background-color: #e0dfdf;
+}
+
+.SU_box:hover {
+    width: 945px;
+    height: 541px;
+    transition-duration: 1.5s;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    transform: translateY(-50px);
+}
+
+.SU_box_text {
+    position: absolute;
+    top: 78px;
+    left: 78px;
+    width: 792px;
+    height: 233px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+.SU_box_button {
+    position: absolute;
+    box-sizing: border-box;
+    padding-top: 24px;
+    bottom: 63px;
+    left: 373px;
+    width: 197px;
+    height: 70px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    background-color: #2a3f17;
+}
+
+.SU_box_button:hover {
+    width: 197px;
+    height: 70px;
+    transition-duration: 0.8s;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.Species {
+    width: 100%;
+    height: 679px;
+    margin: 0 auto 87px;
+}
+
+.Spe_title {
+    box-sizing: border-box;
+    padding: 2px;
+    width: 230px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 35px;
+    color: #2a3f17;
+    text-align: center;
+}
+
+@keyframes Spe_title {
+    /* 0%   {border: 0px solid #2a3f17;transform: translateX(0);} */
+	25%  {border-top: 3px solid #2a3f17;-webkit-transition: 5s;}
+	50%  {border-right: 3px solid #2a3f17;}
+	75%  {border-bottom: 3px solid #2a3f17;}
+	100% {border-left: 3px solid #2a3f17;}
+}
+
+@-webkit-keyframes Spe_title {
+    /* 0%   {border: 0px solid #2a3f17;transform: translateX(0);} */
+	25%  {border-top: 3px solid #2a3f17;-webkit-transition: 5s;}
+	50%  {border-right: 3px solid #2a3f17;}
+	75%  {border-bottom: 3px solid #2a3f17;}
+	100% {border-left: 3px solid #2a3f17;}
+}
+
+.Spe_title:hover {
+    animation: Spe_title 5s;
+}
+
+.Spe_box {
+    display: flex;
+    justify-content: space-between;
+    width: 1148px;
+    height: 414px;
+    margin: 39px auto 119px;
+}
+
+.Spe_box_horse {
+    position: relative;
+    width: 263px;
+    height: 414px;
+    background-color: #e0dfdf;
+}
+
+.Spe_box_horse:hover {
+    width: 263px;
+    height: 414px;
+    transition-duration: 1s;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+.Spe_box_kangaroo {
+    position: relative;
+    width: 263px;
+    height: 414px;
+    background-color: #e0dfdf;
+}
+
+.Spe_box_kangaroo:hover {
+    width: 263px;
+    height: 414px;
+    transition-duration: 1s;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+.Spe_box_lion {
+    position: relative;
+    width: 263px;
+    height: 414px;
+    background-color: #e0dfdf;
+}
+
+.Spe_box_lion:hover {
+    width: 263px;
+    height: 414px;
+    transition-duration: 1s;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+.Spe_box_bird {
+    position: relative;
+    width: 263px;
+    height: 414px;
+    background-color: #e0dfdf;
+}
+
+.Spe_box_bird:hover {
+    width: 263px;
+    height: 414px;
+    transition-duration: 1s;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+.Sb_pic1 {
+    width: 263px;
+    height: 260px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/horse.png");
+    /* background-image: url(./img/horse.png); */
+}
+
+.Sb_pic2 {
+    width: 263px;
+    height: 260px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/kangaroo.png");
+    /* background-image: url(./img/kangaroo.png); */
+}
+
+.Sb_pic3 {
+    width: 263px;
+    height: 260px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/lion.png");
+    /* background-image: url(./img/lion.png); */
+}
+
+.Sb_pic4 {
+    width: 263px;
+    height: 260px;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/bird.png");
+    /* background-image: url(./img/bird.png); */
+}
+
+.Sb_name {
+    position: absolute;
+    top: 294px;
+    left: 35px;
+    width: 197px;
+    height: 32px;
+    color: #2a3f17;
+    font-size: 24px;
+    text-align: center;
+}
+
+.Sb_word {
+    position: absolute;
+    bottom: 39px;
+    left: 37px;
+    width: 202px;
+    height: 27px;
+    color: #2a3f17;
+    font-size: 23px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Spe_button {
+    box-sizing: border-box;
+    width: 359px;
+    height: 69px;
+    margin: 0 auto;
+    border: 5px;
+    padding: 23px;
+    border: 2px solid #2a3f17;
+    color: #2a3f17;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Spe_button:hover {
+    width: 359px;
+    height: 69px;
+    background-color: #2a3f17;
+    color: white;
+    transition-duration: 1.3s;
+}
+
+.Introdction {
+    width: 1432px;
+    height: 1015px;
+    margin: 0 auto 61px;
+}
+
+.Intro_bigbox {
+    display: flex;
+    justify-content: center;
+    width: 1432px;
+    height: 1015px;
+    margin: 0 auto;
+}
+
+.Intro_bigbox_pic {
+    width: 704px;
+    height: 1015px;
+    margin: 0;
+    background-image: url("https://ninglingfan.oss-cn-beijing.aliyuncs.com/squirrel.png");
+    /* background-image: url(./img/squirrel.png); */
+}
+
+.Intro_bigbox_word {
+    box-sizing: border-box;
+    width: 731px;
+    height: 1015px;
+    padding-left: 124px;
+    padding-top: 90px;
+    margin: 0;
+}
+
+.IBW_title {
+    width: 184px;
+    height: 32px;
+    margin-bottom: 41px;
+    color: #2a3f17;
+    font-size: 30px;
+}
+
+.IBW_title:hover {
+    width: 184px;
+    height: 32px;
+    transition-duration: 1.5s;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+.IBW_text {
+    width: 528px;
+    height: 116px;
+    color: #2a3f17;
+    font-size: 25px;
+    margin-bottom: 82px;
+}
+
+.IBW_text:hover {
+    width: 528px;
+    height: 116px;
+    transition-duration: 1s;
+    
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    transform: translateX(50px);
+    /* opacity: .10; */
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.5);
+    transform: scale(1.25);
+}
+
+.IBW_chioce {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 359px;
+    height: 561px;
+}
+
+.IBW_chioce1 {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 70px;
+    font-size: 70px;
+}
+
+.IBW_chioce1:hover {
+    width: 359px;
+    height: 70px;
+    transition-duration: 1.5s;
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+.IBW_chioce2 {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 70px;
+    font-size: 70px;
+}
+
+.IBW_chioce2:hover {
+    width: 359px;
+    height: 70px;
+    transition-duration: 1.5s;
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+.IBW_chioce3 {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 70px;
+    font-size: 70px;
+}
+
+.IBW_chioce3:hover {
+    width: 359px;
+    height: 70px;
+    transition-duration: 1.5s;
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+.IBW_chioce4 {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 70px;
+    font-size: 70px;
+}
+
+.IBW_chioce4:hover {
+    width: 359px;
+    height: 70px;
+    transition-duration: 1.5s;
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('font_3831696_wpprxhfkege/iconfont.woff2?t=1671418117436') format('woff2'),
+        url('font_3831696_wpprxhfkege/iconfont.woff?t=1671418117436') format('woff'),
+        url('font_3831696_wpprxhfkege/iconfont.ttf?t=1671418117436') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    /* font-size: 50px; */
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.IBW_choice1_num {
+    width: 70px;
+    height: 70px;
+    color: #2a3f17;
+    font-size: 70px;
+}
+
+.IBW_choice2_num {
+    width: 70px;
+    height: 70px;
+    color: #2a3f17;
+    font-size: 70px;
+}
+
+.IBW_choice3_num {
+    width: 70px;
+    height: 70px;
+    color: #2a3f17;
+    font-size: 70px;
+}
+
+.IBW_choice4_num {
+    width: 70px;
+    height: 70px;
+    color: #2a3f17;
+    font-size: 73px;
+}
+
+.IBW_choice_word {
+    width: 244px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #2a3f17;
+    font-size: 20px;
+}
+
+.hr-solid {
+    border: 0;
+    border-top: 2px solid black;
+}
+
+.More {
+    width: 1920px;
+    height: 458px;
+    margin: 0 auto;
+}
+
+.more_word1 {
+    position: absolute;
+    top: 172px;
+    left: 191px;
+    width: 253px;
+    height: 133px;
+    color: #2a3f17;
+    font-size: 30px;
+}
+
+.more_word2 {
+    position: absolute;
+    top: 179px;
+    left: 492px;
+    width: 158px;
+    height: 117px;
+    font-size: 22px;
+    color: #697461;
+}
+
+.more_word2:hover {
+    width: 158px;
+    height: 117px;
+    transition-duration: 1s;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.more_button {
+    position: absolute;
+    top: 190px;
+    right: 99px;
+    box-sizing: border-box;
+    padding-top: 12px;
+    width: 359px;
+    height: 71px;
+    color: white;
+    font-size: 30px;
+    background-color: #949f8b;
+    text-align: center;
+}
+
+.more_button:hover {
+    width: 359px;
+    height: 71px;
+    background-color: white;
+    color: #949f8b;
+    transition-duration: 1s;
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
