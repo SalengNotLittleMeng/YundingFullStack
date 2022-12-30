@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var strMot = prompt('请输入母串: ');
+        var strSon = prompt('请输入子串: ');
+        //定义变量为母串和子串     弹出对话框输入母串和子串的内容
+        var count = 0;      //  设置变量计数
+        for (var i = 0; i < strMot.length; i++) {   
+            for (var j = 0; j < strSon.length; j++) {
+                if (strMot[i + j] != strSon[j]) {   //两次循环比较子母串
+                    break;      
+                }           
+            }                   
+            if (j === strSon.length) {  
+                count++;
+            }       
+        }
+        console.log("母串为:", strMot);
+        console.log("子串为:", strSon);
+        console.log("出现次数为：", count);
+    </script>
+</head>
+<body>
+</body>
+
+</html>
