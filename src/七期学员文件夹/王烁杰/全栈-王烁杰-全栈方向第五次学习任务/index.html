@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,30 @@
     <title>Hello World</title>
     <link rel="stylesheet" href="index.css">
     <script>
-        var str = prompt('请输入字符串');
-        var sub = prompt('请输入子串');
-        var arrStr = [];
-        var arrSub = [];
-        arrStr = str;
-        arrSub = sub;
-        var arrStrLength = arrStr.length;
-        var arrSubLength = arrSub.length;
-        var count = 0;
-        for(var i = 0;i < arrStrLength;i++){
-            for(var j = 0;j < arrSubLength;j++){
-                if(arrStr[i+j]!=arrSub[j]){
-                    break;
+        let parentStr = prompt('请输入母串');
+        let childStr = prompt('请输入子串');
+        let parentIndex = 0;
+        let childIndex = 0;
+        let count = 0;
+        while(parentIndex !== parentIndex.length){
+            if(childIndex[childIndex] === parentStr[parentIndex]){
+                childIndex++;
+                parentIndex++;
+                if(childIndex === childStr.length){
+                    count++;
+                    childIndex=0;
+                }
+            }else{
+                childIndex = 0;
+                if(parentStr[parentIndex] !== childStr[childIndex]){
+                    parentIndex++;
                 }
             }
-            if(j === arrSubLength){
-                count++;
-            }
         }
-        alert('count='+count);
     </script>
 </head>
+
 <body>
 </body>
+
 </html>
