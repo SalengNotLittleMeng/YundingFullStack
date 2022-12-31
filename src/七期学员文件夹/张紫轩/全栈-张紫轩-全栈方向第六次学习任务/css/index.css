@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bigBox{
+    width: 100%;
+    height: 740px;
+    background-color: rgb(38, 69, 96);
+}
+.back{
+    width: 400px;
+    margin: 0 auto;
+    height: 100px;
+    padding-top: 100px;
+}
+.main{
+    margin-top: 100px;
+    width: 400px;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.passage{
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    width: 340px;
+    height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgb(114, 152, 234);
+    border-radius: 50px;
+}
+#pa_passage1{
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 340px;
+    height: 90px;
+    display: none;
+    transition: 2s;
+}
+#pa_passage2{
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 340px;
+    height: 90px;
+    display: none;
+}
+#pa_passage3{
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 340px;
+    height: 90px;
+    display: none;
+}
+#pa_passage4{
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 340px;
+    height: 90px;
+    display: none;
+}
+#pa_passage5{
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 340px;
+    height: 90px;
+    display: none;
+}
+.box{
+    margin: 0 auto;
+    margin-bottom: 2px;
+    border-radius: 30px;
+    width: 340px;
+    height: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid black;
+    background-color: rgb(130, 161, 229);
+}
