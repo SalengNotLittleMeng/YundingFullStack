@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+    let mother = prompt("请输入母串");
+    let son = prompt("请输入子串");
+    console.log("母串为：", mother);
+    console.log("子串为：", son);
+    let count = 0;
+    if(son.length==1)
+    {
+        for (let i = 0; i < mother.length; i++) 
+        {
+            for (let j = 0; j < son.length; j++) 
+            {
+                if (mother[i] == son[j]) 
+                {
+                    count++;
+                }
+            }
+        }
+    }
+    else
+    {
+        for (let i = 0; i < mother.length; i++)
+        {
+            if (mother[i] == son[0]) 
+            {
+                for (let j = 0; j < son.length; j++) 
+                {
+                    if (mother[i + j] == son[j]) 
+                    { 
+                        count++; 
+                        i += son.length - 1; 
+                    }
+                } 
+            }
+        }
+    }
+    console.log("子串出现的个数为：", count);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+        
+    
+
+

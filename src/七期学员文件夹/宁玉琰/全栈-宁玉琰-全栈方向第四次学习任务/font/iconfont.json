@@ -1,0 +1,23 @@
+{
+  "id": "3834934",
+  "name": "han'jia",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1317820",
+      "name": "沟通页_三条杠_跳转选择孩子",
+      "font_class": "goutongye_santiaogang_tiaozhuanxuanzehaizi",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "12660046",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    }
+  ]
+}
