@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级组件开发</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 0;
+        }
+        .king {
+            margin:100px auto;
+            width: 400px;
+            height: 1000px;
+        }
+
+        .s1,.s2,.s3,.s4 {
+            width: 400px;
+            height: 100px;
+            border-radius: 50px;
+            position: relative;
+            background-color: greenyellow;
+            color: black;
+            text-align: center;
+            line-height: 100px;
+            font-size: 26px;
+        }
+
+
+        .s1 .s1b,.s2 .s2b,.s3 .s3b,.s4 .s4b {
+            position: absolute;
+            top: 50%;
+            left: 265px;
+            transform: translateY(-6px) rotate(45deg);
+            width: 20px;
+            height: 20px;
+        }
+
+        .s1 .s1b2 ,
+        .s2 .s2b2, 
+        .s3 .s3b2, 
+        .s4 .s4b2{
+            position: absolute;
+            top: 50%;
+            left: 265px;
+            transform: translateY(-18px) rotate(-135deg);
+            width: 20px;
+            height: 20px;
+            border-top: 3px solid brown;
+            border-left: 3px solid brown;
+            
+        }
+
+        .s1 .s1b2:hover,
+        .s2 .s2b2:hover, 
+        .s3 .s3b2:hover, 
+        .s4 .s4b2:hover {
+            background-color: black;
+            opacity: 0.3;
+        }
+
+        .s1s,
+        .s2s,
+        .s3s,
+        .s4s {
+            margin: auto;
+            width: 200px;
+            height: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .s1s1,
+        .s1s2,
+        .s1s3,
+        .s2s1,
+        .s2s2,
+        .s2s3,
+        .s3s1,
+        .s3s2,
+        .s3s3,
+        .s4s1,
+        .s4s2,
+        .s4s3 {
+            width: 200px;
+            height: 40px;
+            border-bottom: 1px solid white;
+            border-radius: 20px;
+            color: black;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .s2 {
+            background-color: purple;
+        }
+
+        .s3 {
+            background-color: hotpink;
+        }
+
+        .s4 {
+            background-color: blueviolet;
+        }
+
+        .s1s1,
+        .s1s2,
+        .s1s3 {
+            background-color: hotpink;
+        }
+
+        .s2s1,
+        .s2s2,
+        .s2s3 {
+            background-color: yellowgreen;
+        }
+
+        .s3s1,
+        .s3s2,
+        .s3s3 {
+            background-color: peru;
+        }
+
+        .s4s1,
+        .s4s2,
+        .s4s3 {
+            background-color: palevioletred;
+        }
+
+        .boxs {
+            border-top: 3px solid brown;
+            border-left: 3px solid brown;
+            
+            
+        }
+
+        .boxs:hover {
+            background-color: black;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="king">
+        <div class="s1">第一章
+            <div class="s1b"></div>
+            <div class="s1b2"></div>
+        </div>
+        <div class="s1s">
+            <div class="s1s1">1.1</div>
+            <div class="s1s2">1.2</div>
+            <div class="s1s3">1.3</div>
+        </div>
+        <div class="s2">第二章
+            <div class="s2b"></div>
+            <div class="s2b2"></div>
+        </div>
+        <div class="s2s">
+            <div class="s2s1">2.1</div>
+            <div class="s2s2">2.2</div>
+            <div class="s2s3">2.3</div>
+        </div>
+        <div class="s3">第三章
+            <div class="s3b"></div>
+            <div class="s3b2"></div>
+        </div>
+        <div class="s3s">
+            <div class="s3s1">3.1</div>
+            <div class="s3s2">3.2</div>
+            <div class="s3s3">3.3</div>
+        </div>
+        <div class="s4">第四章
+            <div class="s4b"></div>
+            <div class="s4b2"></div>
+        </div>
+        <div class="s4s">
+            <div class="s4s1">4.1</div>
+            <div class="s4s2">4.2</div>
+            <div class="s4s3">4.3</div>
+        </div>
+    </div>
+
+    <script>
+        const s1b2 = document.getElementsByClassName("s1b2")[0]
+        const s1b  = document.getElementsByClassName("s1b")[0]
+        const s1sb = document.getElementsByClassName("s1b")[0]
+        const s1s = document.getElementsByClassName("s1s")[0]        
+        const s2b2 = document.getElementsByClassName("s2b2")[0]
+        const s2b  = document.getElementsByClassName("s2b")[0]
+        const s2sb = document.getElementsByClassName("s2b")[0]
+        const s2s = document.getElementsByClassName("s2s")[0]        
+        const s3b2 = document.getElementsByClassName("s3b2")[0]
+        const s3b = document.getElementsByClassName("s3b")[0]
+        const s3sb = document.getElementsByClassName("s3b")[0]
+        const s3s = document.getElementsByClassName("s3s")[0]        
+        const s4b2 = document.getElementsByClassName("s4b2")[0]
+        const s4b  = document.getElementsByClassName("s4b")[0]
+        const s4sb = document.getElementsByClassName("s4b")[0]
+        const s4s = document.getElementsByClassName("s4s")[0]
+        
+        s1b2.onclick = function(){
+            transform()
+            window.m = 1
+            transform2(m)
+            let n = 6;
+            const timer1 = setInterval(()=>{
+                s1s.style.height = (1+n)+"px"
+                n++
+                
+                if (s3s.style.height > "7px" || s2s.style.height > "7px" || s4s.style.height > "7px") {
+                    clearInterval(timer1)
+                    s1s.style.height = "0px"
+                }
+
+                if(s1s.style.height == "120px"){
+                    clearInterval(timer1)
+                    
+            }
+
+        s1b.onclick = function(){
+                clearInterval(timer1)
+                transform()
+                        }
+            },15) 
+        }
+
+
+        s2b2.onclick = function(){
+            transform()
+            window.m = 2
+            transform2(m)
+            let n = 6;
+            const timer2 = setInterval(()=>{
+                s2s.style.height = (1+n)+"px"
+                n++
+                
+                if (s1s.style.height > "7px" || s3s.style.height > "7px" || s4s.style.height > "7px") {
+                    clearInterval(timer2)
+                    s2s.style.height = "0px"
+                }
+                
+                if(s2s.style.height == "120px"){
+                    clearInterval(timer2)
+            }
+
+        s2b.onclick = function(){
+                clearInterval(timer2)
+                transform()
+                        } 
+            },15) 
+        }
+            
+        
+
+        s3b2.onclick = function () {
+                transform() 
+                window.m = 3
+                transform2(m)
+                let n = 6;
+                const timer3 = setInterval(() => {
+                    s3s.style.height = (1 + n) + "px"
+                    n++                    
+                    
+                    if (s1s.style.height > "7px" || s2s.style.height > "7px" || s4s.style.height > "7px") {
+                        clearInterval(timer3)
+                        s3s.style.height = "0px"
+                    }
+                    
+                    if (s3s.style.height == "120px") {
+                        clearInterval(timer3)
+                    }
+
+            s3b.onclick = function (){
+                clearInterval(timer3)
+                transform()
+                        }
+                }, 15)
+            }
+            
+
+        s4b2.onclick = function(){
+            transform()
+            window.m = 4
+            transform2(m)
+            let n = 6;
+            const timer4 = setInterval(()=>{
+                s4s.style.height = (1+n)+"px"
+                n++ 
+                
+                if (s1s.style.height > "7px" || s2s.style.height > "7px" || s3s.style.height > "7px") {
+                    clearInterval(timer4)
+                    s4s.style.height = "0px"
+                }
+                
+                if(s4s.style.height == "120px"){
+                    clearInterval(timer4)
+            }
+            
+        s4b.onclick = function(){
+                clearInterval(timer4)
+                transform()
+                } 
+            },15) 
+        }
+        
+        
+        
+        function transform(){
+            if(s1s.style.height != "0px"){
+                s1s.style.height = "0px"
+                s1b.replaceWith(s1b2)
+                }
+            if (s2s.style.height != "0px") {
+                s2s.style.height = "0px"
+                s2b.replaceWith(s2b2)
+            }
+            if (s3s.style.height != "0px") {
+                s3s.style.height = "0px"
+                s3b.replaceWith(s3b2)
+            }
+            if (s4s.style.height != "0px") {
+                s4s.style.height = "0px"
+                s4b.replaceWith(s4b2)
+            }
+        }
+
+        function transform2(m){
+            if(m == 1){
+            s1b2.replaceWith(s1sb)
+            s1sb.classList.add("boxs")
+            }
+
+
+            if(m == 2){
+            s2b2.replaceWith(s2sb)
+            s2sb.classList.add("boxs")
+            }
+
+            if(m == 3){
+            s3b2.replaceWith(s3sb)
+            s3sb.classList.add("boxs")
+            }
+
+            if(m == 4){
+            s4b2.replaceWith(s4sb)
+            s4sb.classList.add("boxs")
+            }
+            
+        }
+    </script>
+</body>
+</html>
