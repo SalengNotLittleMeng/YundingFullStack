@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息注册界面</title>
+</head>
+<body>
+    <form action="">
+        <table width="600" border="0" align="center">
+            <caption style="color: hotpink"><h3>信息注册表</h3> </caption>
+            <tr>
+                <td>性别</td>
+                <td height="30"><input type="radio" name="gender"> 男 <input type="radio" name="gender"> 女 <input type="radio" name = "gender" checked> 未知? </td>
+            </tr>
+            <tr>
+                <td>真实姓名</td>
+                <td height="30"><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>昵称</td>
+                <td height="30"><input type="text" id = "name1"></td>
+            </tr>
+            <tr>
+                <td>手机号</td>
+                <td width="179" height="30"><input type="text" id = "number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" value="请输入验证码"></td>
+                <td><input type="button" id="btn" value="免费获取验证码"></td>
+            </tr>
+            <tr>
+                <td>自我介绍</td>
+                <td height="30"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>擅长的领域</td>
+                <td>
+                    <select name="" id="">
+                        <option value="" id = "default1" >---请选择你擅长的领域---</option>
+                        <option value="">Java</option>
+                        <option value="">JavaScript</option>
+                        <option value="">Phython</option>
+                        <option value="">C|C++</option>
+                        <option value="">CPU&&OS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" checked id = "main"/> 我同意并时刻遵守云顶书院制定的所有规则</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id ="submit" value="提交"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="js/special.js"></script>
+</body>
+</html>
