@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class MyArray {
+            arr;
+
+            constructor(arr) {
+                if (Array.isArray(arr) === false) {
+                    throw new Error("错误，因为它不是一个数组");
+                } else {
+                    this.arr = arr;
+                }
+            }
+
+            checkArray(arr) {
+                let judgment = true;
+                for (let i = 0; i < arr.length; i++) {
+                    if (typeof (arr[i]) == 'number') {
+                        judgment = false;
+                    }
+                }
+                return judgment;
+            }
+
+            addAll(arr) {
+                let sum = 0;
+                for (let i = 0; i < arr.length; i++) {
+                    sum += arr[i];
+                }
+                return sum;
+            }
+
+            uniquel(arr) {
+                for (let i = 0; i < arr.length; i++) {
+                    const index = arr.indexOf(arr[i], i + 1);
+                    if (index !== -1) {
+                        arr.splice(index, 1);
+                        i--;
+                    }
+                }
+                return arr;
+            }
+        }
+        let args = [1, 2, 3, 4, 6, 6];
+        let arr = new MyArray(args);
+        console.log(arr.checkArray([1, 1, 1, '2', 9]));
+        console.log(arr.addAll(args));
+        console.log(arr.uniquel(args));
+        let arr0 = new MyArray('1234566');
+    </script>
+</body>
+
+</html>
