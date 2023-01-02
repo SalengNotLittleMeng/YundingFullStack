@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("https://xirealm.oss-cn-beijing.aliyuncs.com/xi/v2-4b4b5e7a2f44b06f0194fdfe28c9d563_r.jpg");
+}
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin: 200px auto;
+    border: solid black 2px;
+}
+
+.menu1 {
+    overflow: hidden;
+    width: 500px;
+    height: 60px;
+    margin: auto;
+    transition: height 0.8s ease;
+}
+
+.menu2 {
+    width: 500px;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+    box-sizing: border-box;
+    margin: auto;
+    width: 500px;
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2{
+    display: block;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid black 2px;
+    border-radius: 10px;
+    height: 60px;
+    width: 500px;
+    font-size: 50px;
+    font-family: "宋体";
+    letter-spacing: 2px;
+    line-height: 60px;
+    text-align: center;
+}

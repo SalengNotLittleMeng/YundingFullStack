@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyArray类</title>
+</head>
+<script>
+    class MyArray{
+        constructor(array){
+            if(Array.isArray(array) === false){
+                throw("注意：这不是一个数组")
+            }
+            this.array = array
+        }
+        checkArray(array){
+            for(let ele of array){
+                if (typeof ele !== 'number'){
+                    return false
+                }
+            }
+            return true
+        }
+        addAll(){
+            let sum = 0
+            for(let ele of this.array){
+                sum+=ele
+            }
+            return sum 
+        }
+        uniquel(){
+            let args2 = []
+            for (let ele of this.array) {
+                if(args2.indexOf(ele) === -1 ){
+                    args2.push(ele)
+                }
+            }
+            return args2
+        }
+    }
+    let args = [1, 2, 3, 4, 6, 6]
+    const myArray = new MyArray(args)  
+    console.log(myArray.checkArray([1, 1, 1, '2', 9]))
+    console.log(myArray.addAll())
+    console.log(myArray.uniquel())
+    try{
+        const arr0 = new MyArray('1234566')
+    } 
+    catch (e){
+        console.error(e);
+    }
+</script>
+<body>
+</body>
+</html>
