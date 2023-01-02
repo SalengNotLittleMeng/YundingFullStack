@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子串出现的次数</title>
+    <script type="text/javascript">
+        //输入一个字符串和一个子串，输出子串在字符串中出现的次数。
+
+        //输入一个字符串和一个子串
+        let num1=prompt("请输入母串:")
+        let num2=prompt("请输入子串:")
+
+        //初始化变量
+        let NUM1=0;
+        let NUM2=0;
+        let count=0;//计数器
+
+        //判断子串长度是否小于母串
+        if(num2.length > num1.length){
+            alert('请输入长度小于母串的子串！')
+        }
+        else{
+            //母串未完成遍历则一直循环
+            while (NUM1 !== num1.length) {
+                //将子串与母串一一比对，当子串与母串相同时，子串与母串都+1
+                if (num2[NUM2] === num1[NUM1]) {
+                    NUM1++;
+                    NUM2++;
+                    //当子串完成一次遍历时，子串重头开始继续与母串进行比对，母串继续+1，计数器+1
+                    if (NUM2 === num2.length) {
+                        count++;
+                        NUM1++;
+                        NUM2 = 0;
+                    }
+                }
+                //子串与母串不相同时，母串+1，然后继续进行比对
+                else {
+                    NUM1++;
+                }
+            }
+        }
+
+        //控制台显示
+        console.log('母串为:',num1);
+        console.log('子串为:',num2);
+        console.log('子串出现的次数为:',count);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
