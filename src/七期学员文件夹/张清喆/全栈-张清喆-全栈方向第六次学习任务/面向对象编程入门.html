@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面向对象编程入门</title>
+    <script>
+        //1.Person类
+        class Person
+        {
+            constructor(name,gender,age)
+            {
+                this.name=name;
+                this.gender=gender;
+                this.age=age;
+            }
+            hobby(str)
+                {
+                    return "我的爱好是"+str;
+                }
+            speciality(str)
+            {
+                return "我的特长是"+str;
+            }
+        }
+        let me=new Person("张清喆","男",18);
+        console.log(me.name) ;
+        console.log(me.gender); 
+        console.log(me.age);
+        console.log(me.hobby("吃饭睡觉打豆豆"));
+        console.log(me.speciality("无(悲"));
+        //2.MyArray类
+        class MyArray
+        {
+            arr;
+            constructor(arr)
+            {
+                if (!Array.isArray(arr))
+                {
+                    throw "error:it is not an array";
+                }
+                this.arr=arr;
+            }
+            checkArray(array)
+            {
+                for(var value of array)
+                {
+                    if(typeof value != "number")
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            addAll()
+            {
+                var num=0;
+                for(var value of this.arr)
+                {
+                    num+=value;
+                }
+                return num;
+            }
+            uniquel()
+            {
+                var number=0;
+                var newArr=[];
+                for(var value1 of this.arr)
+                {
+                    var flag=true;
+                    for(var value2 of newArr)
+                    {
+                        if(value1===value2)
+                        {
+                            flag=false;
+                            break;
+                        }
+                    }
+                    if(flag==true)
+                    {
+                        newArr[number]=value1;
+                        number++;
+                    }
+                }
+                return newArr;
+            }
+        }
+        let args =[1, 2, 3, 4, 6, 6] ;
+        let arr = new MyArray(args);
+        console.log(arr.checkArray([1, 1, 1, '2', 9]));
+        console.log(arr.addAll());
+        console.log(arr.uniquel());
+        let arr0 = new MyArray('1234566');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
