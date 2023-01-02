@@ -1,0 +1,47 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: blue;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            margin: 20px auto;
+        }
+
+        .container div {
+            margin-left: 120px;
+            height: 103px;
+            overflow: hidden;
+        }
+
+        .container div span {
+            width: 550px;
+            height: 100px;
+            line-height: 40px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e2b985;
+            cursor: pointer;
+            font-size: 50px;
+        }
+
+        a {
+            margin: 10px 0;
+            width: 550px;
+            height: 80px;
+            line-height: 90px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            border-radius: 15px;
+            background-color: #ffebcc;
+            font-size: 30px;
+            color: black;
+        }
