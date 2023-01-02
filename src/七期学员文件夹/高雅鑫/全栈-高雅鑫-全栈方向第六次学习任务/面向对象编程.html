@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>面向对象编程</title>
+    </head>
+    <script>
+        let Person =class {
+            constructor(name,gender,age,hobby,speciality){
+                this.name=name;
+                this.gender=gender;
+                this.age=age;
+                this.hobby=hobby;
+                this.speciality=speciality;
+            }
+        }
+        let my = new Person ("高雅鑫","小魔仙","谜","变身","念咒语");
+        console.log('大家好，我是'+ my.name);
+        console.log('我是一名'+ my.gender);
+        console.log('我的年龄是个'+my.age);
+        console.log('我的爱好是'+my.hobby);
+        console.log('我的特长是'+my.speciality);
+
+        var MyArray = function(array){
+            let check = Array.isArray(array);
+            if(check!==true){
+                throw "您输入的不是数组！";
+            }
+            
+            this.checkArray = function(array) {
+                const arr =[...array];
+                return typeof array === 'number' && isNaN(array);
+            }
+        
+            this.addAll = function() {
+                var sum=0;
+                for(let i=0;i<array.length;i++){
+                    if(!isNaN(array[i])){//只要是数字就加
+                        sum = sum + array[i];
+                    }
+                }
+                return sum;
+            }
+        
+            this.uniquel = function() {
+                const newarr=[];
+                for(let ele of array){
+                    if(newarr.indexOf(ele)===-1){
+                        newarr.push(ele);
+                    }
+                }
+                return newarr;
+            }
+        }
+        let args=[1,2,3,4,6,6];
+        let arr=new MyArray(args);
+        console.log(arr.checkArray([1, 1, 1, '2', 9]));
+        console.log(arr.addAll());
+        console.log(arr.uniquel());
+        let arr0 = new MyArray('123546544');
+    </script>
