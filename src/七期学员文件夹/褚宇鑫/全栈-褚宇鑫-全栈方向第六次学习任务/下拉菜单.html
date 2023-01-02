@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+             background-color: rgb(255, 208, 146);
+        }
+    
+        .menu {
+            display: flex;
+            width: 200px;
+            height: 300px;
+            margin: auto;
+            border: 10px solid black;
+            border-radius: 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-around;
+            transition: height 1s;
+        }
+
+        .submenu {
+            width: 180px;
+            height: 40px;
+            /* border: 1px solid red; */
+            text-align: center;
+            background-color: inherit;
+            border-radius: 10px;
+        }
+
+        button {
+
+            cursor: pointer;
+            width: 180px;
+            height: 40px;
+            border: none;
+            background-color: inherit;
+            border-radius: 10px;
+        }
+
+        .show1 {
+            display: none;
+            width: 160px;
+            height: 100x;
+            margin: auto;
+            /*border: 1px solid black;*/
+
+        }
+
+        .show1 div {
+            width: 140px;
+            height: 20px;
+            margin: auto;
+            text-align: center;
+            background-color:  rgb(246, 180, 93);
+            border: 3px solid black;
+            border-radius: 30px;
+            font-size: 5px;
+            line-height: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="submenu">
+            <button>passage1</button>
+           
+        </div>
+        <div class="show1">
+            <div><span>passage1.1</span></div>
+            <div><span>passage1.2</span></div>
+            <div><span>passage1.3</span></div>
+        </div>
+        <div class="submenu">
+            <button>passage2</button>
+            
+        </div>
+        <div class="show1">
+            <div><span>passage2.1</span></div>
+            <div><span>passage2.2</span></div>
+            <div><span>passage2.3</span></div>
+        </div>
+        <div class="submenu">
+            <button>passage3</button>
+            
+        </div>
+        <div class="show1">
+            <div><span>passage3.1</span></div>
+            <div><span>passage3.2</span></div>
+            <div><span>passage3.3</span></div>
+        </div>
+        <div class="submenu">
+            <button>passage4</button>
+          
+        </div>
+        <div class="show1">
+            <div><span>passage4.1</span></div>
+            <div><span>passage4.2</span></div>
+            <div><span>passage4.3</span></div>
+        </div>
+        <div class="submenu">
+            <button>passage5</button>
+           
+        </div>
+        <div class="show1">
+            <div><span>passage5.1</span></div>
+            <div><span>passage5.2</span></div>
+            <div><span>passage5.3</span></div>
+        </div>
+    </div>
+
+
+    <script>
+        var btn = document.querySelectorAll('button')
+        var show1 = document.querySelectorAll('.show1')
+        let menu = document.getElementsByClassName('menu')
+        const flag = [0, 0, 0, 0, 0]
+        for (let i = 0; i < btn.length; i++) {
+            btn[i].onclick = function () {
+                judge()
+            //  translate()
+                if (flag[i] === 0) {
+                    show1[i].style.display = 'block'
+                    flag[i] = 1
+                    menu[0].style.height = '460px'
+
+                } else if (flag[i] === 1) {
+                    show1[i].style.display = 'none'
+                    menu[0].style.height = '300px'
+                    flag[i] = 0
+                } else {
+                    menu[0].style.height = '300px'
+                    flag[i] = 0
+                }
+
+            }
+        }
+
+        const judge = function () {
+            for (let j = 0; j < btn.length; j++) {
+                if (flag[j] === 1) {
+                    show1[j].style.display = 'none'
+                    flag[j] = 2
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
