@@ -28,6 +28,6 @@ function statistics (Str1, Str2)
 }
 //调用函数
 statistics(str1, str2);
-console.log( `母串为:${str}`);
+console.log( `母串为:${str1}`);
 console.log(`子串为:${str2}`);
 console.log(`子串出现的次数为:${count}`);
