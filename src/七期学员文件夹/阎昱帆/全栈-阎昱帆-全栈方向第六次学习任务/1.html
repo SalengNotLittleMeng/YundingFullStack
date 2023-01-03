@@ -9,9 +9,12 @@
 <body>
     <script>
         class Person{
-            name='阎昱帆'
-            gender='女'
-            age='18'
+            constructor(name,gender,age)
+            {
+                this.name=name;
+                this.gender=gender;
+                this.age=age;
+            }
             hobby=function(){
                 return '我的爱好是吃饭'
             }
@@ -19,13 +22,12 @@
                 return'我的特长是睡觉'
             }
         }
-        let my = new Person()
+        let my = new Person('阎昱帆','女',18);
         console.log(my.name)
         console.log(my.gender)
         console.log(my.age)
         console.log(my.hobby())
         console.log(my.speciality()) 
-        console.log(typeof('aaa'))
     </script>
 </body>
 </html>
