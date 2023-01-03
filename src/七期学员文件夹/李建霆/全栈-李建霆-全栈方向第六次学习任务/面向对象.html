@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>面向对象</title>
+    <script>
+      class person {
+        constructor(name, age, gender) {
+          this.name = name;
+          this.age = age;
+          this.gender = gender;
+        }
+        hobby() {
+          return "我的爱好是看书，看动漫";
+        }
+        speciality() {
+          return "我的特长是游泳";
+        }
+      }
+
+      let me = new person("李建霆", "18", "男");
+      console.log(me.name);
+      console.log(me.age);
+      console.log(me.gender);
+      console.log(me.hobby());
+      console.log(me.speciality());
+    </script>
+  </head>
+  <body></body>
+</html>
