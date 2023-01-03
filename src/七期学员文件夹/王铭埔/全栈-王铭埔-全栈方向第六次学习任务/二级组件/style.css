@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 400px;
+    height: 700px;
+    background-color: black;
+    margin: 100px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container div{
+    height: 90px;
+    width: 350px;
+    margin: auto;
+    margin-top: 45px;
+    overflow: hidden;
+}
+.container div p{
+    width: 350px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    background-color:rgb(180, 111, 51);
+    cursor: pointer;
+    font-size: 40px;
+}
+a{
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 15px;
+    background-color: rgb(180, 111, 51);
+    margin-top: 10px;
+    color: black;
+}
