@@ -49,22 +49,18 @@
         {
             var a = document.getElementById(a);
             var b = document.getElementsByClassName(b);
-            if(a. style.display = "block")
+            if(a.style.display=="block")
             {
-                a.style.display = "none";
+                a.style.display="none";
             }
-            for(let i=0;i<b.length;i++)
-         {
-             b[i].style.display = "none";
-         }
-        if(a.style.display == "block")
-        {   
-            a.style.display = "none";  
-        }
-        else
-        {
-            a.style.display = "block";
-        }
+           else
+                {
+                    for(let i=0;i<b.length;i++)
+                    {
+                        b[i].style.display="none";
+                    }
+                    a.style.display="block";
+                }
         }
     </script>
 </body>
