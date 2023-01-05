@@ -31,7 +31,6 @@ login.onclick = function () {
     const password = document.getElementById("password")
     const tips = document.getElementById("tips")
     tips.textContent = ""
-    //检验邮箱及密码是否输入
     if (email.value == "") {
         tips.textContent = "你还没有输入邮箱！"
         setTimeout(() => {
@@ -46,7 +45,6 @@ login.onclick = function () {
         }, 5000);
         throw ("no password")
     }
-    //正则表达式检验邮箱是否合法
     const reg = /^\w{1,}@(qq|163).(com|cn)$/
     let result = reg.test(email.value)
     if (result == false) {
@@ -56,7 +54,6 @@ login.onclick = function () {
         }, 5000);
         throw ("Error:Not a email")
     }
-    console.log(email.value);
     let userFlag = false
     for (let user of msg) {
         if (user.email == email.value) {
@@ -70,9 +67,11 @@ login.onclick = function () {
             }
             else {
                 const loginPage = document.getElementById("loginPage")
-                const p=document.getElementsByTagName("p")
+                const p = document.getElementsByTagName("p")
+                const img = document.getElementsByTagName("img")[0]
                 form.style.display = "none"
                 loginPage.style.display = "block"
+                img.src = user.avatar
                 p[0].textContent = "姓名："+user.name
                 p[1].textContent = "年龄："+user.age
                 p[2].textContent = "特长: "+user.strengths
