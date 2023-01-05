@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="w">
+    <div class="shuru">
+        <h6>邮箱</h6>
+        <input class="email" type="text">
+        <span class="span">请输入邮箱账号</span>
+        <h6>密码</h6>
+        <input  class="pass" type="password">
+        <span class ="a"> </span>
+        <button>登录</button>
+    </div>
+    <div class="denglu">
+        <h3>登录成功</h3>
+        <img src=https://220678.oss-cn-qingdao.aliyuncs.com/微信图片_20230105093555.jpg>
+        <p>姓名：韩仪琼</p>
+        <p>年龄：19</p>
+        <p>方向：全栈</p>
+    </div>
+    <script>
+        var reg = /^\w{1,}@(qq)|(163).(com)|(cn)$/;
+        var shuru = document.querySelector('.shuru');
+        var btn = document.querySelector('button');
+        var denglu = document.querySelector('.denglu');
+        var span = document.querySelector('span');
+        var email = document.querySelector('.email');
+        var pass = document.querySelector('.pass');
+        //var a = document.querySelector('.a');
+        email.onblur = function () {
+            if (reg.test(this.value)){
+                span.innerHTML = '输入正确';
+            }
+            else {
+                span.innerHTML = '请重新输入';
+            }
+        }
+        // pass.onblur = function(){
+        //     if(pass.value==null) {
+        //         a.innerHTML = '请输入密码';
+        //     }
+        // }
+        btn.onclick = function() {
+            if (reg.test(email.value)&&pass.value){
+                shuru.style.display = 'none';
+                denglu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
