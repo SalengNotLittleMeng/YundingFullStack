@@ -14,33 +14,47 @@
         border-style: solid;
         border-color: black;
       }
-      .imag{
+      #n1 {
         width: 100px;
-        height:100px;
-        background-image: url("https://200307yjt.oss-cn-beijing.aliyuncs.com/psd/v2-ecff36441eec86a48410904a4acfb2fb_hd.jpg") ;
+        height: 100px;
+        background-image: url("https://tse4-mm.cn.bing.net/th/id/OIP-C.39mOMBjUfsK-HL9jUbv1MwHaE7?pid=ImgDet&rs=1");
         background-size: 100px 100px;
       }
-      .infor{
+      #n2 {
+        width: 100px;
+        height: 100px;
+        background-image: url("https://tse2-mm.cn.bing.net/th/id/OIP-C.YlKimVo94OkaZDZCzPIDpAHaFh?pid=ImgDet&rs=1");
+        background-size: 100px 100px;
+      }
+      #n3 {
+        width: 100px;
+        height: 100px;
+        background-image: url("https://tse2-mm.cn.bing.net/th/id/OIP-C.P2hK9SRjhFE8WM9N8tgWFAHaEQ?pid=ImgDet&rs=1");
+        background-size: 100px 100px;
+      }
+      .infor {
         width: 200px;
         height: 200px;
-        display:none;
+        display: none;
       }
-      .sign_in{
-        display:block;
+      .sign_in {
+        display: block;
       }
     </style>
   </head>
   <body>
-    <div class="sign_in"><!--登录框-->
+    <div class="sign_in">
+      <!--登录框-->
       <div>邮箱</div>
       <input type="text" value="" class="email" />
       <div>密码</div>
-      <input type="text" value="" class="psd"/>
+      <input type="text" value="" class="psd" />
       <botton class="btn">登录</botton>
     </div>
-    <div class="infor"><!--显示框-->
+    <div class="infor">
+      <!--显示框-->
       <div>登录成功</div>
-      <div class="imag"></div>
+      <div class="imag" id=""></div>
       <div class="name"></div>
       <div class="age"></div>
       <div class="strengths"></div>
@@ -80,38 +94,49 @@
       var em = document.querySelector("input");
       var psd = document.querySelector(".psd");
       var btn = document.querySelector("botton");
-      var sign=document.querySelector(".sign_in")
-      var infor=document.querySelector(".infor")
-      var na =document.querySelector(".name")
-      var age = document.querySelector(".age")
-      var stren= document.querySelector(".strengths")
-      var reg = /^([a-zA-Z]|[0-9])+@(qq|163)+\.(com|cn)$/
+      var sign = document.querySelector(".sign_in");
+      var infor = document.querySelector(".infor");
+      var na = document.querySelector(".name");
+      var age = document.querySelector(".age");
+      var stren = document.querySelector(".strengths");
+      var img = document.querySelector(".imag");
+      var reg = /^([a-zA-Z]|[0-9])+@(qq|163)+\.(com|cn)$/;
       btn.onclick = function () {
-        let flag=0
-        if(reg.test(em.value)){
-          console.log("输入邮箱格式正确")
-          for(let i=0;i<msg.length;i++){
+        // console.log(img.style. backgroundImage)
+        let flag = 0;
+        if (reg.test(em.value)) {
+          console.log("输入邮箱格式正确");
+          for (let i = 0; i < msg.length; i++) {
             //分割线
-            if(psd.value==msg[i].password&&em.value==msg[i].email){
-              sign.style.display='none'
-              infor.style.display='block'
-             alert("登录成功")
-             na.innerText='姓名：'+msg[i].name;
-             age.innerText='年龄：'+msg[i].age;
-             stren.innerText='特长：'+msg[i].strengths;
-            //分割线
-          }else if(em.value!=msg[i].email){
-                flag++
-                if(flag==3)
-                alert("该用户不存在")
-          }else if(em.value==msg[i].email&&psd.value==msg[i].password){
-              alert("密码错误")
+            if (psd.value == msg[i].password && em.value == msg[i].email) {
+              sign.style.display = "none";
+              infor.style.display = "block";
+              alert("登录成功");
+              if (i == 0) {
+                img.id = "n1";
+              } else if (i == 1) {
+                img.id = "n2";
+              } else {
+                img.id = "n3";
+              }
+              na.innerText = "姓名：" + msg[i].name;
+              age.innerText = "年龄：" + msg[i].age;
+              stren.innerText = "特长：" + msg[i].strengths;
+              //分割线
+            } else if (em.value != msg[i].email) {
+              flag++;
+              if (flag == 3) alert("该用户不存在");
+            } else if (
+              em.value == msg[i].email &&
+              psd.value == msg[i].password
+            ) {
+              alert("密码错误");
             }
           }
-        }else if(em.value==''||psd.value==''){
-          alert("请输入内容")
-        }else{
-          alert("邮箱格式有误")
+        } else if (em.value == "" || psd.value == "") {
+          alert("请输入内容");
+        } else {
+          alert("邮箱格式有误");
         }
       };
     </script>
