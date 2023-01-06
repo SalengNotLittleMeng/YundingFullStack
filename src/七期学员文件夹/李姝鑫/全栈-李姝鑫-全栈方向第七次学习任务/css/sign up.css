@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#deng {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 30%;
+    left: 40%;
+}
+
+input {
+    outline: none;
+    margin-bottom: 10px;
+    outline: none;
+    border-left: pink;
+    border-top: pink;
+    border-right: pink;
+    border-bottom: 3px solid pink;
+    font-size: 20px;
+    display: block;
+}
+
+.success {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: 60px;
+    left: 40%;
+    display: none;
+}
+
+#avatar {
+    width: 70px;
+    height: 65px;
+    background-size: cover;
+    background: no-repeat;
+}
+
+#name,
+#age,
+#strengths {
+    width: 60px;
+    height: 40px;
+    font-size: 25px;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-color: pink;
+    font-size: 13px;
+}
