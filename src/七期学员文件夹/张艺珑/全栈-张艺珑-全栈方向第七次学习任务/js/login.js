@@ -29,12 +29,22 @@ let msg = [{
 let login = document.getElementById('login');
 let email = document.getElementsByClassName("email")[0];
 let password = document.getElementsByClassName('password')[0];
+let show = document.getElementsByClassName('iconfont')[0];
 let user = document.getElementById("userMessage");
 let [h2, img, p1, p2, p3] = user.children;
 // 绑定事件
 let btn = document.getElementsByClassName('btn')[0];
 btn.addEventListener('click', () => {
     check(email.value, password.value);
+})
+show.addEventListener('click', () => {
+    if(show.className === 'iconfont icon-biyan') {
+        show.classList.replace("icon-biyan", "icon-zhengyan");
+        password.type = "text";
+    } else {
+        show.classList.replace("icon-zhengyan", "icon-biyan");
+        password.type = "password";
+    }
 })
 
 // 定义正则表达式以及检测函数
