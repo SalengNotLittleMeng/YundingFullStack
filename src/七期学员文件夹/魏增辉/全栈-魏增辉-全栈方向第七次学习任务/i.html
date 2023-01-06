@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>登录系统</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.LOAD{
+			width: 600px;
+			display: block;
+			margin: 100px auto;
+		}
+		.mes1,
+		.mes2{
+			display: inline-block;
+			font-size: 12px;
+			color: brown;
+			padding-left: 10px;
+		}
+		.wrong{
+			color: red;
+		}
+		.right{
+			color: green;
+		}
+		.NIU{
+			width: 600px;
+			margin: 100px auto;
+			display: none;
+		}
+		.NIU p{
+			font-size: 20px;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	 <div class="LOAD">
+	 	<div class="YOU">
+	 		邮箱<input type="text"  class ="youxiang" >
+	 		<p class="mes1">请输入你的邮箱</p>
+	 	</div>
+	 	<div class="MI">
+	 		密码<input type="password"  class="mima" >
+	 		<p class="mes2">请输入你的密码</p>
+	 	</div>
+	 	<div class="DENG">
+	 		<button id="GIAO" >登录</button>
+	 	</div>
+	 </div>
+	 <div class="NIU">
+	 	<p>牛逼你登陆成功了！</p>
+	 	<p class ="name"></p>
+	 	<p class ="name"></p>
+	 	<p class ="age"></p>
+	 	<p class ="good"></p>
+	 	
+	 </div>
+	 <script type="text/javascript">
+	 	let msg = [{
+    name: '张三',
+    age: 20,
+    strengths: 'JavaScript',
+    avatar: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.39mOMBjUfsK-HL9jUbv1MwHaE7?pid=ImgDet&rs=1',
+    email: 'yunding@qq.com',
+    password: 33333
+},
+{
+    name: '李四',
+    age: 19,
+    strengths: 'python',
+    avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.YlKimVo94OkaZDZCzPIDpAHaFh?pid=ImgDet&rs=1',
+    email: '12345678@163.com',
+    password: 11111
+},
+{
+    name: '王五',
+    age: 18,
+    strengths: 'Java',
+    avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.P2hK9SRjhFE8WM9N8tgWFAHaEQ?pid=ImgDet&rs=1',
+    email: 'yundingshuyuan@qq.cn',
+    password: 222222
+},
+]
+
+	 	 var youxiang = document.querySelector('.youxiang');
+	 	 var mima = document.querySelector('.mima');
+	 	 var mes1 = document.querySelector('.mes1');
+	 	 var mes2 = document.querySelector('.mes2');
+	 	 var GIAO = document.getElementById('GIAO');
+	 	 var LOAD = document.querySelector('.LOAD');
+	 	 var NIU = document.querySelector('.NIU');
+	 	 var name = document.querySelector('.name');
+	 	 var age = document.querySelector('.age');
+	 	 var good = document.querySelector('.good');
+	 	 var jud = /^[a-zA-Z0-9_-]+@(qq|163)(\.com+$|\.cn+$)/;
+	 	
+	 	
+	 	 
+	 	 	  	
+	 	
+	 	GIAO.onclick = function(){
+	 		
+	 	 	  	if(jud.test(youxiang.value)){
+	 	 	   	for(let i = 0;i < msg.length;i++){
+	 	 	   		if(youxiang.value === msg[i].email ){
+	 	 	   			
+	 	 	   			num = i;
+	 	 	   			mes1.className = 'right';
+	 	 	   			mes1.innerHTML = '牛逼你写对了';
+	 	 	   			mes2.className = 'right';
+	 	 	   			mes2.innerHTML = '牛逼你写对了';
+	 	 	   			name.innerHTML = '姓名' + msg[num].name;
+	 					age.innerHTML = '姓名' + msg[num].name+'年龄' + msg[num].age;
+	 					good.innerHTML = '特长' + msg[num].strengths;
+	 					LOAD.style.display = 'none';
+	 					NIU.style.display = 'block';
+	 	 	   			break;
+	 	 	   		}else{
+	 	 	   			mes1.innerHTML = '查无此人错误';
+	 	 	   		    mes1.className = 'wrong';
+	 	 	   		    mes2.innerHTML = '查无此人错误';
+	 	 	   		    mes2.className = 'wrong';
+	 	 	   		}
+	 	 		}
+	 	 	}else{
+	 	 		mes1.innerHTML = '格式错误';
+	 	 	   	mes1.className = 'wrong';	 	 	
+	 	 	}
+	 	}	
+	</script>
+</body>
+</html>
