@@ -1,10 +1,10 @@
-class Person{
+class Person {
     constructor(name, gender, age) {
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
-    hobby(){
+    hobby() {
         return "我的爱好是打乒乓球，打游戏等等";
     }
     speciality() {
@@ -48,7 +48,7 @@ let MyArray = function (str) {
         }
         return num;
     }
-    this.uniquel = function(){
+    this.uniquel = function () {
         let newArr = [];
         for (let ele of str) {
             if (newArr.indexOf(ele) === -1) {
@@ -60,18 +60,16 @@ let MyArray = function (str) {
 }
 let args = [1, 2, 3, 4, 6, 6];
 let arr = new MyArray(args);
-console.log(arr.checkArray([1, 1, 1,'2', 9]))
+console.log(arr.checkArray([1, 1, 1, '2', 9]))
 console.log(arr.addAll())
 console.log(arr.uniquel())
 // let arr0 = new MyArray('1234566');
 function show(a) {
     var a = document.getElementById(a);
-    if (a.style.display == "block")
-    {
+    if (a.style.display == "block") {
         a.style.display = "none";
     }
-    else
-    {
+    else {
         pa_passage1.style.display = "none";
         pa_passage2.style.display = "none";
         pa_passage3.style.display = "none";
