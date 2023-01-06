@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.king {
+    margin: 100px auto 0;
+    width: 100px;
+    height: 100px;
+}
+
+.mail {
+    width: 100px;
+    height: 15px;
+    font-size: 8px;
+}
+
+.password {
+    width: 100px;
+    height: 15px;
+    font-size: 8px;
+}
+
+.dl {
+    position: relative;
+    height: 21px;
+    width: 166px;
+}
+
+#register {
+    position: absolute;
+    left: 65%;
+}
+

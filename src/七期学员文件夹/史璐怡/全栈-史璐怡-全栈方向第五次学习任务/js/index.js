@@ -3,19 +3,23 @@ var childstr = prompt("请输入子串：");
 var arrps = parentstr.slice()
 var arrcs = childstr.slice()
 var num = 0, i = 0, j = 0, k = false;
-var pslength = arrps.length;
-var cslength = arrcs.length;
-for (i = 0; i < pslength; i++) {
-    for (j = 0; j < cslength; j++) {
+for (i = 0; i < arrps.length; i++) {
+    for (j = 0; j < arrcs.length; j++) {
         if (arrps[i] == arrcs[j]) {
-            if ((j+1) === cslength) {
+            if ((j + 1) === arrcs.length) {
                 k = true;
             } else {
                 i++;
             }
         } else {
-            k = false;
-            break;
+            if (arrps[i] == arrcs[0]) {
+                j = 0;
+                i++;
+            }
+            else {
+                k = false;
+                break;      
+            }
         }
     }
     if (k == true) {

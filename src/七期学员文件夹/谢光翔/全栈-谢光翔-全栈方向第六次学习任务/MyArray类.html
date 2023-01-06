@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyArray类</title>
+    <script type="text/javascript">
+        class MyArray{
+            value;
+            constructor(value){
+                if(Array.isArray(value)){
+                    this.value=value;
+                }else{
+                    throw value+'不是一个数组';
+                }
+            }
+            checkArray(array){
+                if(!Array.isArray(array)){
+                    throw array+'不是一个数组';
+                }
+                let flag=true;
+                for(let i=0;i<array.length;i++){
+                    if('number'!=typeof array[i]){
+                        flag=false;
+                        break;
+                    }
+                }
+                return flag;
+            }
+            addAll(){
+                if(this.checkArray(this.value)){
+                    let sum=0;
+                    for(let i=0;i<this.value.length;i++){
+                        sum+=this.value[i];
+                    }
+                    return sum;
+                }else{
+                    throw '数组不全是数字';
+                }
+            }
+            uniquel(){
+                for(let i=0;i<this.value.length;i++){
+                    for(let j=i+1;j<this.value.length;j++){
+                        if(this.value[i]==this.value[j]){
+                            this.value.splice(j,1);
+                            j--;
+                        }
+                    }
+                }
+                return this.value;
+            }
+        }
+        let args=[1,2,3,4,6,6];
+        const arr=new MyArray(args);
+        console.log(arr.checkArray([1, 1, 1, '2', 9]));
+        console.log(arr.addAll());
+        console.log(arr.uniquel()); 
+        let arr0 = new MyArray('1234566') 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

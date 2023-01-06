@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 947px;
+    display: flex;
+    justify-content: center;
+    background: url("https://seven-8.oss-cn-beijing.aliyuncs.com/%E5%85%A8%E6%A0%88%E7%AC%AC%E4%BA%94%E6%AC%A1%E4%BB%BB%E5%8A%A12.png");
+    background-size: 100% 100%;
+}
+
+.menus {
+    height: auto;
+    width: 200px;
+    overflow: hidden auto;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    }
+
+.menus-item {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 1px 0 1px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    }
+
+    #ying{
+        background: rgb(87, 4, 122);
+    }
+
+    #zhongli{
+        background: rgb(162, 123, 51);
+    }
+
+    #hutao{
+        background: rgb(136, 46, 19);
+    }
+
+    #keli{
+        background: rgb(255, 0, 0);
+    }
+
+img {
+    width: 25px;
+    height: 25px;
+    }
+
+.menus-text {
+    padding: 8px;
+}

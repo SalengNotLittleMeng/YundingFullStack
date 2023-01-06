@@ -1,0 +1,51 @@
+.navigation{
+    list-style: none;
+}
+
+.navigation > li {
+    position: relative; 
+    text-align: center;
+}
+
+.navigation > li > a {
+    background-color: #e4bc84;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+/* .navigation > li > a:hover,  */
+.navigation > li > a:focus {
+    background-color: #e4bc84;
+}
+
+.navigation > li > ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 0;
+    background-color: #faebcc;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation > li:hover > ul {
+    display: block;
+}
+
+.navigation > li > ul > li > a {
+    display: block;
+    padding: 10px;
+    width: 100%!;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 40px;
+}
+

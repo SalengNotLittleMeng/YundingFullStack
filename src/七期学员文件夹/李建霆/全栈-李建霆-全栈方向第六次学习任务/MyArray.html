@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyArray</title>
+    <script>
+        class MyArray{
+
+            checkArray(arr){
+                let i=0;
+                for(i=0;i<args.length;i++) {
+                    if(typeof(arr)!== Number){
+                        return false;
+                    }
+                    if(typeof(arr) === Number){
+                        return ture;
+                    }
+                }
+            }
+            addAll(){
+                let i=0;
+                let sum=0;
+                for(i=0;i<args.length;i++){
+                    sum=args[i]+sum;
+                }
+                return sum;
+            }
+            uniquel(){
+                let i=0;
+                let newarr=[];
+                // let newarr2=[];
+
+                  for(i=0;i<args.length;i++){
+                    newarr[i] = args[i];
+                    if(newarr.indexOf(args[i]) == i-1){
+                        delete newarr[i];
+                    }
+                    // if(typeof(newarr[i]=== null)){
+                    //     newarr2[i] = newarr[i];
+                    // }这里不会去除数组中的空
+                  }
+                  return newarr ;  
+            }
+            constructor(arr){
+                if(!Array.isArray(arr)){
+                    throw("这不是一个数组");
+                }
+            }
+        }
+    let args = [1, 2, 3, 4, 6, 6] //这是传入构造函数的参数
+    let arr = new MyArray(args) //args是一个数组，正常执行
+    console.log(arr.checkArray([1, 1, 1, '2', 9])) //false,因为[1, 1, 1, '2', 1]中的每一项不都是数字（'2'是字符）
+    console.log(arr.addAll()) //22，1+2+3+4+6+6=22
+    console.log(arr.uniquel()) //[1,2,3,4,6],除去了数组中的重复元素
+    let arr0 = new MyArray('1234566') //抛出错误，因为'1234566不是一个数组'
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

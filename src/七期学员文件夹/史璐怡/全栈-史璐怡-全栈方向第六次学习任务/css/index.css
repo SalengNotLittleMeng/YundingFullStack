@@ -1,0 +1,57 @@
+
+body {
+    background-color: #e2b985;
+}
+
+.box {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+}
+
+.box_style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.box_ {
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.box11,
+.box12,
+.box13,
+.box21,
+.box22,
+.box23,
+.box31,
+.box32,
+.box33,
+.box41,
+.box42,
+.box43,
+.box51,
+.box52,
+.box53 {
+    background-color: brown;
+    text-align: center;
+}
