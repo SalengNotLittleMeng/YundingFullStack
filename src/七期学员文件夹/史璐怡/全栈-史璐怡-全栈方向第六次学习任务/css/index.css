@@ -20,16 +20,13 @@ body {
 }
 
 .box_ {
-    height: 40px;
+    height: 34px;
     overflow: hidden;
     cursor: pointer;
 }
 
-.box1,
-.box2,
-.box3,
-.box4,
-.box5 {
+span {
+    display: block;
     height: 40px;
     text-align: center;
     line-height: 30px;
@@ -37,21 +34,10 @@ body {
     font-weight: bolder;
 }
 
-.box11,
-.box12,
-.box13,
-.box21,
-.box22,
-.box23,
-.box31,
-.box32,
-.box33,
-.box41,
-.box42,
-.box43,
-.box51,
-.box52,
-.box53 {
-    background-color: brown;
+.box1 {
+    margin: 0 auto;
+    background-color:beige;
+    width: 200px;
+    border-radius: 50%;
     text-align: center;
 }
