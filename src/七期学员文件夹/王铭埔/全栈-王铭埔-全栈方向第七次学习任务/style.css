@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.all{
+    margin: 200px auto;
+    width: 600px;
+    height: 400px;
+    background-color: aqua;
+    display: block;
+}
+.content{
+    width: 600px;
+    height: 300px;
+    background-color: cadetblue;
+}
+.content p{
+    margin-top: 52px;
+    margin-left: 206px;
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.content input{
+    margin: 12px auto;
+    margin-left: 206px;
+    width: 200px;
+    height: 30px;
+}
+.button{
+    margin-left: 205px;
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    border: solid 1px;
+}
+.button p{
+    font-size: 26px;
+    margin-left: 74px;
+}
+.sign{
+    display: none;
+    margin-left: 780px;
+    margin-top: 200px;
+}
+.sign p{
+    font-size: 25px;
+}
+.sign img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50%;
+}
