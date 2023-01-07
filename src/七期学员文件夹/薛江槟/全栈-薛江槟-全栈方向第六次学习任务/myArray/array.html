@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       class myArray {
+
+            constructor(args) {
+                this.args = args;
+                if (Array.isArray(args) == false) {
+                    throw newError("the arr is not a Array");
+                }
+            };
+
+            //checkArray方法
+            checkArray(args) {
+                for (let i = 0; i < args.length; i++) {
+                    if (typeof args[i] != "number") {
+                        return false;
+                        break;
+                    }
+                }
+                return true;
+            }
+            //addAll方法
+            addAll() {
+                let sum = 0;
+                for (let i = 0; i<args.length; i++) {
+                    sum = sum + args[i];
+                }
+                return sum;
+
+            }
+            //uniquel方法
+            uniquel() {
+                for (let i = 0; i <args.length; i++) {
+                    const index = args.indexOf(args[i], i + 1);
+                    if (index !== -1) {
+                        args.splice(index, 1);
+                        i--;
+                    }
+                }
+                return args;
+            }
+
+        }
+        args = [1, 2, 2, 3, 5, 7, 8, 9, 9];
+        const arr = new myArray(args);
+        //实现基本功能
+        console.log(arr.checkArray(args));
+        console.log(arr.addAll());
+        console.log(arr.uniquel());
+        //实现抛出异常
+       let arr0=new myArray('123456') ;        
+    </script>
+</head>
+<body> 
+   
+   
+</body>
+</html>

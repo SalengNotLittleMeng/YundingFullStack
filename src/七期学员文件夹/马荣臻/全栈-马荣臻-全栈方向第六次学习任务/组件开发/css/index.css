@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 208, 146);
+}
+
+.box {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 1000;
+    transition: height 0.35s;
+}
+
+.btn {
+    height: 40px;
+    transition: height 0.35s;
+    overflow: hidden;
+}
+
+.btn p {
+    margin: 0 auto;
+    width: 350px;
+    height: 40px;
+    background-color: #e2b985;
+    border-radius: 5px;
+}
+
+.btn .btnSon {
+    margin: auto;
+    margin-top: 15px;
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #ffebcc;
+}

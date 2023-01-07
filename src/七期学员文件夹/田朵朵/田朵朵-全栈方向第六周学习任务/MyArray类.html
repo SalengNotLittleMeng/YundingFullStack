@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class MyArray {
+            arr
+            constructor(arr){
+                if (!Array.isArray(arr)){
+                    throw "错误！"
+                }
+                this.arr=arr
+            }
+            
+            checkArray(arr){
+                for(let value of arr){
+                    if(typeof value !== Number){
+                        return false
+                    }else{
+                        return true
+                    }
+                }
+            }
+
+            addAll(){
+                let result 
+                result = eval(args.join("+"))
+                return result
+            }
+
+            uniquel(){
+                let newArr = []
+                for(let ele of args){
+                    if(newArr.indexOf(ele) === -1){
+                        newArr.push(ele)
+                    }
+                }
+                return newArr
+            }
+        }
+
+        let args = [1, 2, 3, 4, 6, 6] //这是传入构造函数的参数
+        let arr = new MyArray(args) //args是一个数组，正常执行
+        console.log(arr.checkArray([1, 1, 1, '2', 9])) //false,因为[1, 1, 1, '2', 1]中的每一项不都是数字（'2'是字符）
+        console.log(arr.addAll()) //22，1+2+3+4+6+6=22
+        console.log(arr.uniquel()) //[1,2,3,4,6],除去了数组中的重复元素
+        let arr0 = new MyArray('1234566') //抛出错误，因为'1234566不是一个数组'`
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

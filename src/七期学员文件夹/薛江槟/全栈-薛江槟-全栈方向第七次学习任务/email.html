@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="email.css">
+        
+    <title>帅比登录页面</title>
+</head>
+<body>
+    <div class="box">
+    <div class="head">登录界面</div>
+    <div class="h">邮箱</div>
+    <input type="text" id="email" style="width:350px; height:40px;" placeholder="在此输入">
+    <div class=”hh" >密码</div>
+    
+    <input type="password" id="password" style="width:350px; height:40px;" placeholder="在此输入">
+    <button id="judge">登录</button>
+
+    <ul>
+       <li>用户信息如下</li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    </ul>
+    </div>
+
+
+    <script>
+
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+    var result = document.getElementById('judge');
+    
+    result.onclick = function () {
+    var judge = /^[A-Za-z0-9]+@(qq|163)(\.com$|\.cn$)/;
+    var flag=true;
+    if (email.value === "") {
+    alert("邮箱不能为空")
+    flag=false;
+    }
+    else if(password.value === "") {
+    alert("密码不能为空")
+    flag=false;
+    }
+    if(flag){
+        
+    
+    if (judge.test(email.value)) {
+            alert("邮箱格式正确,正在检测中，即将为你登录")
+            flag=true;
+        }
+    else {
+        alert("邮箱格式错误，请重新输入");
+        flag=false;
+    }
+    
+    }
+    if(flag){
+        let msg = [{
+            name: '张三',
+            age: 20,
+            strengths: 'JavaScript',
+            avatar: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.39mOMBjUfsK-HL9jUbv1MwHaE7?pid=ImgDet&rs=1',
+            email: 'yunding@qq.com',
+            password:33333
+        },
+        {
+            name: '李四',
+            age: 19,
+            strengths: 'python',
+            avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.YlKimVo94OkaZDZCzPIDpAHaFh?pid=ImgDet&rs=1',
+            email: '12345678@163.com', 
+            password:11111
+        },
+        {
+            name: '王五',
+            age: 18,
+            strengths: 'Java',
+            avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.P2hK9SRjhFE8WM9N8tgWFAHaEQ?pid=ImgDet&rs=1',
+            email: 'yundingshuyuan@qq.cn',
+            password:222222
+        },
+        ];
+        for(let i=0;i<msg.length;i++){
+         if (msg[i].email == email.value){
+            var index=i;
+         }
+         else{
+            index=0;
+         }
+        }
+         if(index!=0){
+                if(msg[index].password==password.value){
+                    
+                    var ul=document.querySelector('ul');
+
+                    for(let i=0;i<ul.children.length;i++){
+                       ul.children[i].style.display="block";
+                    }
+                    ul.children[1].innerHTML =msg[index].name; 
+                    ul.children[2].innerHTML = msg[index].age; 
+                    ul.children[3].innerHTML = msg[index].strengths; 
+                    ul.children[4].innerHTML = msg[index].avatar; 
+                    ul.children[5].innerHTML = msg[index].email; 
+                    ul.children[6].innerHTML = msg[index].password; 
+                }
+                else{
+                    alert("存在该用户，但您输入的密码好像不对奥，再试试吧");
+                }
+        
+        
+    }
+
+    if(index==0){
+            alert("不存在该用户,请您先去注册一个吧");
+    }
+
+
+    }
+}
+
+    </script>
+
+</body>
+</html>

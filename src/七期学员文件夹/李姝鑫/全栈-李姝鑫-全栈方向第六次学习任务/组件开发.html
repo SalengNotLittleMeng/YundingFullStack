@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+
+        .BB {
+            width: 100%;
+            height: 713px;
+            background-color: #E0B783;
+        }
+
+        .bigbox {
+            margin-top: 100px;
+            width: 430px;
+            background-color: black;
+            margin: 0 auto;
+            border-radius: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .yiji {
+            width: 400px;
+            height: 40px;
+            background-color: #E0B783;
+            color: #000;
+            text-align: center;
+            line-height: 40px;
+            vertical-align: middle;
+            border: 5px solid #000;
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: -5px;
+            border-radius: 20px;
+        }
+
+        .erji1 {
+            width: 350px;
+            height: 30px;
+            background-color: #FFEBCC;
+            color: #000;
+            text-align: center;
+            line-height: 30px;
+            vertical-align: middle;
+            border: 5px solid #000;
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: -5px;
+            border-radius: 20px;
+        }
+
+        #erji1 {
+            display: none;
+        }
+
+        #erji2 {
+            display: none;
+        }
+
+        #erji3 {
+            display: none;
+        }
+
+        #erji4 {
+            display: none;
+        }
+
+        #erji5 {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        function Show(a) {
+            var a = document.getElementById(a);
+            if (a.style.display == "block") {
+                a.style.display = "none";
+            }
+            else {
+                erji1.style.display = "none"
+                erji2.style.display = "none"
+                erji3.style.display = "none"
+                erji4.style.display = "none"
+                erji5.style.display = "none"
+                a.style.display = "block";
+            }
+        }
+    </script>
+    </head>
+
+    <body>
+        <div class="BB">
+            <div class="bigbox">
+                <div class="bigbox">
+                    <div class="yiji" onclick="Show('erji1')">passage1</div>
+                    <div id="erji1">
+                        <div class="erji1">passage1.1</div>
+                        <div class="erji1">passage1.2</div>
+                        <div class="erji1">passage1.3</div>
+
+                    </div>
+
+                    <div class="yiji" onclick="Show('erji2')">passage2</div>
+                    <div id="erji2">
+                        <div class="erji1">passage2.1</div>
+                        <div class="erji1">passage2.2</div>
+                        <div class="erji1">passage2.3</div>
+
+                    </div>
+
+                    <div class="yiji" onclick="Show('erji3')">passage3</div>
+                    <div id="erji3">
+                        <div class="erji1">passage3.1</div>
+                        <div class="erji1">passage3.2</div>
+                        <div class="erji1">passage3.3</div>
+                    </div>
+
+                    <div class="yiji" onclick="Show('erji4')">passage4</div>
+                    <div id="erji4">
+                        <div class="erji1">passage4.1</div>
+                        <div class="erji1">passage4.2</div>
+                        <div class="erji1">passage4.3</div>
+                    </div>
+
+                    <div class="yiji" onclick="Show('erji5')">passage5</div>
+                    <div id="erji5">
+                        <div class="erji1">passage5.1</div>
+                        <div class="erji1">passage5.2</div>
+                        <div class="erji1">passage5.3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
