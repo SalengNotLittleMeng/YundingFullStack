@@ -25,11 +25,11 @@ for (let i = 0; i < arr.length; i++) {
 // Person类
 class Person {
     constructor(name, gender, age, hobby, speciality) {
-    this.name = name;
-    this.gender = gender;
-    this.age = age;
-    this.myHobby = hobby;
-    this.mySpeciality = speciality;
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.myHobby = hobby;
+        this.mySpeciality = speciality;
     }
 
     hobby() {
@@ -40,7 +40,7 @@ class Person {
     }
 
 }
-            
+
 let my = new Person('张艺珑', '男', 18, '跑步', '没有特长');
 
 // Myarray 类
@@ -75,15 +75,14 @@ class Myarray {
     }
 
     // 原型中的checkArray方法
-    checkArray (array) {
-    let flags = true;
-    for (let i = 0;i < array.length; i++) {
-        if (typeof(array[i]) == 'number') {
-            flags = false;
+    checkArray(array) {
+        let flags = true;
+        for (let i = 0; i < array.length; i++) {
+            if (typeof (array[i]) == 'number') {
+                flags = false;
+            }
         }
+        return flags;
     }
-    return flags;
-    }
-    
+
 }
-        
