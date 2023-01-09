@@ -1,9 +1,9 @@
-let content01    = document.getElementById("content01");
+let content01 = document.getElementById("content01");
 let email = document.getElementsByClassName("email")[0];
 let password = document.getElementsByClassName("password")[0];
 let login = document.getElementsByClassName("login")[0];
-let content02 = document.getElementById("content02")
-let [p1,p2,p3,p4]=content02.children
+let content02 = document.getElementById("content02");
+let [p1, p2, p3, p4] = content02.children;
 let msg = [
   {
     name: "张三",
@@ -33,34 +33,30 @@ let msg = [
     password: 222222,
   },
 ];
-function check() {
-    let reg = /^(@qq|@163)(.com|.cn)$/;
-    if (reg.test(email) === false) {
-        alert("邮箱格式不合法，请重新输入");
-    }
-    else {
-        for (let index = 0; index < msg.length; index++){
-            if (email === msg[index].email) {
-                if (password === msg[index].password) {
-                    content01.style.display = "none";
-                    content02.style.display = "block";
-                    p1.textContent="登录成功"
-                    p2.textContent = `姓名：${msg[index].name}`;
-                    p3.textContent = `年龄：${msg[index].age}`;
-                    p4.textContent = `特长:${msg[index].strengths}`;
-                }
-                else {
-                    alert("密码错误，请重新输入");
-                }
-                break;
-            }
-            else {
-                alert("该邮箱不存在，请重新输入");
-            }
+function check(email,password) {
+  let reg = /^[a-zA-Z0-9_]+@(qq|163)\.(com|cn)$/g;
+  if (reg.test(email) === false) {
+    alert("邮箱格式不合法，请重新输入");
+  } else {
+    for (let index = 0; index < msg.length; index++) {
+      if (email === msg[index].email) {
+        if (password == msg[index].password) {
+          content01.style.display = "none";
+          content02.style.display = "block";
+          p1.textContent = "登录成功";
+          p2.textContent = `姓名：${msg[index].name}`;
+          p3.textContent = `年龄：${msg[index].age}`;
+          p4.textContent = `特长:${msg[index].strengths}`;
+        } else {
+          alert("密码错误，请重新输入");
         }
+        break;
+      } else {
+        alert("该邮箱不存在，请重新输入");
+      }
     }
+  }
 }
-login.addEventListener('click', function () {
-    check(email, password);
-})
-console.log(content02);
+login.addEventListener("click", function () {
+  check(email.value, password.value);
+});
