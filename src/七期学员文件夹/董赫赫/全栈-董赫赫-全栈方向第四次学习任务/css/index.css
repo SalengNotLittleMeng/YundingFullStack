@@ -1,0 +1,383 @@
+
+.Animal{
+    height: 2288px;
+    width: 100%;
+    /* background-color: aqua; */
+    background: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E7%9F%A9%E5%BD%A2%20%E4%B8%8A.png) ,url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E9%B9%BF.png) ;
+    background-position: top,bottom;
+    background-repeat: no-repeat,no-repeat;
+    background-size:100% 878px,100% 760px;
+}
+.box{
+    display: flex;
+    justify-content:space-between;
+}
+.box p{
+    transition: all 0.5s;
+}
+.box p:hover{
+    transform: scale(1.2);
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    background-color:#81c04b ;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.photo:hover{
+    transform:translateX(-50%)scale(1.1);
+}
+.Animal_Photography{
+    height: 180px;
+    width: 1096px;
+    /* background-color: pink; */
+    margin-top: 91px;
+}
+.title{
+    height: 65px;
+    width: 634px;
+    /* background-color:aquamarine; */
+    margin: 200px auto 0;
+    font-size: 64px;
+    color: #2a3f17;
+}
+.content{
+    height: 93px;
+    width: 1096px;
+    /* background-color:aquamarine; */
+    margin-top: 22px;
+    font-size: 31px;
+    color: #2a3f17;
+}
+.explore{
+    width: 262px;
+	height: 72px;
+	background-color: #2a3f17;
+    margin-top: 134px;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    line-height: 68px;
+}
+.kinds{
+    width: 100%;
+    height: 500px;
+    margin-top: 106px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+}
+.kinds div{
+    /* background-color: aquamarine; */
+    height: 100%;
+    width: 333px;
+    color: #ffffff;
+    text-align:right;
+    line-height: 700px;
+    font-size: 35px;
+    font-family: Cambria;
+    transition: all 0.5s;
+}
+.kinds div:hover{
+    transform: translateY(-50px);
+}
+.kinds div:nth-child(1){
+    background-image: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png);
+}
+.kinds div:nth-child(2){
+    background-image: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png);
+}
+.kinds div:nth-child(3){
+    background-image: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png);
+}
+.word {
+	width: 946px;
+	height: 541px;
+	background-color: #e0dfdf;
+    margin: 161px auto;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.word:hover{
+    transform: translateY(-50px);
+}
+.word_content{
+    width: 794px;
+    height: 231px;
+    /* background-color: pink; */
+    font-size: 20px;
+    margin:83px auto 0;
+}
+.word_botton{
+	width: 197px;
+	height: 70px;
+	background-color: #2a3f17;
+    margin: 98px auto 0;
+    text-align: center;
+    line-height: 73px;
+    color: #ffffff;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.word_botton:hover{
+    transform: scale(0.8);
+}
+.difference{
+    overflow: hidden;
+    height:1924px ;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+.difference_kinds{
+    width: 1148px;
+	height: 491px;
+    /* background-color: pink; */
+    margin: 81px auto;
+    overflow: hidden;
+}
+.difference_kinds_title{
+    width: 231px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #2a3f17;
+    margin: 0 auto ;
+    position: relative;
+}
+
+.difference_kinds_title:before,.difference_kinds_title:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    box-sizing:  border-box;
+    position: absolute;
+}
+.difference_kinds_title:before{
+    top: 0;
+    left: 0;
+    transition: border-color 0s ease-in 0.4s,width 0.1s ease-in 0.3s,height 0.1s ease-in 0.2s;
+}
+.difference_kinds_title:after{
+    right: 0;
+    bottom: 0;
+    transition: border-color 0s ease-in 0.2s,width 0.1s ease-in 0.1s,height 0.1s ease-in;
+}
+.difference_kinds_title:hover:before{
+    width: 100%;
+    height: 100%;
+    transition: width 0.1s ease-in,height 0.1s ease-in 0.1s;
+    border-top-color:#2a3f17;
+    border-right-color:#2a3f17 ;
+}
+.difference_kinds_title:hover:after{
+    width: 100%;
+    height: 100%;
+    transition:border-color 0s ease-in 0.2s,width 0.1s ease-in 0.2s,height 0.15s ease-in 0.3s;
+    border-bottom-color:#2a3f17 ;
+    border-left-color: #2a3f17;
+}
+.difference_kinds_contsent{
+    width: 100%;
+    height: 413px;
+    /* background-color:mediumpurple ; */
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+}
+.difference_kinds_contsent div{
+    width: 264px;
+    height: 100%;
+    background-color:#e0dfdf;
+    color: #2a3f17;
+    transition: all 0.5s;
+}
+.difference_kinds_contsent div:hover{
+    transform: translateY(-20px);
+}
+.difference_kinds_contsent div:nth-child(1){
+    background-image: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E9%A9%AC.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.difference_kinds_contsent div:nth-child(2){
+    background-image: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E8%A2%8B%E9%BC%A0.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.difference_kinds_contsent div:nth-child(3){
+    background-image: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E7%8B%AE%E5%AD%90.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.difference_kinds_contsent div:nth-child(4){
+    background-image: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E5%B0%8F%E9%B8%9F.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.difference_kinds_contsent div p:nth-child(1){
+    margin: 300px 95px 20px;
+    font-size: 20px;
+}
+.difference_kinds_contsent div p:nth-child(2){
+    margin-left: 65px;
+    text-decoration: underline;
+}
+.difference_kinds_contsent div:nth-child(4) p:nth-child(1){
+    margin-left: 70px;
+}
+.konw_more{
+	width: 359px;
+	height: 69px;
+	border: solid 2px #2a3f17;
+    margin: 119px auto 86px;
+    color: #2a3f17;
+    font-size: 30px;
+    line-height: 75px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.konw_more:hover{
+    background-color:#2a3f17 ;
+    color: white;
+}
+.squirrel{
+    display: flex;
+    width: 1352px;
+	height: 1020px;
+    /* background-color: pink; */
+    color: #2a3f17;;
+}
+.squirrel_phpto{
+    overflow: hidden;
+    width: 702px;
+	height: 1020px;
+    /* background-color:mediumpurple; */
+    background-image: url(https://donghehe.oss-cn-hangzhou.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png);
+}
+.squirrel_content{
+    width: 521px;
+    height: 826px;
+    /* background-color:mediumpurple; */
+    margin: 92px 129px;
+}
+.squirrel_content_title{
+    font-size: 36px;
+    transition: all 0.5s;
+}
+.squirrel_content_title:hover{
+    transform: translateY(-20px);
+}
+.squirrel_content_words{
+    margin-top: 39px;
+    font-size: 21px;
+    transition: all 0.5s;
+    transition: transform 0.5s ease-in-out;
+}
+.squirrel_content_words:hover{
+    transform: translateX(80px) scale(1.2);
+}
+.squirrel_content_steps{
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    margin-top: 81px;
+    justify-content: space-between;
+}
+.squirrel_content_steps div{
+    height: 70px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    overflow: hidden;
+    transition: all 0.8s;
+}
+.squirrel_content_steps div:hover{
+    transform: translateX(50px);
+}
+.squirrel_content_steps div p:nth-child(1){
+    text-align: center;
+    font-size:28px;
+    width: 40px;
+    height:40px;
+    border: #2a3f17 2px solid;
+    border-radius: 100px;
+    margin: 10px;
+}
+.squirrel_content_steps div p:nth-child(2){
+    width: 200px;
+    height: 30px;
+    /* background-color: #81c04b; */
+    margin:30px 0;
+}
+.content_1{
+    overflow: hidden;
+    width: 1110px;
+    height: 100%;
+    /* background-color: aliceblue; */
+    margin: 0 auto 0;
+}
+.content_2{
+    width: 1352px;
+    height: 100%;
+    /* background-color: aliceblue; */
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+.botton{
+    height: 462px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+.sign{
+    display: flex;
+    overflow: hidden;
+    color: #2a3f17;
+    overflow: hidden;
+}
+.sign1{
+    /* overflow: hidden; */
+    width: 245px;
+    height:130px;
+    font-size: 25px;
+    /* background-color: pink; */
+    margin: 174px 55px 162px 191px;
+}
+.sign1 div:nth-child(2){
+    margin-top: 55px;
+}
+.sign2{
+    width: 159px;
+    height: 130px;
+    /* background-color: pink; */
+    margin-top: 181px;
+}
+.sign2 div:nth-child(2){
+    margin-top: 65px;
+}
+.sign3{
+    width: 361px;
+	height: 73px;
+    background-color: #2a3f17;
+	opacity: 0.5;
+    margin:193px 0px 194px 321px;
+    color:#ffffff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 70px;
+    transition: all 0.8s;
+}
+.sign3:hover{
+    background-color: white;
+    color: #2a3f17;
+    transform: translateY(-30px);
+}

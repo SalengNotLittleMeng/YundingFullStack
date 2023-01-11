@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("https://xirealm.oss-cn-beijing.aliyuncs.com/xi/v2-4b4b5e7a2f44b06f0194fdfe28c9d563_r.jpg");
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px black;
+    width: 500px;
+    height: 314px;
+    margin: 250px auto;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    font-family: "华文楷体";
+    text-align: left;
+}
+
+.input{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 330px;
+    margin-top: 20px;
+}
+
+input {
+    border: 2px solid #2a3f17;
+    border-radius: 5px;
+    height: 25px;
+    width: 250px;
+    font-size: 20px;
+}
+
+input:focus {
+    border: 2px solid black;
+}
+
+#tips{
+    margin: auto;
+    text-align: left;
+    height: 30px;
+    width: 330px;
+    color: brown;
+    font-size: 20px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 50px;
+    width: 180px;
+    border: 2px solid #2a3f17;
+    border-radius: 10px;
+    background: #949f8b;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "华文楷体";
+    line-height: 50px;
+    text-align: center;
+}
+
+#loginPage{
+    display: none;
+    width: 300px;
+    height: 250px;
+    margin: 280px auto;
+    border: solid 2px black;
+    background: rgba(0, 0, 0, 0.1);
+    font-family: "华文楷体" ;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+img{
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.information{
+    font-size: 25px;
+    margin-left: 10px;
+}

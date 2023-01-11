@@ -1,0 +1,444 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .w {
+          width: 1920px;
+          margin:auto;  
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .headContiner {
+            position: relative;
+            height: 930px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png");
+        }
+        .headContiner .nav {
+            position: relative;
+            background-color: #fff;
+            height: 50px;
+        }
+        .leftNav {
+            position: relative;
+            top: 15px;
+            width: 22px;
+            height: 15px;
+            margin-left: 26px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E4%B8%89%E6%9D%A0.png");
+            transition: all 0.5s;
+        }
+        .leftNav:hover {
+            transform: scale(0.8);
+        }
+        .rightNav {
+            position: relative;
+            top: 15px;
+            right: 26px;
+            height: 15px;
+            width: 15px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E6%94%BE%E5%A4%A7%E9%95%9C.png");
+            float: right;
+            transition: all 0.5s;
+        }
+         .rightNav:hover {
+            transform: scale(0.8);
+         }
+        .text1 {
+            position: absolute;
+            top: 291px;
+            left: 595px;
+            width: 634px;
+            height: 65px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/Animal%20Photography.png");
+        }
+        .text2 {
+            position: absolute;
+            top: 379px;
+            left: 416px;
+            width: 1096px;
+            height: 93px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/A%20silhouette%20of%20them,%20a%20simple%20little%20acttion,%20here%20are%20the%20pho.png");
+        }
+        .button {
+            position: absolute;
+            bottom: 252px;
+            left: 415px;
+            width: 216px;
+            height: 63px;
+            padding-left: 62px;
+            padding-top: 15px;
+            color: #fff;
+            font-size: 37px;
+            background-color: #2a3f17;
+        }
+        @keyframes reduce {
+            0%{width: 200px;height: 200px;}
+            50%{width: 150px;height: 150px;}
+            100%{width: 200px;height: 200px;}
+        }
+        .photograph {
+            position: absolute;
+            top: 0px;
+            left: 860px;
+            height: 200px;
+            width: 200px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E5%9B%BE%E6%A0%87.png");
+            animation: reduce 2s;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .continer2 {
+            position: relative;
+            height: 498px;
+            background: #fff;
+        }
+        .bird1 {
+            position: absolute;
+            left: 404px;
+            top: -146px;
+            width: 333px;
+            height: 498px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png");
+            transition: top 1.5s;
+        }
+        .bird1:hover {
+            top: -186px;
+        }
+        .bird2 {
+            position: absolute;
+            left: 792px;
+            top: -146px;
+            width: 333px;
+            height: 498px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png");
+            transition: top 1.5s;
+        }
+        .bird2:hover {
+            top: -186px;
+        }
+        .bird3 {
+            position: absolute;
+            left: 1182px;
+            top: -146px;
+            width: 333px;
+            height: 498px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png");
+            transition: top 1.5s;
+        }
+        .bird3:hover {
+            top: -186px;
+        }
+        .Fly {
+            position: relative;
+            left: 203px;
+            top: 360px;
+            font-size: 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #fff;
+        }
+        .Love {
+            position: relative;
+            left: 203px;
+            top: 360px;
+            font-size: 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #fff;
+        }
+        .Stand {
+            position: relative;
+            left: 180px;
+            top: 360px;
+            font-size: 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #fff;
+        }
+        .continer3 {
+            position: relative;
+            height: 760px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png");
+        }
+        .textborder {
+            position: absolute;
+            left: 499px;
+            top: -83px;
+            height: 540px;
+            width: 945px;
+            padding-top: 79px;
+            padding-left: 75px;
+            font-size: 23px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: #e0dfdf;
+            box-sizing: border-box;
+            transition: top 1s;
+        }
+        .textborder:hover {
+            top: -113px;
+        }
+        .continer3 a {
+            position: absolute;
+            display: inline-block;
+            background-color: #2a3f17;
+            top: 325px;
+            left: 872px;
+            height: 70px;
+            width: 196px;
+            padding-left: 38px;
+            padding-top: 20px;
+            font-size: 33px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-sizing: border-box;
+            transition: all 1s;
+        }
+        .continer3 a:hover {
+            transform: scale(0.8);
+        }
+        .continer4 {
+            position: relative;
+            height: 1927px;
+            background-color: #fff;
+        }
+        .difference {
+            position: absolute;
+            top: 81px;
+            left: 830px;
+            font-size: 51px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #000;
+            box-sizing: border-box;
+            animation: moveBoder 0.3s infinite;
+        }
+        /* 这个动画做的不太好 不会做 */
+        @keyframes moveBoder {
+            0%{border-top: #000 solid 5px;}
+            25%{border-right: #000 solid 5px;}
+            50%{border-bottom: #000 solid 5px;}
+            75%{border-left: #000 solid 5px;}
+            100%{border: #fff solid 0px;}
+        }
+        .horse {
+            position: absolute;
+            left: 398px;
+            top: 158px;
+            height: 413px;
+            width: 263px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E9%A9%AC.png");
+            background-color: #e0dfdf;
+            background-repeat: no-repeat;
+            transition: top 1s;
+        }
+        .horse:hover {
+            top: 120px;
+        }
+        .kangaroo {
+            position: absolute;
+            left: 695px;
+            top: 158px;
+            height: 413px;
+            width: 263px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E8%A2%8B%E9%BC%A0.png");
+            background-color: #e0dfdf;
+            background-repeat: no-repeat;
+            transition: top 1s;
+        }
+        .kangaroo:hover {
+            top: 120px;
+        }
+        .lion {
+            position: absolute;
+            left: 987px;
+            top: 158px;
+            height: 413px;
+            width: 263px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E7%8B%AE%E5%AD%90.png");
+            background-color: #e0dfdf;
+            background-repeat: no-repeat;
+            transition: top 1s;
+        }
+        .lion:hover {
+            top: 120px;
+        }
+        .hummingbird {
+            position: absolute;
+            right: 375px;
+            top: 158px;
+            height: 413px;
+            width: 263px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E5%B0%8F%E9%B8%9F.png");
+            background-color: #e0dfdf;
+            background-repeat: no-repeat;
+            transition: top 1s;
+        }
+        .hummingbird:hover {
+            top: 120px;
+        }
+        .Horse {
+            position: absolute;
+            top: 294px;
+            left: 95px;
+            font-size: 33px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .Kangaroo {
+            position: absolute;
+            top: 294px;
+            left: 70px;
+            font-size: 33px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .Lion {
+            position: absolute;
+            top: 294px;
+            left: 95px;
+            font-size: 33px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .Hummingbird {
+            position: absolute;
+            top: 294px;
+            left: 42px;
+            font-size: 33px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .different_story {
+            position: absolute;
+            left: 43px;
+            bottom: 32px;
+            color: #2a3f17;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .continer4 a {
+            position: absolute;
+            left: 792px;
+            top: 690px;
+            display: inline-block;
+            width: 356px;
+            height: 69px;
+            color: black;
+            text-align: center;
+            padding-top:16px ;
+            font-size: 30px;
+            border: #000 solid 1px;
+            box-sizing: border-box;
+            transition: background-color  1s;
+            /* 这里文字不改变颜色会有视觉停留效应      但不加此效果主要原因还是因为加上就没有动画的感觉了，疑惑 */
+            /* transition: color; */
+        }
+        .continer4 a:hover {
+            background-color: black;
+            /* color: #fff; */
+        }
+        .squirrel {
+            position: absolute;
+            left: 256px;
+            bottom: 61px;
+            height: 1020px;
+            width: 702px;
+            background-image: url("https://ta0.oss-cn-beijing.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png");
+        }
+        .Photo {
+            position: absolute;
+            top:948px ;
+            right: 657px;
+            font-size: 36px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            transition: top 1s;
+        }
+        .Photo:hover {
+            top: 910px;
+        }
+        .family {
+            position: absolute;
+            top: 1008px;
+            right: 344px;
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 1s;
+            transition: right 1s;
+        }
+        .family:hover {
+            transform: scale(1.2);
+            right: 310px; 
+        }
+        .order {
+            display: flex;
+            position: absolute;
+            bottom: 161px;
+            right: 450px;
+            height: 561px;
+            width: 389px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .first {
+            height: 70px;
+            line-height: 70px;
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .first img {
+            float: left;
+        }
+        .first div {
+            position: relative;
+            left: 0px;
+            transition: left 1s;
+        }
+        .first div:hover {
+            left: 50px;
+        }
+        .container5 {
+            position: relative;
+            height: 460px;
+            background-color: #fff;
+            border-top: #000 solid 5px;
+        }
+        .wild {
+            position: absolute;
+            left: 445px;
+            top: 174px;
+            font-size: 40px;
+        }
+        .sea {
+            top: 266px;
+        }
+        .more {
+            position: absolute;
+            top: 181px;
+            left: 748px;
+            color: #4d5b41;
+            font-size: 30px;
+        }
+        .art {
+            font-size: 24px;
+            top: 234px;
+        }
+        .life {
+            font-size: 24px;
+            top: 274px;
+        }
+        .container5 a {
+            position: absolute;
+            display: inline-block;
+            top: 195px;
+            right: 330px;
+            height: 73px;
+            width: 360px;
+            line-height: 73px;
+            text-align: center;
+            font-size: 36px;
+            background-color: #949f8b;
+            /* 同时应用多个过渡效果 */
+            transition: top 1s;
+            transition: background-color;
+            transition: color 1s;
+        }
+        .container5 a:hover {
+            background: #fff;
+            top: 175px;
+            color: #949f8b;
+        }

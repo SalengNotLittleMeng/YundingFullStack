@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font/iconfont.ttf?t=1671610836292') format('truetype'),
+         url('./font/iconfont.woff?t=1671610836292') format('woff'),
+         url('./font/iconfont.woff2?t=1671610836292') format('woff2');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.top{
+    width:100%;
+    height :920px;
+    /* background-color: pink; */
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png");
+}
+.top-top{
+    width:100%;
+    height :45px;
+    background-color:white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    transition: all 2s ease;
+}
+.top-pic1{
+    width:55px;
+    height:45px;
+    float: left;
+    
+    /* background-color: lightskyblue; */
+    transition: all 2s ease;
+}
+ .top-pic1:hover{
+    transform: scale(.5,.5);
+}
+.top-pic2{
+    width:55px;
+    height:45px;
+    float: right;
+    /* background-color: black; */
+   
+    transition: all 2s ease;
+}
+.top-pic2:hover{
+    transform: scale(.5,.5);
+}
+.top-content{
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    margin-left: -557px;
+    width:1114px;
+    height :215px;
+    /* background-color:green ; */
+    
+}
+.top-con1{
+    width:1114px;
+    height :65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 72px;
+    /* background-color:blueviolet ; */
+    
+}
+.top-con2{
+    width:1114px;
+    height :150px;
+    font-size: 30px;
+    /* background-color:red ; */
+    margin-top: 35px;
+}
+
+.top-button{
+    width:262px;
+    height :70px;
+    background-color: #2a3f17 ;
+    position: absolute;
+    top:600px;
+    left:50%;
+    margin-left: -553px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    transition: all 2s ease;
+    
+}
+.top-button:hover{
+    transform: scale(2.2);
+}
+#top-button{
+    color: white;
+}
+.top-camera{
+    width:206px;
+    height :200px;
+    position: absolute;
+    top: 0;
+   left: 50%;
+   margin-left: -103px;
+   background-color: #949f8b;
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E7%9B%B8%E6%9C%BA.222png.png");
+    
+    transition: all 2s;
+}
+.top-camera:hover{
+    transform: scale(.5,.5);
+}
+.camera{
+    width:158px ;
+    height:158px;
+    border-radius: 50%;
+    margin: 13px auto;
+    border: 8px solid white;
+    background-image: url("");
+}
+.next{
+    width:100%;
+    height :604px;
+    background-color:white;
+    position: relative;
+
+}
+.picture{
+    width:1114px;
+    height :507px;
+    /*background-color:pink ;*/
+
+    
+    position: absolute;
+    bottom:252px ;
+    left: 50%;
+    margin-left: -557px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.picture div{
+    width:335px;
+    height :507px;
+  
+
+}
+
+.picture1{
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png");
+    transition: all 2s;
+}
+.picture2{
+background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png");
+transition: all 2s;
+
+}
+
+
+.picture3{
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png");
+    transition: all 2s;
+
+}
+
+.picture1:hover{
+    transform: translateY(-30%);
+}
+.picture2:hover{
+    transform: translateY(-30%);
+}
+.picture3:hover{
+    transform: translateY(-30%);
+}
+
+.middle{
+    width:100%;
+    height :755px;
+    background-color: blue;
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png");
+    position: relative;
+
+}
+.introduction:hover{
+    transform: translateY(-10%);
+}
+.introduction{
+    width:942px;
+    height :542px;
+    background-color:#e0dfdf ;
+    position: absolute;
+    left: 50%;
+    margin-left: -471px;
+    bottom: 310px;
+
+    overflow: hidden;
+    background-image: url("");
+transition: all 2s;
+    
+
+}
+.intro1{
+    width:800px;
+    height :240px;
+    margin-top: 80px;
+    margin-left: 32px;
+    font-size: 20px;
+    margin: 87px auto;
+    background-color:#e0dfdf;
+}
+.intro2{
+    width:208px;
+    height :68px;
+    margin-left: 368px;
+    text-align: center;
+    line-height: 68px;
+    font-size: 30px;
+    background-color:#2a3f17 ;
+    transition: all 3s;
+}
+.intro2:hover{
+    transform: scale(0.5,0.5);
+}
+.difference{
+    width:100%;
+    height :862px;
+    background-color:white ;
+    position: relative;
+    overflow: hidden;
+}
+.title{
+    width:260px;
+    height :60pz;
+   
+   position: absolute;
+   top: 79px;
+   left: 50%;
+   margin-left: -130px;
+    font-size: 48px;
+    text-align: center;
+    line-height: 60px;
+    background-color: white;
+   
+   
+}
+@keyframes move{
+    0%{}
+    25%{border-top: 12px solid green;}
+    50%{border-right: 12px solid green;}
+    75%{border-bottom: 12px solid green;}
+    100%{border-left: 12px solid green;}
+}
+.title:hover{
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+
+.animals{
+    width:1162px;
+    height :417px;
+    position: absolute;
+    top: 163px;
+    left: 50%;
+    margin-left: -581px;
+    background-color:white ;
+    display: flex;
+    justify-content: space-between;
+}
+.animal-pic1{
+    width:260px;
+    height :417px;
+    background-color:#e0dfdf ;
+    display: flex;
+    flex-direction: column;
+    transition: all 2s;
+}
+.pic11{
+    width:260px;
+    height :254px;
+    /* background-color: blueviolet; */
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E9%A9%AC.png");
+    
+}
+.animal-pic1:hover{
+    transform: translateY(-30%);
+}.animal-pic2:hover{
+    transform: translateY(-30%);
+}.animal-pic3:hover{
+    transform: translateY(-30%);
+}.animal-pic4:hover{
+    transform: translateY(-30%);
+}
+.CON11{
+    width:193px;
+    height :119px;
+   
+    border-bottom: 2px solid black;
+    margin:0 auto;
+}
+.con11{
+    width:193px;
+    height :98px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 98px;
+    /* background-color:yellow ; */
+
+}
+.con111{
+    width:193px;
+    height :21px;
+    font-size:21px ;
+    text-align: center;
+    line-height: 21px;
+    /* background-color:yellowgreen; */
+}
+.animal-pic2{
+    width:260px;
+    height :417px;
+     background-color:#e0dfdf ; 
+    display: flex;
+    flex-direction: column;
+    transition: all 2s;
+}
+.pic22{
+    width:260px;
+    height :254px;
+    /* background-color: blueviolet; */
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E8%A2%8B%E9%BC%A0.png");
+    transition: all 3s;
+
+}
+.CON22{
+    width:193px;
+    height :119px;
+    /* background-color:pink ; */
+    border-bottom: 2px solid black;
+    margin:0 auto;
+}
+.con22{
+    width:193px;
+    height :98px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 98px;
+    /* background-color:yellow ; */
+
+}
+.con222{
+    width:193px;
+    height :21px;
+    font-size:21px ;
+    text-align: center;
+    line-height: 21px;
+    /* background-color:yellowgreen; */
+}
+.animal-pic3{
+    width:260px;
+    height :417px;
+    background-color:#e0dfdf ; 
+    display: flex;
+    flex-direction: column;
+    transition: all 2s;
+}
+.pic33{
+    width:260px;
+    height :254px;
+    /* background-color: blueviolet; */
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E7%8B%AE%E5%AD%90.png");
+  
+
+}
+.CON33{
+    width:193px;
+    height :119px;
+    /* background-color:pink ; */
+    border-bottom: 2px solid black;
+    margin:0 auto;
+}
+.con33{
+    width:193px;
+    height :98px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 98px;
+    /* background-color:yellow ; */
+
+}
+.con333{
+    width:193px;
+    height :21px;
+    font-size:21px ;
+    text-align: center;
+    line-height: 21px;
+    /* background-color:yellowgreen; */
+}
+.animal-pic4{
+    width:260px;
+    height :417px;
+     background-color:#e0dfdf ; 
+    display: flex;
+    flex-direction: column;
+    transition: all 2s;
+}
+.pic44{
+    width:260px;
+    height :254px;
+    /* background-color: blueviolet; */
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E5%B0%8F%E9%B8%9F.png");
+
+
+}
+.CON44{
+    width:193px;
+    height :119px;
+    /*ackground-color:pink ; */
+    border-bottom: 2px solid black;
+    margin:0 auto;
+}
+.con44{
+    width:193px;
+    height :98px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 98px;
+    /* background-color:yellow ; */
+
+}
+.con444{
+    width:193px;
+    height :21px;
+    font-size:21px ;
+    text-align: center;
+    line-height: 21px;
+    /* background-color:yellowgreen; */
+}
+
+
+.diff-button{
+    width:350px;
+    height :68px;
+    /* background-color: yellow; */
+    text-align: center;
+    line-height: 68px;
+    font-size: 30px;
+    position: absolute;
+    top: 694px;
+    left: 50%;
+    margin-left: -175px;
+    border: 3px solid black;
+    transition: all 3s;
+}
+.diff-button:hover{
+    background-color: #2a3f17;
+}
+
+.photo{
+    width:100%;
+    height :1078px;
+    /* background-color:wheat; */
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid black;
+
+}
+.photo1{
+    width:695px;
+    height :1022px;
+    background-color:black ;
+    margin-left: 251px;
+    background-image: url("https://typoraningyuyan.oss-cn-beijing.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png");
+   transition: all 2s;
+}
+.photo1:hover{
+    transform: scale(.5,.5);
+}
+.photo-introduction{
+    width:800px;
+    height :1022px;
+    background-color:white ;
+  position: relative;
+
+}
+.the-photo{
+    width:526px;
+    height :278px;
+    /* background-color:yellow; */
+    
+}
+.the-photo1{
+    width:198px;
+    height :65px;
+    /* background-color:greenyellow ; */
+    position: absolute;
+    top: 63px;
+    left: 136px;
+    font-size: 36px;
+    transition: all 2s;
+}
+.the-photo2{
+    width:538px;
+    height :140px;
+    font-size: 24px;
+    /* background-color:palevioletred ; */
+    position: absolute;
+    top: 157px;
+    left: 136px;
+    transition: all 2s;
+}
+.the-photo1:hover{
+transform: translateY(-30%);
+}
+.the-photo2:hover{
+    transform: scale(1.2);
+    }
+
+.box{
+    width:800px;
+    height :744px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+.box div{
+    width:374px;
+    height :80px;
+    /* background-color: wheat; */
+    margin-left: 136px;
+   text-align: center;
+    line-height: 110px;
+    font-size: 24px;
+    transition: all 2s;
+}
+.box div:hover{
+    transform: translateX(50%);
+}
+.box1::before{
+    content: '1';
+    float: left;
+    width:80px;
+    height :80px;
+    /* background-color: blueviolet; */
+    border-radius: 40px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 80px;
+    
+    font-size: 48px;
+}
+.box2::before{
+    content: '2';
+    float: left;
+    width:80px;
+    height :80px;
+    /* background-color: blueviolet; */
+    border-radius: 40px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 48px;
+}
+.box3::before{
+    content: '3';
+    float: left;
+    width:80px;
+    height :80px;
+   /*background-color: blueviolet; */
+    border-radius: 40px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 48px;
+}
+.box4::before{
+    content: '4';
+    float: left;
+    width:80px;
+    height :80px;
+    /* background-color: blueviolet; */
+    border-radius: 40px;
+    border: 3px solid black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 48px;
+}
+.bottom{
+    width:100%;
+    height :460px;
+    /* background-color:pink ; */
+    overflow: hidden;
+   
+}
+.bottom-con{
+    width:1146px;
+    height :460px;
+    background-color:white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.txt1{
+    width:280px;
+    height :163px;
+    /* background-color: palevioletred; */
+    left: 0;
+    top:169px ;
+    text-align: center;
+    position: absolute;
+    font-size:40px ;
+    transition: all 2s;
+}
+.txt2{
+    width:250px;
+    height :176px;
+    /* background-color: goldenrod; */
+    position: absolute;
+    top:169px ;
+    left: 295px;
+    transition: all 2s;
+}
+.txt22{
+    width:146px;
+    height :44px;
+    /* background-color: yellow; */
+    text-align: center;
+    font-size:30px ;
+    
+    
+}
+.txt33{
+    width:146px;
+    height :130px;
+    /* background-color: yellow; */
+    text-align: center;
+    
+    font-size:24px; 
+}
+
+.bottom-button{
+    width:370px;
+    height :68px;
+    background-color:#949f8b;
+    position: absolute;
+    top: 194px;
+   right: 0;
+    text-align: center;
+    line-height:68px ;
+    font-size: 36px;
+    transition: all 2s;
+}
+.txt1:hover{
+  transform: scale(2);
+}
+.txt2:hover{
+    transform: scale(2);
+}
+.bottom-button:hover{
+    transform: translateY(-50%);
+    background-color: aliceblue;

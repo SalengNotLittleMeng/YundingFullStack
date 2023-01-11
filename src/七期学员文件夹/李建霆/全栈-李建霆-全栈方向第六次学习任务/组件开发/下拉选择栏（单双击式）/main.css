@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.nav {
+  width: 300px;
+  margin: 0 auto;
+  background-color: rgb(95, 145, 49);
+  border-radius: 25px;
+}
+.nav > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+.nav > ul > li {
+  width: 300px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+  border-radius: 25px;
+  background-color: rgba(171, 165, 126, 0.913);
+  height: 43px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  /* background-repeat: no-repeat; */
+}
+.nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  display: block;
+  padding: 10px 0;
+  border-radius: 25px;
+}
+.nav ul li a:hover {
+  width: 300px;
+  background-color: rgb(166, 117, 10);
+}
+.nav > ul > li > ul {
+  /* 动画效果，当高度改变时，使其1s渐变 */
+  transition: height 1s ease;
+  background-color: rgb(22, 100, 129);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  bottom: 2px;
+  border-radius: 25px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>登录界面</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'iconfont';
+        src:
+            url('css/font_3853070_9blqly5b68i/iconfont.woff2') format('woff2'),
+            url('css/font_3853070_9blqly5b68i/iconfont.woff') format('woff'),
+            url('css/font_3853070_9blqly5b68i/iconfont.ttf') format('truetype');
+    }
+
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+</style>
+
+<body>
+
+    <div class="register">
+        <div class="ma">邮箱</div>
+        <div class="flex" id="width">
+            <input type="email" id="email">
+            <div class="error">
+                <span class="iconfont" id="icon">&#xe624;</span>
+                <div class="word" id="error"></div>
+            </div>
+        </div>
+        <div class="pass">密码</div>
+        <input type="password" id="password">
+        <div class="su">
+            <input type="submit" value="登录" id="submit">
+        </div>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

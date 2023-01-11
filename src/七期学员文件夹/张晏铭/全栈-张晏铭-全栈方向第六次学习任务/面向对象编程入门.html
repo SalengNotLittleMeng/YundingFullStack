@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面向对象编程入门</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        class Person{
+            name = "张晏铭"
+            gender = "男"
+            age = 18
+            birthday
+            constructor(birthday){
+                this.birthday = birthday
+            }
+            hobby(){
+                console.log("我的爱好是肝度较高的游戏")
+            }
+            speciality(){
+                console.log("我的特长是钻研编码程序,打羽毛球.")
+            }
+        }
+        const my = new Person("一月八日")
+        console.log(my.name)
+        console.log(my.gender)
+        console.log(my.age)
+        console.log(my.birthday)
+        my.hobby()
+        my.speciality()
+
+        const arr = [1,2,2,3,1,4,6,7,7,3,2,8,9]
+        if(Array.isArray(arr)){
+            console.log(checkArray(arr))
+        if(checkArray(arr) === true){
+            console.log(addAll())
+            console.log(uniquel())
+        }
+        }
+
+        else{
+            throw "请确定输入了一个数组。。。"
+        }
+        
+
+        function checkArray(m) {
+            let n = 1
+            for (let vol of m) {
+                if (typeof vol != typeof 1) {
+                    n--
+                    return false
+                }
+            }
+            if (n === 1) {
+                return true
+            }
+        }
+
+        function addAll(){
+            let all = 0
+            for(let voll of arr){
+                all += voll
+            }
+            return all
+        }
+    
+        function uniquel(){
+            let brr = []
+            for(let volll of arr){
+                if(brr.indexOf(volll)=== -1){
+                    brr.push(volll)
+                }
+            }
+            return brr
+        }
+
+    </script>
+    
+</body>
+</html>

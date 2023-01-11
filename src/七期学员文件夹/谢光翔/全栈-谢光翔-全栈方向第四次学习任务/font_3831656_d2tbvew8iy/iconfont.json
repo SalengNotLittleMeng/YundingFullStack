@@ -1,0 +1,30 @@
+{
+  "id": "3831656",
+  "name": "第四次作业",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "666889",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "7339838",
+      "name": "选项",
+      "font_class": "xuanxiang",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "7588170",
+      "name": "24gf-camera",
+      "font_class": "24gf-camera",
+      "unicode": "e9f3",
+      "unicode_decimal": 59891
+    }
+  ]
+}

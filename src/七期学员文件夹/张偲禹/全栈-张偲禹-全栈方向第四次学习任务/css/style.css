@@ -1,0 +1,372 @@
+.box1{
+    margin:0 auto;
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.icon-liebiao:hover{
+    font-size: 5px!important;
+    transition-duration: 1s;
+}
+.icon-sousu:hover{
+    font-size: 5px !important;
+    transition-duration: 1s;
+}
+.square{
+    background-color: rgb(136, 193, 22);
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 99;
+}
+.square:hover {
+    transform:scale(0.9);
+    transition-duration: 1s;
+}
+.camera{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(136, 193, 22);
+    height:70px;
+    width:70px;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 51px;
+}
+.icon-xiangji{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 44px!important;
+}
+
+.box2{
+    width:1200px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url("https://uu--image.oss-cn-zhangjiakou.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png" );
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.text{
+    position: absolute;
+    margin: 0 auto;
+    width:600px;
+    height: 100%;
+    left:50%;
+    transform: translateX(-50%);
+    top:18%;
+}
+h1{
+    font-size: 50px;
+    color: rgb(4, 84, 4);
+    text-align: center;
+    font-family:"Times New Roman", Times, serif;
+}
+p{
+    font-size: 20px;
+    color: rgb(4, 84, 4);
+    text-align: start;
+    font-family: "Times New Roman", Times, serif;
+}
+.TextTwo{
+    top:5%;
+    height: 20px;
+    width:120px;
+    background-color:rgb(4, 84, 4) ;
+    padding: 20px;
+    position: relative;
+}
+h2{
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-weight: lighter;
+}
+.swan{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height:250px;
+    left:50%;
+    transform: translateX(-50%);
+    top:88%;
+}
+.swan div:hover{
+    transform: translateY(-30%);
+    transition-duration: 2s;
+}
+.swan img{
+    width:180px;
+    height:250px;
+}
+.swan span{
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    display: flex;
+    top:80%;
+    color:white;
+}
+
+.box3{
+    width:1200px;
+    height:350px;
+    margin:0 auto;
+}
+
+.box4{
+    width:1200px;
+    height:550px;
+    margin:0 auto;
+    background-image: url("https://uu--image.oss-cn-zhangjiakou.aliyuncs.com/%E9%B9%BF.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.text2{
+    position: absolute;
+    height:350px;
+    width:600px;
+    background-color: rgb(205, 205, 205);
+    left:50%;
+    transform: translateX(-50%);
+    top:-20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text2:hover{
+    transform: translateY(-30%)translateX(-50%);
+    transition-duration: 2s;
+}
+.Text{
+    width:450px;
+    margin: 0 auto;
+    color: rgb(4, 84, 4);
+    text-align: justify;
+}
+.SignUp{
+    width:130px;
+    height:40px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 25px;
+    background-color: rgb(4, 48, 4);
+    color: white;
+    text-align: center;
+}
+.SignUp:hover{
+    transform:scale(0.7);
+    transition-duration: 2s;
+}
+
+.box5{
+    width:1200px;
+    height:1500px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+.Difference{
+    font-size: 30px;
+    color: rgb(4, 84, 4);
+    margin: 0 auto;
+    height:40px;
+    width:140px;
+    padding: 20px;
+    animation-name:border;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes border{
+    0%{border:none;}
+    25%{border-top: 2px solid black;}
+    50%{border-style:solid solid none none;
+        border-color: black;
+        border-width: 2px;}
+    75%{border-style: solid solid solid none;
+        border-color: black;
+        border-width: 2px;}
+    100%{border:2px solid black;}
+}
+.Animal{
+    height:350px;
+    width:830px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.Animal div:hover{
+    transform:translateY(-20%) ;
+    transition-duration: 2s;
+}
+.Horse{
+    height:350px;
+    width:190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(205, 205, 205);
+    position: relative;
+}
+.Kangaroo{
+    height: 350px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(205, 205, 205);
+    position: relative;
+}
+.Lion{
+    height: 350px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(205, 205, 205);
+    position: relative;
+}
+.Bird{
+    height: 350px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(205, 205, 205);
+    position: relative;
+}
+.animal{
+    text-align: center;
+    color: rgb(4, 84, 4);
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:60%;
+}
+.stroy{
+    color: rgb(4, 84, 4);
+    width: 160px;
+    border-bottom:2px solid black;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:80%;
+}
+.Knowmore{
+    height:35px;
+    width:160px;
+    padding: 20px;
+    margin:0 auto;
+    border:2px solid black;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(4, 84, 4);
+}
+.Knowmore:hover{
+    background-color: rgb(4, 84, 4);
+    color:white;
+    transition-duration: 2s;
+}
+.Squirrel{
+    margin: 0 auto;
+    height:700px;
+    width:1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.squirrel{
+    width:500px;
+}
+.introduction{
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.introduction span{
+    color: rgb(4, 84, 4);
+    display: flex;
+}
+.introduction span:hover{
+    transform: translateX(20%);
+    transition-duration: 1s;
+}
+.introduction span div{
+    font-size: 30px;
+    font-weight: lighter;
+    height:50px;
+    width:50px;
+    border:2px solid rgb(4, 84, 4);
+    border-radius: 50%;
+    text-align: center;
+}
+.photo{
+    color: rgb(4, 84, 4);
+    font-size: 30px;
+}
+.photo:hover{
+    transform:translateY(-30%);
+    transition-duration: 1s;
+}
+.Introduction{
+    color: rgb(4, 84, 4);
+}
+.Introduction:hover{
+    transform: scale(1.2)translateX(9%);
+    transition-duration: 1s;
+}
+
+.box6{
+    height:300px;
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.box6_1{
+    color:rgb(3, 28, 3);
+    font-size: 25px;
+}
+.box6_2{
+    position: absolute;
+    color: rgb(4, 48, 4);
+    left:42%;
+    font-size: 15px;
+}
+.box6_3{
+    background-color: rgb(138, 144, 133);
+    color: white;
+    height:30px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.box6_3:hover{
+    background-color:white;
+    color: rgb(4, 84, 4);
+    transform: translateY(-40%);
+    transition-duration: 2s;
+}
