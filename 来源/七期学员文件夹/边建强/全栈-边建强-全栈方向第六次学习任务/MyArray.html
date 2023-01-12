@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class MyArray{
+            constructor(arr){
+                let check=Array.isArray(arr)
+                if(check){
+                    this.arr=arr
+                }else{ throw 'Error'}
+                    }
+            checkArray(arr){
+                for(let value of arr){
+                    if(typeof value !='number')
+                    return false
+                }
+                return true
+                    }
+            addAll(){
+                let sum=this.arr.reduce((a,b)=>a+b,0)
+                return  sum
+                    }
+            uniquel(){
+                let newArray=[]
+                let i,j=0;
+                for(let i=0;i<this.arr.length;i++){
+                    if(this.arr.indexOf(this.arr[i],i+1)==-1){
+                        newArray[j]=this.arr[i];
+                        j++
+                    }
+                }
+                return newArray
+            }
+        }
+        let args = [1, 2, 3, 4, 6, 6];
+        let arr = new MyArray(args);
+        console.log(arr.checkArray([1, 1, 1, '2', 9]));
+        console.log(arr.addAll());
+        console.log(arr.uniquel());
+        let arr0 = new MyArray('1234566');
+    </script>
+</body>
+</html>
