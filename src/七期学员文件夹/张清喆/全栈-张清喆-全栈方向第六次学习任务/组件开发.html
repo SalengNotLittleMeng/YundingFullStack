@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组件开发</title>
+    <script>
+        function show(num)
+        {
+            var arr1=["box2_1","box2_2","box2_3","box2_4","box2_5"];
+            var arr2=[];
+            number=0;
+            for(var value of arr1)
+            {
+                if(value!=num)
+                {
+                    arr2[number]=value;
+                    number++;
+                }
+            }
+            var num1=document.getElementById(num);
+            var num2=document.getElementById(arr2[0]);
+            var num3=document.getElementById(arr2[1]);
+            var num4=document.getElementById(arr2[2]);
+            var num5=document.getElementById(arr2[3]);
+            if(num1.style.display == "block")
+            {
+                num1.style.display = "none";  
+            }
+            else
+            {
+                num1.style.display = "block";
+            }
+            if(num2.style.display=="block"||num2.style.display=="block"||num3.style.display=="block"||num4.style.display=="block"||num5.style.display=="block")
+            {
+                num2.style.display="none";
+                num3.style.display="none";
+                num4.style.display="none";
+                num5.style.display="none";
+            }
+        }
+    </script>
+    <style>
+        .box1
+        {
+            height: 50px;
+            width: 300px;
+            background-color: orange;
+            border:black 4px solid;
+            margin: auto;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .box2
+        {
+            height: 50px;
+            width: 250px;
+            background-color: orange;
+            border:black 4px solid;
+            margin: auto;
+            color: black;
+            font-size: 25px;
+            text-align: center;
+            line-height: 50px;
+        }
+        #box2_1,#box2_2,#box2_3,#box2_4,#box2_5
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box1" onclick="show('box2_1')">
+        passage1
+    </div>
+    <div id="box2_1">
+        <div class="box2">passage1.1</div>
+        <div class="box2">passage1.2</div>
+        <div class="box2">passage1.3</div>
+    </div>
+    <div class="box1" onclick="show('box2_2')">
+        passage2
+    </div>
+    <div id="box2_2">
+        <div class="box2">passage2.1</div>
+        <div class="box2">passage2.2</div>
+        <div class="box2">passage2.3</div>
+    </div>
+    <div class="box1" onclick="show('box2_3')">
+        passage3
+    </div>
+    <div id="box2_3">
+        <div class="box2">passage3.1</div>
+        <div class="box2">passage3.2</div>
+        <div class="box2">passage3.3</div>
+    </div>
+    <div class="box1" onclick="show('box2_4')">
+        passage4
+    </div>
+    <div id="box2_4">
+        <div class="box2">passage4.1</div>
+        <div class="box2">passage4.2</div>
+        <div class="box2">passage4.3</div>
+    </div>
+    <div class="box1" onclick="show('box2_5')">
+        passage5
+    </div>
+    <div id="box2_5">
+        <div class="box2">passage5.1</div>
+        <div class="box2">passage5.2</div>
+        <div class="box2">passage5.3</div>
+    </div>
+</body>
+</html>

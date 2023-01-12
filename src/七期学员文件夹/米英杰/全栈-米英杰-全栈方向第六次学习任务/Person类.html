@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person类</title>
+    <script>
+        class Person {
+            constructor(name, gender, age, hobby, speciality) {
+                this.name = name
+                this.gender = gender
+                this.age = age
+                this.Hobby = hobby
+                this.Speciality = speciality
+            }
+            hobby() {
+                return '我的爱好是' + this.Hobby
+            }
+            speciality() {
+                return '我的特长是' + this.Speciality
+            }
+        }
+        const my = new Person('米英杰', '男', 18, '阅读', '写作')
+        console.log(my.name)
+        console.log(my.gender)
+        console.log(my.age)
+        console.log(my.hobby())
+        console.log(my.speciality())
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,482 @@
+	*{
+			margin: 0;
+			padding: 0;
+		}
+	
+		.father{
+			width: 1920px;
+			height: 4674px;
+			background-color: skyblue;
+			margin: 0 auto;
+		}
+		.title{
+			width: 1920px;
+			height: 49px;
+			background-color: #ffffff;
+			position: relative;
+		}
+		.left{
+			width: 68px;
+			height: 49px;
+			position: absolute;
+			top: 16px;
+			
+		}
+		.left img{
+			transition: all .8s;
+		}
+		.left img:hover{
+			transform: scale(0.6);
+		}
+		.right{
+			width: 68px;
+			height: 49px;
+			position: absolute;
+			top: 16px;
+			
+			left: 1880px;
+		}
+		.top{
+			width: 1920px;
+			height: 1398px;
+			background-color: white;
+			position: relative;
+
+		}
+		.top1{
+			width: 1920px;
+			height: 882px;
+			background-image:url(https://kisynergy.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F.png) ;
+			position: relative;
+		}
+		.camera{
+			position: absolute;
+			left: 857px;
+			
+			top: -49px;
+			width: 203px;
+			height: 199px;
+			background-image: url(https://kisynergy.oss-cn-beijing.aliyuncs.com/camera.png);
+			
+			transition: transform .5s;
+			
+		}
+		.camera:hover{
+			transform-origin: center;
+			transform: scale(0.8);
+		}
+		.top_words{
+			width: 1920px;
+			height: 176px;
+			position: absolute;
+			top: 243px;
+			text-align: center;
+			color: #2a3f17;
+		}
+		.top_words h1{
+			font-size: 72px;
+			font-family:Cambria ;
+		}
+		.top_words p{
+			font-size: 30px;
+			font-family:微软雅黑 ;
+		}
+		.explore{
+			width: 257px;
+			height: 73px;
+			background-color: #2a3f17;
+			text-align: center;
+			position: absolute;
+			line-height: 73px;
+			top: 558px;
+			left: 415px;
+			color: white;
+			font-size: 25px;
+			font-family: 微软雅黑;
+		}
+		.top_pictures{
+			width: 1112px;
+			height: 499px;
+			position: absolute;
+			top: 739px;
+			left: 400px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.top_pictures1{
+			width: 340px;
+			height: 499px;
+			background-image:url(https://kisynergy.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F1.png) ;
+			transition: all .5s;
+
+		}
+		.top_pictures1:hover{
+			transform: translateY(-30px);
+		}
+		.top_pictures2{
+			width: 340px;
+			height: 499px;
+			background-image:url(https://kisynergy.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F2.png) ;
+			transition: all .5s;
+		}
+		.top_pictures2:hover{
+			transform: translateY(-30px);
+		}
+		.top_pictures3{
+			width: 340px;
+			height: 499px;
+			background-image:url(https://kisynergy.oss-cn-beijing.aliyuncs.com/%E7%81%AB%E7%83%88%E9%B8%9F3.png) ;
+			transition: all .5s;
+		}
+		.top_pictures3:hover{
+			transform: translateY(-30px);
+		}
+		.w{
+			color: white;
+			position: relative;
+			font-size: 48px;
+			font-family:Cambria ;
+			top: 360px;
+			left: 206px;
+		}
+		.part1{
+			width: 1920px;
+			height: 759px;
+			background-image:url(https://kisynergy.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png);
+			position: relative;
+			
+		}
+		.deer1{
+			width: 949px;
+			height: 543px;
+			background-color: #e0dfdf;
+			position: absolute;
+			top: -78px;
+			left: 498px;
+			text-align: center;
+			transition: all .5s;
+			font-size: 20px;
+			font-family: 微软雅黑;
+		}
+		.deer1:hover{
+			transform: translateY(-30px);
+		}
+		.SIGNUP{
+			width: 196px;
+			height: 70px;
+			background-color: green;
+			position: absolute;
+			top: 409px;
+			left: 374px;
+			line-height: 70px;
+			font-size: 30px;
+			color: white;
+			text-decoration: none;
+			transition: all .8s;
+		}
+		.SIGNUP:hover{
+			transform: scale(0.8);
+		}
+		.part2{
+			width: 1920px;
+			height: 689px;
+			background-color:#f8f8f8 ;
+			position: relative;
+		}
+		.Difference{
+			width: 252px;
+			height: 69px;
+			position: absolute;
+			left: 848px;
+			top: 30px;
+			text-align: center;
+			line-height: 69px;
+
+		}
+		.Difference p{
+			font-size: 48px;
+			font-family: 微软雅黑;
+			color: #2a3f17;
+			outline: none;
+		}
+		@keyframes Difference{
+    		0%{
+        	border: 3px solid #f8f8f8;
+    		}
+    		25%{
+        	border: 3px solid #f8f8f8;
+        	border-top: 4px solid #2a3f17;
+    		}
+    		50%{
+        	border: 3px solid #f8f8f8;
+        	border-top: 4px solid #2a3f17;
+        	border-right: 4px solid #2a3f17;
+    		}
+    		75%{
+        	border: 3px solid #f8f8f8;
+        	border-top: 3px solid #2a3f17;
+        	border-right: 3px solid #2a3f17;
+        	border-bottom: 3px solid #2a3f17;
+    		}	
+    		100%{
+        	border: 3px solid #2a3f17;
+    		}
+  		}
+ 		.Difference p:hover{
+    	animation-name: Difference ;
+    	animation-duration: 1s;
+		}   
+		.part2_pictures{
+			width: 1148px;
+			height: 414px;
+			background-color: #f8f8f8;
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+			top: 154px;
+			left: 397px;
+		}
+		.box1{
+			width: 260px;
+			height: 411px;
+			background-color: #e0dfdf;
+			transition: all ,.5s;
+			text-align: center;
+
+		}
+		.box1:hover{
+			transform: translateY(-30px);
+		}
+		.box2{
+			width: 260px;
+			height: 411px;
+			background-color: #e0dfdf;
+			transition: all ,.5s;
+			text-align: center;
+		}
+		.box2:hover{
+			transform: translateY(-30px);
+		}
+		.box3{
+			width: 260px;
+			height: 411px;
+			background-color: #e0dfdf;
+			transition: all ,.5s;
+			text-align: center;
+		}
+		.box3:hover{
+			transform: translateY(-30px);
+		}
+		.box4{
+			width: 260px;
+			height: 411px;
+			background-color: #e0dfdf;
+			transition: all ,.5s;
+			text-align: center;
+		}
+		.box4:hover{
+			transform: translateY(-30px);
+		}
+		.Y{
+			position: relative;
+			top: 35px;
+			
+		}
+		.Y h3{
+			font-size: 30px;
+			font-family: 微软雅黑;
+			color: #2a3f17;
+		}
+		.Y a{
+			font-size: 21px;
+			font-family: 微软雅黑;
+			color: #2a3f17;
+		}
+		.part3{
+			width: 1920px;
+			height: 1357px;
+			background-color: #f8f8f8;
+			position: relative;
+
+		}
+		.KOWN{
+			width: 359px;
+			height: 67px;
+			position: absolute;
+			left: 790px;
+			top: 115px;
+			text-align: center;
+			line-height: 67px;
+			border: 4px solid #2a3f17;
+			text-decoration: none;
+			transition: all .8s;
+		}
+		.KOWN a{
+			font-size: 30px;
+			font-family: 微软雅黑;
+			color: #2a3f17;
+			text-decoration: none;
+		}
+		.KOWN:hover{
+			background-color: #2a3f17;
+    	}
+    	.KOWN a:hover{
+    		color: white;
+    	}
+		.GIAO{
+			width: 1370px;
+			height: 1022px;
+			background-color: #f8f8f8;
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+			top: 267px;
+			left: 252px;
+		}
+		.part3_pictures{
+			width: 702px;
+			height: 1022px;
+			background-image: url(https://kisynergy.oss-cn-beijing.aliyuncs.com/%E6%9D%BE%E9%BC%A0.png);
+		}
+		.part3_words{
+			width: 538px;
+			height: 1022px;
+			
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+
+		}
+		.PP{
+			width: 538px;
+			height: 163px;
+			
+			transition: all .8s;
+		}
+		.PP h3{
+			font-size: 36px;
+			font-family: 微软雅黑;
+			position: relative;
+			top: 93px;
+			color: #2a3f17;
+		}
+		.PP:hover{
+			transform: translateY(-30px);
+		}
+		.PPP{
+			width: 538px;
+			height: 267px;
+			
+			transition: all .8s;
+			
+			
+		}
+		.PPP p{
+			color: #2a3f17;
+			font-size: 24px;
+			font-family: 微软雅黑;
+			position: relative;
+			top: 15px;
+		}
+		.PPP:hover{
+			transform: translateX(50px);
+
+		}
+		.P{
+			width: 538px;
+			height: 69px;
+			
+			display: flex;
+			justify-content: flex-start;
+			transition: all .8s;
+			margin: 30px;
+			text-align: center;
+			line-height: 69px;
+			position: relative;
+			top: -20px;
+		}
+		.P:hover{
+			transform: translateX(50px);
+		}
+		.Pnumber{
+			width: 69px;
+			height: 69px;
+			border-radius: 50%;
+			border: 2px solid #2a3f17;
+			color: #2a3f17;
+			font-size: 30px;
+			text-align: center;
+			line-height: 69px;
+		}
+		.PW{
+			width: 266px;
+			height: 69px;
+			color: #2a3f17;
+			font-size: 24px;
+			font-family: 微软雅黑;
+			line-height: 69px;
+			text-align: left;
+			position: relative;
+			left: 15px;
+		}
+		.B{
+			width: 1920px;
+			height: 10px;
+			background-color: black;
+		}
+		.end{
+			width: 1920px;
+			height: 458px;
+			background-color: #ffffff;
+			position: relative;
+		}
+		.lastwords #WILD{
+    		position: absolute;
+    		top: 174px;
+    		left: 117px;
+		}
+		.lastwords #SEA{
+    		position: absolute;
+    		top: 266px;
+    		left: 117px;
+		}
+		.lastwords #MOER{
+    		position: absolute;
+    		top: 181px;
+    		left: 413px;
+    		font-size: 30px;
+    		color: #949f8b;
+		}
+		.lastwords #art{
+    		position: absolute;
+    		top: 233px;
+    		left: 415px;
+    		font-size: 20px;
+    		color: #949f8b;
+		}
+		.lastwords #life{
+    		position: absolute;
+    		top: 273px;
+    		left: 415px;
+    		font-size: 20px;
+    		color: #949f8b;
+		}
+		.Big_World{
+			width: 363px;
+			height: 73px;
+			position: absolute;
+			top: 195px;
+			left: 1203px;
+			background-color: #949f8b;
+			text-align: center;
+			line-height: 73px;
+			font-size: 40px;
+			text-decoration: none;
+			color: white;
+			transition: all .8s;
+		}
+		.Big_World:hover{
+			color: #949f8b;
+    		background-color: white;
+    		transform: translateY(-50px);
+		}

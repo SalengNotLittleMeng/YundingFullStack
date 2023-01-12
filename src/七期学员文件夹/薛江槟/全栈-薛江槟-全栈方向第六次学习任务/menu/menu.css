@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: none;
+    margin: auto;
+    cursor: pointer;
+    height:60px;
+    list-style: none;
+    font-size: 25px;
+    width: 750px;
+    
+}
+ul{
+    cursor: pointer;
+}
+div{
+    height: 50px;
+    width: 750px;
+    margin: auto;
+    margin-top: 20px;
+    
+    background-color: silver;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+   
+    border-radius: 50px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}

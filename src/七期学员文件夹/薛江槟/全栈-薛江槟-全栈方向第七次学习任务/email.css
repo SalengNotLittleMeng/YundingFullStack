@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.box{
+    
+    margin: auto;
+    margin-top: 10px;
+    height: 500px;
+    width: 355px;
+   
+    
+    
+}
+.head{
+    padding-left: 100px;
+    font-size: 33px;
+    padding-bottom: 30px;
+}
+input{
+    border-radius: 10px;
+    background-color: #A8A8A8;
+    color: white;
+    opacity: 0.7;
+    font-size: 18px;
+   
+    
+}
+.hh{
+  top:20px;
+}
+button{
+    cursor: pointer;
+    margin-top: 30px;
+  height:45px;
+  width:350px ;
+  font-size: 20px;
+  background-color: black;
+  color:white;
+  border-radius: 5px;
+    
+}
+button:hover{
+   opacity: 0.7;
+}
+
+
+li{
+    list-style: none;
+    display: none;
+}

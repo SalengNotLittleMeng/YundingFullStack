@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Person {
+            #name;
+            #gender;
+            #age;
+            hobby() {
+                return '我的爱好是'
+            }
+            speciality() {
+                return '我的特长是'
+            }
+            constructor(name, gender, age) {
+                this.#name = name;
+                this.#gender = gender;
+                this.#age = age;
+            }
+            get name() {
+                return this.#name;
+            }
+            get gender() {
+                return this.#gender;
+            }
+            get age() {
+                return this.#age;
+            }
+        }
+        let my = new Person('赵丹娜', '女', 19);
+        console.log(my.name);
+        console.log(my.gender);
+        console.log(my.age);
+        console.log(my.hobby());
+        console.log(my.speciality());
+    </script>
+</head>
+<body>
+    
+</body>
+
+</html>

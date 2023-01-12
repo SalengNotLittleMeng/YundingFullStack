@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>组件开发</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <div  class="blackbox">
+        <div id="">
+            <span id="one">Passage1</span>
+            <a href="">Passage1.1</a>
+            <a href="">Passage1.2</a>
+            <a href="">Passage1.3</a>
+        </div>
+        <div id="">
+            <span id="two">Passage1</span>
+            <a href="">Passage2.1</a>
+            <a href="">Passage2.2</a>
+            <a href="">Passage2.3</a>
+        </div>
+        <div id="">
+            <span id="three">Passage3</span>
+            <a href="">Passage3.1</a>
+            <a href="">Passage3.2</a>
+            <a href="">Passage3.3</a>
+        </div>
+        <div id="">
+            <span id="one">Passage4</span>
+            <a href="">Passage4.1</a>
+            <a href="">Passage4.2</a>
+            <a href="">Passage4.3</a>
+        </div>
+        <div id="">
+            <span id="five">Passage5</span>
+            <a href="">Passage5.1</a>
+            <a href="">Passage5.2</a>
+            <a href="">Passage5.3</a>
+        </div>
+    </div>
+
+    <script>
+        let menu = document.getElementsByTagName("span");
+        let first = null;
+        for (let i = 0; i < menu.length; i++) {
+            menu[i].onclick = function () {
+                let par = menu[i].parentNode;
+                if (first === i) {
+                    if (par.style.height === "43px") {
+                        open(par);
+                    }
+                    else {
+                        close(par);
+                    }
+                }
+                else {
+                    if (first !== null) {
+                        close(menu[first].parentNode);
+                    }
+                    open(par);
+                    first = i;
+                }
+            }
+        }
+
+        function open(par) {
+            let tem = setInterval(() => {//不太懂这个内
+                let num = par.offsetHeight;//返回像素高度
+                if (num >= par.scrollHeight) {
+                    clearInterval(tem);//取消tem的id值
+                }
+                par.style.height = num + 1 + "px";
+            }, 7);
+        }
+
+        function close(par) {
+            let tem = setInterval(() => {
+                let num = par.offsetHeight;
+                if (num <= 43) {
+                    clearInterval(tem);
+                    return;
+                }
+                par.style.height = num - 1 + "px";
+            }, 7);
+        }
+        </script>
+    </body>
+    </html>

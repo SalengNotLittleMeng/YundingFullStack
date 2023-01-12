@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var args = [1, 2, 3, 4, 6, 6];
+        class MyArr {
+            array;
+            constructor(args) {
+                if (!Array.isArray(args)) {
+                    throw new Error('This is not an Array!')
+                }
+                this.array = args;
+            }
+            checkArr(args) {
+                var flag = true;
+                for (var i = 0; i < args.length; i++) {
+                    if (args[i] !== Number) {
+                        flag = false;
+                    }
+                }
+                return flag;
+            }
+            addAll(args) {
+                var sum = 0;
+                for (var i = 0; i < args.length; i++) {
+                    sum += args[i];
+                }
+                return sum;
+            }
+            uniquel(args) {
+                var newArr = [];
+                for (var i = 0; i < args.length; i++) {
+                    var flag = true;
+                    for (var j = 0; j < newArr.length; j++) {
+                        args[i] === newArr[j] ? flag = false : flag;
+                    }
+                    flag ? newArr.push(args[i]) : newArr;
+                }
+                return newArr;
+            }
+        }
+        var arr = new MyArr(args);
+        console.log(arr.checkArr([1, 1, 1, '2', 9]));
+        console.log(arr.addAll(args));
+        console.log(arr.uniquel(args));
+        var arr1 = new MyArr('1234566');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
