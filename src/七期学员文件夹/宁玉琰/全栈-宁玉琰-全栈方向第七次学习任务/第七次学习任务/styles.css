@@ -1,0 +1,8 @@
+#success-box{
+    visibility: hidden;
+    background-color:purple;
+}
+.img{
+    width: 20px;
+    height: 20px;
+}
