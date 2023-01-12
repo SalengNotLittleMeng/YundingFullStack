@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person类</title>
+    <script type="text/javascript">
+        class Person{
+            name;
+            age;
+            gender;
+            _hobby;
+            _speciality;
+            constructor(name,age,gender,_hobby,_speciality){
+                this.name=name;
+                this.age=age;
+                this.gender=gender;
+                this._hobby=_hobby;
+                this._speciality=_speciality;
+            }
+            hobby(){
+                return this._hobby;
+            }
+            speciality(){
+                return this._speciality;
+            }
+        }
+        const my=new Person('谢光翔',18,'男','宅家','睡觉');
+        console.log(my.name);
+        console.log(my.age);
+        console.log(my.gender);
+        console.log(my.hobby());
+        console.log(my.speciality());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

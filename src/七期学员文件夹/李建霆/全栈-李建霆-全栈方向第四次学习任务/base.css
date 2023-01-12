@@ -1,0 +1,379 @@
+.box1 {
+  width: 1920px;
+  height: 929px;
+  background-color: #00ffff;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  width: 1920px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.button {
+  width: 40px;
+  height: 30px;
+  top: 0px;
+  margin-left: 10px;
+  margin-right: 0px;
+  position: relative;
+}
+.button:hover {
+  transform: scale(0.75, 0.75);
+}
+.camera {
+  width: auto;
+  height: auto;
+  transition-duration: 0.5s;
+}
+.camera:hover {
+  transform: scale(0.75);
+}
+.content1 {
+  position: absolute;
+  top: 300px;
+  left: 650px;
+  font-size: 50px;
+  color: rgb(9, 104, 45);
+}
+.content2 {
+  position: absolute;
+  height: 50px;
+  width: 900px;
+  top: 400px;
+  left: 475px;
+  font-size: 26px;
+  color: rgb(9, 104, 45);
+}
+.expiore {
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  background-color: #2a3f17;
+  bottom: 250px;
+  left: 300px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 250%;
+}
+.box2 {
+  width: 1400px;
+  height: 333px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  left: 200px;
+}
+.fire {
+  width: 333px;
+  height: 498px;
+  transition-duration: 0.5s;
+  position: relative;
+}
+.fire:hover {
+  transform: translate(0px, -75px);
+}
+.word1 {
+  font-size: 38px;
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 200px;
+}
+.box3 {
+  width: 1920px;
+  height: 600px;
+  position: relative;
+  top: 500px;
+  background-color: tomato;
+}
+.content3 {
+  width: 900px;
+  height: 450px;
+  background-color: #e0dfdf;
+  position: absolute;
+  top: -100px;
+  left: 450px;
+  transition-duration: 0.5s;
+  color: #3d4e2e;
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+}
+.content3:hover {
+  transform: translate(0px, -50px);
+}
+.button2 {
+  width: 200px;
+  height: 80px;
+  background-color: #2a3f17;
+  position: absolute;
+  bottom: 100px;
+  left: 400px;
+  color: white;
+  font-size: 28px;
+  padding-top: 25px;
+  transition-duration: 0.8s;
+}
+.button2:hover {
+  transform: scale(0.8);
+}
+.box4 {
+  height: 800px;
+  width: 1920px;
+  position: relative;
+  top: 660px;
+}
+.difference {
+  position: absolute;
+  background-color: white;
+  top: 65px;
+  left: 770px;
+  width: 360px;
+  height: 100px;
+  z-index: 1000;
+  color: #2f431d;
+  font-size: 38px;
+  text-align: center;
+  padding-top: 20px;
+}
+.hide {
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  left: 750px;
+  width: 400px;
+  height: 150px;
+  z-index: 1;
+  /* border: 1px solid red;  */
+}
+.hide::before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  top: 50px;
+  left: 750px;
+  width: 400px;
+  height: 150px;
+  background-color: #2f431d;
+  transform: rotate(180deg);
+  transform-origin: left bottom;
+  transition: all 0.5s;
+}
+.hide:hover:before {
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+
+.box5 {
+  width: 1920px;
+  height: 600px;
+  position: absolute;
+
+  top: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.firebox {
+  width: 264px;
+  height: 400px;
+  background-color: #e0dfdf;
+  font-size: 28px;
+  text-align: center;
+  transition: 0.5s;
+}
+.firebox:hover {
+  transform: translate(0px, -75px);
+}
+.knowborder {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  bottom: -105px;
+  left: 805px;
+  border: 5px solid #2f431d;
+}
+.know {
+  width: 301px;
+  height: 101px;
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+
+  font-size: 28px;
+  color: #2f431d;
+  text-align: center;
+  line-height: 100px;
+  transition-duration: 0.5s;
+  z-index: 100;
+}
+.know:hover {
+  background-color: #2f431d;
+
+  color: white;
+}
+.box6 {
+  width: 702px;
+  height: 1020px;
+  position: relative;
+  background-color: khaki;
+  top: 800px;
+  left: 320px;
+}
+.box7 {
+  width: 480px;
+  height: 800px;
+  position: relative;
+  left: 1050px;
+  top: -75px;
+}
+.title {
+  width: 200px;
+  height: 50px;
+  color: #2f431d;
+  font-size: 40px;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  transition-duration: 0.5s;
+}
+.title:hover {
+  transform: translateY(-25px);
+}
+.content4 {
+  width: 417px;
+  height: 150px;
+  color: #2f431d;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  transition-duration: 0.5s;
+}
+.content4:hover {
+  transform: translate(75px, 20px);
+  font-size: 18px;
+}
+.stitle1 {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+
+  top: 250px;
+  left: 25px;
+  color: #2f431d;
+  font-size: 24px;
+  line-height: 100%;
+  transition-duration: 0.5s;
+}
+.stitle1:hover {
+  transform: translateX(25px);
+}
+.stitle2 {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 400px;
+  left: 25px;
+  color: #2f431d;
+  font-size: 24px;
+  line-height: 100%;
+}
+.stitle2:hover {
+  transform: translateX(25px);
+}
+.stitle3 {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 550px;
+  left: 25px;
+  color: #2f431d;
+  font-size: 24px;
+  line-height: 100%;
+}
+.stitle3:hover {
+  transform: translateX(25px);
+}
+.stitle4 {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 700px;
+  left: 25px;
+  font-size: 24px;
+  color: #2f431d;
+  line-height: 100%;
+}
+.stitle4:hover {
+  transform: translateX(25px);
+}
+.box8 {
+  height: 500px;
+  width: 1920px;
+  position: relative;
+}
+.content6 {
+  width: 300px;
+  height: 75px;
+  position: absolute;
+  top: 200px;
+
+  left: 400px;
+  font-size: 28px;
+  color: #2a3f17;
+}
+.content7 {
+  width: 300px;
+  height: 75px;
+  position: absolute;
+  top: 300px;
+
+  left: 400px;
+  font-size: 28px;
+  color: #2a3f17;
+}
+.more {
+  width: 100px;
+  height: 40px;
+  font-size: 24px;
+  position: absolute;
+  top: 200px;
+  left: 650px;
+  color: #2a3f17;
+}
+.content8 {
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: 300px;
+  left: 650px;
+  color: #2a3f17;
+}
+.button3 {
+  width: 300px;
+  height: 75px;
+  position: absolute;
+  top: 250px;
+  left: 1100px;
+  background-color: #8d9884;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  line-height: 75px;
+  transition-duration: 0.5s;
+}
+.button3:hover {
+  transform: translateY(-25px);
+  background-color: white;
+  color: #2a3f17;
+}

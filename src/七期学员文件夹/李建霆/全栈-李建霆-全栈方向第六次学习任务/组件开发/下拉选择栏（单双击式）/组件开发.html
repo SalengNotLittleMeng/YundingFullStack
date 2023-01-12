@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>组件开发</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    单击点开，双击收回
+    <div class="nav">
+      <ul>
+        <li>
+          <a>text1</a>
+          <ul>
+            <li><a>text1.1</a></li>
+            <li><a>text1.2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>text2</a>
+          <ul>
+            <li><a>text2.1</a></li>
+            <li><a>text2.2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>text3</a>
+          <ul>
+            <li><a>text3.1</a></li>
+            <li><a>text3.2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>text4</a>
+          <ul>
+            <li><a>text4.1</a></li>
+            <li><a>text4.2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script>
+      let firstLi = document.querySelectorAll(".nav>ul>li");
+      //querySelectorAll() 找出所有匹配的节点并返回数组。
+      // 通过循环给每个一级li标签都绑定鼠标点击
+
+      for (let i = 0; i < firstLi.length; i++) {
+        firstLi[i].onclick = function () {
+          if (this.querySelector("ul")) {
+            //querySelector() 方法返回文档中匹配指定 CSS 选择器的第一个元素,并且找到后就返回节点对象。
+            // firstLi[i]已经不是当前的了，this是当前的
+            let secli = this.querySelector("ul");
+            // 获得当前二级菜单中的li标签个数
+            let liLength = secli.querySelectorAll("li").length;
+            secli.style.height = 44 * liLength + "px";
+          }
+        };
+        firstLi[i].ondblclick = function () {
+          //尝试过变为单击模式，发现两个单击会冲突，不会改
+          if (this.querySelector("ul")) {
+            var secli = this.querySelector("ul");
+            secli.style.height = "0px";
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

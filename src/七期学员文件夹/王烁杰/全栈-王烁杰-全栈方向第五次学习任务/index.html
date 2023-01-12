@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        let parentStr = prompt('请输入母串');
+        let childStr = prompt('请输入子串');
+        let parentIndex = 0;
+        let childIndex = 0;
+        let count = 0;
+        while(parentIndex !== parentIndex.length){
+            if(childIndex[childIndex] === parentStr[parentIndex]){
+                childIndex++;
+                parentIndex++;
+                if(childIndex === childStr.length){
+                    count++;
+                    childIndex=0;
+                }
+            }else{
+                childIndex = 0;
+                if(parentStr[parentIndex] !== childStr[childIndex]){
+                    parentIndex++;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

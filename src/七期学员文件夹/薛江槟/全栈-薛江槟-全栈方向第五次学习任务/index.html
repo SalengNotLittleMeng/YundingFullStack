@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薛江槟-全栈方向第五次学习任务</title>
+    <script>
+            let mother=prompt("请输入母串");
+            let son=prompt("请输入子串");
+            var num=0;
+            
+            if(mother.length<son.length||typeof(mother)!="string"||typeof(son)!="string"){
+                console.log("你输入的字符串不符合标准");
+            }
+          
+            else for(let i=0;i<mother.length;i++){
+                     let k=i;
+                     let index=true;
+                    for(let j=0;j<son.length;j++,k++){
+                        if(mother[k]!=son[j]){
+                            index=false;
+                            break;
+                        }
+                    }
+                    if(index){
+                        num++;
+                    }
+                    
+            }
+            document.write("子串出现的次数为",num);
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

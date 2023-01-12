@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="dialogEmail" id="dialogEmail">
+            <p class="warningText">邮箱格式错误！<br />应满足以下要求：</p>
+            <ul class="warningLi">
+                <li>结尾为.com或.cn</li>
+                <li>仅包含一个小数点</li>
+                <li>小数点前为@qq或@163</li>
+            </ul>
+            <div class="arrow"></div>
+        </div>
+        <div class="dialogPwd" id="dialogPwd">
+            <p>密码错误！请重试</p>
+            <div class="arrow"></div>
+        </div>
+        <div class="welcome">
+            <p class="title">登录成功</p>
+            <div class="img"></div>
+            <div class="message" id="message">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="head">
+            <p class="lineLeft">——————</p>
+            <p class="textCenter">LOGIN</p>
+            <p class="lineRight">——————</p>
+        </div>
+        <div class="input">
+            <div class="box">
+                <p class="text">邮箱 Email</p>
+                <input type="email" class="inputBox" id="email">
+            </div>
+            <div class="box">
+                <p class="text">密码 Password</p>
+                <input type="password" class="inputBox" id="pwd">
+            </div>
+        </div>
+        <button class="btn" id="btn">Log In</button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

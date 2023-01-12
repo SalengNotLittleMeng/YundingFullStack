@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串子串出现次数</title>
+    <script>
+        let arr = prompt("请输入一个字符串：");
+        let sub = prompt("请输入一个子串：");
+        let str = arr.split("");
+        let target = sub.split("");
+            let count = 0;
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = 0; j < sub.length; j++) {
+                    if(str[i+j]!=target[j]){
+                        break;
+                    }
+                }
+                if(j == sub.length){
+                    count++;
+                }
+            }
+        console.log("子串出现次数为：",count);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
