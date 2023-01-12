@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邮箱登录</title>
+</head>
+<style>
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    #show {
+        visibility: hidden;
+    }
+</style>
+<body>
+    <div class="BOX">
+        <div class="login">
+            <div class="email">
+                <label for="email">邮箱：</label><br>
+                <input type="email" id="email">
+            </div>
+            <div class="password">
+                <label for="password">密码：</label><br>
+                <input type="password" id="password">
+            </div>
+            <button onclick="login()">登录</button>
+        </div>
+        
+        <div id="show">
+            <h3>登录成功</h3>
+            <img id="image" src="" alt="">
+            <div class="name"></div>
+            <div class="age"></div>
+            <div class="speciality"></div>
+        </div>
+        
+    </div>
+    <script src="邮箱.js"></script>
+</body>
+</html>
