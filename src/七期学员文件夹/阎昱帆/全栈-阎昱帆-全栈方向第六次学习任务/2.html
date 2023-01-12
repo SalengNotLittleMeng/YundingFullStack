@@ -38,8 +38,9 @@
             }
         }
         let args=[1,2,3,4,6,6]
+        //let args=100;
         let arr=new MyArray(args)
-        if(typeof(args)!='object')
+        if(!Array.isArray(args))
         {
             throw'请传入数组'
         }

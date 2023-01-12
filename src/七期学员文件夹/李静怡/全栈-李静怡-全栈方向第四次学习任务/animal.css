@@ -130,18 +130,30 @@
     height: 40px;
 }
 .photo1 {
+<<<<<<< HEAD
     background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo1.png) no-repeat scroll;
+=======
+    background: url(image/photo1.png) no-repeat scroll;
+>>>>>>> 4dba60c (李静怡-全栈方向第四次学习任务)
     width: 330px;
     height: 500px;
 }
 .photo2 {
+<<<<<<< HEAD
     background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo2.png) no-repeat scroll;
+=======
+    background: url(image/photo2.png) no-repeat scroll;
+>>>>>>> 4dba60c (李静怡-全栈方向第四次学习任务)
     width: 330px;
     height: 500px;
     left: 390px;
 }
 .photo3 {
+<<<<<<< HEAD
     background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/photo3.png) no-repeat scroll;
+=======
+    background: url(image/photo3.png) no-repeat scroll;
+>>>>>>> 4dba60c (李静怡-全栈方向第四次学习任务)
     width: 330px;
     height: 500px;
     left: 780px;
@@ -355,7 +367,11 @@
 .serial4 {
     width: 68px;
     height: 68px;
+<<<<<<< HEAD
     background: url(https://aaaaeeen.oss-cn-beijing.aliyuncs.com/knowmore_circle.png) no-repeat scroll;
+=======
+    background: url(image/knowmore_circle.png) no-repeat scroll;
+>>>>>>> 4dba60c (李静怡-全栈方向第四次学习任务)
     float: left;
     position: relative;
 }

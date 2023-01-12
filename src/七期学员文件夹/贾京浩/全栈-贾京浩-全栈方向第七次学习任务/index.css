@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    width: 400px;
+    margin: 100px auto;
+    border-bottom: 1px solid #ccc;
+}
+.box input {
+    width: 370px;
+    height: 30px;
+    border: 0;
+    outline: none;
+}
+.box2 {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.box2 button {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+}
+.box_hello,.box_name,.box_age,.box_strengths {
+    height: 50px;
+    font-size: 20px;
+    align-content: center;
+}
+.box_circle {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}

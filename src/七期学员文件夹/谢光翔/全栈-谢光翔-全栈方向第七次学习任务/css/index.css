@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+input{
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid whitesmoke;
+    font-size: 16px;
+}
+button{
+    cursor: pointer;
+    outline: none;
+    background-color: green;
+    color:aliceblue;
+    font-size: 25px;
+    border: none;
+}
+.sign_in{
+    width:400px;
+    height:350px;
+    display: block;
+}
+.sign{
+    width:100px;
+    height:78px;
+    font-size: 35px;
+    color:white;
+    margin: 0 auto;
+}
+.sign_in_button{
+    margin:75px auto 0;
+    padding-left: 162.5px;
+}
+#sign_in_success{
+    display: none;
+}
+#sign_in_success img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#sign_in_success p{
+    font-size: 25px;
+}
