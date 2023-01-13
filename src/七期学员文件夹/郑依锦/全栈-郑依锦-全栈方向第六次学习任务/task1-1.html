@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript week2 task 1-1</title>
+    <script>
+        class Person {
+            constructor(name, gender, age, hobby, specialty) {
+                this.name = name;
+                this.gender = gender;
+                this.age = age;
+                this.Hobby = hobby;
+                this.Specialty = specialty;
+            }
+            hobby(hobby) {
+                return `我的爱好是${this.Hobby}等等`;
+            }
+            specialty(specialty) {
+                return `我的特长是${this.Specialty}等等`;
+            }
+        }
+        let my = new Person("郑依锦", "女", 18, "搞笑", "犯傻");
+        console.log(my.name);
+        console.log(my.gender);
+        console.log(my.age);
+        console.log(my.hobby());
+        console.log(my.specialty());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

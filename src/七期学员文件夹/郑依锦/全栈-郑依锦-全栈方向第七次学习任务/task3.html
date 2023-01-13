@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 学长学姐辛苦啦~ 祝假期愉快！-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript week3 task</title>
+    <script src="./task3.js" type="text/javascript" defer></script>
+    <link href=" ./task3.css" rel="stylesheet" type="text/css" />
+    <script>
+        console.log(Symbol('a') === Symbol('a'));
+        console.log(Symbol.for('a') === Symbol.for('a'));
+        console.log(Symbol() instanceof Object);
+    </script>
+</head>
+
+<body>
+    <div class="logIn">
+        <label for="email">邮箱</label>
+        <input type="text" id="email" placeholder="请输入邮箱">
+        <label for="password">密码</label>
+        <input type="password" id="password" placeholder="请输入密码">
+        <div id="hint"></div>
+        <button id="log_in">登录</button>
+    </div>
+    <div class="success">
+        <h3>登录成功~</h3>
+        <img id="avatar" src="">
+        <div id="name"></div>
+        <div id="age"></div>
+        <div id="strengths"></div>
+    </div>
+</body>
+
+</html>
