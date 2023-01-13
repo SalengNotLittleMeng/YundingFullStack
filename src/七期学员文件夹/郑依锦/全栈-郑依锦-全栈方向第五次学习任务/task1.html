@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript week1 task</title>
+    <script>
+        let mother = prompt("请输入母串：");
+        let son = prompt("请输入子串：");
+        console.log(`母串为：${mother}    子串为：${son}`);
+        let count = 0;
+        for (let i = 0;i < mother.length;i++) {
+            flag = 1;
+            n = i;
+            for (let m = 0;m < son.length;m++, n++) {
+                if (son[m] !== mother[n]) {
+                    flag = 0;
+                    break;
+                }
+            }
+            if (flag) count++;
+        }
+        console.log(`子串出现的个数为：${count}`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
