@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <script>
+        let msg = [{
+    name: '张三',
+    age: 20,
+    strengths: 'JavaScript',
+    avatar: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.39mOMBjUfsK-HL9jUbv1MwHaE7?pid=ImgDet&rs=1',
+    email: 'yunding@qq.com',
+    password: 33333
+},
+{
+    name: '李四',
+    age: 19,
+    strengths: 'python',
+    avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.YlKimVo94OkaZDZCzPIDpAHaFh?pid=ImgDet&rs=1',
+    email: '12345678@163.com',
+    password: 11111
+},
+{
+    name: '王五',
+    age: 18,
+    strengths: 'Java',
+    avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.P2hK9SRjhFE8WM9N8tgWFAHaEQ?pid=ImgDet&rs=1',
+    email: 'yundingshuyuan@qq.cn',
+    password: 222222
+},
+]   
+    </script>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body 
+        {
+            background-image: url("https://heaven-1.oss-cn-beijing.aliyuncs.com/网页背景图.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .bigbox
+        {
+            /* background-color: red; */
+            width:400px;
+            height: 140px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            padding: 40px 50px;
+            overflow: hidden;
+        }
+        .new_bigbox
+        {
+            /* background-color: red; */
+            width:400px;
+            height: 140px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            padding: 40px 50px;
+            padding-left: 200px;
+            overflow: hidden;
+        }
+        .box1
+        {
+            height: 50px;
+            width: 400px;
+            /* background-color: yellow; */
+            overflow: hidden;
+            display: flex;
+        }
+        .box1_1
+        {
+            height: 50px;
+            width: 90px;
+            /* background-color: blue; */
+            text-align: center;
+            line-height: 50px;
+        }
+        .box1_2
+        {
+            height: 50px;
+            width: 210px;
+            /* background-color: orange; */
+            text-align: center;
+            line-height: 50px;
+        }
+        .box1_3
+        {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 13px;
+            color: red;
+        }
+        .box2
+        {
+            height: 40px;
+            width: 300px;
+            /* background-color: yellow; */
+            text-align: center;
+            line-height: 40px;
+            
+        }
+        .avator
+        {
+            /* display: block; */
+            width: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox" id="bigbox">
+        <div class="box1">
+            <div class="box1_1">邮箱</div>
+            <div class="box1_2" ><input type="email" id="email1"></div>
+            <div class="box1_3" id="email2"></div>
+        </div>
+        <div class="box1">
+            <div class="box1_1">密码</div>
+            <div class="box1_2" ><input type="password" id="pass1"></div>
+            <div class="box1_3" id="pass2"></div>
+        </div>
+        <div class="box2"><input type="submit" id="sub" value="提交" ></div>
+    </div>
+    <script>
+        var email1=document.getElementById("email1");
+        var email2=document.getElementById("email2");
+        var pass1=document.getElementById("pass1");
+        var pass2=document.getElementById("pass2");
+        var sub=document.getElementById("sub");
+        var bigbox=document.getElementById("bigbox");
+        var body=document.body;
+        var reg=/^\S+(@qq|@163)\.(com|cn)$/;
+        console.log(email1.value);
+        email1.onblur=function()
+        {
+            if(!reg.test(email1.value))
+            {
+                email2.innerHTML="邮箱格式不正确";
+            }
+            else
+            {
+                email2.innerHTML="";
+            }
+        };
+        function newpage(index)
+        {
+            var new_bigbox = document.createElement("div");
+            new_bigbox.classList.add("new_bigbox");
+            body.appendChild(new_bigbox);
+            var new_box1 = document.createElement("div");
+            var new_box2 = document.createElement("img");
+            var new_box3 = document.createElement("div");
+            var new_box4 = document.createElement("div");
+            var new_box5 = document.createElement("div");
+            new_bigbox.appendChild(new_box1);
+            new_bigbox.appendChild(new_box2);
+            new_bigbox.appendChild(new_box3);
+            new_bigbox.appendChild(new_box4);
+            new_bigbox.appendChild(new_box5);
+            new_box1.innerHTML="登录成功";
+            new_box2.src=msg[index].avatar;
+            new_box2.classList.add("avator");
+            new_box3.innerHTML="姓名："+msg[index].name;
+            new_box4.innerHTML="年龄："+msg[index].age;
+            new_box5.innerHTML="特长："+msg[index].strengths;
+        }
+        sub.onclick=function()
+        {
+            var flag=true;
+            for(var i=0;i< msg.length;i++)
+            {
+                if(msg[i].email==email1.value)
+                {
+                    flag=false;
+                    if(msg[i].password==pass1.value)
+                    {
+                        bigbox.remove();
+                        newpage(i);
+                        break;
+                    }
+                    else
+                    {
+                        pass2.innerHTML="密码不正确";
+                        break;
+                    }
+                }
+            }
+            if(flag==true)
+            {
+                email2.innerHTML="该邮箱未注册";
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登录页面验证</title>
+    <script>
+        function login() {
+            // console.info("点击了登录");
+            var userName = $("#uName").val();
+            // console.info(userName)
+            var userPass = $("#uPass").val();
+            // console.info(userPass);
+            if (userName == "" || userName == null) {
+                alert("用户名不能为空");
+                return false;
+            } else if (userPass == "" || userPass == null) {
+                alert("密码不能为空");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form action="#" method="post" onsubmit="return login();" id="loginForm">
+        <h3>用户登录</h3>
+        <br /> 用 户 名：<input type="text" name="user.username" id="uName"
+            style="height: 30px;width: 220px;font-size: 20px;" /><br />
+        <br /> 密 码：<input type="password" name="user.password" id="uPass"
+            style="height: 30px;width: 220px;font-size: 20px;" /><br />
+        <br /> <input type="submit" value="登录" style="height: 30px;width: 60px;font-size: 20px;" />
+        <input type="reset" value="重置" style="height: 30px;width: 60px;font-size: 20px;" />
+    </form>
+
+</body>
+
+</html>

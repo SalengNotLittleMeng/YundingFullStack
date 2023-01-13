@@ -1,0 +1,38 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    background-color: burlywood;
+}
+
+.box {
+    width: 500px;
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+    
+}
+
+.box div {
+    height: 90px;
+    overflow: hidden;
+}
+
+.box div span {
+    width: 500px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    background-color: rgba(245, 172, 17, 0.849);
+    cursor: pointer;
+}
+
+a {
+    width: 500px;
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}

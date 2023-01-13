@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: yellow;
+    text-align: center;
+    line-height: 100px;
+    font-size: 70px;
+    font-weight: 1000;
+}
+
+#wel_name {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#wei_age {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#wel_go {
+    margin-top: 10px;
+    font-size: 20px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        class Person {
+            name = "李姝鑫";
+            gender = "女";
+            age = 17;
+            hobby = function () {
+                console.log('我的爱好是听歌');
+            }
+            speciality = function () {
+                console.log('我的特长是敲代码');
+            }
+        }
+        let my = new Person()
+        console.log(my.name)
+        console.log(my.gender)
+        console.log(my.age)
+        my.hobby(),
+            my.speciality()
+
+        let arr = [1, 2, 3, 4, 6, 6, 8, 8, 9, 9]
+        if (Array.isArray(arr)) {
+            console.log(checkArray(arr));
+        }
+        if ((checkArray(arr) === true)) {
+            console.log(addAll())
+            console.log(uniquel())
+        }
+        else {
+            throw new Error('arr is not a Array!');
+        }
+        function checkArray(arr) {
+            let n = 0;
+            for (let i = 0; i > arr.length; i++) {
+                if (typeof arr[i] !== typeof 1) {
+                    n++
+                    return false
+                }
+            }
+            if (n === 0)
+                return true;
+        }
+
+        function addAll() {
+            let sum = 0
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i]
+            }
+            return sum
+        }
+
+        function uniquel() {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = i + 1; j < arr.length; j++) {
+                    if (arr[i] === arr[j]) {
+                        arr.splice(j, 1)
+                    }
+                }
+            }
+            return arr
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyArray类</title>
+</head>
+<body>
+    <script>
+        let args = [1, 2, 3, 4, 6, 6]
+
+        class MyArray {
+            constructor(args) {
+                if(!Array.isArray(args)){
+                    throw "Error:Not a string"
+                }
+                this.args=args
+            }
+
+            checkArray(args) {
+                for(let i=0;i<args.length;i++){
+                    if(typeof args[i] !== "number"){
+                        return false;
+                        break;
+                    }
+                }
+            }
+
+            addAll() {
+                let sum=0;
+                for(let i =0; i < args.length; i++){
+                    sum+=args[i]
+                }
+                return sum;
+            }
+
+            uniquel() {
+                for(let i=0;i<args.length;i++){
+                    for(let j=i+1;j<args.length;j++){
+                        if(args[i]==args[j]){
+                            args.splice(j,1)
+                            j--;
+                        }
+                    }
+                }
+                return args;
+            }
+
+        }
+
+        let arr = new MyArray(args)
+
+        console.log(arr.checkArray([1, 1, 1, '2', 9]))
+        console.log(arr.addAll())
+        console.log(arr.uniquel()) 
+
+        let arr0 = new MyArray('1234566') 
+    </script>
+</body>
+</html>

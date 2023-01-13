@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyArray类</title>
+</head>
+<body>
+    <script>
+        class MyArray{
+            arr;
+            constructor(arr){
+                if(Array.isArray(arr)!==true)
+                throw 'error: not a array';
+                this.arr = arr;
+            }
+
+            checkArray(arr){
+                for(let ele of arr){
+                    if(typeof ele !== "number"){
+                        return false;
+                    }
+                }
+            return true;
+            }
+
+            addAll(){
+                let sum = 0;
+                for(let ele of this.arr){
+                    sum += ele;
+                }
+                return sum;
+            }
+
+            uniquel(){
+                const newArr = []
+                for(let ele of this.arr){
+                    if(newArr.indexOf(ele) === -1){
+                        newArr.push(ele);
+                    }
+                }
+            return newArr
+            }
+        }
+        
+        let args = [1,2,3,4,6,6]
+        let arr = new MyArray(args)
+        console.log(arr.checkArray([1,1,'2',9]))
+        console.log(arr.addAll())
+        console.log(arr.uniquel())
+        let arr0 = new MyArray('123466')
+    </script>
+</body>
+</html>

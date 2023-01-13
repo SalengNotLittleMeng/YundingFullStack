@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*function Person(name,gender,age) {
+                this.name = name;
+                this.gender = gender;
+                this.age = age;
+                
+        }
+        Person.prototype.hobby=function () {
+                    console.log(`我的爱好是sing music badmition`);
+                
+        }
+        Person.prototype.speciality=function () {
+                    console.log(`我的特长是sing music badmition`);
+                
+        }
+        const my=new Person("宁玉琰","女",18);
+        console.log(my);
+        my.speciality();
+        my.hobby();
+        
+        const his=new Person("宁玉","女",18);
+        console.log(his);*/
+
+
+
+
+        class Person {
+            constructor(name, gender, age) {
+                this.name = name;
+                this.gender = gender;
+                this.age = age;
+                this.hobby = function () {
+                    console.log(`我的爱好是sing music badmition`);
+                }
+                this.speciality = function () {
+                    console.log(`我的特长是sing music badmition`);
+                }
+            }
+        }
+        const my = new Person("宁玉琰", 18, "女");
+        console.log(my.name);
+        console.log(my.gender);
+        console.log(my.age);
+        console.log(my.hobby());
+        console.log(my.speciality());
+
+       
+       
+       
+       
+        /* class Person {
+             name = "宁玉琰"
+             gender = "女"
+             age = 18
+             hobby() {
+                 console.log(`我的爱好是sing music badmition`);
+             }
+             speciality() {
+                 console.log(`我的特长是sing music badmition`);
+             }
+ 
+         }
+         const my = new Person()
+         console.log(my.name);
+         console.log(my.gender);
+         console.log(my.age);
+         console.log(my.hobby());
+         console.log(my.speciality());*/
+
+       
+       
+       
+       
+         /*var my= new Object()
+         my.name= "宁玉琰",
+         my.gender="女",
+         my.age=18,
+         my.hobby=function(){
+         console.log(`我的爱好是sing music badmition`);}
+         let adress="speciality";
+         my[adress]=function(){
+          console.log(`我的特长是sing music badmition`);}
+     
+         
+        
+     console.log(my.name);
+     console.log(my.gender);
+     console.log(my.age);
+     console.log(my.hobby());  
+     console.log(my.speciality());  */
+
+
+    </script>
+</body>
+
+</html>

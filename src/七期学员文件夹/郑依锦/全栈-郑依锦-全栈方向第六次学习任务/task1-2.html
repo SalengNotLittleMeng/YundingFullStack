@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript week2 task 1-2</title>
+    <script>
+        class MyArray {
+
+            constructor(array) {
+                if (Array.isArray(array)) {
+                    this.array = array;
+                }
+                else {
+                    throw "not a correct array"
+                }
+            }
+
+            checkArray(array) {
+                for (let value of array) {
+                    if (!isNaN(value)) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            addAll() {
+                return this.array.reduce((a, b) => a + b);
+            }
+
+            uniquel() {
+                for (let i = 0;i < this.array.length;i++) {
+                    const index = this.array.indexOf(this.array[i], i + 1);
+                    if (index !== -1) {
+                        this.array.splice(index, 1);
+                        i--;
+                    }
+                }
+                return this.array;
+            }
+
+        }
+
+        let args = [1, 2, 3, 4, 6, 6];
+        let arr = new MyArray(args);
+        console.log(arr.checkArray([1, 1, 1, '2', 9]));
+        console.log(arr.addAll());
+        console.log(arr.uniquel());
+        let arr0 = new MyArray('1234566');
+
+    </script>
+</head>
+
+
+<body>
+
+</body>
+
+</html>

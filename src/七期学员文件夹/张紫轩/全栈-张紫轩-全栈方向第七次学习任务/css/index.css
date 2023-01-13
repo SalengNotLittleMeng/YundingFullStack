@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.register {
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.error {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.word {
+    color: red;
+    float: right;
+}
+
+.flex {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.su {
+    margin-top: 5px;
+}
+
+#icon {
+    display: none;
+}

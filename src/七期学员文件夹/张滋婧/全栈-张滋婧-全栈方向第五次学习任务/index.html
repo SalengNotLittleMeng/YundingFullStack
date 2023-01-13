@@ -7,15 +7,6 @@
     <title>Document</title>
     <script>
         {
-            // "use strict" 
-            //     let all = prompt("请输入母串：");
-            //     let part = prompt("请输入子串：");
-
-            //     console.log("母串为：",all,"子串为：",part)
-            //     let count = all.split(part).length - 1;
-            //     console.log("字串出现的个数为：",count); 
-
-        
             "use strict"
 
             let all = prompt("请输入母串：");
@@ -24,24 +15,24 @@
                 // 计算母串和子串的长度
             let allLength = all.length;
             let partLength = part.length;
-            let a = part.length + 1;
 
                 //记录子串出现的个数
-            let count = 0;
+            let count = 0,j,i;
+            
             
                 // 求子串的个数
-            for(let i=1;i<=allLength;i++){
-                let j=1;
-                //每次母串与子串第一个比较，一样就循环比较下一个，不一样就跳过，进行下一次大循环
-                while(all[i] == part[j]){
-                    j++;
-                    i++;
-                    if (j == a) {
-                        count++;
-                        break;   
+            for( i=0;i<allLength;i++){
+                for( j=0;j<partLength;j++){
+                    if(all[i+j] !== part[j]){
+                        break;
                     }
                 }
+                if(j == partLength){
+                    count++;
+                    i+=j-1               //使下一次循环时从这次比较完的地方开始，避免重复比较
+                }
             }
+
 
             console.log("母串为：", all, "子串为：", part);
             console.log("子串出现的个数为：", count); 
