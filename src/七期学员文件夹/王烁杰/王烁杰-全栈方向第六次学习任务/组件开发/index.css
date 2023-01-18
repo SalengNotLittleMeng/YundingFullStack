@@ -1,47 +1,65 @@
-        * {
-            margin: 0;
-            padding: 0;
-        }
+body {
+    background-color: blue;
+}
 
-        body {
-            background-color: blue;
-        }
+.menu-list {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
 
-        .container {
-            width: 800px;
-            height: 500px;
-            margin: 20px auto;
-        }
+.menu-list ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
-        .container div {
-            margin-left: 120px;
-            height: 103px;
-            overflow: hidden;
-        }
+.menu-list li {
+    overflow: hidden;
+    max-height: 50px;
+    line-height: 50px;
+    transition: max-height .5s linear;
+}
 
-        .container div span {
-            width: 550px;
-            height: 100px;
-            line-height: 40px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #e2b985;
-            cursor: pointer;
-            font-size: 50px;
-        }
+.menu-list .menu-list__item {
+    overflow: hidden;
+    width: 200px;
+    height: auto;
+    margin: 8px auto 0;
+    background-color: cadetblue;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
 
-        a {
-            margin: 10px 0;
-            width: 550px;
-            height: 80px;
-            line-height: 90px;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-            border-radius: 15px;
-            background-color: #ffebcc;
-            font-size: 30px;
-            color: black;
-        }
+.menu-list__item:hover {
+    background-color: yellow;
+}
+
+.menu-list__item1:hover {
+    background-color: yellow;
+}
+
+.menu-list__item1 {
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+    margin: 5px auto 5px;
+    background-color: yellow;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.menu-list .menu-list__item--selected {
+    max-width: 210px;
+    max-height: 400px;
+    background-color: yellow;
+    margin: 5px auto 0;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
