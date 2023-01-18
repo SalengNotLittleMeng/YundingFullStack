@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    class Person{
+        constructor(name,gender,age){
+            this.name = name
+            this.gender = gender
+            this.age = age
+        
+        }
+        // hobby(){
+        //     console.log("我的爱好是吃饭")
+        // }
+        // speciality(){
+        //     console.log("我的特长睡觉")
+        // }
+    }
+
+    const my = new Person("小明","男",3)
+
+    Person.prototype.hobby = function(){
+        console.log("我的爱好是吃饭")
+    }
+
+    Person.prototype.speciality = function () {
+        console.log("我的特长睡觉")
+    }
+    console.log(my.name) // 打印“我”的名字,输出示例:张三
+    console.log(my.gender) // 打印“我”的性别，输出示例：女
+    console.log(my.age) // 打印“我”的年龄，输出示例：12
+    my.hobby()
+    my.speciality()
+</script>
+<body>
+    
+</body>
+</html>

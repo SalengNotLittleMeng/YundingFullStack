@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    //获取用户输入的母串和子串
+    let parentStr  = prompt('请输入一个字符串')
+    let childStr = prompt('请输入一个子串')
+    //设置索引 计数器
+    let parentIndex = 0;
+    let childIndex = 0;
+    let count = 0 ;
+    //进入算法
+    while(parentIndex !== parentStr.length){
+        if(childStr[childIndex]==parentStr[parentIndex]){//单个字符相等 索引加1
+        parentIndex++;
+        childIndex++;
+            if (childIndex == childStr.length) {
+                count++;
+                childIndex=0;
+            }
+        }
+        else{//单个字符不相等 母串索引加1
+            parentIndex++;
+        }
+    }
+    alert(`子串在字符串中出现的次数=${count}`);
+
+    
+</script>
+<body>
+    
+</body>
+</html>
