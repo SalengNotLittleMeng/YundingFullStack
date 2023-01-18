@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #success-box {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<script>
+    let msg = [{
+            name: '张三',
+            age: 20,
+            strengths: 'JavaScript',
+            avatar: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.39mOMBjUfsK-HL9jUbv1MwHaE7?pid=ImgDet&rs=1',
+            email: 'yunding@qq.com',
+            password: 33333
+        },
+        {
+            name: '李四',
+            age: 19,
+            strengths: 'python',
+            avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.YlKimVo94OkaZDZCzPIDpAHaFh?pid=ImgDet&rs=1',
+            email: '12345678@163.com',
+            password: 11111
+        },
+        {
+            name: '王五',
+            age: 18,
+            strengths: 'Java',
+            avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.P2hK9SRjhFE8WM9N8tgWFAHaEQ?pid=ImgDet&rs=1',
+            email: 'yundingshuyuan@qq.cn',
+            password: 222222
+        },
+        ]
+
+        function login() {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            if (!regFun(email)) {
+                alert('email的格式不正确');
+                return;
+            }
+            for (let i = 0; i < msg.length; i++) {
+                if (msg[i].email == email) {
+                    if (msg[i].password == password) {
+                        // 操作Dom的函数
+                        showInfo(i);
+                        return;
+                    } else {
+                        alert("密码不正确");
+                        return;
+                    }
+                }
+            }
+            alert("账号不存在");
+        }
+
+        function regFun(expression) {
+            let reg = /^[A-Za-z0-9_]+@(qq|163)\.(com|cn)$/g
+            return reg.test(expression)
+        }
+        
+
+        function showInfo(index) {
+            let obj = msg[index]
+            document.getElementById('success-box').style.visibility = 'visible';
+            document.getElementById('img').src = obj.avatar
+            let infoKey = ['姓名：', '年龄:', '特长:']
+            let infoVal = [];
+            for (val in obj) {
+                infoVal.push(obj[val]);
+            }
+            infoVal = infoVal.slice(0, infoKey.length);
+            let msgBox = document.getElementById('msg-box')
+            for (let i = 0; i < infoKey.length; i++) {
+                const div = document.createElement('div');
+                div.innerText = infoKey[i] + infoVal[i];
+                msgBox.appendChild(div);
+            }
+        }
+</script>
+<body>
+    <div id = "box">
+        <label for="email">邮箱：</label>
+        <input type="email" name="" id="email"><br />
+        <label for="password">密码：</label>
+        <input type="password" name="" id="password"><br />
+        <button onclick="login()">登录</button>
+        
+        <div id="success-box">
+            <p>登录成功</p>
+            <img id="img" src="" alt="">
+            <div id="msg-box"></div>
+        </div>
+
+    </div>
+</body>
+</html>
