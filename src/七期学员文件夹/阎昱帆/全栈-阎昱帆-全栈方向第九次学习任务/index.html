@@ -33,24 +33,11 @@
     <div id="time">
         时间
     </div><br/>
-    账号：<input type="text"name="user" id = "username"><br/><br/>
-    密码：<input type="password"name="pwd" id = "password"><br/><br/>
+    账号：<input type="text" id = "username"><br/><br/>
+    密码：<input type="password" id = "password"><br/><br/>
     <button id="btn1">注册</button><br/><br/>
     <button id="btn2">获取用户信息</button><br/><br/>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <ul></ul>
     <script>
         const btn1 = document.getElementById("btn1");
         const btn2 = document.getElementById("btn2");
@@ -58,6 +45,7 @@
         const password = document.getElementById("password");
         const username = document.getElementById("username");
         const msg = document.getElementById("msg");
+        const ul = document.querySelector("ul");
         const li = document.querySelectorAll("li");
         axios.defaults.baseURL = 'https://api.reginvolver.cn/';
         function getTime(){
@@ -66,7 +54,7 @@
             method:"GET",
             headers:{"Content-Type":"application/x-www-form-urlencoded"}
             })
-            .then((res)=>{time.textContent = "当前时间："+`${res.data}`})
+            .then((res)=>{time.textContent = "当前时间："+res.data})
             .catch((err) => {})
             }
         btn1.addEventListener("click",()=>{
@@ -79,10 +67,13 @@
                 },
             headers:{"Content-Type":"application/json"}    
             })
-            .then((res)=>{console.log(res)})
-            .catch((err) => {})
+            .then((res)=>{
+                alert(res.data.msg);
+                console.log(res.data.data.username)
+            })
         })
         setInterval(getTime,1000);
+        var a = 0;
         btn2.addEventListener("click",()=>{
             axios({
                 url:"/user/list",
@@ -96,7 +87,11 @@
             .then((res)=>{
                 console.log(res);
                 for(let i= 0;i<res.data.data.records.length;i++)
-                li[i].textContent = res.data.data.records[i].username
+                {
+                    const li = document.createElement("li")
+                    ul.appendChild(li)
+                    li.innerHTML=res.data.data.records[i].username
+                }
             })
         })
     </script>
