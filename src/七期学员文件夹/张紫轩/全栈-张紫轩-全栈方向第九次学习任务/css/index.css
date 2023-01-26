@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 216px;
+}
+.name{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.password{
+    margin-bottom: 10px;
+}
+.interact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#time{
+    padding-top: 30px;
+}
+.box{
+    margin-left: 30px
+}
