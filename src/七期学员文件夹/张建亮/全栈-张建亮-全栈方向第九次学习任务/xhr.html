@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>JavaScript</title>
+    <style>
+        * {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="time">当前时间： <span></span></div>
+
+    <label for="username">账号：
+        <input type="text" id="username" placeholder="请输入账号"></label><br>
+    <label for="password">密码：
+        <input type="password" id="password" placeholder="请输入密码"></label><br>
+
+    <br> <button class="register">注册</button>
+    <button class="fetch ">获取用户列表</button>
+
+    <script>
+        const time = document.querySelector('.time span');
+        const username = document.querySelector('#username');
+        const password = document.querySelector('#password');
+        const register = document.querySelector('.register');
+        const fetch = document.querySelector('.fetch ')
+
+        axios.defaults.baseURL = 'http://api.reginvolver.cn'
+
+        //获取时间
+        function getTime() {
+            axios({
+                url: '/common/time',
+                method: 'GET',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            })
+                .then((response) => time.textContent = `${response.data}`);
+        }
+        // setInterval多次执行,间隔为一秒
+        setInterval(getTime, 1000);
+
+        // 注册用户
+        register.onclick = function () {
+            axios({
+                url: 'https://api.reginvolver.cn/user/register',
+                method: 'POST',
+                data: {
+                    username: `${username.value}`,
+                    password: `${password.value}`,
+                },
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            }).then(response => {
+                const res = JSON.stringify(response);
+                console.log(`注册报文：${res}`);
+                //控制台打印响应报文
+            })
+        }
+
+        //获取用户列表
+        fetch.addEventListener("click", () => {
+            axios({
+                url: '/user/list',
+                method: 'GET',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            })
+                .then((response) => {
+                    // 创建列表显示用户信息
+                    const div = document.createElement("div");
+                    const ul = document.createElement("ul")
+                    const body = document.getElementsByTagName("body")[0]
+                    body.appendChild(div);
+                    div.appendChild(ul)
+                    //forEach方法用于遍历数组
+                    response.data.data.records.forEach(element => {
+                        const li = document.createElement("li");
+                        ul.appendChild(li);
+                        li.innerHTML = ` ${element.username}`;
+                    });
+                    // 打印响应报文
+                    console.log(response);
+                })
+        })
+
+    </script>
+</body>
+
+
+
+</html>
