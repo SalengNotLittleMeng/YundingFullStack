@@ -1,41 +1,29 @@
-let menu = document.getElementsByTagName("span");
-let now = null;
-for (let i = 0; i < menu.length; i++) {
-  menu[i].onclick = function () {
-    let par = menu[i].parentNode;
-    if (now === i) {
-      if (par.style.height === "103px") {
-        open(par);
-      } else {
-        close(par);
+let that;
+class Menu {
+  constructor(id) {
+    that = this;
+    this.container = document.getElementById(id);
+    this.menulists = this.container.querySelectorAll(
+      ".menu-list__item, menu-list1__item, .menu-list__item--selected"
+    );
+    this.container.addEventListener("click", this.controller);
+  }
+
+  controller(e) {
+    let target = e.target;
+    that.menulists.forEach((item) => {
+      if (item != target) {
+        item.className = "menu-list__item";
       }
-    } else {
-      if (now !== null) {
-        close(menu[now].parentNode);
+      if (item != target && item.contains(target)) {
+        item.className = "menu-list__item--selected";
       }
-      open(par);
-      now = i;
-    }
-  };
+    });
+    target.className =
+      target.className == "menu-list__item"
+        ? "menu-list__item--selected"
+        : "menu-list__item";
+  }
 }
 
-function open(par) {
-  let tem = setInterval(() => {
-    let num = par.offsetHeight;
-    if (num >= par.scrollHeight) {
-      clearInterval(tem);
-    }
-    par.style.height = num + 1 + "px";
-  }, 7);
-}
-
-function close(par) {
-  let tem = setInterval(() => {
-    let num = par.offsetHeight;
-    if (num <= 103) {
-      clearInterval(tem);
-      return;
-    }
-    par.style.height = num - 1 + "px";
-  }, 7);
-}
+let menu = new Menu("my-menu");

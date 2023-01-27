@@ -1,0 +1,18 @@
+button{
+    position: relative;
+    top:50px;
+    left: 5px;
+    font-size: 15px;
+}
+#input{
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+#timeb{
+    position: relative;
+    left: 5px;
+}
+body{
+    font-size: 20px;
+}

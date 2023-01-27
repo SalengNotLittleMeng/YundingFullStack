@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //实现一个MyArray类，这个类要求传入的参数是一个数组，如果传入的参数不是数组，应该抛出一个异常
+    class MyArray{
+        constructor(args){
+            try{
+                if(!Array.isArray(args)){
+                    throw new Error("传入的不是一个数组")
+                }else{
+                    this.arr = args
+                }
+            }catch(err){
+                console.log(err)
+            }
+        }
+        // 接受一个数组作为参数，检查数组的每一位是否都是数字，返回一个布尔值
+        
+        checkArray(arr){
+            for(let temp of arr){
+                if(typeof temp !== 'number'){
+                    return false
+                }
+            }
+            return ture
+        }
+        //不接受任何参数，返回传入构造函数的参数（一个数组）每一项的值的和
+        addAll(){
+            let sum = 0 
+            for(let value of args){
+                sum+=value;
+            }
+            return sum;
+        }
+        //不接受任何参数，返回一个数组，这个数组是传入构造函数的参数去重后的结果
+        uniquel(){
+            const newArr = []
+            for(let ele of args){
+                if(newArr.indexOf(ele)===-1){
+                    newArr.push(ele)
+                }
+            }
+            return newArr
+        }
+    }
+
+    let args = [1, 2, 3, 4, 6, 6] //这是传入构造函数的参数
+    let arr = new MyArray(args) //args是一个数组，正常执行
+    console.log(arr.checkArray([1, 1, 1, '2', 9])) //false,因为[1, 1, 1, '2', 1]中的每一项不都是数字（'2'是字符）
+    console.log(arr.addAll()) //22，1+2+3+4+6+6=22
+    console.log(arr.uniquel()) //[1,2,3,4,6],除去了数组中的重复元素
+    let arr0 = new MyArray('1234566') //抛出错误，因为'1234566不是一个数组'`
+</script>
+<body>
+    
+</body>
+</html>

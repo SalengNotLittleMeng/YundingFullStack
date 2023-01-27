@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        hr{
+            margin-top: 50%;
+        }
+        .main{
+            width: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <hr>
+        <p id='time' class="time">当前时间：</p>
+        <div>
+            账号：
+            <input type="text" id="account">
+        </div>
+        <div>
+            密码：
+            <input type="password" id="pwd">
+        </div>
+        <button id="rgs">注册</button>
+        <button id="log">获取用户列表</button>
+        <ul id="userList"></ul>
+    </div>
+    <script>
+        const time = document.getElementById('time');
+        var rgs = document.getElementById("rgs");
+        var log = document.getElementById('log');
+        var userList = document.getElementById('userList');
+
+        //设置计时器，每隔一秒更新时间
+
+        setInterval(function() {
+            axios({
+                url: 'https://api.reginvolver.cn/common/time',
+                method: 'GET',
+            })
+                .then((res) => time.textContent = `${res.data}`);
+        }, 1000)
+
+        //注册
+
+        rgs.addEventListener('click', () => {
+            var account = document.getElementById('account').value;
+            var pwd = document.getElementById('pwd').value;
+            axios({
+                url: 'https://api.reginvolver.cn/user/register',
+                method: 'POST',
+                data: {
+                    "password": `${account}`,
+                    "username": `${pwd}`,
+                }
+            }).then((res) => {
+                console.log("注册报文", res);
+            }).catch((rej) => {
+                console.log('error');
+            })
+        })
+
+        //点击后获取用户列表
+
+        log.addEventListener('click', () => {
+            axios({
+                url: 'https://api.reginvolver.cn/user/list',
+                method: 'GET',
+            }).then((res) => {
+                console.log('用户信息列表报文：', res);
+                for (let i = 0; i < res.data.data.records.length; i++) {
+                    const li = document.createElement('li');
+                    userList.appendChild(li);
+                    userList.lastElementChild.innerHTML = res.data.data.records[i].username;
+                }
+            }).catch((rej) => {
+                console.log('error');
+            })
+        })
+    </script>
+</body>
+
+</html>
