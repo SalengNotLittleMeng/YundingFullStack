@@ -1,0 +1,14 @@
+* {
+    margin: 20 auto;
+    padding: 20;
+}
+
+.login {
+    position: relative;
+    top: 10px;
+}
+
+.btn {
+    position: relative;
+    top: 20px;
+}

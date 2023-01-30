@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>接口</title>
+</head>
+<body>
+    <div>当前时间: <span id="time"></span></div>
+    <div class="login">
+        <label for="account">账号:</label>
+        <input type="text" id="account"><br>
+        <label for="password">密码:</label>
+        <input type="password" id="password">
+    </div>
+    <div class="btn">
+        <button id="sign" onclick="SIGN()">注册</button>
+        <button id="user" onclick="FIND()">获取用户列表</button>
+    </div>
+    <div><ul id="allUser"></ul></div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
