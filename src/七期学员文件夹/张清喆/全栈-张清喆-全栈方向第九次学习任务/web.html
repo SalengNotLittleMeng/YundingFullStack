@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div>当前时间：<span id="time"></span></div>
+    账号：<input type="text" id="text">
+    <br>
+    密码：<input type="password" id="password">
+    <br><br>
+    <button id="register">注册</button>
+    <button id="obtain">获取用户列表</button>
+    <div >
+        <ul id="user">
+            
+        </ul>
+    </div>
+    <script>
+        var time=document.getElementById("time");
+        var text=document.getElementById("text");
+        var password=document.getElementById("password");
+        var register=document.getElementById("register");
+        var obtain=document.getElementById("obtain");
+        var user=document.getElementById("user");
+        function Time()
+        {
+            axios({
+                url:"https://api.reginvolver.cn/common/time",
+                method:"get",
+                headers:{"Content-Type":"application/x-www-form-urlencoded"}
+            }).then(value=>{
+                time.textContent=value.data;
+            })
+        }
+        Time();
+        // setInterval(Time,1); 
+        register.addEventListener("click",()=>{
+            axios({
+                url:"https://api.reginvolver.cn/user/register",
+                method:"POST",
+                headers:{"Content-Type":"application/json"},
+                data:{
+                    "password": password.value,
+                    "username": text.value
+                }
+            }).then((value)=>{
+                alert("注册成功");
+                console.log("注册报文" ,value);
+            })
+        });
+        obtain.addEventListener("click",()=>{
+            axios({
+                url:"https://api.reginvolver.cn/user/list",
+                method:"GET",
+                headers:{"Content-Type":"application/x-www-form-urlencoded"}
+            }).then((value)=>{
+                var len=value.data.data.records.length;
+                for(let i=0;i<len;i++)
+                {
+                    const li = document.createElement("li");
+                    user.appendChild(li);
+                    li.textContent=value.data.data.records[i].username;
+                }
+                console.log("用户信息列表报文" ,value);
+            })
+        });
+    </script>
+</body>
+</html>

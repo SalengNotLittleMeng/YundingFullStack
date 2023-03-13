@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Person{
+            name = "田朵朵"
+            gender = "女"
+            age = 18
+            hobby = function(){
+                return "我的爱好是听歌看书"
+            }
+            speciality = function(){
+                return "我的特长是腿特长"
+            }
+        }
+
+        const my = new Person()
+        
+        console.log(my)
+        console.log(my.name) // 打印“我”的名字,输出示例:张三
+        console.log(my.gender) // 打印“我”的性别，输出示例：女
+        console.log(my.age) // 打印“我”的年龄，输出示例：12
+        console.log(my.hobby()) // 打印“我”的爱好，输出示例：“我的爱好是XXXX等等”
+        console.log(my.speciality()) // 打印“我”的特长，输出示例：“我的特长是XXXX等等”
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

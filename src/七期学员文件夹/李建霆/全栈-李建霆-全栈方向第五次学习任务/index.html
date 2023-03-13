@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function getStr(fStr, cStr) {
+      if (typeof fStr !== "string" || typeof cStr !== "string") {
+        return 0;
+      }
+
+      if (fStr.length < cStr.length) {
+        return 0;
+      }
+
+      let nNum = 0;
+      let k = 0;
+      let n = 0;
+      while (k != fStr.length) {
+        //比较单个字符，如果字符相等 母串和子串都向后走一位
+        if (cStr[n] === fStr[k]) {
+          n++;
+          k++;
+          //直到子串到头，计数器加1，同时重置
+          if (n === cStr.length) {
+            nNum++;
+            n = 0;
+          }
+        } else {
+          //单个字符不相等，子串重置
+          n = 0;
+          //母串字符和子串首字符不相同时，母串可以往后移
+          if (fStr[k] !== cStr[n]) {
+            k++;
+          }
+        }
+      }
+      return nNum;
+    }
+
+    let fname = prompt("请输入母串");
+
+    let sname = prompt("请输入子串");
+
+    console.log("子串的数目是", getStr(fname, sname));
+  </script>
+  <body></body>
+</html>

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+#wrap{
+    margin:0 auto;
+}
+#time_box{
+    font-size: 18px;
+}

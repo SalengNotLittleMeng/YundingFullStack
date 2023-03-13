@@ -1,0 +1,52 @@
+:root{
+    background:burlywood;
+}
+.content{
+    margin:0 auto;
+    width:500px;
+    padding:15px 30px;
+    border-radius:10px;
+    background:black;
+    display:flex;
+    flex-direction: column;
+}
+p{
+    font-weight: bold;
+    font-size: 40px;
+}
+a{
+    font-size: 30px;
+}
+.passage1,.passage2,.passage3,.passage4,.passage5{
+    text-align: center;
+}
+.p1,.p2,.p3,.p4,.p5{
+    background: burlywood;
+    height:50px;
+    border-radius: 10px;
+}
+#part1{
+    display: none;
+}
+#part2{
+    display: none;
+}
+#part3{
+    display: none;
+}
+#part4{
+    display: none;
+}
+#part5{
+    display: none;
+}
+.p11,.p12,.p13,
+.p21,.p22,.p23,
+.p31,.p32,.p33,
+.p41,.p42,.p43,
+.p51,.p52,.p53{
+    background:lemonchiffon;
+    height:40px;
+    margin:15px 0;
+    border-radius: 10px;
+} 

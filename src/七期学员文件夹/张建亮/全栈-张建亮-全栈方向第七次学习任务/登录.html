@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box2 {
+            display: none;
+        }
+
+        .photo {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <h1>登录账号</h1>
+        <label for="email">
+            <span>邮箱</span>
+            <input type="text" id="email"></label>
+        <label for="passWord">
+            <span>密码</span>
+            <input type="text" id="password"></label>
+        <button>登录</button>
+        <div class="tips"></div>
+    </div>
+    <div class="box2">
+        <h1>登陆成功</h1>
+        <ul id="message">
+            <img src="" alt="" class="photo">
+            <li class="name"></li>
+            <li class="age"></li>
+            <li class="strengths"></li>
+        </ul>
+    </div>
+    <script>
+        let msg = [{
+            name: '张三',
+            age: 20,
+            strengths: 'JavaScript',
+            avatar: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.39mOMBjUfsK-HL9jUbv1MwHaE7?pid=ImgDet&rs=1',
+            email: 'yunding@qq.com',
+            password: 33333
+        },
+        {
+            name: '李四',
+            age: 19,
+            strengths: 'python',
+            avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.YlKimVo94OkaZDZCzPIDpAHaFh?pid=ImgDet&rs=1',
+            email: '12345678@163.com',
+            password: 11111
+        },
+        {
+            name: '王五',
+            age: 18,
+            strengths: 'Java',
+            avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.P2hK9SRjhFE8WM9N8tgWFAHaEQ?pid=ImgDet&rs=1',
+            email: 'yundingshuyuan@qq.cn',
+            password: 222222
+        },
+        ]
+        let box1 = document.querySelector('.box1')
+        let email = document.querySelector('#email')
+        let password = document.querySelector('#password');
+        let box2 = document.querySelector('.box2');
+        let tips = document.querySelector('.tips');
+        let button = document.querySelector('button');
+        // let button = document.getElementsByTagName("button");
+        let reg = /^\w+@(qq|163)+\.(com|cn)$/;
+        let name = document.querySelector('.name')
+        let age = document.querySelector('.age')
+        let strengths = document.querySelector('.strengths')
+        let photo = document.querySelector('.photo')
+        button.onclick = function () {
+            if (reg.test(email.value)) {
+                for (i = 0; i < msg.length; i++) {
+                    if (email.value == msg[i].email && password.value == msg[i].password) {
+                        box1.style.display = "none"
+                        box2.style.display = "block"
+                        alert("密码正确");
+                        photo.src = msg[i].avatar;
+                        name.innerText = "姓名：" + msg[i].name;
+                        age.innerText = "年龄：" + msg[i].age;
+                        strengths.innerText = "特长：" + msg[i].strengths;
+                        break;
+                    }
+                    else {
+                        alert("账号或密码错误,请重新输入");
+                        break;
+                    }
+                }
+            } else {
+                alert("输入邮箱格式错误");
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

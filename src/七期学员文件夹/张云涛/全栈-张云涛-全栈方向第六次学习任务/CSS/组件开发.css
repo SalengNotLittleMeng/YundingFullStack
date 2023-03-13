@@ -1,0 +1,62 @@
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        .w {
+            width: 1000px;
+            margin: 200px auto;
+        }
+
+        .outer {
+            padding-top: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+            height: 2000px;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            width: 1000px;
+            height: 200px;
+            background-color: #fff;
+            /* border: 5px solid black; */
+            border-radius: 50px 50px 50px 50px;
+        }
+
+        .boxHeight {
+            height: 830px;
+        }
+
+        .inBoxHeight {
+            width: 1000px;
+            height: 200px;
+            border: 5px solid brown;
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        .box11,
+        .box21,
+        .box31,
+        .box41 {
+            text-align: center;
+            line-height: 200px;
+            font-size: 100px;
+            border: 5px solid black;
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        .box12,
+        .box22,
+        .box32,
+        .box42 {
+            text-align: center;
+            line-height: 200px;
+            font-size: 0px;
+        }
+
+        .inBoxText {
+            font-size: 100px;
+        }

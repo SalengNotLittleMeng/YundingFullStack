@@ -1,0 +1,22 @@
+.box span,
+.login span {
+    display: block;
+}
+.box,
+.login {
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.login {
+    height: 125px;
+    display: none;
+}
+.login .img {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+}

@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(187, 160, 212);
+}
+
+.menu-list {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.menu-list ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li{
+    overflow: hidden;
+    max-height: 50px;
+    line-height: 50px;
+    transition: max-height .5s linear;
+}
+
+.menu-list .menu-list__item {
+    overflow: hidden;
+    width: 200px;
+    height: auto;
+    margin: 8px auto 0;
+    background-color: rgb(169, 54, 235);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.menu-list__item:hover {
+    background-color: rgb(221, 196, 255);
+}
+.menu-list__item1:hover {
+    background-color: rgb(221, 196, 255);
+}
+
+.menu-list__item1 {
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+    margin: 5px auto 5px;
+    background-color: rgb(197, 142, 228);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.menu-list .menu-list__item--selected {
+    max-width: 210px;
+    max-height: 400px;
+    background-color: rgb(169, 54, 235);
+    margin: 5px auto 0;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <script>
+        // 定义子串统计函数
+        function countstr(bigStr, smallStr) {
+            // 定义变量
+            let bigLen = bigStr.length; // 母串长度
+            let smallLen = smallStr.length; // 字串长度
+            let i = 0, j = 0; // 循环变量
+            var count = 0; // 计数变量
+            
+            while (i < bigLen) {
+                if (bigStr[i] === smallStr[j]) {
+                    i++;
+                    j++;
+                    if (j === smallLen) {
+                        j = 0;
+                        count++;
+                    }
+                } else {
+                    i++;
+                    j = 0;
+                }
+            }
+
+            return count;
+        }
+        // 定义输入语句
+        var bigStr = prompt('请输入一个字符串');
+        var smallStr = prompt('请输入它的字串');
+        // 定义输出语句
+        console.log('母串为' + bigStr + '\n','字串为' + smallStr + '\n','出现次数为' + countstr(bigStr, smallStr) + '次'); 
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

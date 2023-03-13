@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding:0 ;
+
+}
+.menu-list{
+    margin: 0 auto;
+    
+    width: 500px;
+   
+}
+.menu-list ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.menu-list li{
+line-height: 100px;
+max-height: 100px;
+overflow: hidden;
+background-color: palevioletred;
+transition: max-height 0.5s linear;
+border-radius: 15px;
+}
+.menu-list .menu{
+background-color: burlywood;
+border-top: 2px solid black;
+}
+.menu-list .menu--selected{
+    background-color: pink;
+    border-top: 2px solid black;
+    border-radius: 15px;
+    max-height: 500px;
+}

@@ -1,0 +1,13 @@
+.box{
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    background-color:rgb(42, 185, 78);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.box1{
+    margin-top: 15px;
+}

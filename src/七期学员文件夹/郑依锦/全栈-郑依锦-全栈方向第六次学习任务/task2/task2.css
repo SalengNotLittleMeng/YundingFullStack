@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    background: #97c2dd;
+}
+
+.view {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#passage1,
+#passage2,
+#passage3,
+#passage4,
+#passage5 {
+    display: none;
+}
+
+.passage {
+    width: 600px;
+    margin: auto;
+}
+
+.passage h1,
+.part {
+    height: 50px;
+    width: 600px;
+    line-height: 46px;
+    text-align: center;
+    font-family: "[Lato]", sans-serif;
+    color: #010b2b;
+    border: 5px solid #03469e;
+    border-radius: 10px;
+}
