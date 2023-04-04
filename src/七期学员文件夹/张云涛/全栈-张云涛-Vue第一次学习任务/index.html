@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.js"></script>
+
+    <div id="app">
+        <input v-model="text">
+
+        <p>你要输入的单词是：{{text}}</p>
+
+        <button @click="add">添加</button>
+        <button @click="remove">删除</button>
+
+        <div v-if="this.words.length>5?true:false" v-bind:class="redClass">鳖加辣！单词太多了</div>
+        
+        <ul :class="{red:this.words.length>5}">
+            <li v-for="word in words" key="word.Id">
+                {{word.word}}
+            </li>
+        </ul>
+        
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+        
+        let id = 0;
+        
+        createApp({
+            data(){
+                return{
+                    text:'',
+                    words:[],
+                    redClass:"red"
+                }
+            },    
+            methods: {
+                add(){
+                    this.words.push({Id:id++,word:this.text})
+                    this.text = ''
+                },
+                remove(){
+                    console.log(this.words.length)
+                    this.words.splice(this.words.length-1,1)
+                },
+            }    
+        }).mount("#app")
+    </script>
+</body>
+</html>
