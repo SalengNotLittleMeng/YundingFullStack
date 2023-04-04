@@ -15,11 +15,11 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.js"></script>
 
     <div id="app">
-        <input v-model="text">
+        <input v-model="text" @keyup.enter="add">
 
         <p>你要输入的单词是：{{text}}</p>
 
-        <button @click="add">添加</button>
+        <button @click="add" >添加</button>
         <button @click="remove">删除</button>
 
         <div v-if="this.words.length>5?true:false" v-bind:class="redClass">鳖加辣！单词太多了</div>
@@ -51,7 +51,6 @@
                     this.text = ''
                 },
                 remove(){
-                    console.log(this.words.length)
                     this.words.splice(this.words.length-1,1)
                 },
             }    
