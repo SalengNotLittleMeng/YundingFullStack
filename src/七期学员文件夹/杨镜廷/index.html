@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+</head>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<style>
+  .font_color{
+    color:red;
+  }
+</style>
+<body>
+<div id="app">
+  <input type="text" v-model="message" @keyup.enter="input_add(message)">
+		<h2>您要添加的单词是：{{ message }}</h2>
+		<button @click="add(message)">添加</button>
+		<button @click="dele">删除</button>
+    <h3 v-show="index>5" :class="{font_color:index>5}">单词数目超过五个</h3>
+		<h4 :class="{font_color:index>5}">单词列表：</h4>
+		<ul :class="{font_color:index>5}">
+			<li v-for="(item,index) in arr">
+		      {{ item }}
+			</li>
+		</ul>
+</div>
+</body>
+<script>
+  const { createApp } = Vue
+  createApp({
+    data() {
+      return {
+        message:"",
+				arr:["fuck","damn","shit"],
+        index:3
+      }
+    },
+    methods:{
+      add:function(msg){
+        this.arr.push(msg)
+        this.index++
+      },
+      input_add:function(message){
+        this.arr.push(message)
+        this.index++
+      },
+      dele:function(){
+        this.arr.pop()
+        this.index--
+      }
+    }
+  }).mount('#app')
+</script>
+</html>
