@@ -1,0 +1,20 @@
+.user_page {
+    width: 500px;
+    height: 500px;
+    margin: 80px auto;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.critext {
+    height: 32px;
+    margin-bottom: 10px;
+}
+.word_list{
+    margin-left: 40px;
+}
+.active{
+    color: red;
+}
