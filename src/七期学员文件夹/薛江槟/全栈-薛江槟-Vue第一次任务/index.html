@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自助单词增减系统</title>
+<style>
+    ul{
+        list-style: none;
+    }
+    .search{
+        
+    width:600px;
+    margin: 0 auto;       
+     text-align: center;
+
+    }
+    .button{
+        width: 60px;
+        height: 30px;
+    }
+    .change{
+        color: red;
+    }
+    .strong{
+        font-size: 35px;
+
+    }
+</style>
+</head>
+<body>
+<div id="app" class="search">
+    
+    <input type="text"  v-model="word"  @keyup.enter="increase">
+    <div class="strong">你输入的单词是:<strong>{{word}}</strong></div>
+    <div class="top">
+    
+    <button  class="button" @click="increase">添加</button>
+    <button class="button" @click="remove" >删除</button>
+    </div>
+    <ul v-if="this.arr.length!=0">    
+        <li  v-for="(value,index) in arr" :class="{change:isbeyond()}">{{index+1}} {{value}}</li>
+    </ul>   
+    <div v-if="isbeyond()" :class="{change:isbeyond()}">别加啦，单词也太多了！！！</div>
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script type="text/javascript">
+       const { createApp } = Vue;
+     createApp({
+        data(){
+            return{
+           word:"",
+           arr:[],
+                    }
+            },
+        methods: {
+            increase(){
+                if(this.word!=''){
+                this.arr.push(this.word);
+                console.log(this.arr);
+            }else{
+                alert("空单词不能添加哦,亲")
+            }
+            },
+            remove(){
+                this.arr.pop()
+
+            },
+            isbeyond(){
+                if(this.arr.length>=5){
+                    return true
+                }
+                else{
+                    return false
+                }
+            }
+        }
+}).mount('#app')
+</script>
