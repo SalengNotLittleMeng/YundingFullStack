@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+        p{
+            font-size: 32px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.47/vue.global.js"></script>
+
+    <div id="app">
+        <span>请输入单词：</span>
+        <input v-model="text" @keyup.enter="add">
+
+        <p>你输入的单词:{{text}}</p>
+
+        <button @click="add">添加</button>
+        <button @click="remove">删除</button>
+
+        <div v-if="this.words.length > 5" v-bind:class="redClass">别加了!单词太多了</div>
+
+        <ul :class="{red:this.words.length > 5 }">
+            <li v-for="word in words" key="word.Id">
+                {{word.word}}
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        let num = 0;
+        const app = Vue.createApp({
+            data() {
+                return {
+                    text: '',
+                    words: [],
+                    redClass: "red"
+                }
+            },
+            methods: {
+                add() {
+                    this.words.push({ Number: num++, word: this.text })
+                    this.text = ''
+                },
+                remove() {
+                    this.words.splice(this.words.length - 1, 1)
+                },
+            }
+        })
+        app.mount("#app")
+    </script>
+</body>
+
+</html>
