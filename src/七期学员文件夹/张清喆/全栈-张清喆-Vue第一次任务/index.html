@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add and delete</title>
+    
+    <style>
+        .color{
+            color: red;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <div id="app">
+        <input type="text" v-model="text" @keyup.enter="add">
+        <div>你要输入的单词是：{{text}}</div>
+        <button @click="add" >添加</button>
+        <button @click="delete1">删除</button>
+        <div v-if="judge==1" :class="{color:true}">鳖加辣！单词数量太多了</div>
+        <ul :class="{color:judge===1}">
+            <li v-for="word in words" >
+               第{{word.num}}个：{{word.word}}     
+            </li>    
+        </ul>
+    </div>
+    <script>
+        var a=0;
+        const app=Vue.createApp({
+            data:function(){
+                return{
+                    words:[],
+                    text:"",
+                    judge:0,
+                }
+            },
+            methods:{
+                add(){
+                    if(this.words.length<=4)
+                    {
+                        a++;
+                        this.words[this.words.length]={num:a,word:this.text};
+                        this.text="";
+                    }
+                    else{
+                        this.judge=1;
+                    }
+                },
+                delete1(){
+                    
+                    this.words.splice(this.words.length-1,1);
+                    if(a>0)
+                    {
+                        a--;
+                    }
+                    if(this.words.length<6)
+                    {
+                        this.judge=0;
+                    }
+                }
+            }
+        });
+        app.mount("#app");
+    </script>
+</body>
+</html>
