@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue第一次学习作业</title>
+    <style>
+        .active {
+            color: red;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        button {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <input type="text" v-model="currentMsg" @keyup.enter.native="Add()" />
+        <h1>当前输入内容为：{{currentMsg}}</h1>
+        <button @click="Add">添加</button>
+        <button @click="Delete" :disabled="allMsg.length <= 0">删除</button>
+        <div class="active" v-if="allMsg.length > 5">鳖加辣！！单词太多了</div>
+        <ul :class="{active: allMsg.length > 5}">
+            单词列表
+            <li v-for="item of allMsg">{{item}}</li>
+        </ul>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./vue第一次作业.js"></script>
+</body>
+
+</html>
