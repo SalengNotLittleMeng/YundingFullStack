@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<body>
+    <div id="app">
+        <input type="text" v-model="word" @keyup.enter="add">
+        <h2>你要输入的单词是：{{word}}</h2>
+        <button @click="add" >添加</button>
+        <button @click="remove" :disabled="wordCard.length<=0">删除</button>
+        <ul :class="{change : isChange}">单词列表
+            <li v-for="item in wordCard">{{item}}</li>
+        </ul>
+        <h2 style="color:red" v-if="wordCard.length>5" >憋加辣！ 单词数量太多了</h2>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const app = Vue.createApp({
+            data: function () {
+                return {
+                    word: '',
+                    wordCard: [],
+                    isChange: false
+                }
+            },
+            methods: {
+                add: function () {
+                    if (this.word != "") {
+                        this.wordCard.push(this.word);
+                        if(this.wordCard.length>5){
+                            this.isChange=true
+                        }
+                    }
+                    else{
+                        alert("please input word")
+                    }
+                },
+                remove: function () {
+                    this.wordCard.pop()
+                    if(this.wordCard.length<=5){
+                        this.isChange=false
+                    }
+                }
+            }
+        })
+        app.mount("#app")
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <div id="app">
+        <input type="text" v-model="prop.message"@keyup.enter="add">
+        <h1>你要输入的单词是：{{prop.message}}</h1>
+        <h2 v-if="counter>=5">单词数量太多了</h2>
+        <button @click="add">添加</button>
+        <button @click="del">删除</button>
+        <ul v-for="item in list">
+            <li :class="{red: result}" >{{item}}</li>
+        </ul>
+        
+    </div>
+    <script>
+        const app = Vue.createApp({
+
+            data: function () {
+                return {
+                    counter: 0,
+                    result:false,
+                    word:'',
+                    prop:{
+                        message:''
+                    },
+                    list:[]
+                }
+            },
+            methods: {
+                add() {
+                    this.counter++
+                    if(this.counter >=5){
+                        this.result = true
+                    }
+                    word = this.prop.message
+                    this.list.push (word)
+                    // console.log(word);
+                    console.log(this.counter);
+                },
+                del: function () {
+                    this.counter--
+                    this.list.pop(word)
+                    console.log(this.counter);
+                    if(this.counter <5){
+                        this.result = false
+                    }
+                }
+            }
+        })
+        app.mount('#app')
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="typecenter">
+        <input type="text" v-model="message" @keyup.enter="getWords">
+        <h1>你要输入的单词是：{{ message }} </h1>
+        <button @click="getWords">添加</button>
+        <button @click="deleteWords">删除</button>
+        <p v-show="arr.length>5" :class="arr.length>5?'changeColor':''">鳖加辣！单词数量太多了</p>
+        <p v-show="arr.length==0">鳖删除辣！都没单词啦</p>
+        <p :class="arr.length>5?'changeColor':''">单词列表：</p>
+        <ul :class="arr.length>5?'changeColor':''">
+            <li v-for="item in arr">
+                {{ item }}
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

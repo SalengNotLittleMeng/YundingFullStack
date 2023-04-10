@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 监听键盘Enter敲击事件 -->
+        <input type="text" v-model:value="newWord" v-on:keyup.enter="addWord()">
+        <h1 id="text">你要输入的单词是：{{newWord}}</h1>
+        <button @click="addWord()">添加</button>
+        <button @click="deleteWord()">删除</button>
+        <ul :style="{color:wordColor}">
+            <h3 v-if="wordNumberJudge()">{{warning}}</h3>
+            单词列表：
+            <li v-for="(item,index) in word" :key="index">{{item}}</li>
+        </ul>
+    </div>
+    <script>
+        //创建vm实例
+        let app = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    //输入框内的内容
+                    newWord: "",
+                    //初始单词表
+                    word: ["蒸羊羔", "蒸熊掌", "蒸鹿尾"],
+                    //单词颜色，通过这个改变ul列表颜色
+                    wordColor: "black",
+                    //警告，单词数量过多时会出现
+                    warning: "鳖加拉！单词数量太多啦",
+                }
+            },
+            methods: {
+                //判断单词数量是否超过限制
+                wordNumberJudge() {
+                    //if语句改变文本颜色
+                    if (this.word.length >= 5) {
+                        this.wordColor = "red";
+                    }
+                    else {
+                        this.wordColor = "black";
+                    }
+                    //返回表达式布尔值，供v-if做判断
+                    return this.word.length >= 5;
+                },
+                //添加单词，添加完清除输入框
+                addWord() {
+                    this.word.push(this.newWord);
+                    this.newWord = "";
+                },
+                //删除单词
+                deleteWord() {
+                    this.word.pop(this.word[this.word.length]);
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

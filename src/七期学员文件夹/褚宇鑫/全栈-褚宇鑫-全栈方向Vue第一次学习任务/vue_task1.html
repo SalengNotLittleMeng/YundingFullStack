@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        div{
+            width: 200px;
+            margin:0 auto;
+        }
+        ol{
+            padding-left: 20px;
+        }
+        #del{
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="collectInfo">
+        <input type="text" v-model="message" @keyup.enter="addWord"><br>
+        <p>你输入的单词是：{{message}}</p>
+        <button id="add" @click="addWord">添加</button>
+        <button id="del" @click="deleteWord">删除</button>
+        <ol id="word" ref="ol">
+            <p>{{tip}}</p>
+            <p>单词列表：</p>
+            <li v-for="word in words">
+                {{word}}
+            </li>
+        </ol>
+    </div>
+    <script>
+        Vue.config.productionTip = false//阻止 vue 在启动时生成生产提示
+
+        const vm = new Vue({
+            el:'#collectInfo',
+            data:{
+                message: '',
+                tip:'',
+                words:['脆脆鲨','exquisite'],
+            },
+            methods: {
+              addWord(){
+                if(this.words.length < 5){
+                    this.words.push(this.message)
+                    this.message = ''     //添加到列表以后帮您自动清除输入框内容
+                }
+                else{
+                    this.$refs.ol.style.color = "red"; 
+                    this.tip = '嘿嘿嘿嘿~'
+                }
+              },
+              deleteWord(){
+                this.words.pop()
+                this.$refs.ol.style.color = "black"
+                this.tip = ''
+              }
+
+            }
+        })
+    </script>
+</body>
+</html>

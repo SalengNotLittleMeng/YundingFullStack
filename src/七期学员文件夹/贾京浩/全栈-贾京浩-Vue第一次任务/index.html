@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+    <style>
+        .warn {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="message" @keyup.enter="add">
+        <h2>你要添加的单词是：{{ message }}</h2>
+        <button @click="add">添加</button>
+        <button @click="del">删除</button>
+        <p class="warn" v-show="index>5">太多啦，再加就罢工！</p>
+        <div :class="{warn:index>5}">
+            <h3>单词列表：</h3>
+            <ul>
+                <li v-for="item in list">{{ item }}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    const { createApp } = Vue
+    createApp({
+        data() {
+            return {
+                message: "wula",
+                list: ["eat", "sleep"],
+                index: 2,
+            }
+        },
+        methods: {
+            add() {
+                this.list.push(this.message);
+                this.index++;
+            },
+
+            del() {
+                this.list.pop();
+                this.index--;
+            }
+        }
+    }).mount('#app')
+</script>
+
+</html>

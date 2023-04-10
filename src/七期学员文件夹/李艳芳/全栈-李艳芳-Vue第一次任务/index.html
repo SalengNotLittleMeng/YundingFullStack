@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input :style="{ width:'200px', height:'20px',border:'3px solid gray' }" v-model="message" @keyup.enter="add(message)">
+        <h1>你要输入的单词是：{{message}}</h1>
+        <button @click="add(message)">添加</button>&nbsp;
+        <button @click="del">删除</button>
+        <br><br>
+        <div class="prompt" v-if="list.length > 5">
+            <h2 :style="{ color:'red' }">鲨加辣！单词数量太多了</h2>
+            <ul>
+                <h2 :style="{ color:'red' }">单词列表：</h2>
+                <li v-for="item in list" :style="{ color:'red' }">{{item}}</li>
+            </ul>
+        </div>
+        <div v-else>
+            <ul><h2>单词列表：</h2>
+                <li v-for="item in list">{{item}}</li>
+            </ul>
+        </div> 
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
