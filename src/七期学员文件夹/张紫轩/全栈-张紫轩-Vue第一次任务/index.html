@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="CH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div class="user_page" id="app">
+        <input type="text" v-model="inputword" @keyup.enter="inputForWord">
+        <div class="critext">
+            <h2 v-cloak v-on:keyup="displayWord">你要输入的单词是：{{ inputword }}</h2>
+        </div>
+        <div class="button">
+            <button @click="inputForWord" >添加</button>
+            <button @click="delectForWord">删除</button>
+        </div>
+        <div class="word_list">
+            <h3>
+                <font color="red" v-if="wordList.length > 5">鳖加辣!单词数量太多了</font>
+            </h3>
+            <p :class="{active:isActive}">单词列表</p>
+        </div>
+        <ul v-cloak>
+            <li v-for="item in wordList" :class="{active:isActive}">{{ item }}</li>
+        </ul>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
