@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 学长学姐们辛苦啦！ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Vue-task1</title>
+    <style>
+        .warn {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <input type="text" v-model="input" @keyup.enter="add(input)">
+        <h1>您要添加的单词是：{{ input }}</h1>
+        <button @click="add(input)">添加</button>
+        <button @click="del">删除</button>
+        <section class="warn" v-show="numJudge()">单词数目超过五个，系统过载</section>
+        <div :class="{warn:numJudge()}">
+            <h3>单词列表：</h3>
+            <li v-for="(item,index) in list">{{ index+1 }} {{ item }}</li>
+        </div>
+    </div>
+</body>
+<script>
+    const { createApp } = Vue
+    createApp({
+        data() {
+            return {
+                input: "请输入单词",
+                list: ["sun", "moon", "you"],
+            }
+        },
+        methods: {
+            add(input) {
+                this.list.push(this.input);
+                this.input = "";
+            },
+            numJudge() {
+                return this.list.length > 5;
+            },
+            del() {
+                this.list.pop();
+            }
+        }
+    }).mount('#box')
+</script>
+
+</html>
