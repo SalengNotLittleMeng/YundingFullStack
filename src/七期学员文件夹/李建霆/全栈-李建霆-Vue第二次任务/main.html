@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+      table {
+        border-collapse: collapse;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        text-align: center;
+      }
+      th,
+      td {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        /* width: 70px;
+        height: 50px; */
+        padding: 8px;
+      }
+      .first {
+        font-size: 16px;
+        background-color: gainsboro;
+      }
+      .first book_name {
+        width: 100px;
+      }
+      .active {
+        background-color: orange;
+      }
+      .put {
+        width: 50px;
+      }
+      .put.name {
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>当前选中书籍为:{{message}}</h2>
+      <create-infos @sub-name="choose_display"> </create-infos>
+    </div>
+
+    <template id="book_infos">
+      <div class="book_infos">
+        <table>
+          <thead>
+            <!-- 表头 -->
+            <tr>
+              <th class="first">序号</th>
+              <th class="first">书名</th>
+              <th class="first">价格</th>
+              <th class="first">购买数量</th>
+              <th class="first">操作</th>
+            </tr>
+          </thead>
+          <!-- 显示书籍信息的模块 -->
+          <tr
+            v-for="(item,index) in books"
+            :key="item.id"
+            @click="choose(index)"
+            :class="{active: index === index_re }"
+          >
+            <td>{{index+1}}</td>
+            <td>{{formate_name(item.name)}}</td>
+            <td>{{formate_price(item.price)}}</td>
+            <td>
+              <button
+                :disabled="item.count <= 0"
+                @click="decrease_count(item.id)"
+              >
+                -
+              </button>
+              {{item.count}}
+              <button @click="add_count(item.id)">+</button>
+            </td>
+            <td>
+              <button @click="remove_book(index)">移除</button>
+            </td>
+          </tr>
+          <!-- 添加的组件 -->
+          <tr v-if="click_confirm">
+            <td>{{books.length+1}}</td>
+            <td>
+              <input
+                type="text"
+                placeholder="请输入书名"
+                class="put name"
+                v-model.lazy="add_name"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                placeholder="0"
+                class="put"
+                v-model.lazy="add_price"
+              />
+            </td>
+            <td>
+              <button @click="prede_count(pre_count)" :disabled="pre_count<= 0">
+                -
+              </button>
+              {{pre_count}}
+              <button @click="preadd_count(pre_count)">+</button>
+            </td>
+            <td>
+              <button disabled>移除</button>
+            </td>
+          </tr>
+        </table>
+        <button v-if="!click_confirm" @click="clcik_btn">添加</button>
+        <button v-if="click_confirm" @click="addall" @click="clcik_btn2">
+          确定
+        </button>
+        <button v-if="click_confirm" @click="clcik_btn2">取消</button>
+      </div>
+      <h2>总价:{{sum_prices}}</h2>
+    </template>
+
+    <script>
+      //子组件搭建
+      const CreateInfos = {
+        template: "#book_infos",
+        data() {
+          return {
+            books: [
+              {
+                id: 1,
+                name: "红楼梦",
+                price: 99,
+                count: 0,
+              },
+              {
+                id: 2,
+                name: "水浒传",
+                price: 89,
+                count: 3,
+              },
+            ],
+            index_re: -1,
+            click_confirm: false,
+            add_name: "",
+            add_price: "",
+            pre_count: 1,
+          };
+        },
+
+        emits: ["subName"], //出现了奇怪的报错，网上说：子组件中没有用setup语法糖的写法, 所以事件需要在子组件中声明才可以使用 emits:['subNum'], 如果不做什么即会出现警告
+
+        methods: {
+          //给表格内数据拼接统一格式，方便后期管理
+          formate_name(name) {
+            return "《" + name + "》";
+          },
+          formate_price(price) {
+            return "￥" + price;
+          },
+          add_count(index) {
+            //加书籍数量
+
+            this.books[index - 1].count++;
+          },
+          decrease_count(index) {
+            //减书籍数量
+            this.books[index - 1].count--;
+          },
+          remove_book(index) {
+            //移除书籍
+            this.books.splice(index, 1);
+          },
+          choose(index) {
+            //选择方法，运用了排他思想
+            this.index_re = index;
+            // let btn_name = "";
+            // btn_name = this.books[index].name;     这两行代码如果启用会显示读取不到‘name’属性,但不影响使用
+
+            this.$emit("subName", this.books[index].name);
+          },
+          //给添加模块加数
+          preadd_count(num) {
+            this.pre_count++;
+          },
+          prede_count(num) {
+            this.pre_count--;
+          },
+          clcik_btn() {
+            this.click_confirm = true;
+            
+          },
+          clcik_btn2() {
+            this.click_confirm = false;
+            this.add_name = "";
+            this.add_price = "";
+            this.pre_count = "1";
+          },
+
+          addall() {
+            let newid = "";
+            newid = this.books.length + 1;
+            if (this.add_name == "") {
+              alert("书名不能为空");
+            } else {
+              if (this.add_price <= 0) {
+                alert("价格不能为负数");
+              } else {
+                this.books.push({
+                  id: newid,
+                  name: this.add_name,
+                  price: this.add_price,
+                  count: this.pre_count,
+                });
+              }
+            }
+            this.click_confirm = false;
+            this.add_name = "";
+            this.add_price = "";
+            this.pre_count = "1";   
+            console.log(this.books);
+            // this.$emit("subId", newid);前期做的时候思考错数据应该添加到的数组位置了
+            // this.$emit("subaddName",this.add_name);
+            // this.$emit("subPrice", this.add_price);
+            // this.$emit("subCount", this.pre_count);
+          },
+        },
+        computed: {
+          //求总价函数
+          sum_prices() {
+            let sum = 0;
+            for (const item of this.books) {
+              sum += item.price * item.count;
+            }
+            return sum;
+          },
+        },
+      };
+
+      //根组件
+      const app = Vue.createApp({
+        components: {
+          CreateInfos,
+        },
+        data: () => {
+          return {
+            message: "",
+            click_confirm: false,
+            addid_spread1: "",
+            addname_spread1: "",
+            addprice_spread1: "",
+            // books: [                             父组件里不需要留子组件的数据
+            //   {
+            //     id: 1,
+            //     name: "红楼梦",
+            //     price: 99,
+            //     count: 1,
+            //   },
+            //   {
+            //     id: 2,
+            //     name: "水浒传",
+            //     price: 89,
+            //     count: 3,
+            //   },
+            // ],
+          };
+        },
+        methods: {
+          choose_display(name_spread) {
+            this.message = name_spread;
+          },
+          clcik_btn() {
+            this.click_confirm = true;
+          },
+          clcik_btn2() {
+            this.click_confirm = false;
+          },
+          // sub_id(addid_spread) {                 前期做的时候思考错数据应该添加到的数组位置了,留着警示自己
+          //   // this.books.push({});
+          //   this.addid_spread1 = addid_spread
+
+          // },
+          // sub_name(addname_spread) {
+          //   // this.books.push({});
+          //   this.addname_spread1 = addname_spread
+          // },
+          // sub_price(addprice_spread) {
+          //   // this.books.push({});
+          //   this.addprice_spread1 = addprice_spread
+          // },
+          // sub_count(addcount_spread) {
+          //   this.books.push({
+          //     id:this.addid_spread1,name:this.addname_spread1,price:this.addprice_spread1,count:addcount_spread});
+          //     console.log(this.books)
+          // },
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>
