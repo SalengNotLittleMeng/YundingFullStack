@@ -10,16 +10,11 @@ export default {
   },
   methods: {
     add() {
-
-
       this.allContent.push(this.content)
     },
     remove() {
-
-
       this.allContent.pop()
     },
-
   },
   watch: {
     allContent: {
@@ -31,14 +26,11 @@ export default {
           this.isRed = false
           this.notice = false
         }
-
-
       },
       deep: true
     }
   }
 }
-
 </script>
 
 <template>
@@ -51,9 +43,11 @@ export default {
     <div v-if="notice">憋加了,已经塞不下了
     </div>
     单词列表
-    <ul><li v-for="(p, index) in allContent" :key="index">
-      {{ p }}
-    </li></ul>
+    <ul>
+      <li v-for="(p, index) in allContent" :key="index">
+        {{ p }}
+      </li>
+    </ul>
   </div>
 </template>
 
