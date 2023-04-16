@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #f5f5f5;
+        }
+
+        th,
+        td {
+            border: 1px solid #161313;
+            padding: 8px 16px;
+        }
+        
+        .active{
+            background-color: plum;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <table>
+            <h2>总价：{{formatPrice(totalPrice)}} 当前选中书籍:{{message}}</h2>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>书名</th>
+                    <th>价格</th>
+                    <th>购买数量</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(item , index) in books" :key="item.id"  @click=rowClick(index) :class="{active:index === currentIndex}" >
+                    <td>{{index+1}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{formatPrice(item.price)}}</td>
+                    <td>
+                        <button v-bind:disabled="item.count <=1" @click="decrement(index)">-</button>
+                        {{item.count}}
+                        <button @click="increment(index)">+</button>
+                    </td>
+                    <td>
+                        <button @click="removeBook(index)">移除</button>
+                    </td>
+                </tr>
+                <tr v-show="!swi" >
+                    <td></td>
+                    <td><input type="text"  v-model="newBooks.name"></td>
+                    <td><input type="number"  v-model="newBooks.price" ></td>
+                    <td>
+                        <button v-bind:disabled="newBooks.count <=1" @click="decrement1()">-</button>
+                        {{newBooks.count}}
+                        <button @click="increment1()">+</button>
+                    </td>
+                    <td>
+                        <button @click="removeBook(this.books.length+1)">移除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button @click="addButton" v-show="swi">添加</button>
+        <div v-show="!swi">
+            <button @click="makeSure">确认</button>
+            <button @click="cancel">取消</button>
+        </div>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    books: [
+                        {
+                            id: 1,
+                            name: '《JavaScript高级程序设计》',
+                            price: 126,
+                            count: 1
+                        },
+                        {
+                            id: 2,
+                            name: '《你不知道的JS（上卷）》',
+                            price: 78,
+                            count: 1
+                        },
+                        {
+                            id: 3,
+                            name: '《你不知道的JS（中卷）》',
+                            price: 76,
+                            count: 1,
+                        },
+                        {
+                            id: 4,
+                            name: '《你不知道的JS（下卷）》',
+                            price: 64,
+                            count: 1,
+                        }
+                    ],
+                    currentIndex:  0,
+                    message: '',
+                    swi:true,
+                    newBooks: {
+                        name: '',
+                        price: 0,
+                        count: 1,
+                    }
+                
+                }
+            },
+            computed: {
+                totalPrice() {
+                    let price = 0
+                    for (const item of this.books) {
+                        price += item.price * item.count
+                    }
+                    return price
+                }
+            },
+            methods: {
+                formatPrice(price) {
+                    return "￥" + price
+                },
+                decrement(index) {
+                    this.books[index].count--
+                },
+                increment(index) {
+                    this.books[index].count++
+                },
+                decrement1() {
+                    this.newBooks.count--
+                },
+                increment1(index) {
+                    this.newBooks.count++
+                },
+                removeBook(index){
+                    this.books.splice(index,1)
+                },
+                rowClick(index){
+                    this.message = this.books[index].name
+                    this.currentIndex = index
+                },
+                addButton: function (){
+                    this.swi = false
+                    
+                },
+                cancel: function () {
+                    this.swi = true
+                },
+                makeSure() {
+                    if (this.newBooks.name === '') {
+                        alert('书名不能为空')
+                    } 
+                    else if (this.newBooks.price <= 0) {
+                        alert('价格应该是正数')
+                    } 
+                    else {
+                        let newBooks = {
+                            name: this.newBooks.name,
+                            price: this.newBooks.price,
+                            count: this.newBooks.count,
+                        }
+                        this.books.push(newBooks)
+                        this.swi = false
+                        this.newBooks.name = ''
+                        this.newBooks.price = ''
+                        this.newBooks.count = 1
+                }
+            }
+        }
+    })
+        app.mount("#app")
+    </script>
+</body>
+
+</html> 
