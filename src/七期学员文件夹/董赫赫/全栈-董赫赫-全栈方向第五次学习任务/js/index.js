@@ -3,7 +3,7 @@ let str2 = prompt("请输入子串");
 let count = 0;
 function statistics (Str1, Str2)
 {
-    for (let num = 0; num < Str1.length; num++) 
+    for (let num = 0; num < Str1.length; num++)
     {
         let float = true;
         let num1 = num;
@@ -13,9 +13,10 @@ function statistics (Str1, Str2)
         /*2.当str1[num1] = str2[num2]时，num1++,num2++,循环继续
         直到num2=str2.length时，若float=true，则字串出现一次，跳出子循环，count++ */
         //一次子循环结束，父循环num++，继续自循环，直到num=str1.length，结束循环，输出count为字串出现次数
-            if (Str1[num1] != Str2[num2]) 
+            if (Str1[num1] != Str2[num2])
             {
                 float = false;
+                break;
             }
         }
         if (float === true)

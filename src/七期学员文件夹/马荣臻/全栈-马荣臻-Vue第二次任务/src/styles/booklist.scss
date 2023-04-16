@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #aaa;
+}
+
+th,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    text-align: center;
+}
+
+p {
+    display: inline;
+    margin: 10px;
+}
+
+.chosen {
+    background-color: rgb(170, 195, 197);
+}
+
+button {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #dcdfe6;
+    color: #000;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.disabled {
+    cursor: no-drop;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdfe6;
+    color: #000;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+}
