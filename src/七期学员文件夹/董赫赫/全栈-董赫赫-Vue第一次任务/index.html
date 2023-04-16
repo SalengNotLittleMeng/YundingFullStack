@@ -1,0 +1,42 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2023-04-14 17:05:20
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2023-04-16 01:28:26
+ * @FilePath: \图书管理系统前端\dongh.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active,.tip{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="newWord">
+        <h2>你要输入的单词是：{{ newWord }}</h2>
+        <div class="buttons">
+            <button id="addWord" @click="addWord(newWord)">添加</button>
+            <button id="deleteWord"@click="deleteWord">删除</button>
+        </div>
+        <div class="list">
+            <div class="tip" v-if="items.length > 5">单词数量太多了！</div>
+            <div :class="{active:items.length > 5}">单词列表</div>
+            <ul :class="{active:items.length > 5}">
+                <li v-for="item in items">{{item}}</li>
+            </ul>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
