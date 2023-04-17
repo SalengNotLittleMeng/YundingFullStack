@@ -1,0 +1,18 @@
+table {
+  border-collapse: collapse;
+}
+
+input {
+  width: 30px;
+}
+
+th,
+td {
+  border: 1px solid rgb(15, 181, 236);
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.active {
+  background-color: pink;
+}
