@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>褚宇鑫</title>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="tryAddBook">{{addState[Number(this.ifAdd)]}}</button>
+        <span> 当前选中的书籍：{{addBookSymbol(books[current]?.name) }}</span>
+        <h2>刚刚被删除的的书籍是：{{addBookSymbol(deleteItem?.name) }} </h2>
+        <table v-if="books.length != 0">
+            <!-- 这里是表头 -->
+            <thead>
+                <tr>
+                    <th v-for="header in tableHead">{{header}}</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <!-- 这里是书籍列表组件 -->
+                <tr is="vue:book-item" v-for="(item, index) in books" :key="item.id" :index='index' :item='item' :current="current"
+                    @add='addCount' @del='delCount' @remove='removeBook' @select="select"></tr>
+                <!-- 这里是添加书籍组件 -->
+                <tr is="vue:add-book" v-if="ifAdd" :index="books.length" @add-book="addBook"></tr>
+            </tbody>
+        </table>
+
+        <h2 v-else>还没有任何书籍哦</h2>
+
+        <h2 v-if="books.length != 0">总价：{{ addMoneySymbol(totalPrice)  }} </h2>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script type="module">
+        //定义一个组件
+        import books from './data.js'
+        import addBook from './components/addbook.js'
+        import bookItem from './components/bookItem.js'
+        import {addMoneySymbol,addBookSymbol} from './hooks/index.js'
+
+        const app = Vue.createApp({
+            components: {
+                addBook,
+                bookItem
+            },
+
+            data() {
+                return {
+                    // 书籍信息列表
+                    books,
+                    // 表头
+                    tableHead: ['编号', '书籍名称', '出版日期', '价格', '购买数量', '操作'],
+                    // 是否显示添加书籍列
+                    ifAdd: false,
+                    // 当前选中的条目编号
+                    current: -1,
+                    // 添加书籍按钮的状态
+                    addState:['添加','取消'],
+                    // 刚刚删除的条目
+                    deleteItem:'',
+                }
+            },
+            methods: {
+                // 书籍购买数量操作
+                addCount(index) {
+                    this.books[index].count++;
+                },
+                delCount(index) {
+                    this.books[index].count--;
+                },
+                // 删除书籍
+                removeBook(index) {
+                    // 保证选中的条目不会变
+                    this.deleteItem = this.books[index];
+                    if(index<this.current){
+                        this.current--;
+                    }else if(index==this.current){
+                        this.current=-1;
+                    }
+                    // 这里才是真正的删除
+                    this.books.splice(index, 1);
+
+                },
+                // 修改选中状态
+                select(index) {
+                    this.current = index;
+                },
+                // 弹出添加书籍框
+                tryAddBook(){
+                    this.ifAdd = !this.ifAdd;
+                },
+                // 添加书籍
+                addBook(book) {
+                    this.books.push(book);
+                },
+                addBookSymbol,
+                addMoneySymbol,
+            },
+            computed: {
+                totalPrice() {
+                    let price = 0
+                    for (const item of this.books) {
+                        price += item.price * item.count
+                    }
+                    return price;
+                }
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+
+</html>
