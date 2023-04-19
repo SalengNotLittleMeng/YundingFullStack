@@ -10,48 +10,29 @@
         </div>
       </template>
     </list>
+
     <list title="榜单">
       <template #content>
         <div class="list">
-          <list title="新歌榜">
+          <!-- 以下是组件单元，通过slot与v-for实现三个榜单 -->
+          <list v-for="unit in itemList" :key="unit.name" :title="unit.name">
+            <!-- 以下是标题描述部分，包括简介、封面 -->
             <template #titleContent>
               <div class="description">
-                <p>{{ hotSong.description }}</p>
-                <img :src="hotSong.coverImgUrl" alt="" class="cover" />
+                <p>{{ unit.description }}</p>
+                <img :src="unit.coverImgUrl" alt="" class="cover" />
               </div>
             </template>
+            <!-- 以上是标题描述部分，包括简介、封面 -->
+            <!-- 以下是歌曲列表 -->
             <template #content>
-              <div v-for="(item, index) in hotSong.tracks" :key="item.name">
+              <div v-for="(item, index) in unit.tracks" :key="item.name">
                 <p>{{ index + 1 }} - {{ item.name }}</p>
               </div>
             </template>
+            <!-- 以上是歌曲列表 -->
           </list>
-          <list title="热歌榜">
-            <template #titleContent>
-              <div class="description">
-                <p>{{ newSong.description }}</p>
-                <img :src="newSong.coverImgUrl" alt="" class="cover" />
-              </div>
-            </template>
-            <template #content>
-              <div v-for="(item, index) in newSong.tracks" :key="item.name">
-                <p>{{ index + 1 }} - {{ item.name }}</p>
-              </div>
-            </template>
-          </list>
-          <list title="原创榜">
-            <template #titleContent>
-              <div class="description">
-                <p>{{ originSong.description }}</p>
-                <img :src="originSong.coverImgUrl" alt="" class="cover" />
-              </div>
-            </template>
-            <template #content>
-              <div v-for="(item, index) in originSong.tracks" :key="item.name">
-                <p>{{ index + 1 }} - {{ item.name }}</p>
-              </div>
-            </template>
-          </list>
+          <!-- 以上是组件单元，通过slot与v-for实现三个榜单 -->
         </div>
       </template>
     </list>
@@ -70,9 +51,7 @@ export default {
   data() {
     return {
       artist,
-      hotSong,
-      newSong,
-      originSong,
+      itemList: [hotSong, newSong, originSong],
     };
   },
   components: {
@@ -88,7 +67,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 10px;
+  margin: auto;
+  max-width: 1000px;
 }
 
 * {
@@ -121,9 +101,10 @@ p {
 }
 
 .cover {
-  display: inline;
   width: 100px;
   height: 100px;
+  display: inline;
+  margin-left: 5px;
   flex: 0;
 }
 </style>

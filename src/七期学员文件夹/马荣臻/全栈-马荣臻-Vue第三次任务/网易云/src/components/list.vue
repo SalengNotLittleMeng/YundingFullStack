@@ -24,8 +24,12 @@ export default {
 </script>
 
 <style scoped>
-* {
-  text-align: left;
+#app {
+  margin: 10px;
+}
+
+p{
+  width: 30px;
 }
 
 div {
