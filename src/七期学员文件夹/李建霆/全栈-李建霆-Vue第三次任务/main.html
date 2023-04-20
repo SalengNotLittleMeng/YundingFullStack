@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="app">
+      <content :name_deli="singer_name">
+        <template v-slot:name>
+          <!-- <h2 class="title">{{name_deli}}</h2>   Property "name_deli" was accessed during render but is not defined on instance.   出现了这个bug ,很奇怪，网上找不到解决方法，本来想将数据统一写在根组件的data里，现在只能写死了QAQ      -->
+          <h2 class="title">热门歌手</h2>
+        </template>
+
+        <template v-slot:hr>
+          <hr />
+        </template>
+
+        <template v-slot:text>
+          <div v-for="(item,index) in artist0 ">
+            <img :src="item.picUrl" class="img" />
+            <span class="name">{{item.name}}</span>
+          </div>
+        </template>
+        <template v-slot:hr2>
+          <hr />
+        </template>
+      </content>
+
+      <content :name_deli="list_name">
+        <template v-slot:name>
+          <!-- <h2 class="title">{{name_deli}}</h2>  同上 -->
+          <h2 class="title">榜单</h2>
+        </template>
+
+        <template v-slot:hr>
+          <hr />
+        </template>
+
+        <template v-slot:text>
+          <div class="big_list">
+            <!-- 新歌榜 -->
+            <content>
+              <template v-slot:text>
+                <div class="list">
+                  <charts :charts0="newSong0" :charts1="newSong1"></charts>
+                  <hr />
+                </div>
+              </template>
+            </content>
+
+            <!-- 热歌榜 -->
+            <content>
+              <template v-slot:text>
+                <div class="list">
+                  <charts :charts0="hotSong0" :charts1="hotSong1"></charts>
+                  <hr />
+                </div>
+              </template>
+            </content>
+
+            <!-- 原创榜 -->
+            <content>
+              <template v-slot:text>
+                <div class="list">
+                  <charts
+                    :charts0="originSong0"
+                    :charts1="originSong1"
+                  ></charts>
+                  <hr />
+                </div>
+              </template>
+            </content>
+          </div>
+        </template>
+
+        <template v-slot:hr2>
+          <hr />
+        </template>
+      </content>
+    </div>
+
+    <!-- 子组件模板  -->
+    <template id="content">
+      <slot name="name"></slot>
+
+      <slot name="hr"></slot>
+
+      <div class="box">
+        <slot name="text"></slot>
+      </div>
+
+      <slot name="hr2"></slot>
+    </template>
+
+    <template id="charts">
+      <div class="box">
+        <span>
+          <h3 class="title">{{charts1.name}}</h3>
+          <p class="des">{{charts1.description}}</p>
+        </span>
+        <img :src="charts1.coverImgUrl" alt="" class="pic" />
+      </div>
+      <hr />
+      <div v-for="(item,index) in charts0" class="list_content">
+        {{index+1}}-{{item.name }}
+      </div>
+    </template>
+
+    <script type="module">
+      import artist from "./artist.js";
+      import hotSong from "./hotSong.js";
+      import newSong from "./newSong.js";
+      import originSong from "./originSong.js"; //引入数据
+
+      //子组件注册
+      const Content = {
+        template: "#content",
+
+        props: ["name_deli"],
+      };
+
+      const Charts = {
+        template: "#charts",
+
+        props: ["charts0", "charts1"],
+      };
+
+      // 根组件注册
+      const app = Vue.createApp({
+        components: {
+          Content,
+          Charts,
+        },
+        data: () => {
+          return {
+            artist0: artist,
+            newSong0: newSong.tracks,
+            newSong1: newSong,
+            hotSong0: hotSong.tracks,
+            hotSong1: hotSong,
+            originSong0: originSong.tracks,
+            originSong1: originSong,
+
+            singer_name: "热门歌手",
+            list_name: "榜单",
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>
