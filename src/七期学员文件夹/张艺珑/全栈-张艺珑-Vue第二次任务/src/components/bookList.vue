@@ -15,10 +15,8 @@ function changeClass(x,y) {
         <tr v-for="book ,index in props.booksProps" :class="changeClass(index,activeIndex)">
             <td >{{ index+1 }}</td>
             <td @click="activeIndex = index; 
-            if(!bookName){
+            if(!(bookName && bookName === book.name) ){
                 bookName = book.name; 
-            } else {
-                bookName = '';
             }
             ">    
                 《{{ book.name }}》</td>
