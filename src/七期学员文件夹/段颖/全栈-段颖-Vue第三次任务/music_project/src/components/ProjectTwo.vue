@@ -2,16 +2,19 @@
   <div>
     <!-- 歌手 -->
     <div class="title">热门歌手</div>
-    <div class="nav">
-      <div v-for="(item, index) in artist" :key="index" class="avator">
-        <div>
-          <img :src="item.picUrl" :alt="item.altUrl" />
+    <slot name="content">
+      <div class="nav">
+        <div v-for="(item, index) in artist" :key="index" class="avator">
+          <div>
+            <img :src="item.picUrl" :alt="item.altUrl" />
+          </div>
+          <div>{{ item.name }}</div>
         </div>
-        <div>{{ item.name }}</div>
       </div>
-    </div>
+    </slot>
     <div class="title" style="margin-top: 24px">榜单</div>
-    <div class="nav">
+   <slot name="bottom">
+     <div class="nav">
       <!-- 三个歌单 -->
       <div v-for="(item, index) in songList" :key="index" class="left">
         <div class="row-nav">
@@ -42,6 +45,8 @@
         </div>
       </div>
     </div>
+
+   </slot>
   </div>
 </template>
 
@@ -57,7 +62,6 @@ export default {
       songList: [hotSong, newSong, originSong],
     };
   },
-
 };
 </script>
 
