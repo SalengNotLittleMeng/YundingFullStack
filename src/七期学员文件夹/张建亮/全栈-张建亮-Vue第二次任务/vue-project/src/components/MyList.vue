@@ -11,7 +11,7 @@
             :class="{ 'activeCss': selected == obj.id }" @click="active(item, obj.id)" @remove="remove"
             :index="index + 1" />
         <tr v-show="!addShow.addShow">
-            <td>4</td>
+            <td></td>
             <td><input type="text" v-model="bookName"></td>
             <td><input type="number" v-model="value" oninput="value=value.replace(/^(0+)|[^\d]+/g,'')"
                     style="width: 30px;" /></td>
