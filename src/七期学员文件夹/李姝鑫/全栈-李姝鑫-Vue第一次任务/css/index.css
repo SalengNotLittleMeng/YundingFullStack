@@ -1,0 +1,35 @@
+#delete {
+    position: absolute;
+    left: 70px;
+}
+
+#list {
+    position: absolute;
+    left: 55px;
+    top: 177px;
+    font-size: 21px;
+}
+
+ul {
+    position: absolute;
+    top: 197px;
+    left: 15px;
+    list-style-type: circle;
+}
+
+.exceed {
+    color: red;
+}
+
+.ban {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 55px;
+    top: 140px;
+}
+
+.noBan {
+    display: none;
+}

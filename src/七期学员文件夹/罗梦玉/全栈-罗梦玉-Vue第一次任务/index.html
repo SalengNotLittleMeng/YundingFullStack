@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <input v-model="text" @keydown.enter="addWord">
+
+        <h3>你要输入的单词是：{{ text }}</h3>
+
+        <button @click="addWord">添加</button>
+        <button @click="deleteWord">删除</button>
+
+        <div v-if="this.word.length>5?true:false" v-bind:class="red">鳖加辣！单词太多了!</div>
+
+        <div :class="this.word.length>5?'red':'' ">单词列表：</div>
+
+        <ul :class="this.word.length>5?'red':'' ">
+            <li v-for="item in word">
+                {{ item }}
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                text: "",
+                word: [],
+                red: "red"
+            }
+        },
+        methods: {
+            addWord: function () {
+                if (this.text) {
+                    this.word.push(this.text)
+                }
+            },
+            deleteWord: function () {
+                if (this.text.length > 0) {
+                    this.word.splice(-1, 1);
+                }
+            }
+        }
+    })
+    app.mount("#app")
+</script>
+
+</html>

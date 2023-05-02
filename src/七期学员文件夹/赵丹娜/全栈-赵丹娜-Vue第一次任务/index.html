@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Vue.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <input v-model="word" @keyup.enter="add">
+        <div>你要输入的单词是：{{word}}</div>
+        <button @click="add">添加</button>
+        <button @click="del">删除</button>
+        <div v-if="this.list.length > 5" v-bind:class="redColor">鳖加辣！单词数量太多了</div>
+        <ul :class="{red:this.list.length > 5 }">
+            <li v-for="item in list">{{item}}</li>
+        </ul>
+    </div>
+    <script src="js/Vue.js"></script>
+</body>
+
+</html>

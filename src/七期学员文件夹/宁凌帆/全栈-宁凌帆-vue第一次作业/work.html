@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue's work</title>
+    <style>
+        [v-cloak]{
+            display: none;    /* 利用v-cloak先遮盖页面，待其加载完毕再显示 */
+        }
+        .red {
+            color: red;
+        }
+        .normal{
+            display: none;
+        }
+        #appear{
+            display: block;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <input v-model="word" type="text" @keydown.enter="addWord" v-cloak>
+        <h2 v-cloak>Your input word is:{{word}}</h2>
+        <button @click="addWord" v-cloak>Add</button>
+        <button @click="deleteWord" v-cloak>Delete</button>
+        <h1 class="normal" v-if="warn" :id="isRed()?'appear':''" v-cloak>Warnning!!The word you entered has exceeded!!</h1>
+        <h1 class="normal" v-if="warn" :id="isRed2()?'appear':''" v-cloak>Warnning!!Nothing to delete!!</h1>
+        <h3 :class="{ red : isRed() }" v-cloak>Words List</h3>
+        <ul>
+            <li v-cloak v-for="(item,index) in arrWords" :class="{ red : isRed() }">{{item}}</li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data: function () {
+                return {
+                    word: "",                     // 变量word为输入的单词
+                    arrWords: ["Tom", "Jerry"],   // arrWords为初始单词
+                }
+            },
+            methods: {
+                // 添加单词操作
+                addWord: function(){
+                    this.arrWords.push(this.word);
+                    word = this.word = "";
+                },
+                // 删除单词操作
+                deleteWord: function(){
+                    this.arrWords.pop(this.arrWords[this.arrWords.length])    // 利用array.pop()删除数组最后一个元素
+                },
+                // 判断是否显示Warnning
+                warn: function(){
+                    this.arrWords.length >= 5 ? true : false
+                },
+                // 判断是否超出5个且标红
+                isRed: function(){
+                    if(this.arrWords.length > 5){
+                        return true
+                    }
+                    else{
+                        return false
+                    }
+                },
+                // 判断是否低于已输入单词且标红
+                isRed2: function(){
+                    if(this.arrWords.length<=0){
+                        return true
+                    }
+                    else{
+                        return false
+                    }
+                }
+            }
+        })
+        app.mount("#app")
+    </script>
+</body>
+
+</html>

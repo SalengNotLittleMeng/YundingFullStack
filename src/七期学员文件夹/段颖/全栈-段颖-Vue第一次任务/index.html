@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<link href="./css/css.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id='app'>
+        <input v-model="text" type="text" @keydown.enter="add">
+
+        <div :class="first"><strong>你要输入的单词是:{{text}}</strong></div>
+        <div>
+            <button @click="add">添加</button>
+            <button @click="del">删除</button>
+            <div v-show="change" class="change">单词数量过多</div>
+        </div>
+        <div class="red">单词列表:</div>
+        <ul>
+            <li v-for='(word,index) in arr' :class='{"red":fontColor}'>{{word}}</li>
+        </ul>
+    </div>
+    <!-- js引入放在body下面部分,具体原因可百度 -->
+    <script type="text/javascript" src="./js/Vue3.js"></script>
+</body>
+
+</html>

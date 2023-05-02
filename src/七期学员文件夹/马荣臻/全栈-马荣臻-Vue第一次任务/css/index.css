@@ -1,0 +1,20 @@
+@import "button.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#app {
+    position: absolute;
+    /* width: 500px; */
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+}

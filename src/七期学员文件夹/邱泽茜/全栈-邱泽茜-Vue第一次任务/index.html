@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active, .point {
+            color: red;
+        }
+        [v-cloak] {
+        display: none;
+        }
+        button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="newWord">
+        <h2>你要输入的单词是：{{ newWord }}</h2>
+        <div class="content">
+            <button id="add" @click="addWord(newWord)" @keydown.enter="addWord(newWord)">添加</button>
+            <button id="delete" @click="deleteWord">删除</button>
+            <div class="wordList">
+                <p>单词列表：</p>
+                <div class="point" v-show="words.length > 5" v-cloak>单词数量过多！</div>
+                <ul :class="{active: words.length > 5}">
+                    <li v-for="(word, index) in words" >{{ word }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({  
+            data: function(){
+        	    return {
+                    newWord: "",
+                    words: ["apple","pen","banana"],
+                }
+    	    },
+            methods:{
+                addWord(newWord) {
+                    this.words.push(newWord)
+                },
+                deleteWord() {
+                    this.words.pop()
+                }
+            },
+        })
+        app.mount("#app")
+    </script>
+</body>
+</html>

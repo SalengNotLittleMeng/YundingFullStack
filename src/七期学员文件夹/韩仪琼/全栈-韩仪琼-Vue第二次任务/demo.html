@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    tr:hover {
+        background-color: skyblue;
+    }
+
+    input {
+        width: 50px;
+    }
+
+    .first {
+        width: 150px
+    }
+</style>
+
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <div id="app">
+        <h2>总价:￥{{allPrice}} 当前选中书籍:{{message}}</h2>
+        <table border="1">
+            <tr>
+                <th>序号</th>
+                <th>书名</th>
+                <th>价格</th>
+                <th>购买数量</th>
+                <th>操作</th>
+            </tr>
+            <tr v-for="(item,index) in list" :key="index">
+                <td>{{index+1}}</td>
+                <td @click="get_message">{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.count}}</td>
+                <!-- <td><button @click="del">移除</button></td> -->
+                <td><button @click="delDetailCol(index)">移除</button></td>
+
+            </tr>
+            <tr v-show="!result" :="book_num">
+                <td></td>
+                <td><input class="first" type="text" placeholder=" " v-model="prop.name"></td>
+                <td><input type="number" placeholder=" " v-model="prop.price" min="0"></td>
+                <!-- <td>{{item.count}}</td> -->
+                <td><input type="number" placeholder=" " v-model="prop.count" min="0"></td>
+                <!-- <td><button @click="del()">移除</button></td> -->
+            </tr>
+        </table>
+        <button @click="add" v-show="result">添加</button>
+        <div v-show="!result">
+            <button @click="sure">确定</button>
+            <button @click="cancel">取消</button>
+        </div>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data: function () {
+                return {
+                    num: 0,
+                    result: true,
+                    allPrice: 0,
+                    message: '',
+                    prop: {
+                        name: '',
+                        price: 0,
+                        count: 0,
+                    },
+                    list: [{
+                        name: '《JavaScript高级程序设计》',
+                        price: 66,
+                        count: 1
+                    }]
+                }
+            },
+            methods: {
+                add: function () {
+                    this.result = !this.result
+                },
+                book_num: function () {
+                    for (i in this.list) {
+                        i++
+                    }
+                    this.num = i + 1
+                },
+                delDetailCol(index) {
+                    this.list.splice(index, 1)
+                    let list = this.list
+                    // console.log(index);
+                    // console.log(list);
+                    this.allPrice=0
+                    // console.log(this.prop.index);
+                    list= this.list.map(item => item)
+                    for(item in list){
+                        // console.log(list[item].count);
+                        // console.log(list[item].price);
+                        onecost=(list[item].count)*(list[item].price)
+                        this.allPrice += onecost
+                        // console.log(onecost);
+                    }
+                },
+                sure: function () {
+                    this.allPrice=0
+                    let newObj = {
+                        name: this.prop.name,
+                        price: this.prop.price,
+                        count: this.prop.count,
+                    }
+                    this.list.push(newObj);
+                    this.num++;
+                    this.result = !this.result
+                    list= this.list.map(item => item)
+                    for(item in list){
+                        // console.log(list[item].count);
+                        // console.log(list[item].price);
+                        onecost=(list[item].count)*(list[item].price)
+                        this.allPrice += onecost
+                        // console.log(onecost);
+                    }
+                },
+                cancel: function () {
+                    this.result = !this.result
+                },
+                get_message: function (e) {
+                    // console.log(e.target.innerText);
+                    this.message = e.target.innerText
+                },
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+
+</html>
