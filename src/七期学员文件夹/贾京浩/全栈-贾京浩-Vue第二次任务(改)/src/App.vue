@@ -5,8 +5,15 @@
       <TableThead />
       <tbody>
         <tr v-for="(item, index) in list" :key="index" :class="{ active: index === currentIndex }">
-          <BookInfo :name="item.name" :price="item.price" :index="index" :counter="item.counter" @add="add(index)"
-            @reduce="reduce(index)" @select="select(index)" @delete="Delete(index)"/>
+          <BookInfo
+          :name="item.name"
+          :price="item.price"
+          :index="index"
+          :counter="item.counter"
+          @add="add(index)"
+          @reduce="reduce(index)"
+          @select="select(index)"
+          @delete="Delete(index)"/>
         </tr>
         <BookAdd :serialNumber="this.list.length" @addInfo="addInfo"/>
       </tbody>
