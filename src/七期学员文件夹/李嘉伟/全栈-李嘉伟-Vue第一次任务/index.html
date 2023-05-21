@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="div">
+        <input v-model="newWord">
+        <h2>你要输入的单词是：{{newWord}}</h2>
+        <button @click="addWords">添加</button>
+        &nbsp
+        <button @click="removeWords(word)">删除</button>
+        <ul :class="colorClass">
+            {{notice}}
+            <li v-for="word in wordList">{{word}}</li>
+        </ul>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data:function() {
+                return {
+                    newWord:'',
+                    wordList:[],
+                    colorClass:'black',
+                    notice:''
+                }
+            },
+            methods:{
+                addWords:function() {
+                    this.wordList.push(this.newWord)
+                    this.newWord=''
+                    if(this.wordList.length>5){
+                        this.notice='啊不要加了，超过五个了'
+                        this.colorClass='red'
+                    }
+                },
+                removeWords:function(word) {
+                    this.wordList.pop()
+                    if (this.wordList.length <= 5) {
+                        this.notice = '',
+                            this.colorClass = 'black'
+                    }
+                }
+            }
+        })
+        app.mount('#div')
+    </script>
+</body>
+</html>

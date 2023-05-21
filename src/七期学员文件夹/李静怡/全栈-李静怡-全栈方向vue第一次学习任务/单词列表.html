@@ -1,0 +1,69 @@
+<!-- 基础及进阶要求均已实现
+另补充一设计为当单词列表中无单词时，单词列表不出现 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 400px;
+            height: 30px;
+        }
+        h4 {
+            color: red;
+        }
+        .wordsList {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">    
+        <input type="text" v-model="word" @keyup.enter="pushItem">
+        <h3>你要输入的单词是：{{word}}</h3>
+        <button @click="pushItem">添加</button>
+        <button @click="removeItem">删除</button>
+        <h4 v-if="words.length>5">鳖加辣！单词数量太多了</h4>
+        <div class="wordsList" :class="{active:this.words.length>5}" v-if="words.length>0">
+            <span>单词列表：</span>
+            <ul>
+                <li v-for="item in words">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://unpkg.com/vue@next"></script> 
+    <script>
+        // 1.创建app
+        const app=Vue.createApp({
+            //data:opyion api
+            data:function(){
+                return{
+                    message:"hello vue",
+                    word:"",
+                    words:[]
+                }
+            },
+            methods:{
+                pushItem(){
+                    this.words.push(this.word)
+                },
+                removeItem(){
+                    this.words.pop(this.word)
+                }
+            }
+        })
+
+        // 2.挂载app
+        app.mount("#app")
+    </script>
+</body>
+</html>

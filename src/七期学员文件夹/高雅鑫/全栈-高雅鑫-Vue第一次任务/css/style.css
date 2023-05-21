@@ -1,0 +1,14 @@
+.toomuch {
+    color: red;
+}
+
+.warning {
+    visibility: hidden;
+}
+
+
+
+.secondly{
+    color: red;
+    visibility: visible;
+}

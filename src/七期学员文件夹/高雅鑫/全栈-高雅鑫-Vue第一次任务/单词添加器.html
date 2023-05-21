@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="" viewport content="width=device-width,initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>document</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="word">
+            <h1>单词添加器</h1>
+            <input id="add" type="text" v-model="newword" @keyup.enter="addword">
+                <!--<input id="" female type="radio" v-model="gender" value=" female"> 女-->
+            <h2>你要输入的单词是：{{newword}}</h2>
+            <button @click="addword">添加</button> <button @click="deleteword">删除</button>
+            <h2 :class="{secondly:allwords.length > 4, warning :allwords.length <5}">憋加辣！加了超过5个你背不下来了！</h2>
+            <hr/>
+            <label :class="{toomuch:allwords.length > 4}">单词列表：</label>
+            <ul>
+                <li :class="{toomuch:allwords.length > 4}" v-for="item in allwords" :key="item.value" :value="item.value">
+                    {{item}}</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./js/vue.js"></script>
+</body>
+
+</html>
