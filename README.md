@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+# lastwork
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
 # 云顶书院-全栈开源仓库
 
 #### 介绍
@@ -44,3 +70,4 @@
 - 通过实战项目着手进行 代码思维，分析，实战能力的培养
 
 #### 如果你是一位全栈技术爱好者，有一些独特的见解或技术推荐，并有乐于分享的精神，请尽情在<全栈技术分享><学习笔记及心得><全栈项目>等文件夹中书写你的锦囊把
+>>>>>>> 6350311c66807c84b85c56e52c10fb427556a78e
