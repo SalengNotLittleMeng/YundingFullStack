@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "iconfont";
+    src: url('./iconfont.woff2?t=1670487461212') format('woff2'),
+        url('./iconfont.woff?t=1670487461212') format('woff'),
+        url('./iconfont.ttf?t=1670487461212') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.w {
+    width: 1240px !important;
+    margin: auto;
+}
+input {
+    border: none;
+    background: none;
+    transition: all .8s;
+}
+input:hover {
+    transform: scale(0.8);
+}
+header {
+    width: 1920px;
+    height: 1525px;
+    background: url(https://typora-iamge.oss-cn-beijing.aliyuncs.com/%E4%B9%8C%E9%BE%9F_01.jpg) no-repeat;
+    margin: auto;
+}
+.top {
+    overflow: hidden;
+    width: 1920px;
+    height: 48px;
+    margin: auto;
+    background-color: #ffffff;
+}
+.category {
+    font-size: 30px !important;
+    float: left;
+    margin-left: 70px;
+    line-height: 48px;
+} 
+.seek {
+    float: right;
+    font-size: 30px;
+    margin-right: 70px;
+    line-height: 48px;
+}
+.production {
+    position: relative;
+    height: 880px;
+    margin: 0 auto;
+}
+.production .camera {
+    position: absolute;
+    color: white;
+    top: -48px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    background-color: #7fbf4e;
+    transition: all  .8s;
+}
+.camera div {
+    width: 157px;
+    height: 157px;
+    font-size: 70px;
+    border: 4px solid white;
+    border-radius: 80px;
+    margin: 18px 15px 0 15px;
+    text-align: center;
+    line-height: 157px;
+}
+.camera:hover {
+    transform: scale(0.9);
+}
+.production h1 {
+    font: 400 72px 'Cambria';
+    color: #2e411e;
+    padding: 239px 0 0 227px;
+}
+.production p {
+    position: absolute;
+    width: 1100px;
+    font-size: 30px;
+    padding-top: 14px;
+    color: #2e411e;
+}
+input[value="EXPIORE"] {
+    position: absolute;
+    top: 557px;
+    left: 67px;
+    width: 263px;
+    height: 72px;
+    background-color: #2e411e;
+    font-size: 30px;
+    color: white;
+}
+.grounding {
+    position: relative;
+    width: 1920px;
+    height: 598px;
+    background-color: #f8f8f8;
+} 
+section  {
+    position: absolute;
+    top: -146px;
+    left: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1113px ;  
+    width: 500px; 
+}
+img[class^="bird"] {
+    transition: all 1.3s;
+}
+img[class^="bird"]:hover {
+    transform: translate(0,-70px);
+}
+main {
+    height: 2694px;
+}
+.deer {
+    position: relative;
+    width: 1920px;
+    height: 760px;
+    margin: auto;
+    background: url(https://typora-iamge.oss-cn-beijing.aliyuncs.com/%E9%B9%BF.png);
+}
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -80px;
+    left: 498px;
+    width: 946px;
+    height: 541px;
+    background-color: #dfdede;
+    transition: all .8s;
+}
+.signup:hover {
+    transform: translate(0,-50px);
+}
+.signup article {
+    font-size: 20px;
+    color: #2e411e;
+}
+input[value="SIGN UP"] {
+    width: 197px;
+    height: 70px;
+    background-color: #2e411e;
+    font-size: 30px;
+    color: white;
+}
+.animal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1920px;
+    height: 1934px;
+    margin: auto;
+    background-color: #f8f8f8;
+}
+.difference {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+.difference h1 {
+    width: 260px;
+    height: 15px;
+    padding: 30px 0;
+    margin: 30px auto 60px auto;
+    text-align: center;
+    line-height: 15px;
+    font-size: 48px;
+    color: #2e411e;
+    border: 7px solid #f8f8f8;
+}
+@keyframes difference {
+    0% {
+        border: 7px solid #f8f8f8;
+    }
+    25% {
+        border-top: 7px solid #2e411e;
+    }
+    50% {
+        border-top: 7px solid #2e411e;
+        border-right: 7px solid #2e411e;
+    }
+    75% {
+        border-top: 7px solid #2e411e;
+        border-right: 7px solid #2e411e;
+        border-bottom: 7px solid #2e411e;
+    }
+    100% {
+        border: 7px solid #2e411e;
+    }
+}
+.difference h1:hover {
+    animation: difference 2s steps(4) alternate;
+}
+.diff_animal {
+    height: 413px;
+}
+.diff_animal :nth-child(-n+4) {
+    float: left;
+    width: 265px;
+    height: 413px;
+    margin-left: 35px;
+    background-color: #dfdede;
+    transition: all 1s;
+}
+.diff_animal :nth-child(-n+4):hover {
+    transform: translate(0,-40px);
+}
+.difference .diff_animal img {
+    transform: initial !important;
+    height: 264px;
+    margin: 0;
+}
+
+.difference .diff_animal h3 {
+    transform: initial !important;
+    height: 31px;
+    margin: 33px auto 23px auto;
+    font-size: 30px;
+    font-weight: 600;
+    color: #2e411e;
+    text-align: center;
+}
+.difference .diff_animal a {
+    height: 70px;
+    margin: 0;
+    transform: initial !important;
+    font-size: 22px;
+    color: #2e411e;
+    text-align: center;
+}
+input[value="Know more"] {
+    width: 355px;
+    height: 66px;
+    font-size: 30px;
+    color: #2e411e;
+    border: 2px solid #2e411e;
+    margin: 118px auto 0 444px;
+}
+input[value="Know more"]:hover {
+    color: white;
+    background-color: #2e411e;
+}
+.squirrel {
+    position: relative;
+    height: 1020px;
+}
+.squirrel .aside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 732px;
+    height: 1020px;
+}
+.squirrel img {
+    position: absolute;
+    left: -74px;
+    transition: all 1.3s;
+
+}
+.squirrel img:hover {
+    transform: translate(-80px,0);
+}
+.squirrel .aside  h3 {
+    font-size: 36px;
+    color: #2e411e;
+    transition: all 1.3s;
+}
+.squirrel .aside  p {
+    font-size: 24px;
+    color: #2e411e;
+    transition: all 1.3s;
+}
+.squirrel .aside h3:hover{
+    transform: translate(125px,0) scale(1.5);
+}
+.squirrel .aside p:hover{
+    transform: translate(150px, 0) scale(1.6);
+}
+.squirrel .aside ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 563px;
+}
+ul li {
+    position: relative;
+    list-style: none;
+    transition: all 2s;
+}
+ul li:hover {
+    transform: translate(150px);
+}
+.squirrel .aside ul li div[class^="num"] {
+    width: 70px;
+    height: 70px;
+    font-size: 48px;
+    color: #2e411e;
+    text-align: center;
+    line-height: 70px;
+    border: 2px solid #2e411e;
+    border-radius: 37px;
+    transition: all 1.3s;
+}
+.squirrel .aside ul li div:hover {
+    color: white;
+    background-color: #2e411e;
+}
+.squirrel .aside ul li p[class="words"] {
+    all: initial;
+    position: absolute;
+    font-size: 24px;
+    color: #2e411e;
+    top: 32px;
+    left: 100px;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1920px;
+    height: 497px;   
+}
+footer .words {
+    position: relative;
+    width: 480px;
+    height: 141px;
+}
+footer .words h3 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #2e411e;
+}
+.p {
+    position: relative;
+    top: -96px;
+    left: 305px;
+}
+footer .words p {
+    font-size: 25px;
+    color: #2e411e;
+}
+input[value="Big World"] {
+    width: 360px;
+    height: 70px;
+    font-size: 36px;
+    color: white;
+    background-color: #929d8a;
+    transition: all 1.3s;
+}
+input[value="Big World"]:hover {
+    background-color: #fff;
+    color: #2e411e;
+}

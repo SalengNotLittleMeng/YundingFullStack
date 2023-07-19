@@ -1,0 +1,41 @@
+ @keyframes animat {
+     0% {
+         margin-left: 300px;
+         opacity: 0;
+     }
+     100% {
+         margin-left: 0;
+         opacity: 1;
+     }
+ }
+ 
+ .list-item {
+     /* display: inline-block; */
+     margin-right: 10px;
+ }
+ 
+ .list-enter-active,
+ .list-leave-active {
+     transition: all 0.5s;
+ }
+ 
+ .list-enter-active {
+     animation: animat 1s;
+ }
+ 
+ .list-move {
+     transition: transform 1s;
+ }
+ 
+ .list-leave-active {
+     animation: animat 1s reverse;
+ }
+ 
+ .list-enter,
+ .list-leave-to {
+     opacity: 0;
+ }
+ 
+ .slide-fade-move {
+     transition: all .3s ease;
+ }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <button onclick="addName()">添加新用户</button><input type="text" id="addNew">
+    <br>
+    <button onclick="getName()">获取用户列表</button>
+    <div id="userList"></div>
+</head>
+
+<body>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    function getName() {
+        axios.get('http://47.93.100.90:3000/getList?id=hello').then(function(res) {
+            console.log(res)
+            res = res.data;
+            let buf = '';
+            for (let i = 0; i < res.length; i++) {
+                buf += `<div>${res[i]}</div>`
+            }
+            document.getElementById("userList").innerHTML = buf;
+        }, function(err) {
+            console.log(err)
+        })
+    }
+
+    function addName() {
+        let newName = document.getElementById("addNew").value;
+        if (newName == '') {
+            alert("输入不能为空！");
+            return;
+        }
+        axios.post('http://47.93.100.90:3000/addList', {
+            name: newName,
+            id: 'hello',
+        }).then(function(res) {
+            console.log(res.data.allList)
+            alert("添加成功！")
+        }, function(err) {
+            console.log(err)
+        })
+    }
+</script>
+
+</html>

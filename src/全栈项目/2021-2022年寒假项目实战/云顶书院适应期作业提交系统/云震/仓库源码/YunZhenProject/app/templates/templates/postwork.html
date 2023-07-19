@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>提交页面</title>
+  <link rel="stylesheet" href="{% static 'css/postwork.css' %}">
+</head>
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<body>
+  <div class="back" style="background-image: url({% static 'img/QQ图片20220224180204.jpg' %});">
+    <div class="box">
+      <div class="head">
+        <img src="{% static 'img/图层 7.png' %}" alt="" class="logo">
+        <div class="name">{{ user_name }}</div>
+        <br>
+        <div class="phone">{{ user_phone_number }}</div>
+        <div class="head-right">
+          <a href="../inbox">收件箱</a>
+          <a href="../outbox">发件箱</a>
+          <a href="../postwork" style="color: black">提交作业</a>
+          <a href="../log_out">退出登录</a>
+        </div>
+      </div>
+      <div class="contain">
+        <div class="button">
+            <button type="submit" class="button-1" value="发送" class>发送</button>
+          <!-- <input type="button" class="button-2" value="定时发送">
+        <input type="button" class="button-3" value="存草稿"> -->
+        </div>
+        <div class="addressee">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp收件人&nbsp&nbsp&nbsp<input type="text" value="{{ get_user_name }}{{ error }}" name="get_user_name"></div>
+        <div class="topic">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp主题&nbsp&nbsp&nbsp<input type="text" value="{{ topic }}" name="topic"></div>
+        <div class="function">
+          <div class="add">
+            <img src="{% static 'img/图层 1.png' %}" style="width: 20px;">
+            <input type="file" name="filename" value="添加附件" class="button-file">
+          </div>
+          <div class="day"><img src="{% static 'img/图层 4.png' %}" style="width: 20px;"><input type="button" value="日程"></div>
+          <div class="picture"><img src="{% static 'img/图层 6.png' %}" style="width: 24px;"><input type="button" value="照片"></div>
+          <div class="word"><img src="{% static 'img/图层 5.png' %}" style="width: 16px;"><input type="button" value="文档"></div>
+          <div class="jieping"><img src="{% static 'img/图层 3.png' %}" style="width: 22px;"><input type="button" value="截屏"></div>
+          <div class="expression"><img src="{% static 'img/图层 2.png' %}" style="width: 20px;"><input type="button" value="表情">
+          </div>
+          <p>正文</p>
+            <div class="form">
+            <textarea name="content" id="textarea" cols="30" rows="10" class="textarea"
+              style="background-image: url({% static 'img/背景2.jpg' %}); background-size: 100% 100%; position: relative; right: 10px;">{{ content }}</textarea>
+          </div>
+
+        </div>
+        <div class="foot">
+          <span>发件人：{{ user_name }}</span>
+        </div>
+      </div>
+      <div class="last"></div>
+
+    </div>
+  </div>
+</body>
+</form>
+<script src="./index.js"></script>
+
+</html>

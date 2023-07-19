@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 node_modules
 /dist
@@ -21,3 +22,12 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+=======
+.idea/
+node_modules
+dist
+example/
+.DS_Store
+.gitee
+.vscode
+>>>>>>> 6350311c66807c84b85c56e52c10fb427556a78e

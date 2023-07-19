@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ body {
+   overflow: scroll;
+   overflow-x: hidden;
+   height: 940px;
+   position: absolute;
+   top: -100px;
+
+
+
+
+ }
+
+
+.back {
+  width: 1900px;
+  height: 1200px;
+  background-size: 100% 100%;
+  z-index: 3;
+  position: relative;
+  right: 80px;
+
+}
+
+
+
+
+.box {
+  width: 1700px;
+  height: 1130px;
+  /* border: 2px solid aqua;
+  border-top: none;
+  border-bottom: none; */
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  opacity: 0.9;
+
+}
+
+.head {
+  width: 1700px;
+  position: relative;
+  bottom: 40px;
+
+
+}
+.head img {
+  width: 180px;
+  position: relative;
+  top: 60px;
+  left: 40px;
+}
+
+.name {
+  display: inline-block;
+  position: relative;
+  bottom: -10px;
+  left: 16px;
+  font-size: 38px;
+}
+.phone {
+  position: relative;
+  left: 200px;
+  bottom: -10px;
+  font-size: 30px;
+}
+
+
+.head-right {
+  position: relative;
+  bottom: 40px;
+  left: 1190px;
+}
+
+.head-right a {
+  font-size: 20px;
+  margin-left: 30px;
+  list-style: none;
+  text-decoration: none;
+  color: grey;
+}
+
+.contain {
+  width: 1630px;
+  height: 970px;
+  position: relative;left: 40px;
+  bottom: 40px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #bee6ed;
+}
+.button {
+  background-color: #92dae1;
+  height: 70px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 10px 10px 10px -4px rgb(0 0 0 / 30%);
+}
+
+.button button {
+  background-color: #b2d7dd;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 14px;
+  border: 1px solid black;
+  border-radius: 10%;
+ position: relative;
+ left: 10px;
+  }
+
+.button-file {
+  background-color: #b2d7dd;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 14px;
+  border: 1px solid black;
+  border-radius: 10%;
+ position: relative;
+ left: 10px;
+}
+
+  .addressee {
+    position:relative;
+    top: 40px;
+  }
+
+  .addressee input {
+    width: 1480px;
+  }
+
+  .topic input {
+    width: 1480px;
+  }
+ .topic {
+   position: relative;
+   top: 70px;
+ }
+.function>div {
+  display: inline-block;
+  position: relative;
+  top: 90px;
+  left: 60px;
+  margin-left: 16px;
+
+}
+.function>div>input {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.function>div>img {
+  width: 20px;
+}
+
+.function>p {
+  position: relative;
+  top: 90px;
+  left: 46px;
+}
+
+.form textarea {
+  width: 1480px;
+  height: 600px;
+  position: relative;
+  left: 15px;
+  top: 20px;
+  font-size: 24px;
+}
+
+.form div {
+  font-size: 48px;
+  color: #a8babd;
+  position: relative;
+  top: 340px;
+  left: 740px;
+  z-index: 2;
+}
+
+.form p {
+  color: #92dae1;
+  position: relative;
+  top: 200px;
+}
+
+.foot {
+  position: relative;
+  left: 20px;
+  top: 60px;
+
+}
+
+.foot span {
+  margin-left: 80px;
+}
+
+.last {
+  height: 50px;
+  background-color: #92dae1;
+  width: 1630px;
+  position: relative;
+  bottom: 40px;
+  left: 40px;
+
+}
+
+body {
+  transform: scale(0.8,0.8);
+  position: relative;
+  bottom: 120px;
+  right:90px;
+}
+
+.textarea:hover {
+  background-size: 100% 100%;
+}

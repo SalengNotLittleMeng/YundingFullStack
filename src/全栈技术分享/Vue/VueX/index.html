@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>我是 state 测试：{{ this.$store.state.name }}</div>
+        <div>我是 getters 测试:{{ this.$store.getters.decorationName }}</div>
+        <button @click="$store.commit('changeName', 'mutations 按钮')">
+      mutations 按钮
+    </button>
+        <button @click="$store.dispatch('changeNameAsync', 'actions 按钮')">
+      actions 按钮
+    </button>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
+<script src="./src/index.js"></script>
+<script>
+    Vue.use(Store);
+    let store = new Store({
+        state: {
+            name: '张三',
+            age: 21,
+        },
+        mutations: {
+            changeName(state, newName) {
+                // 这里简单举个例子 修改个名字
+                state.name = newName
+            },
+        },
+        actions: {
+            changeNameAsync(context, newName) {
+                // 这里用 setTimeout 模拟异步
+                setTimeout(() => {
+                    // 在这里调用 mutations 中的处理方法
+                    context.commit('changeName', newName)
+                }, 2000)
+            },
+        },
+        getters: {
+            decorationName(state) {
+                return `大家好我的名字叫${state.name}今年${state.age}岁`
+            },
+        },
+    })
+    let vm = new Vue({
+        el: '#app',
+        store: store,
+        mounted() {}
+    })
+</script>
+
+</html>

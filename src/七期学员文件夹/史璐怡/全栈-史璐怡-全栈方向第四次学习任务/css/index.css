@@ -1,0 +1,430 @@
+
+ body {
+     margin: 0;
+ }
+/* head */
+ .head {
+     position: relative;
+     overflow: hidden;
+     width: 100%;
+     height: 1523px;
+     background-image: url(https://shiluyi.oss-cn-beijing.aliyuncs.com/tortoise.png);
+     background-repeat: no-repeat;
+     background-size: 100% 876px;
+ }
+
+ .head .area1 {
+     width: 1094px;
+ }
+
+ .menu {
+     display: flex;
+     justify-content: space-between;
+     height: 49px;
+     background-color: white;
+ }
+
+ .iconfont {
+     transition: all 0.3s;
+     font-size: 45px!important;
+ }
+
+ span:hover {
+     transform: scale(0.8);
+ }
+
+ .menu>.div {
+     flex: 1;
+ }
+
+ .camera {
+     position: relative;
+     top: -49px;
+     height: 200px;
+     width: 200px;
+     background-color: #81c04b;
+     margin: 0 auto;
+     transition: all 0.8s;
+ }
+
+ .camera:hover {
+     transform: scale(0.85);
+ }
+
+ .camera .circle {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 166px;
+     height: 166px;
+     border: 4px solid white;
+     border-radius: 50%;
+ }
+
+ .camera img {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .title {
+     position: absolute;
+     top: 214px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 718px;
+     height: 238px;
+     color: #2a3f17;
+     font-size: 72px;
+ }
+
+ .word {
+     position: absolute;
+     top: 370px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 1094px;
+     height: 94px;
+     color: #2a3f17;
+     font-size: 30px;
+     line-height: 30px;
+ }
+
+ .EXPIORE {
+     position: absolute;
+     top: 556px;
+     width: 262px;
+     height: 72px;
+     background-color: #2a3f17;
+     color: white;
+     font-size: 30px;
+     line-height: 72px;
+     text-align: center;
+     transition: all 1s;
+ }
+
+ .EXPIORE:hover {
+     cursor: pointer;
+     opacity: 0.8;
+ }
+
+ .flamingos {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 480px;
+ }
+
+ .flamingos>img {
+     transition: all 0.6s;
+ }
+
+ .flamingos>img:hover {
+     cursor: pointer;
+     transform: translateY(-50px);
+ }
+ /* deer */
+ .deer {
+     position: relative;
+     width: 100%;
+     height: 779px;
+     background-image: url(https://shiluyi.oss-cn-beijing.aliyuncs.com/deer.png);
+     background-repeat: no-repeat;
+     background-size: 100% 100%
+ }
+ .sign_box {
+     position: absolute;
+     top: -84px;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: rgb(224, 223, 223);
+     width: 946px;
+     height: 541px;
+     transition: all 1s;
+ }
+ .sign_box:hover {
+     transform: translate(-50%, -50px);
+ }
+ .sign_box p {
+     position: absolute;
+     top: 62px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 800px;
+     font-size: 20px;
+     font-family: "Microsoft YaHei";
+     color: rgb(42, 63, 23);
+     line-height: 1.5;
+ }
+ .deer .button {
+     position: absolute;
+     top: 408px;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: rgb(42, 63, 23);
+     width: 197px;
+     height: 70px;
+     color: white;
+     font-size: 30px;
+     font-family: "Microsoft YaHei";
+     text-align: center;
+     line-height: 70px;
+     transition: all 1s;
+ }
+ .deer .button:hover {
+     cursor: pointer;
+     transform: scale(0.9) translateX(-50%);
+ }
+ /* difference */
+ .difference {
+     position: relative;
+     width: 100%;
+     height: 686px;
+ }
+ .dif {
+     position: absolute;
+     top: 81px;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+ .dif_box {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 64px;
+ }
+ button {
+     border: 0;
+     background: none;
+     font-size: 48px;
+     color: #2a3f17;
+     position: relative;
+     padding: 10px 20px;
+ }
+ button::before,
+ button::after {
+     box-sizing: inherit;
+     position: absolute;
+     content: '';
+     border: 3px solid transparent;
+     width: 0;
+     height: 0;
+ }
+ button::after {
+     bottom: 0;
+     right: 0;
+ }
+ button::before {
+     top: 0;
+     left: 0;
+ }
+ button:hover::before,
+ button:hover::after {
+     width: 100%;
+     height: 100%;
+ }
+ button:hover::before {
+     border-top-color: #2a3f17;
+     border-right-color: #2a3f17;
+     transition: width 0.3s, height 0.3s 0.3s;
+ }
+ button:hover::after {
+     border-bottom-color: #2a3f17;
+     border-left-color: #2a3f17;
+     transition: border-color 0s 0.6s, width 0.3s 0.6s, height 0.3s 1s;
+ }
+ .dif_pic {
+     position: absolute;
+     top: 184px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 1148px;
+     height: 412px;
+ }
+ .dif_pic_box {
+     display: flex;
+     justify-content: space-between;
+     width: 1148px;
+     height: 412px;
+ }
+ .dif_pic_box div {
+     background-color: #e0dfdf;
+     width: 264px;
+     height: 413px;
+     transition: all 0.5s;
+ }
+ .dif_pic_box div:hover {
+     transform: translateY(-50px);
+ }
+ .dif_pic_box img {
+     width: 100%;
+ }
+ .dif_pic_box p {
+     font-size: 22px;
+     color: rgb(42, 63, 23);
+     text-align: center;
+ }
+ .dif_pic_box .name {
+     font-weight: bold;
+ }
+ .dif_pic_box .story {
+     margin: 0 auto;
+     width: 195px;
+     border-bottom: 2px solid rgb(42, 63, 23);
+ }
+ /* know_more */
+ .know_more {
+     width: 100%;
+     height: 1254px;
+ }
+ .area3 {
+     position: relative;
+ }
+ .know {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 355px;
+     height: 65px;
+     font-size: 30px;
+     color: rgb(42, 63, 23);
+     font-family: "Microsoft YaHei";
+     text-align: center;
+     line-height: 65px;
+     border-width: 2px;
+     border-color: rgb(42, 63, 23);
+     border-style: solid;
+     transition: all 0.5s;
+ }
+ .know:hover {
+     background-color: rgb(42, 63, 23);
+     color: white;
+ }
+ .know_more img {
+     position: absolute;
+     top: 138px;
+ }
+ .know_more .The_Photo {
+     position: absolute;
+     top: 210px;
+     left: 780px;
+     font-size: 36px;
+     color: rgb(42, 63, 23);
+     transition: all 0.5s;
+ }
+ .know_more .The_Photo:hover {
+     transform: translateY(-50px);
+ }
+ .area3 p {
+     position: absolute;
+     top: 258px;
+     left: 780px;
+     font-size: 24px;
+     color: rgb(42, 63, 23);
+     line-height: 1.25;
+     transition: all 0.5s;
+ }
+ .area3 p:hover {
+     transform: translateX(50px);
+ }
+ .num_word {
+     position: absolute;
+     top: 500px;
+     left: 780px;
+     width: 280px;
+     height: 578px;
+ }
+ .num_box {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 380px;
+     height: 578px;
+ }
+ .num_box .num_title {
+     display: inline-block;
+     font-size: 24px;
+     color: rgb(42, 63, 23);
+     margin-left: 40px;
+ }
+ .number {
+     display: inline-block;
+     width: 66px;
+     height: 66px;
+     font-size: 40px;
+     color: rgb(42, 63, 23);
+     border-width: 2px;
+     border-color: rgb(42, 63, 23);
+     border-style: solid;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 66px;
+ }
+ .num_box>div {
+     transition: all 1s;
+ }
+ .num_box>div:hover {
+     transform: translateX(50px);
+ }
+  /* foot */
+.foot {
+    width: 100%;
+    height: 460px;
+    border-top: 2px solid black;
+}
+.area4 {
+    position: relative;
+}
+.IN_THE_WILD,
+.IN_THE_SEA {
+    position: absolute;
+    top: 174px;
+    left: 196px;
+    font-size: 40px;
+    color: rgb(42, 63, 23);
+}
+.IN_THE_SEA {
+    margin-top: 90px;
+}
+.MOER {
+    position: absolute;
+    top: 181px;
+    left: 497px;
+    font-size: 30px;
+    color: rgba(42, 63, 23, 0.902);
+}
+.we {
+    position: absolute;
+    top: 230px;
+    left: 497px;
+     font-size: 24px;
+     color: rgba(42, 63, 23, 0.8);
+     line-height: 1.667;
+}
+.foot .button {
+    position: absolute;
+    top: 193px;
+    left: 980px;
+    width: 361px;
+    height: 73px;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    line-height: 73px;
+    background-color: rgb(42, 63, 23);
+    opacity: 0.502;
+    transition: all 0.5s;
+}
+.foot .button:hover {
+    cursor: pointer;
+    transform: translateY(-50px);
+    background-color: white;
+    color: rgb(42, 63, 23);
+}
+ /* 版心 */
+ div[class^=area] {
+     height: 100%;
+     width: 1362px;
+     margin: 0 auto;
+}
