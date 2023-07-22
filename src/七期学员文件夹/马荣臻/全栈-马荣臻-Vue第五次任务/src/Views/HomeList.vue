@@ -9,6 +9,7 @@
       >
         {{ val }}
       </li>
+
       <!-- 输入框收集新的列表元素，双向绑定inputValue，监听enter敲击事件 -->
       <li>
         <input v-model="inputValue" @keyup.enter="addInput()" />
@@ -32,7 +33,7 @@ function addInput() {
   inputValue.value = "";
 }
 
-//传递路由
+//传递路由参数
 function elementClick(index) {
   router.push({
     path: "/home/selected",
