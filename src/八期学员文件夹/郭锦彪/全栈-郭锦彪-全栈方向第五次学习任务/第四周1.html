@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    div{
+        width: 504px;
+        background-color: aquamarine;
+        margin: auto;
+        font-size: 25px;
+    }
+    input{
+        width: 500px;
+        height: 30px;
+        font-size: 20px;
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        请输入一个字符串：<br>
+        <input type="text" class="father"><br>
+        请输入一个字串：<br>
+        <input type="text" class="son"><br>
+        字串出现的次数为:<br>
+        <input type="text" class="number"><br>
+        <button>输出结果</button>
+    </div>
+    <script>
+        var button = document.querySelector("button")
+        var father = document.querySelector(".father")
+        var son = document.querySelector(".son")
+        var text = document.querySelector(".number")
+        button.onclick =function(){
+            let str = father.value
+            let checkString = son.value
+            let i, j
+            let result
+            let count = 0; //字符串个数
+            for (i = 0; i <= (str.length - checkString.length); i++) {
+                result = true
+                if (str[i] === checkString[0]) {
+                    for (j = 0; j < checkString.length; j++) {
+                        if (str[i + j] !== checkString[j]) {
+                            result = false
+                        }
+                    }
+                    if (result == true) {
+                        count++
+                        i = i + checkString.length - 1
+                    }
+                }
+            }
+            text.value = count
+        }
+    </script>
+</body>
+</html>
