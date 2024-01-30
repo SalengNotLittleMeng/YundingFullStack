@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+    div{
+        width: 662px;
+        background-color: aquamarine;
+        margin: auto;
+        font-size: 25px;
+    }
+    input{
+        width: 500px;
+        height: 30px;
+        font-size: 20px;
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    .picture{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .aftername,.afterage,.aftercharacter{
+        border: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="before">
+        请输入邮箱：<br>
+        <input type="text" class="father"><br>
+        请输入密码：<br>
+        <input type="password" class="son"><br>
+        <button>登录</button>
+    </div>
+    <div class="after">
+        登陆成功！<br>
+        <img src="demo.jpg" class="picture"><br>
+        姓名：
+        <input type="text" class="aftername"><br>
+        年龄：
+        <input type="text" class="afterage"><br>
+        特长：
+        <input type="text" class="aftercharacter"><br>
+
+    </div>
+    <script>
+        var before = document.querySelector(".before")
+        var after = document.querySelector(".after")
+        var aftername = document.querySelector(".aftername")
+        var afterage = document.querySelector(".afterage")
+        var aftercharacter = document.querySelector(".aftercharacter")
+        var button = document.querySelector("button")
+        var father = document.querySelector(".father")
+        var son = document.querySelector(".son")
+        var input = document.querySelectorAll("input")
+        var msg = [{
+            name: '张三',
+            age: 20,
+            strengths: 'JavaScript',
+            avatar: 'https://tse4-mm.cn.bing.net/th/id/OIP-C.39mOMBjUfsK-HL9jUbv1MwHaE7?pid=ImgDet&rs=1',
+            email: 'yunding@qq.com',
+            password: 33333
+        },
+        {
+            name: '李四',
+            age: 19,
+            strengths: 'python',
+            avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.YlKimVo94OkaZDZCzPIDpAHaFh?pid=ImgDet&rs=1',
+            email: '12345678@163.com',
+            password: 11111
+        },
+        {
+            name: '王五',
+            age: 18,
+            strengths: 'Java',
+            avatar: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.P2hK9SRjhFE8WM9N8tgWFAHaEQ?pid=ImgDet&rs=1',
+            email: 'yundingshuyuan@qq.cn',
+            password: 222222
+        },
+        ]
+        after.style.display = "none"
+        button.onclick=function(){
+            var res = /^[a-zA-Z0-9]{1,}(@qq.com)|(@qq.cn)|(@163.com)|(@163.cn)$/g
+            var result = res.test(father.value)
+            if(result){
+                if(son.value === '')
+                {
+                    alert("请输入密码！")
+                }
+                if(son.value!==''){
+                    var num=0;
+                    for (var value of msg) {
+                        if(value.email === father.value){
+                            num++;
+                        }
+                    }
+                    if(num === 0){
+                        alert("输入的邮箱不存在，请重新输入")
+                        father.value = ''
+                        son.value = ''
+                    }
+                    if(num === 1){
+                        var sum = 0;
+                        for (var values of msg) {
+                            if (values.password == son.value) {
+                                sum++;
+                            }
+                        }
+                        if(sum === 0){
+                            alert("密码错误，请重新输入！")
+                            son.value = ''
+                        }else if(sum===1){
+                            for (var valueb of msg) {
+                                if(valueb.email===father.value)
+                                afterage.value = valueb.age
+                                aftername.value = valueb.name
+                                aftercharacter.value = valueb.strengths
+                                for (var value of input) {
+                                    value.disabled = true
+                                }
+                                before.style.display = 'none'
+                                after.style.display = 'block'
+                            }
+                            sum = 0
+                        }
+                        num = 0; 
+                    }
+                    
+                }
+            }else{
+                alert("输入的邮箱格式有误，请重新输入！")
+                father.value=''
+                son.value=''
+            }
+        }
+        
+    </script>
+</body>
+</html>
